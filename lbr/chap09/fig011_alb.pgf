@@ -1,0 +1,48 @@
+% (c) 2012 Dimitrios Vrettos - d.vrettos@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+\node [circle, draw] (a) {$\bullet$};
+\node [circle, draw, fill=orange!20!] (t) [above right=of a] {$T$};
+\node [circle, draw] (c) [below right=of a] {$C$};
+\node [rectangle, draw] (d1) at(45:5.5) {$1$};
+\node [right=.1 of d1]{$P(T \cap 1)=1/12$};
+\node [rectangle, draw] (d2) [below =.2 of d1] {$2$};
+\node [right=.1 of d2]{$P(T \cap 2)=1/12$};
+\node [rectangle, draw] (d3) [below =.2 of d2] {$3$};
+\node [right=.1 of d3]{$P(T \cap 3)=1/12$};
+\node [rectangle, draw] (d4) [below =.2 of d3] {$4$};
+\node [right=.1 of d4]{$P(T \cap 4)=1/12$};
+\node [rectangle, draw, fill=orange!20!] (d5) [below =.2 of d4] {$5$};
+\node [right=.1 of d5] (ad1){$P(T \cap 5)=1/12$};
+\node [rectangle, draw, fill=orange!20!] (d6) [below =.2 of d5] {$6$};
+\node [right=.1 of d6] (ad2){$P(T \cap 6)=1/12$};
+\draw (6.7,.55) -- (7.2,.55) -- (7.2,1.2) -- (6.7,1.2);
+\node at (7.4,.9) {$+$};
+\node [rectangle, draw] (d11) [below =.2 of d6] {$1$};
+\node [right=.1 of d11]{$P(C \cap 1)=1/12$};
+\node [rectangle, draw] (d22) [below =.2 of d11] {$2$};
+\node [right=.1 of d22]{$P(C \cap 2)=1/12$};
+\node [rectangle, draw] (d33) [below =.2 of d22] {$3$};
+\node [right=.1 of d33]{$P(C \cap 3)=1/12$};
+\node [rectangle, draw] (d44) [below =.2 of d33] {$4$};
+\node [right=.1 of d44]{$P(C \cap 4)=1/12$};
+\node [rectangle, draw] (d55) [below =.2 of d44] {$5$};
+\node [right=.1 of d55]{$P(C \cap 5)=1/12$};
+\node [rectangle, draw] (d66) [below =.2 of d55] {$6$};
+\node [right=.1 of d66]{$P(C \cap 6)=1/12$};
+
+\draw[ultra thick,color=Maroon] (a) -- (t) node[midway,sloped,above] {$1/2$};
+\draw (a) -- (c)node[midway,sloped,above] {$1/2$};
+\draw (t) -- (d1)node[midway,sloped] {$1/6$};
+\draw (t) -- (d2)node[midway,sloped] {$1/6$};
+\draw (t) -- (d3)node[midway,sloped] {$1/6$};
+\draw (t) -- (d4)node[midway,sloped] {$1/6$};
+\draw[thick,color=Maroon] (t) -- (d5)node[midway,sloped] {$1/6$};
+\draw[thick,color=Maroon] (t) -- (d6)node[midway,sloped] {$1/6$};
+\draw (c) -- (d11)node[midway,sloped] {$1/6$};
+\draw (c) -- (d22)node[midway,sloped] {$1/6$};
+\draw (c) -- (d33)node[midway,sloped] {$1/6$};
+\draw (c) -- (d44)node[midway,sloped] {$1/6$};
+\draw (c) -- (d55)node[midway,sloped] {$1/6$};
+\draw (c) -- (d66)node[midway,sloped] {$1/6$};
+
+\end{tikzpicture}

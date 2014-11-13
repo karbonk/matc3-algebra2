@@ -1,0 +1,410 @@
+% (c)~2014 Claudio Carboncini - claudio.carboncini@gmail.com
+% (c)~2014 Dimitrios Vrettos - d.vrettos@gmail.com
+\chapter{Equazioni di grado superiore al secondo}
+\section{L'equazione di terzo grado, un po' di storia}
+Problema: “Trovare un numero il cui cubo, insieme con due suoi quadrati e dieci volte il numero stesso, dia come somma 20”.
+
+Il problema enunciato venne posto da Giovanni Panormita, astronomo e filosofo alla corte di Federico II, a Leonardo Pisano, detto Fibonacci, che ne tentò la soluzione nella sua opera Flos.
+
+Con il linguaggio matematico attuale il problema si formalizza nell’equazione di terzo grado $x^3+2x^2+10x=20$; Fibonacci pervenne al valore approssimato $x=1,3688$ come soluzione al problema, senza indicare la via seguita per la sua determinazione. Pur tuttavia egli riuscì a dimostrare che le soluzioni di un’equazione di terzo grado non possono mai esprimersi mediante radicali quadratici neanche se sovrapposti.
+
+Solo tra il 1540 e il 1545, ad opera dei matematici italiani Niccolò Fontana, detto Tartaglia, e Gerolamo Cardano, fu scoperta la formula risolutiva dell’equazione generale di terzo grado.
+
+Cardano dimostra che ogni equazione di terzo grado $ax^3+bx^2+cx+d=0$ è riconducibile alla forma $y^3+{py}+q=0$. Operando con la sostituzione $x=y-\frac b{3a}$ si ricava la formula risolutiva: 
+\[y=\sqrt[3]{-\frac q 2+\sqrt{\left(\frac p 3\right)^3+\left(\frac q 2\right)^2}}+\sqrt[3]{-\frac q 2-\sqrt{\left(\frac p 3\right)^3+\left(\frac q 2\right)^2}}\] 
+da cui poi risale alla soluzione dell'equazione assegnata.
+\begin{exrig}
+\begin{esempio}
+Risolvere l'equazione: $x^3+3x^2+6x+5=0$.
+
+Operiamo la sostituzione $x=y-\frac b{3a}$ che in questo caso è $x=y-1$; l'equazione diventa $(y-1)^3+3(y-1)^2+6(y-1)+5=0$ ed eseguendo i calcoli si ha $y^3+3y+1=0$ con $p=3$ e~$q=1$.
+Applicando la formula risolutiva si ha 
+\[y=\sqrt[3]{-\frac 1 2+\sqrt{\frac 1 4+1}}+\sqrt[3]{-\frac 1 2-\sqrt{\frac 1 4+1}}=\sqrt[3]{\frac{\sqrt 5-1} 2}+\sqrt[3]{\frac{-\sqrt 5-1} 2}\] 
+e quindi $x=\sqrt[3]{\dfrac{\sqrt 5-1} 2}+\sqrt[3]{\dfrac{-\sqrt 5-1} 2}-1$.
+\end{esempio}
+
+\begin{esempio}
+Risolvere l’equazione $x^3=15x+4$ applicando la formula di Cardano.
+
+Notiamo che è $p=-15$ e $q=-4$ e dunque sotto la radice quadrata della formula 
+si ha $\left(\frac p 3\right)^3+\left(\frac q 2\right)^2=(-5)^3+(-2)^2=-121$ pertanto non un numero
+reale, mentre è evidente la soluzione reale $x=4$. Questa circostanza ha spinto il 
+matematico Raffaele Bombelli, ad elaborare nella sua opera “Algebra” del 1572, calcoli con radici 
+quadrate di numeri negativi (numeri) che troveranno una sistemazione coerente nella teoria dei 
+numeri complessi sviluppata da Fiedrich Gauss.
+
+Vediamo come possiamo determinare l’I.S. dell'equazione di Bombelli con le nostre conoscenze. Scriviamo l’equazione nella forma canonica $p(x)=0\Rightarrow x^3-15x-4=0$; sappiamo che uno zero intero è $x=4$ dunque scomponiamo dividendo $p(x)=x^3-15x-4$ per il binomio $x-4$. Potete verificare che si ottiene $x^3-15x-4=(x-4)\cdot (x^2+4x+1)=0$ da cui, per la legge di annullamento del prodotto, 
+\[x-4=0\Rightarrow x=4\vee x^2+4x+1=0\Rightarrow x_{1,2}=-2\pm \sqrt 3.\]
+
+Poco dopo la scoperta della formula risolutiva per le equazioni di terzo grado il matematico 
+italiano Ferrari trovò anche la formula per risolvere le equazioni di quarto grado. Le ricerche per
+trovare la formula che risolvesse l'equazione di quinto grado furono invece vane, non perché i 
+matematici non furono abbastanza “ingegnosi” bensì per il fatto che, come dimostrò Galois non 
+esistono formule che per mezzo di radici ed altre operazioni algebriche possano risolvere le 
+equazioni dal quinto grado in poi. In altre parole esistono solo formule per le equazioni di 
+secondo, terzo e quarto grado.
+
+Oggigiorno, tuttavia, si preferisce non approfondire le applicazioni di queste formule. Si usa applicare solo la formula risolutiva per le equazioni di secondo grado e per quelle di grado superiore al secondo si applicano i metodi che vedremo in questo capitolo oppure si preferisce applicare metodi di calcolo numerico che danno le soluzioni per approssimazioni successive.
+\end{esempio}
+\end{exrig}
+\section{Equazioni riconducibili al prodotto di due o più fattori}
+In questo capitolo ci proponiamo di determinare l’Insieme Soluzione di equazioni algebriche di grado superiore al secondo.
+
+Ricordiamo che un’equazione algebrica si presenta nella forma $p(x)=0$ dove $p(x)$ è un polinomio nella variabile $x$, di grado $n$, a coefficienti reali: \[a_nx^n+a_{n-1}x^{n-1}+ \ldots +a_2x^2+a_1x+a_0=0.\]
+
+\begin{exrig}
+\begin{esempio}
+Determinare le radici reali dell’equazione $4x^3+x^2-4x-1=0$.
+
+Scomponiamo in fattori il polinomio al primo membro mediante raccoglimento parziale: 
+\[p(x)=4x^3+x^2-4x-1=4x \left(x^2-1\right)+\left(x^2-1\right)=\left(x^2-1\right) (4x+1).\] 
+Per la legge dell’annullamento del prodotto si ottiene 
+\[x^2-1=0\vee 4x+1=0 \Rightarrow x^2-1=0\Rightarrow x_1=-1\vee x_2=1\text{ e }4x+1=0\Rightarrow x=-\frac{1}{4}.\] L'equazione ha dunque tre soluzioni reali distinte e $\IS=\left\{-1;1;-\frac 1 4\right\}$.
+\end{esempio}
+\begin{esempio}
+Determinare le radici reali dell’equazione fratta $\frac{2x+3}{2x+1}+\frac{x^2}{x+1}=5x+3$.
+
+Riduciamo allo stesso denominatore 
+\[\frac{2x^2+5x+3+2x^3+x^2-10x^3-15x^2-5x-6x^2-9x-3}{(2x+1)\cdot (x+1)}=0.\]
+Poniamo le Condizioni d’Esistenza $x\neq -\frac 1 2\wedge x\neq -1$. Eliminiamo il denominatore e sommiamo i monomi simili; otteniamo un'equazione di terzo grado $8x^3+18x^2+9x=0$. Scomponiamo in fattori il polinomio $x\cdot \left(8x^2+18x+9\right)=0$. Per la legge di annullamento $x=0\vee x^2+18x+9=0$. Risolvendo anche l'equazione di secondo grado con la formula risolutiva si ottengono le soluzioni $x_1=0\vee x_2=-\frac 3 4\vee x_3=-\frac 3 2$.
+
+\osservazione
+Si dimostra che un'equazione ammette tante soluzioni, che possono essere reali e distinte, coincidenti o non reali, quante ne indica il suo grado.
+
+Ricordiamo che uno zero di un polinomio è il valore che assegnato alla variabile rende il polinomio uguale a zero. L’obiettivo posto viene raggiunto ponendo il polinomio uguale a zero, come nell’esempio seguente.
+\end{esempio}
+
+\begin{esempio}
+Trovare gli zeri del seguente polinomio di terzo grado $p(x)=x^3-7x^2+4x+12$.
+
+Scriviamo l’equazione $x^3-7x^2+4x+12=0$ e cerchiamo di scomporre con il metodo di Ruffini. Sostituendo $x=-1$ si ottiene $(-1)^3-7(-1)^2+4(-1)+12=-1-7-4+12=0$. Possiamo allora dividere il polinomio $x^3-7x^2+4x+12=0$ per il binomio $x+1$. Applicando la regola di Ruffini si ha:
+\begin{center}
+\input{lbr/chap05/fig001_rufi.pgf}
+\end{center}
+Il polinomio si scompone in $(x+1)(x^2-8x+12)$. Per la legge di annullamento del prodotto $x+1=0\vee x^2-8x+12=0$. L'equazione $x+1=0$ dà come soluzione $x=-1$. L'equazione $x^2-8x+12=0$ si può risolvere con la formula risolutiva ridotta $x_{1,2}=4\pm \sqrt{16-12}=4\pm 2$. Il polinomio assegnato ha tre zeri distinti $x_1=-1\vee x_2=2\vee x_3=6$.
+\end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.1}, \ref{ese:5.2}, \ref{ese:5.3}, \ref{ese:5.4}, \ref{ese:5.5}, \ref{ese:5.6}, \ref{ese:5.7}, \ref{ese:5.8}, \ref{ese:5.9}, \ref{ese:5.10}, \ref{ese:5.11}}
+
+\section{Equazioni binomie}
+Un’equazione binomia è un’equazione del tipo $ax^n+b=0$ con $a\neq 0$ e con $n\in \insN_0$. L’equazione così scritta è detta in \emph{forma normale o canonica}.
+Dobbiamo distinguere i casi:
+\begin{itemize*}
+\item $n$ pari e $ a\cdot b< 0 $. I coefiicienti $ a $ e $ b $ hanno segno discorde. L’equazione ammette due sole soluzioni reali ed opposte: $x_1=\sqrt[n]{-\frac b a}\vee x_2=-\sqrt[n]{-\frac b a}$;
+\item $n$ pari e $ a\cdot b> 0 $. I coefiicienti $ a $ e $ b $ hanno lo stesso segno. L’equazione non ammette soluzioni reali;
+\item $n$ dispari e $ b\neq 0 $. L’equazione ha un’unica soluzione reale $x_1=\sqrt[n]{-\frac b a}$;
+\item $b=0$. L’equazione è $ax^n=0$ e le $n$ soluzioni sono coincidenti nell’unica soluzione $x=0$. In questo caso si dice che l’unica soluzione $x=0$ ha molteplicità $n$.
+\end{itemize*}
+\newpage
+\begin{exrig}
+ \begin{esempio}
+Risolvere le seguenti equazioni binomie
+\begin{itemize}
+\item $3x^4-8=0$.
+
+L’esponente $n$ è pari, i coefficienti sono discordi: l’equazione ammette due soluzioni reali distinte: $x_1=\sqrt[4]{\frac 8 3}\vee x_2=-\sqrt[4]{\frac 8 3}$.
+
+Osserviamo che l’equazione proposta può essere risolta col metodo della scomposizione in fattori: $3x^4-8=0 \Rightarrow \left(\sqrt 3x^2+\sqrt 8\right)\cdot \left(\sqrt 3x^2-\sqrt 8\right)=0$ e per la legge di annullamento del prodotto $\left(\sqrt 3x^2+\sqrt 8\right)=0\vee \left(\sqrt 3x^2-\sqrt 8\right)=0$ la prima equazione non ha soluzioni reali, mentre per la seconda $\left(\sqrt 3x^2-\sqrt 8\right)=0\Rightarrow x^2=\sqrt{\frac 8 3}\Rightarrow x=\pm \sqrt{\sqrt{\frac 8 3}}\Rightarrow x=\pm \sqrt[4]{\frac 8 3}$
+
+\item $-6x^4+9=13$.
+
+Riducendo alla forma normale troviamo $-6x^4-4=0$; moltiplicando ambo i membri per $-1$ si ottiene $6x^4+4=0$ in cui il primo membro è una somma di numeri sempre positivi sempre maggiore di zero, quindi in $\insR$ l’equazione è impossibile e $\IS=\emptyset $.
+
+\item $8x^3+3=4$.
+
+Riduciamo l’equazione alla forma normale $8x^3-1=0$. Essendo di grado dispari, l’unica soluzione è $x=\sqrt[3]{\frac 1 8}=\frac 1 2$.
+
+Allo stesso risultato perveniamo se scomponiamo in fattori la differenza di due cubi: $8x^3-1=0 \Rightarrow (2x-1)\cdot \left(4x^2+2x+1\right)=0$. Per la legge di annullamento del prodotto $2x-1=0 \Rightarrow x=\frac 1 2\ \vee \ 4x^2+2x+1=0$ l'equazione di secondo grado non ha soluzioni reali essendo $\Delta <0$. Pertanto l'unica soluzione è $x=\frac 1 2$ e $\IS=\left\{\frac 1 2\right\}$.
+
+\item $ 2x^7+3=2 $.
+
+In forma normale $2x^7+1=0$. Si trova così l’unica soluzione reale $x=\sqrt[7]{-\frac 1 2}=-\sqrt[7]{\frac 1 2}$.
+
+\item $3x\cdot \left(x^4-1\right)=4\cdot (1+x)-(7x+4)$.
+
+Sviluppando i calcoli si ottiene $3x^5=0 \Rightarrow x^5=0$ da cui $x=0$ che ha una sola soluzione reale con molteplicità $5$.
+
+\item $x^3+3=0$.
+
+L’equazione ha l’unica soluzione reale $x=-\sqrt[3]3$. Spieghiamo il risultato scomponendo la somma di cubi $\left(x\right)^3+\left(\sqrt[3]3\right)^3=0 \Rightarrow \left(x+\sqrt[3]3\right) \left(x^2-x\sqrt[3]3+\sqrt[3]{3^2}\right)=0$, per la legge di annullamento del prodotto otteniamo: $\left(x+\sqrt[3]3\right)=0 \Rightarrow x=-\sqrt[3] 3$ e $x^2-\sqrt[3]3 x+\sqrt[3]{3^2}=0$ che non ha soluzioni reali essendo $\Delta <0$.
+\end{itemize}
+ \end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.12}, \ref{ese:5.13}, \ref{ese:5.14}, \ref{ese:5.15}, \ref{ese:5.16}, \ref{ese:5.17}, \ref{ese:5.18}, \ref{ese:5.19}, \ref{ese:5.20}}
+
+\section{Equazioni trinomie}
+Un’equazione \emph{trinomia} è un’equazione con tre termini del tipo $ax^{2n}+bx^n+c=0$ dove $n$ è un intero positivo e i coefficienti $a$ e $b$ sono non nulli. Sono esempi di equazioni trinomie $x^4-5x^2+4=0$, $x^6-4x^3+3=0$, $x^{10}-x^5+6=0$.
+
+Per risolvere queste equazioni è opportuno fare un cambio di incognita: ponendo $t=x^n$ l’equazione trinomia diventa di secondo grado: $at^2+bt+c=0$ e da questa, detta \emph{equazione risolvente}, si ricavano i valori di $t$. Successivamente, dalla relazione $t=x^n$, si ricavano i valori di $x$.
+
+\subsection{Equazione biquadratica}
+Se $n=2$ l’equazione è detta \emph{biquadratica} e si presenta nella forma \ $ax^4+bx^2+c=0$.
+
+\begin{exrig}
+\begin{esempio}
+Risolvere le seguenti equazioni biquadratiche.
+\begin{itemize}
+\item $ x^4-5x^2+4=0 $.
+
+L’equazione è biquadratica; facciamo un cambio di incognita ponendo $x^2=t$; l’equazione diventa $t^2-5t+4=0$ che ha due soluzioni reali distinte $t_1=1\;\vee \;t_2=4$. Per determinare le soluzioni dell’equazione assegnata teniamo conto della sostituzione fatta. Da $t_1=1$ otteniamo $x^2=1$ con soluzioni $x_1=-1\vee x_2=+1$ e da $t_2=4$ otteniamo $x^2=4$ con soluzioni $x_1=-2\vee x_2=+2$. Pertanto l’equazione assegnata ha quattro soluzioni reali distinte e $\IS=\{-1;+1-2;+2\}$.
+
+\item $ 2x^4+3x^2-2=0 $.
+
+L’equazione è biquadratica, ponendo $x^2=t$ diventa $2t^2+3t-2=0$ che ha per soluzioni $t_1=-2\;\vee t_2=\frac 1 2$. Ritornando alla sostituzione iniziale, da $t_1=-2$ otteniamo $x^2=-2\Rightarrow \IS=\emptyset $ e da $t_2=\frac 1 2$ otteniamo $x^2=\frac 1 2$ con soluzioni $x_1=-\sqrt{\frac 1 2}\vee x_2=+\sqrt{\frac 1 2}$ e razionalizzando $x_1=-\frac{\sqrt 2} 2\vee x_2=+\frac{\sqrt 2} 2$.
+
+\item $ x^4-\frac{16} 9x^2=0 $.
+
+L'equazione è biquadratica incompleta; si può determinare l’insieme soluzione raccogliendo $x^2$ a fattore comune $x^2\left(x^2-\frac{16} 9\right)=0$ e per la legge di annullamento del prodotto possiamo concludere $x^2=0\vee x^2=\frac{16} 9$ da cui $\IS=\left\{0;-\frac 4 3;+\frac 4 3\right\}$.
+ \end{itemize}
+
+\end{esempio}
+\end{exrig}
+\conclusione
+L’equazione biquadratica ${ax}^4+{bx}^2+c=0$
+\begin{itemize*}
+\item ha quattro soluzioni reali distinte se il discriminante dell’equazione risolvente è positivo e se risultano positivi anche i rapporti $-\frac b a$ e $\frac c a$ che indicano rispettivamente la somma e il prodotto delle sue soluzioni. Infatti \dotfill;
+\item ha due soluzioni reali distinte se il discriminante dell’equazione risolvente è positivo e se risulta negativo il rapporto $\frac c a$ che indica il prodotto delle sue soluzioni. Infatti \dotfill;
+\item non ha soluzioni reali se il discriminante dell’equazione risolvente è positivo e se risulta positivo il rapporto $\frac c a$ e negativo il rapporto $-\frac b a$. Infatti \dotfill;
+\item non ha soluzioni reali se il discriminante dell’equazione risolvente è negativo.
+\end{itemize*}
+Per stabilire il numero di soluzioni di un'equazione biquadratica si può anche utilizzare la regola dei segni di Cartesio:
+\begin{itemize*}
+\item $\Delta >0$ e due variazioni si hanno 4 soluzioni reali;
+\item $\Delta >0$ una permanenza e una variazione si hanno 2 soluzioni reali;
+\item $\Delta =0$ e $-\frac b{2a}>0$ si hanno due soluzioni reali; $-\frac b{2a}<0$ nessuna soluzione reale;
+\item $\Delta <0$ nessuna soluzione reale.
+\end{itemize*}
+
+\ovalbox{\risolvii \ref{ese:5.21}, \ref{ese:5.22}, \ref{ese:5.23}, \ref{ese:5.24}, \ref{ese:5.25}, \ref{ese:5.26}, \ref{ese:5.27}, \ref{ese:5.28}, \ref{ese:5.29}, \ref{ese:5.30}, \ref{ese:5.31}}
+
+\subsection{Equazioni trinomie con n maggiore di 2}
+\begin{exrig}
+\begin{esempio}
+Risolvere le seguenti equazioni trinomie.
+\begin{itemize}
+\item $ x^6-4x^3+3=0 $.
+
+Ponendo $t=x^3$ abbiamo l’equazione risolvente $t^2-4t+3=0$, le cui soluzioni reali sono $t_1=1$, $t_2=3$; per ricavare i valori di $x$ è sufficiente risolvere le due equazioni binomie $x^3=1$ e $x^3=3$, trovando così le soluzioni reali per l’equazione assegnata $x_1=1\vee x_2=\sqrt[3]3$;
+
+\item $ x^8-x^4-2=0 $.
+
+Ponendo $t=x^4$ arriviamo all’equazione $t^2-t-2=0$ da cui $t_1=2$ e $t_2=-1$; pertanto le due equazioni binomie da risolvere sono: $x^4=2$ e $x^4=-1$. Quindi $x^4=2\Rightarrow x^2=-\sqrt 2\vee x^2=\sqrt 2$ e di queste due, solo la seconda ha soluzioni reali e precisamente $x_1=\sqrt[4]2$; $x_2=-\sqrt[4]2$; $x^4=-1$ non ha soluzioni reali, concludendo: $\IS=\left\{-\sqrt[4]2;+\sqrt[4]2\right\}$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.32}, \ref{ese:5.33}}
+
+\section{Equazioni che si risolvono con sostituzioni}
+Molte altre equazioni si possono risolvere con opportune sostituzioni.
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente equazione $ \left(x^2-4\right)^4-1=0 $.
+
+Sostituendo $t=x^2-4$ l'equazione diventa $t^4-1=0$. È un'equazione binomia che ha per soluzioni $t_1=-1$, $t_2=+1$. Sostituendo questi valori nella relazione $t=x^2-4$ si ha: 
+\[x^2-4=-1\Rightarrow x^2=3\Rightarrow x_{1,2}=\pm \sqrt 3\text{ e }x^2-4=+1\Rightarrow x^2=5\Rightarrow x_{3,4}=\pm \sqrt 5.\]
+\end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.34},\ref{ese:5.35},\ref{ese:5.36}, \ref{ese:5.37}}
+
+\section{Equazioni reciproche}
+\begin{definizione}
+Un’equazione è detta \emph{reciproca di prima specie} se, posta nella forma canonica $p(x)=0$, il polinomio $p(x)$ ha i coefficienti dei termini estremi e quelli dei termini equidistanti dagli estremi \emph{uguali}.
+
+Un’equazione è detta \emph{reciproca di seconda specie} se, posta nella forma canonica $p(x)=0$, il polinomio $p(x)$ ha i coefficienti dei termini estremi e quelli dei termini equidistanti dagli estremi \emph{opposti}. In particolare, se $p(x)$ ha grado $2k$ (pari), il coefficiente di $x^k$ è nullo.
+\end{definizione}
+
+\begin{itemize*}
+\item $x^3-2x^2-2x+1=0$ è un’equazione di terzo grado reciproca di prima specie;
+\item $3x^4+5x^3-4x^2+5x+3=0$ è un’equazione di quarto grado reciproca di prima specie;
+\item $-7x^4+5x^3-5x+7=0$ è un’equazione di quarto grado reciproca di seconda specie;
+\item $3x^5+2x^4+6x^3-6x^2-2x-3=0$ è un’equazione di quinto grado reciproca di seconda specie;
+\item $-2x^4+8x^3+3x^2-8x+2=0$ è un’equazione di quarto grado, ma non è reciproca di seconda specie, in quanto il coefficiente di secondo grado dovrebbe essere nullo.
+\end{itemize*}
+
+Il seguente teorema mette in luce una importante proprietà di cui godono queste equazioni.
+\begin{teorema}[delle radici reciproche]
+Se $\lambda $ è una radice non nulla di un’equazione reciproca di qualunque grado, allora anche $\dfrac 1{\lambda }$ è radice dell’equazione.
+\end{teorema}
+
+Consideriamo l'equazione reciproca di prima specie \[a_0x^n+a_1x^{n-1}+a_2x^{n-2}+ \ldots +a_2x^2+a_1x+a_0=0.\]
+
+\emph{Ipotesi}. $x=\lambda $ è una radice dell’equazione;
+
+\emph{Tesi}. $x=\frac 1{\lambda }$ è una radice dell’equazione.
+\begin{proof}
+Sappiamo che se $x=\lambda$ è una radice allora è vera l’uguaglianza
+\[a_0\lambda ^n+a_1\lambda ^{n-1}+\ldots \ldots +a_1\lambda +a_0=0 {}^{(*)}.\]
+Sostituiamo $\frac 1{\lambda }$ al posto della $x$ nel polinomio al primo membro, si ha:
+\[p\left(\frac 1{\lambda }\right)=a_0\left(\frac 1{\lambda }\right)^n+a_1\left(\frac 1{\lambda }\right)^{n-1}+\ldots +a_1\left(\frac 1{\lambda }\right)+a_0\]
+che, mettendo in evidenza $ \left(\frac 1{\lambda }\right)^n $, diventa: \[p\left(\frac 1{\lambda }\right)=\frac 1{\lambda ^n} \left(a_0+a_1\lambda +\ldots +a_1\lambda ^{n-1}+a_0\lambda ^n \right)=\frac{a_0+a_1\lambda +\ldots +a_1\lambda ^{n-1}+a_0\lambda ^n}{\lambda ^n}.\]
+Osservando il numeratore notiamo che è proprio quanto scritto in (*) e pertanto, essendo il denominatore diverso da zero, si ha $p\left(\frac 1{\lambda }\right)=0$ che dimostra la tesi.
+\end{proof}
+Dimostra tu il teorema per le equazioni di seconda specie.
+
+\subsection{Equazioni di terzo grado reciproche di prima specie}
+Queste equazioni hanno la seguente struttura: \[a_0x^3+a_1x^2+a_1x+a_0=0.\]
+Una radice dell'equazione è $x=-1$, infatti sostituendo tale valore al posto della $ x $ nel polinomio al primo membro si ottiene: \[p(-1)=a_0(-1)^3+a_1(-1)^2+a_1(-1)+a_0=-a_0+a_1-a_1+a_0=0.\]
+
+Ricordiamo che secondo la regola del resto, il valore trovato (zero) ci assicura che il polinomio al primo membro è divisibile per $x+1$; con la divisione polinomiale o con la regola di Ruffini possiamo scrivere $a_0x^3+a_1x^2+a_1x+a_0=(x+1)\cdot \left(a_0x^2+(a_1-a_0)x+a_0\right)=0$ da cui con la legge di annullamento del prodotto possiamo determinare le soluzioni dell’equazione assegnata.
+
+Un modo alternativo per determinare l’Insieme Soluzione dell’equazione reciproca di prima specie consiste nel raccogliere parzialmente i due coefficienti $a_0$ e $a_1$ in modo da ottenere $a_0\left(x^3+1\right)+a_1\left(x^2+x\right)=0$ da cui $a_0(x+1)\left(x^2-x+1\right)+a_1x(x+1)=0$ e raccogliendo il binomio $(x+1)$ ritroviamo la fattorizzazione precedente: $(x+1) \left(a_0x^2+(a_1-a_0)x+a_0\right)=0$.
+\begin{exrig}
+ \begin{esempio}
+ Risolvere le seguenti equazioni di terzo grado di prima specie.
+
+ \begin{itemize}
+ \item $x^3-5x^2-5x+1=0$.
+
+ Si tratta di un’equazione di terzo grado reciproca di prima specie. Una radice è $x=-1$, per cui possiamo fattorizzare il polinomio al primo membro eseguendo la divisione polinomiale e ottenere $(x+1)\left(x^2-6x+1\right)=0$. Per la legge di annullamento del prodotto otteniamo la radice $x=-1$ già nota e, risolvendo l’equazione $x^2-6x+1=0$ troviamo le altre radici $x_2=3+2\sqrt 2$ e $x_3=3-2\sqrt 2$ e quindi $\IS=\left\{-1;3+2\sqrt 2;3-2\sqrt 2\right\}$.
+
+ Notiamo che $ x_2 $ e $ x_3 $ sono tra loro reciproche: $ x_1 \cdot x_2=1 $ cioè $ (3+2\sqrt 2)\cdot (3-2\sqrt 2)=1 $.
+
+ \item $3x^3-5x^2-5x+3=0$
+
+ L’equazione assegnata è reciproca di terzo grado e di prima specie ammette dunque $x=-1$ come radice. Infatti $p(-1)=3(-1)^3-5(-1)^2-5(-1)+3=\ldots$ Il polinomio al primo membro si può scomporre con la regola di Ruffini cioè $(x+1)\left(3x^2-8x+3\right)=0$; per la legge di annullamento del prodotto avremo $x+1=0\Rightarrow x=-1$ come già noto e $3x^2-8x+3=0$ con soluzioni $x_2=\ldots $ e $x_3=\ldots $ con insieme soluzione: $\IS=\{\dotfill \}$.
+ \end{itemize}
+ \end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.38},\ref{ese:5.39},\ref{ese:5.40}, \ref{ese:5.41}}
+
+\subsection{Equazioni di terzo grado reciproche di seconda specie}
+Queste equazioni hanno la seguente struttura:
+\[a_0x^3+a_1x^2-a_1x-a_0=0.\]
+$x=1$ è una radice, basta verificare sostituendo tale valore al posto della $ x $ nel polinomio al primo membro si ottiene: \[p(1)=a_0(1)^3+a_1(1)^2-a_1(1)-a_0=a_0+a_1-a_1-a_0=0.\]
+
+Procedendo come nel caso precedente si può ottenere la scomposizione in fattori del polinomio al primo membro: $(x-1)\cdot \left(a_0x^2+(a_0+a_1)x+a_0\right)=0$ e quindi determinare l’I.S. dell’equazione assegnata applicando la legge di annullamento del prodotto.
+\begin{exrig}
+ \begin{esempio}
+ Risolvere le seguenti equazioni di terzo grado di seconda specie
+
+ \begin{itemize}
+ \item $ 2x^3-7x^2+7x-2=0 $.
+
+ È un’equazione di terzo grado reciproca di seconda specie, i coefficienti infatti sono opposti a due a due. Una radice è $x_1=1$ infatti $p(1)=2-7+7-2=0$. Applicando la regola di Ruffini per scomporre il polinomio di terzo grado si ottiene $(x-1)\left(2x^2-5x+2\right)=0$. Per la legge di annullamento del prodotto abbiamo la radice $x=1$ già nota e risolvendo $\left(2x^2-5x+2\right)=0$ si ricavano le altre due radici: $x_2=2$ e $x_3=\frac 1 2$ e dunque $\IS=\left\{1;2;\frac 1 2\right\}$.
+
+ \item $ 2x^3-9x^2+9x-2=0 $.
+
+ L’equazione assegnata è reciproca di terzo grado e di seconda specie perché ha i coefficienti opposti a due a due,e dunque ammette $x=+1$ come radice. Infatti $p(1)=\ldots$
+ Applichiamo la regola di Ruffini per scomporre in fattori il polinomio di terzo grado. Il polinomio si scompone in $(x-1)\left(2x^2- \ldots \ldots\right)=0$. Per la legge di annullamento del prodotto avremo $x-1=0\Rightarrow x=1$ come già noto e $2x^2-7x+2=0$ con soluzioni $x_2=\ldots $ e $x_3=\ldots $ con insieme soluzione: $\IS=\{\ldots \ldots \ldots \}$. L’equazione assegnata ha tre soluzioni reali di cui le due irrazionali sono l’una il reciproco dell’altra.
+ \end{itemize}
+ \end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.42},\ref{ese:5.43},\ref{ese:5.44}}
+
+\subsection{Equazioni di quarto grado reciproche di prima specie}
+Rientrano in questa classificazione le equazioni del tipo: \[a_0x^4+a_1x^3+a_2x^2+a_1x+a_0=0.\]
+
+Prima di tutto osserviamo che $x=0$ non può essere una radice in quanto, se lo fosse, sarebbe nullo il termine noto, cioè $a_0=0$ e di conseguenza sarebbe nullo anche il coefficiente di $ x^{4} $, il grado dell’equazione diventerebbe $\le 3$. Questa premessa ci consente di dividere per $x^2$ ottenendo l’equazione equivalente data $a_0 x^2+a_1x+a_2+\frac{a_1} x+\frac{a_0}{x^2}=0$ , raccogliendo a fattori parziali si ha $a_0\left(x^2+\frac 1{x^2}\right)+a_1\left(x+\frac 1 x\right)+a_2=0$.
+
+Ponendo $t=x+\frac 1 x$ quindi $t^2=\left(x+\frac 1 x\right)^2\Rightarrow t^2=x^2+\frac 1{x^2}+2$ e $x^2+\frac 1{x^2}=t^2-2$. Sostituendo nell’equazione $a_0\left(x^2+\frac 1{x^2}\right)+a_1\left(x+\frac 1 x\right)+a_2=0$ ricaviamo la seguente equazione di secondo grado equivalente alla data: $a_0\left(t^2-2\right)+a_1t+a_2=0\;\Rightarrow \;a_0t^2+a_1t+a_2-2a_0=0$.
+
+Trovate, se esistono reali, le radici $t_1$ e $t_2$ di questa equazione, possiamo determinare le corrispondenti radici dell’equazione iniziale risolvendo le due equazioni fratte $x+\frac 1 x=t_1$ e $x+\frac 1 x=t_2$ nell’incognita $x$, rispettivamente equivalenti a $x^2-t_1x+1=0$ e a ${x}^2-t_2x+1=0$.
+
+Queste ultime equazioni hanno soluzioni reali se e solo se $|t |\ge 2$. Infatti, risolvendo rispetto a $x$ l’equazione $x+\frac 1 x=t$, troviamo: $x^2-tx+1=0$ e calcolando il discriminante $\Delta =t^2-4$ vediamo che ci sono soluzioni reali se e solo se $t^2-4\ge 0$ ovvero se e solo se $t\le -2 \vee t\ge 2$ cioè $|t|\ge 2$.
+\newpage
+\begin{exrig}
+ \begin{esempio}
+ Risolvere le seguenti equazioni reciproche di quarto grado di prima specie.
+ \begin{itemize}
+ \item $x^4-4x^3+5x^2-4x+1=0$.
+
+ Si tratta di un’equazione di quarto grado reciproca di prima specie. Dividiamo per $x^2$, otteniamo $x^2-4x+5-4\frac 1 x+\frac 1{x^2}=0$. Raccogliendo in fattori comuni come nella regola abbiamo $\left(x^2+\frac 1{x^2}\right)-4\left(x+\frac 1 x\right)+5=0$. Ponendo $t=x+\frac 1 x$ otteniamo l’equazione $ \left(t^2-2\right)-4t+5=0$ ovvero $t^2-4t+3=0$ da cui $t_1=1$ e $t_2=3$. Il primo valore $t_1$ non dà soluzioni reali poiché l’equazione $x+\frac 1 x=1$ ha il discriminante negativo mentre l’equazione $x+\frac 1 x=3$ ha due soluzioni reali distinte $x_1=\frac{3+\sqrt 5} 2$ e $x_2=\frac{3-\sqrt 5} 2$.
+
+ \item $ 2x^4+3x^3-16x^2+3x+2=0 $.
+
+ Dividiamo ambo i membri dell’equazione per $x^2$, certamente diverso da zero e otteniamo: $2x^2+3x-16+3\cdot \frac 1 x+2\cdot \frac 1{x^2}=0$. Mettiamo in evidenza $ 2 $ nel primo e quinto addendo e $ 3 $ tra il secondo e quarto addendo: $2\cdot \left(x^2+\frac 1{x^2}\right)+3\cdot \left(x+\frac 1 x\right)-16=0$. Ponendo $x+\frac 1 x=t$ otteniamo l'equazione $2(t^2-2)+3t-16=0\Rightarrow 2t^2+3t-20=0$ che ha come soluzioni $t_1=-4\vee t_2=\frac 5 2$. Poiché $|t|\ge 2$ le equazioni $x+\frac 1 x=t_1$ e $x+\frac 1 x=t_2$ hanno entrambe soluzioni reali distinte, pertanto $\IS=\left\{-2\sqrt{3,}2\sqrt{3,}\frac 1 2,2\right\}$.
+ \end{itemize}
+ \end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.45},\ref{ese:5.46}}
+
+\subsection{Equazioni di quarto grado reciproche di seconda specie}
+Fanno parte di questa classe le equazioni del tipo: \[a_0x^4+a_1x^3-a_1x-a_0=0\] in cui il coefficiente di $x^2$ è nullo. Per risolvere questa equazione, raccogliamo a fattore parziale $a_0$ e $a_1$ ottenendo: $a_0\left(x^4-1\right)+a_1\left(x^3-x\right)=0$ da cui $a_0\left(x^2-1\right)\left(x^2+1\right)+a_1x\left(x^2-1\right)=0$.
+
+Raccogliendo a fattore comune totale si ha:
+\[\left(x^2-1\right)\left[a_0\left(x^2+1\right)+a_1x\right]=0\Rightarrow \left(x-1\right)\left(x+1\right)\left(a_0x^2+a_1x+a_0\right)=0.\]
+Per la legge di annullamento del prodotto si hanno quindi le due radici $x_1=1,\;x_2=-1$ e le eventuali radici reali dell’equazione di secondo grado $a_0x^2+a_1x+a_0=0$.
+\begin{exrig}
+ \begin{esempio}
+ Risolvere l'equazione $ x^4-8x^3+8x-1=0 $.
+
+ Si tratta di un’equazione di quarto grado reciproca di seconda specie, si osservi che il coefficiente di secondo grado è nullo e che gli altri coefficienti sono a due a due opposti.
+ Raccogliendo a fattore comune parziale abbiamo 
+\[(x^4-1)-8x(x^2-1)=0\Rightarrow (x^2-1)(x^2+1)-8x(x^2-1)=0.\]
+ Mettendo poi in evidenza il binomio $\left(x^2-1\right)$ abbiamo: $\left(x^2-1\right)\left(x^2-8x+1\right)$. Risolvendo le equazioni $x^2-1=0$ e $x^2-8x+1=0$, otteniamo tutte le radici: 
+\[x_1=1\vee x_2=-1\vee x_3=4+\sqrt{15}\vee x_4=4-\sqrt{15}\] 
+e quindi 
+\[\IS=\left\{-1;1;4+\sqrt{15};4-\sqrt{15}\right\}.\]
+ \end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:5.47},\ref{ese:5.48},\ref{ese:5.49},\ref{ese:5.50},\ref{ese:5.51}}
+
+\subsection{Equazioni di quinto grado reciproche di prima specie}
+Fanno parte di questa classe le equazioni del tipo: \[a_0x^5+a_1x^4+a_2x^3+a_2x^2+a_1x+a_0=0.\]
+
+Con il raccoglimento parziale otteniamo: 
+\[a_0\left(x^5+1\right)+a_1\left(x^4+x\right)+a_2\left(x^3+x^2\right)=0.\]
+
+Applichiamo ora la formula per la scomposizione della somma di potenze ottenendo
+\[a_0(x+1)\left(x^4-x^3+x^2-x+1\right)+a_1x(x+1)\left(x^2-x+1\right)+a_2x^2(x+1)=0.\]
+Raccogliendo $(x+1)$ ricaviamo: 
+\[(x+1)\left[a_0\left(x^4-x^3+x^2-x+1\right)+a_1x\left(x^2-x+1\right)+a_2x^2\right]=0\]
+e quindi l'equazione diventa:
+\[(x+1)\left[a_0x^4+(a_1-a_0)x^3+(a_2-a_1+a_0)x^2+(a_1-a_0)x+a_0\right]=0.\]
+
+Per la legge di annullamento del prodotto si determina la soluzione reale $x=-1$ e con i metodi analizzati in precedenza si risolve l’equazione di quarto grado reciproca di prima specie: 
+\[\left(a_0x^4+(a_1-a_0)x^3+(a_2-a_1+a_0)x^2+(a_1-a_0)x+a_0\right)=0.\]
+\begin{exrig}
+ \begin{esempio}
+ Risolvere l'equazione $6x^5+x^4-43x^3-43x^2+x+6=0$.
+
+ L’equazione è di quinto grado reciproca di prima specie. Una radice è $x_1=-1$ e l’equazione può essere scritta come: 
+\[(x+1)\left(6x^4-5x^3-38x^2-5x+6\right)=0.\]
+ Risolvendo l’equazione di quarto grado reciproca di prima specie 
+\[6x^4-5x^3-38x^2-5x+6=0,\] 
+si trovano le altre quattro radici: 
+\[x_2=-2, x_3=-\frac 1 2, x_4=3, x_5=\frac{1}{3}\] quindi 
+\[\IS=\left\{-1;-2;-\frac 1 2;3;\frac 1 3\right\}.\]
+ \end{esempio}
+\end{exrig}
+
+\subsection{Equazioni di quinto grado reciproche di seconda specie}
+Fanno parte di questa classe le equazioni del tipo:
+\[a_0x^5+a_1x^4+a_2x^3-a_2x^2-a_1x-a_0=0.\]
+
+Con il raccoglimento parziale si ottiene 
+\[a_0\left(x^5-1\right)+a_1\left(x^4-x\right)+a_2\left(x^3-x^2\right)=0.\]
+
+ Applichiamo ora la formula per la scomposizione della somma di potenze ottenendo: 
+\[a_0(x-1)\left(x^4+x^3+x^2+x+1\right)+a_1x(x-1)\left(x^2+x+1\right)+a_2x^2(x-1)=0.\] 
+Raccogliendo il binomio $(x-1)$ si ottiene 
+\[(x-1)\left[a_0\left(x^4+x^3+x^2+x+1\right)+a_1x\left(x^2+x+1\right)+a_2x^2\right]=0\] e quindi 
+\[(x+1)\left[a_0x^4+(a_1-a_0)x^3+(a_2-a_1+a_0)x^2+(a_1-a_0)x+a_0\right]=0.\]
+
+Una radice è $x=1$ e le altre provengono dall’equazione di quarto grado reciproca di prima specie: \[a_0x^4+(a_1+a_0)x^3+(a_2+a_1+a_0)x^2+(a_1+a_0)x+a_0=0.\]
+\begin{exrig}
+ \begin{esempio}
+ Risolvere l'equazione $x^5+2x^4-5x^3+5x^2-2x-1=0$.
+
+ È un’equazione di quinto grado reciproca di seconda specie. Una radice è $x_1=1$ e l'equazione può essere scritta come: 
+\[(x-1)\left(x^4+3x^3-2x^2+3x+1\right)=0.\] 
+Risolvendo l’equazione di quarto grado reciproca di prima specie 
+\[x^4+3x^3-2x^2+3x+1=0,\] si trovano altre due radici reali: 
+\[x_2=-2+\sqrt 3\text{ e }x_3=-2-\sqrt 3,\] 
+pertanto 
+\[\IS=\left\{+1;-2+\sqrt 3;-2-\sqrt 3\right\}.\]
+ \end{esempio}
+\end{exrig}
+
+\subsection{Equazioni reciproche di sesto grado}
+\begin{exrig}
+ \begin{esempio}
+ Risolvere l'equazione $-x^6+6x^5+6x^4-6x^2-6x+1=0$.
+
+ Si tratta di un’equazione di sesto grado reciproca di seconda specie (si osservi che il termine di terzo grado è nullo); l’equazione ammette per radici $x_1=1$ e $x_2=-1$.
+
+ Possiamo quindi dividere il polinomio per il binomio $\left(x^2-1\right)$, ottenendo come quoziente $-x^4+6x^3+5x^2+6x-1$. Si tratta allora di risolvere un’equazione di quarto grado reciproca di prima specie. Si trovano in questo modo altre due radici reali: $x_3=\frac{7+\sqrt 5}{2}$ e $x_4=\frac{7-\sqrt 5} 2$.
+ \end{esempio}
+\end{exrig}
+\newpage
+\input{./chap/05_esercizi}

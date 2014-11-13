@@ -1,0 +1,72 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+
+\draw[->] (0,0) -- (3,0) node [below right] () {$r$};
+\draw[->] (5,0) -- (9,0) node [below right] () {$r$};
+
+\foreach \x in {1,2,6,7,8}{
+\draw(\x,3pt)--(\x,-3pt);
+\begin{scope}[dotted]
+\draw (\x,0) -- (\x,-1.5);
+\draw (2,-.5) -- (3,-.5);
+\draw (1,-1) -- (3,-1);
+\draw (7,-.75) -- (8,-.75);
+\draw (7,-1.25) -- (8,-1.25);
+\end{scope}}
+
+\node[above]  at (1,0) {$1$};
+\node[above]  at (2,0) {$2$};
+\node[above]  at (6,0) {$0$};
+\node[above]  at (7,0) {$1$};
+\node[above]  at (8,0) {$2$};
+
+\begin{scope}[blue,thick]
+\draw (0,-.5) -- (2,-.5);
+\draw (1,-1) -- (0,-1);
+\draw (5,-.25) -- (6,-.25);
+\draw (5,-.25) -- (9,-.25);
+\draw (5,-.75) -- (7,-.75);
+\draw (8,-.75) -- (9,-.75);
+
+\draw[fill=white] (2,-.5)circle (1.5pt);
+\draw[fill=white] (1,-1)circle (1.5pt);
+\draw[fill=white] (6,-.25)circle (1.5pt);
+\draw[fill=white] (7,-.75)circle (1.5pt);
+\draw[fill=white] (8,-.75)circle (1.5pt);
+\end{scope}
+
+\foreach \x in {4.5}{
+\node  at (\x,-.25) {$IS_1$};
+\node  at (\x,-.75) {$IS_2$};
+\node  at (\x,-1.25) {$IS$};
+}
+\foreach \x in {-0.5}{
+\node  at (\x,-.25) {$N$};
+\node  at (\x,-.75) {$D$};
+\node  at (\x,-1.25) {$N/D$};
+}
+
+\foreach \z in {.5,1.5}
+\node  at (\z,-.25) {$+$};
+
+\foreach \zi in {1.5,2.5}
+\node  at (\zi,-.75) {$-$};
+
+\node  at (2.5,-.25) {$-$};
+\node  at (0.5,-.75) {$+$};
+
+\begin{scope}[red]
+\foreach \y in {-1.25}{
+\foreach \ziv in {1.5}
+	\node at (\ziv,\y) {$-$};
+\foreach \zv in {.5,2.5}
+\node at (\zv,\y) {$+$};
+\draw (5,-1.25) -- (7,-1.25);
+\draw (8,-1.25) -- (9,-1.25);
+\draw[fill=white] (6,-1.25)circle (1.5pt);
+\draw[fill=white] (7,-1.25)circle (1.5pt);
+\draw[fill=white] (8,-1.25)circle (1.5pt);
+
+}
+\end{scope}
+\end{tikzpicture}

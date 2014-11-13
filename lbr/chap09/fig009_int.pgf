@@ -1,0 +1,20 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+
+\def\insiemeA{(1.5,1.9) ellipse (1.2 and .8)}
+\def\insiemeB{(2.3,1) ellipse (1.1 and .9)}
+    \begin{scope}
+        \clip \insiemeA;
+        \fill[color=gray!20!] \insiemeB;
+    \end{scope}
+\draw[rounded corners] (0,0) rectangle (4,3) (-.2,3) node {$\Omega$} ;
+\draw\insiemeB node {$B$};
+\draw\insiemeA node {$A$};
+\draw[fill=blue] (.9,2.2)circle (1.5pt) node[right]{$6$};
+\draw[fill=blue] (3.4,2.3)circle (1.5pt) node[right]{$2$};
+\draw[fill=blue] (1.9,2.3)circle (1.5pt) node[right]{$4$};
+\draw[fill=blue] (2.7,.7)circle (1.5pt) node[right]{$1$};
+\draw[fill=blue] (2,1.6)circle (1.5pt) node[right]{$3$};
+\draw[fill=blue] (1.5,1.4)circle (1.5pt) node[right]{$5$};
+
+\end{tikzpicture}

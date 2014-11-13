@@ -1,0 +1,22 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+% prima parabola;
+  \draw (-1,0) parabola[parabola height=-2cm] +(3,0);
+  \draw[->] (-1,-1) -- (2,-1) node [below right] () {$x$};
+  \draw[fill=blue] (-.55,-1)circle (1.5pt);
+  \draw[fill=blue] (1.55,-1)circle (1.5pt);
+  \node[below left] at (-.55,-1) {$-2$};
+  \node[below right] at (1.55,-1) {$1$};
+  \node[below] at(.5,-2) {$y=x^2+x-2$};
+%seconda parabola
+  \draw (3,0) parabola[parabola height=-2cm] +(3,0);
+  \draw[->] (3,-2) -- (6,-2) node [below right] () {$x$};
+  \draw[fill=blue] (4.55,-2)circle (1.5pt);
+  \node[below] at (4.55,-2) {$2$};
+  \node[below] at(4.5,-2.3) {$y=x^2-4x+4$};
+ % terza parabola;
+  \draw (7,0) parabola[parabola height=-1.5cm] +(3,0);
+  \draw[->] (7,-2) -- (10,-2) node [below right] () {$x$};
+  \node[below] at(8.5,-2) {$y=x^2-2x+7$};
+\end{tikzpicture}
+

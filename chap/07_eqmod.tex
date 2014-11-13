@@ -1,0 +1,317 @@
+% (c)~2014 Claudio Carboncini - claudio.carboncini@gmail.com
+% (c)~2014 Dimitrios Vrettos - d.vrettos@gmail.com
+\chapter{Equazioni e disequazioni con moduli}
+
+\section{Valore assoluto}
+Il valore assoluto o modulo di un numero $a$, indicato con $|a|$, è lo stesso numero $a$ se $a$ è maggiore o uguale a zero, il suo opposto, cioè $-a$, se $a$ è minore di zero. In sintesi scriviamo:
+
+\begin{equation*}
+\left|a\right|=\left\{\begin{array}{l}a\text{, se }a\ge 0\\-a\text{, se }a<0\end{array}\right.
+\end{equation*}
+Per esempio $\left|+7\right|=7;\ \left|-3\right|=-(-3)=3;\ \left|0\right|=0;\ \left|-1\right|=1;\ \left|1\right|=1$.
+
+Nello stesso modo definiamo il valore assoluto di una espressione algebrica.
+Il valore assoluto o modulo dell'espressione algebrica $E=x^2-3x$, indicato con $\left|x^2-3x\right|$, è una funzione definita per casi, cioè definita da espressioni diverse su sottoinsiemi diversi del dominio, 
+\[f(x)=\left|x^2-3x\right|=\left\{\begin{array}{l}x^2-3x\text{ se }x^2-3x\ge 0\\-\left(x^2-3x\right)\text{ se }x^2-3x<0\end{array}\right..\]
+
+Risolvendo la disequazione $x^2-3x\ge 0$ si esplicitano i due sottoinsiemi in cui sono definite le due espressioni algebriche: 
+\[f(x)=\left|x^2-3x\right|=\left\{\begin{array}{l}x^2-3x\text{ se }x\le 0\vee x\ge 3\\-x^2+3x\text{ se }0<x<3\end{array}\right..\]
+
+In generale, la funzione valore assoluto di un’espressione algebrica, detta \textit{argomento del valore assoluto}, viene esplicitata in due casi: 
+\[\left|f(x)\right|=\left\{\begin{array}{l}{f(x)\text{, se }f(x)\ge 0}\\{-f(x)\text{, se }f(x)<0}\end{array}\right..\]
+
+\begin{exrig}
+\begin{esempio}
+Per la funzione $f(x)=\left|\sqrt 3+3x\right|$ trovare le espressioni algebriche che descrivono i due casi.
+
+Per definizione si ha: 
+\[f(x)=\left|\sqrt 3+3x\right|=\left\{\begin{array}{l}{\sqrt 3+3x \text{ se }\sqrt 3+3x\ge 0\Rightarrow x\ge -\frac{\sqrt 3} 3}\\{-\sqrt 3-3x\text{ se }\sqrt 3+3x<0\Rightarrow x<-\frac{\sqrt 3} 3}\end{array}\right..\]
+\end{esempio}
+
+\begin{esempio}
+Data la funzione $f(x)=\left|x^2-4\right|+\left|x+1\right|-2x$ descriverla per casi, eliminando i valori assoluti.
+
+Dobbiamo studiare i segni dei due binomi in valore assoluto 
+\[x^2-4\ge 0\Rightarrow x\le -2\vee x\ge 2\] e \[x+1\ge 0\Rightarrow x>-1.\] 
+La situazione è rappresentata con maggiore chiarezza nel grafico.
+\begin{center}
+\input{./lbr/chap07/fig001_seg.pgf}
+\end{center}
+
+\begin{itemize*}
+\item Nell'intervallo $x<-2$ il primo argomento di valore assoluto è positivo e il secondo è negativo;
+\item nell'intervallo $-2\le x<-1$ tutti e due gli argomenti di valore assoluto sono negativi;
+\item nell'intervallo $-1\le x<2$ il primo argomento di valore assoluto è negativo, il secondo è positivo;
+\item nell'intervallo $x\ge 2$ entrambi gli argomenti sono positivi.
+\end{itemize*}
+In sintesi 
+\[f(x)=\left\{\begin{array}{l}(x^2-4)-(x+1)-2\text{ se }x<-2 \\-(x^2-4)-(x+1)-2x\text{ se }-2\le x<-1 \\-(x^2-4)+(x+1)-2x\text{ se }-1\le x<2 \\+(x^2-4)+(x+1)-2x\text{ se }x>2 \end{array}\right..\]
+\end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:7.1}, \ref{ese:7.2}, \ref{ese:7.3}.}
+
+\section{Equazioni in una incognita in valore assoluto}
+\subsection{Equazioni nelle quali l'incognita è presente solo all'interno del modulo}
+
+\subsubsection*{Equazioni con valore assoluto del tipo ${\left|f(x)\right|=k\text{ con }k\ge 0}$}
+
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente equazione $\left|x^2-7\right|=3$.
+
+Ricordiamo che $\left|x^2-7\right|=x^2-7\text{ se }x^2-7\ge 0$ mentre $\left|x^2-7\right|=-x^2+7\text{ se }x^2-7<0$.
+
+Pertanto l'equazione diventa $x^2-7=3\text{ se }x^2-7\ge 0$ e $-x^2+7=3\text{ se }x^2-7<0$.
+
+Il tutto si trasforma nell'unione dei due sistemi 
+\[\left\{\begin{array}{l}{x^2-7\ge 0}\\{x^2-7=3}\end{array}\right.\cup \left\{\begin{array}{l}{x^2-7<0}\\{-x^2+7=3}\end{array}\right..\]
+
+Moltiplicando per $-1$ l'equazione del secondo sistema otteniamo: \[ \left\{\begin{array}{l}{x^2-7\ge 0}\\{x^2-7=3}\end{array}\right.\cup \left\{\begin{array}{l}{x^2-7<0}\\{x^2-7=-3}\end{array}\right.. \]
+
+Si vede abbastanza facilmente che sia nel primo che nel secondo sistema le due disequazioni sono sempre verificate. Infatti, nel primo sistema l'equazione $x^2-7=3$ verifica automaticamente la disequazione $x^2-7\ge 0$ in quanto è richiesto che $x^2-7$ sia uguale a 3, pertanto è necessariamente positivo.
+
+Stesso ragionamento vale per il secondo sistema. In altre parole, per risolvere la disequazione data è sufficiente risolvere le due equazioni $\left(x^2-7=3\right)\vee \left(x^2-7=-3\right)$ unendone le soluzioni:
+ \[x^2-7=3\Rightarrow x^2=10\Rightarrow x_1=-\sqrt{10}\vee x_2=\sqrt{10}\]
+e \[x^2-7=-3\Rightarrow x^2=4\Rightarrow x_3=-2\vee x_4=2.\]
+
+L'insieme delle soluzioni è quindi: $\left\{-\sqrt{10},\sqrt{10},-2,+2\right\}$.
+\end{esempio}
+\end{exrig}
+
+\paragraph{Procedura risolutiva} Per risolvere un'equazione del tipo $\left|f(x)\right|=k\text{ con }k\in \insR\wedge k\ge 0$ è sufficiente risolvere la doppia equazione $f(x)=\pm k$.
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente equazione $\left|x^2-x\right|=1$.
+
+L'equazione $\left|x^2-x\right|=1$ si risolve unendo le soluzioni delle equazioni $x^2-x=1$ e $x^2-x=-1$. cioè:
+\[x^2-x=1\Rightarrow x^2-x-1=0\Rightarrow x_1=\frac{1-\sqrt 5} 2\vee x_2=\frac{1+\sqrt 5} 2\]
+e
+\[x^2-x=-1\Rightarrow x^2-x+1=0\Rightarrow \Delta <0\to \emptyset .\]
+
+L'Insieme Soluzione è \[\left\{\frac{1-\sqrt 5} 2,\frac{1+\sqrt 5} 2\right\}.\]
+\end{esempio}
+\end{exrig}
+
+\subsubsection*{Equazioni con valore assoluto del tipo ${\left|f(x)\right|=k\text{ con }k<0}$}
+
+Se $k<0$ l'equazione è impossibile. In questo caso $\left|f(x)\right|=k$ è una contraddizione, in quanto un valore assoluto di una espressione dà un valore sempre positivo.
+
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente equazione $\left|x-7\right|=-1$.
+Impostiamo la ricerca delle soluzioni con il metodo generale presentato prima.
+
+\[\left\{\begin{array}{l}{x-7\ge 0}\\{x-7=-1}\end{array}\right. \cup \left\{\begin{array}{l}{x-7<0}\\{x-7=1}\end{array}\right..\]
+Entrambi i sistemi non hanno soluzioni reali. L'equazione è impossibile.
+\end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:7.3}, \ref{ese:7.4}, \ref{ese:7.5}, \ref{ese:7.6}, \ref{ese:7.7}.}
+
+\subsection{Equazioni nelle quali l'incognita si trova anche fuori dal modulo}
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente equazione $\left|-1+3x\right|=7x+4$.
+
+L'equazione presenta un valore assoluto al primo membro.
+
+Tenendo conto che 
+\[\left|-1+3x\right|=\left\{\begin{array}{l}{-1+3x\text{ se }-1+3x\ge 0\Rightarrow x\ge \frac 1 3}\\{1-3x\text{ se }-1+3x<0\Rightarrow x<\frac 1 3}\end{array}\right.,\]
+l'equazione si trasforma nell'unione dei sistemi 
+\[\left\{\begin{array}{l}{x\ge \frac 1 3}\\{-1+3x=7x+4}\end{array}\right.\cup \left\{\begin{array}{l}{x<\frac 1 3}\\{1-3x=7x+4}\end{array}\right..\]
+
+Risolvendo si ha 
+\[\left\{\begin{array}{l}{x\ge \frac 1 3}\\{4x=-5}\end{array}\right.\Rightarrow x=-\frac 5 4\cup \left\{\begin{array}{l}{x<\frac 1 3}\\{10x=3}\end{array}\right.\Rightarrow x=\frac 3{10}.\]
+
+La soluzione $-\frac 5 4$ non è accettabile in quanto non è maggiore di $\frac 1 3$. Pertanto rimane la soluzione $x=\frac 3{10}$.
+\end{esempio}
+
+\begin{esempio}
+Risolvere la seguente equazione $\left|-2x+5\right|=x-3$.
+
+Esplicito i due casi dell’argomento 
+\[\left|-2x+5\right|=\left\{\begin{array}{l}{-2x+5\text{, se }-2x+5\ge 0\Rightarrow x\le \frac 5 2}\\{2x-5\text{, se }-2x+5<0\Rightarrow x>\frac 5 2}\end{array}\right..\]
+L'equazione si trasforma nell'unione dei sistemi: 
+\[\left\{\begin{array}{l}{x\le \frac 5 2}\\{-2x+5=x-3}\end{array}\right.\cup \left\{\begin{array}{l}{x>\frac 5 2}\\{2x-5=x-3}\end{array}\right..\]
+
+Risolvo ciascun sistema 
+\[\left\{\begin{array}{l}{x\le \frac 5 2}\\{-3x=-8}\end{array}\right.\Rightarrow x=\frac 8 3\cup \left\{\begin{array}{l}{x>\frac 5 2}\\{x=2}\end{array}\right.\] 
+e verifico che entrambi sono impossibili, cioè $\IS_1=\emptyset$ e $\IS_2=\emptyset $.
+
+Unisco i due insiemi soluzione $\IS_1\cup \IS_2=\emptyset \cup \emptyset =\emptyset $: l'equazione è impossibile.
+\end{esempio}
+
+\begin{esempio}
+Risolvere la seguente equazione $\left|2x-1\right|=x+2$.
+
+L'equazione si trasforma nell'unione dei due sistemi 
+\[ \left\{\begin{array}{l}{2x-1\ge 0}\\{2x-1=x+2}\end{array}\right.\cup \left\{\begin{array}{l}{2x-1<0}\\{-2x+1=x+2}\end{array}\right.\Rightarrow
+\left\{\begin{array}{l}{x\ge \frac 1 2}\\{x=3}\end{array}\right.\cup \left\{\begin{array}{l}{x<\frac 1 2}\\{x=-\frac 1 2}\end{array}\right..\] 
+Quindi le soluzioni sono $x=3\vee x=-\frac 1 2$.
+\end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:7.8}, \ref{ese:7.9}, \ref{ese:7.10}, \ref{ese:7.11}, \ref{ese:7.12}, \ref{ese:7.13}, \ref{ese:7.14}, \ref{ese:7.15}.}
+
+\section{Equazioni con più espressioni in valore assoluto}
+
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente equazione $\left|2x-3\right|-\left|1-2x\right|+x=4$.
+
+L’equazione presenta due espressioni in valore assoluto; ciascuna espressione sarà sviluppata in due modi diversi dipendenti dal segno assunto dai rispettivi argomenti. Si presenteranno allora quattro casi e l’insieme soluzione dell’equazione sarà ottenuto dall’unione delle soluzioni dei singoli casi. Per semplificare il procedimento possiamo studiamo il segno di ciascun argomento e poi confrontiamo i segni con uno schema grafico:
+\begin{center}
+\input{./lbr/chap07/fig002_seg.pgf}
+\end{center}
+Si presentano tre casi:
+\begin{itemize*}
+\item Caso I: $ \left\{\begin{array}{l}{x\le \frac 1 2}\\{-(2x-3)-(1-2x)+x=4}\end{array}\right. $;
+\item Caso II: $ \left\{\begin{array}{l}{\frac 1 2\le x<\frac 3 2}\\{-(2x-3)+(1-2x)+x=4}\end{array}\right. $;
+\item Caso III: $ \left\{\begin{array}{l}{x\ge \frac 3 2}\\{(2x-3)+(1-2x)+x=4}\end{array}\right. $.
+\end{itemize*}
+
+In ogni sistema la prima condizione è la disequazione che vincola il segno degli argomenti e la seconda è l’equazione che risulta in base al segno definito. Risolviamo.
+
+Caso I: 
+\[\left\{\begin{array}{l}x\le \frac 1 2\\-(2x-3)-(1-2x)+x=4\end{array}\right.\Rightarrow \left\{\begin{array}{l}x\le \frac 1 2\\x=2\end{array}\right.\Rightarrow \IS_1=\emptyset .\]
+Il sistema è impossibile in quanto $2$ non è minore di $\frac 1 2$.
+
+Caso II: 
+\[\left\{\begin{array}{l}\frac 1 2\le x\le \frac 3 2\\-(2x-3)+(1-2x)+x=4\end{array}\right.\Rightarrow \left\{\begin{array}{l}\frac 1 2\le x\le \frac 3 2\\x=0\end{array}\right.\Rightarrow \IS_2=\emptyset .\]
+Il sistema è impossibile in quanto 0 non appartiene all'intervallo considerato.
+
+Caso III: 
+\[\left\{\begin{array}{l}x>\frac 3 2\\(2x-3)+(1-2x)+x=4\end{array}\right.\Rightarrow \left\{\begin{array}{l}x>\frac 3 2\\x=6\end{array}\right.\Rightarrow \IS_3=\{6\}.\]
+La soluzione in questo caso è accettabile.
+
+Conclusione: $\IS=\IS_1\cup \IS_2\cup \IS_3=\{6\}$.
+\end{esempio}
+
+\begin{esempio}
+Risolvere la seguente equazione $\left|x^2-4\right|-3x=\left|x-1\right|$.
+
+Confrontiamo il segno di ciascun argomento servendoci dello schema:
+\begin{center}
+\input{./lbr/chap07/fig001_seg.pgf}
+\end{center}
+In questo esempio dobbiamo esaminare 4 casi che si esplicitano nei sistemi:
+\begin{itemize*}
+\item Caso I: 
+\[\left\{\begin{array}{l}{x\le -2}\\{x^2-4-3x=-x+1}\end{array}\right.\Rightarrow x_1=1-\sqrt 6\vee x_2=1+\sqrt 6\Rightarrow \IS_1=\emptyset .\]
+\item Caso II: 
+\[\left\{\begin{array}{l}{-2<x<1}\\{-x^2+4-3x=-x+1}\end{array}\right.\Rightarrow x_1=-3\vee x_2=1\Rightarrow \IS_2=\emptyset .\]
+\item Caso III: 
+\[\left\{\begin{array}{l}{1\le x<2}\\{-x^2+4-3x=x-1}\end{array}\right.\Rightarrow x_1=-5\vee x_2=1\Rightarrow \IS_3=\{1\}.\]
+\item Caso IV: 
+\[\left\{\begin{array}{l}{x\ge 2}\\{x^2-4-3x=x-1}\end{array}\right.\Rightarrow x_1=2-\sqrt 7\vee x_2=2+\sqrt 7\Rightarrow \IS_4=\left\{2+\sqrt 7\right\}.\]
+\end{itemize*}
+
+Conclusione: $\IS=\IS_1\cup \IS_2\cup \IS_3\cup \IS_4=\left\{1;2+\sqrt 7\right\}$.
+\end{esempio}
+\end{exrig}
+
+\begin{procedura} {Risoluzione di una equazione con valori assoluti:}
+\begin{enumeratea}
+\item l'incognita è presente solo nell'argomento del modulo: $\left|f(x)\right|=k$, l’equazione si risolve ponendo: $f(x)=\pm k$. Se $k<0$ l'equazione è impossibile;
+\item l’incognita si trova anche al di fuori del modulo; in questo caso si analizza il segno dell’argomento del modulo e si risolvono i due sistemi dove la prima condizione è la disequazione che vincola il segno dell'argomento e la seconda è l'equazione che risulta in base al segno definito. L'insieme soluzione dell'equazione è dato dall'unione dell'Insieme Soluzione dei due sistemi;
+\item se è presente più di un modulo, si studia il segno di ogni argomento e dallo schema che ne segue si costruiscono e quindi si risolvono i sistemi in cui la prima condizione è la disequazione che vincola il segno degli argomenti e la seconda è l'equazione in base al segno definito. Anche in questo caso l'Insieme Soluzione dell'equazione è dato dall'unione dell'Insieme Soluzione di ogni sistema.
+\end{enumeratea}
+\end{procedura}
+\ovalbox{\risolvii \ref{ese:7.16}, \ref{ese:7.17}, \ref{ese:7.18}, \ref{ese:7.19}, \ref{ese:7.20}, \ref{ese:7.21}, \ref{ese:7.22}, \ref{ese:7.23}, \ref{ese:7.24}, \ref{ese:7.25}, \ref{ese:7.26}, \ref{ese:7.27}, \ref{ese:7.28}, \ref{ese:7.29}.}
+
+\section{Disequazioni in valore assoluto}
+Le disequazioni con i moduli si risolvono in modo analogo alle equazioni con moduli.
+
+\subsection{Disequazioni in cui l'incognita si trova solo nel modulo}
+\paragraph{Primo caso:} disequazioni nella forma $\left|f(x)\right|<k$ con $ k>0 $.
+
+La disequazione si sdoppia nell'unione dei due sistemi 
+\[\left\{\begin{array}{l}{f(x)\ge 0}\\{f(x)<k}\end{array}\right.\cup\left\{\begin{array}{l}{f(x)< 0}\\{f(x)>-k}\end{array}\right.,\]
+con soluzioni $ 0\le f(x)\vee -k<f(x)<0 $ cioè:
+\[-k<f(x)<k \text{ oppure }\left\{\begin{array}{l}{f(x)< k}\\{f(x)>-k}\end{array}\right..\]
+
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente disequazione $\left|x^2-1\right|<3$.
+
+La disequazione diventa $-3<x^2-1<3$ oppure 
+\[\left\{\begin{array}{l}{x^2-1<3}\\{x^2-1>-3}\end{array}\right.\Rightarrow \left\{\begin{array}{l}{x^2<4}\\{x^2>-2}\end{array}\right..\]
+
+La prima disequazione $x^2<4$ è verificata per $-2<x<2$.
+
+La seconda è sempre verificata perché il quadrato $x^2$ è sempre maggiore di un numero negativo.
+L'insieme soluzione della disequazione assegnata è quindi $-2<x<2$.
+
+\end{esempio}
+\end{exrig}
+
+\paragraph{Secondo caso:} disequazioni nella forma $\left|f(x)\right|>k$ con $ k>0 $.
+
+Per il procedimento svolto nel caso precedente queste disequazioni si trasformano sempre nelle disequazioni \[ f(x)<-k\vee f(x)>k. \]
+
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente equazione $\left|x^2-4\right|>4$.
+
+L'equazione diventa $x^2-4<-4\vee x^2-4>4$, spostando $ -4 $ al secondo membro otteniamo $x^2<0\vee x^2>8$.
+
+La prima disequazione $x^2<0$ non ha soluzioni in quanto il quadrato $x^2$ non può essere minore di 0.
+La seconda ha per soluzioni $x<-2\sqrt 2\vee x>2\sqrt 2$.
+\end{esempio}
+\end{exrig}
+
+\subsection{Disequazioni in cui l'incognita si trova anche fuori dal modulo}
+
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente disequazione $\left|x^2-x\right|<2x^2+3x-1$.
+
+Studiamo il segno dell'argomento del modulo 
+\[x^2-x\ge 0 \Rightarrow x(x-1)\ge 0 \Rightarrow x\le 0\vee x\ge 1.\]
+
+La disequazione assegnata si sdoppia nell'unione di due sistemi:
+
+\[\left\{\begin{array}{l}{x\le 0\vee x\ge 1}\\{x^2-x<2x^2+3x-1}\end{array}\right.\cup \left\{\begin{array}{l}{0<x<1}\\{-x^2+x<2x^2+3x-1}\end{array}\right..\]
+
+ Semplificando le disequazioni si ha:
+\begin{equation*}
+\left\{\begin{array}{l}{x\le 0\vee x\ge 1}\\{x^2+4x-1>0}\end{array}\right.\cup \left\{\begin{array}{l}{0<x<1}\\{3x^2+2x-1>0}\end{array}\right..
+\end{equation*}
+\begin{center}
+\input{./lbr/chap07/fig003_seg.pgf}
+\end{center}
+
+L'insieme soluzione è $x<-2-\sqrt 5\vee x>\frac 1 3$.
+\end{esempio}
+\end{exrig}
+
+\subsection{Disequazioni con più valori assoluti}
+\begin{exrig}
+\begin{esempio}
+Risolvere la seguente disequazione $\left|x+1\right|\ge \left|x^2-1\right|$.
+
+Studiamo il segno di ciascun argomento e poi confrontiamo i segni con uno schema grafico:
+\begin{center}
+\input{./lbr/chap07/fig004_seg.pgf}
+\end{center}
+Si presentano tre casi: 
+\[\left\{\begin{array}{l}{x<-1}\\{-(x-1)\ge x^2-1}\end{array}\right.\cup \left\{\begin{array}{l}{-1\le x<1}\\{x+1\ge -\left(x^2-1\right)}\end{array}\right.\cup \left\{\begin{array}{l}{x\ge 1}\\{x+1\ge x^2-1}\end{array}\right..\]
+
+Risolviamo il primo sistema: \[\left\{\begin{array}{l}x<-1\\x^2+x\le 0\end{array}\right.\Rightarrow \left\{\begin{array}{l}x<-1 \\-1\le x\le 0\end{array}\right..\] 
+In questo caso non si hanno soluzioni.
+
+Risolviamo il secondo sistema: 
+\[\left\{\begin{array}{l}-1\le x<1\\x^2+x\ge 0\end{array}\right.\Rightarrow \left\{\begin{array}{l}-1\le x<1 \\x\le -1\vee x\ge 0\end{array}\right..\] 
+In questo caso le soluzioni sono: $0\le x<1\vee x\ge 0.$
+
+Risolviamo il terzo sistema: \[\left\{\begin{array}{l}x\ge 1\\x^2-x-2\le 0\end{array}\right.\Rightarrow \left\{\begin{array}{l}x\ge 1 \\-1\le x\le 2\end{array}\right..\] 
+In questo caso le soluzioni sono: $1\le x\le 2.$
+\begin{center}
+\input{./lbr/chap07/fig005_seg.pgf}
+\end{center}
+
+Unendo tutte le soluzioni si ha: $x=-1\vee 0\le x\le 2$.
+\end{esempio}
+\end{exrig}
+\ovalbox{\risolvii \ref{ese:7.30}, \ref{ese:7.31}, \ref{ese:7.32}, \ref{ese:7.33}, \ref{ese:7.34}, \ref{ese:7.35}, \ref{ese:7.36}.}
+
+\newpage
+\input{./chap/07_esercizi}

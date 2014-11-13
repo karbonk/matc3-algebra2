@@ -1,0 +1,107 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+%IS1
+\draw[->] (0,0) -- (6,0) node [below right] () {$r$};
+
+\foreach \x in {1.5,2.5,3.5,4.5}{
+\draw(\x,3pt)--(\x,-3pt);
+\begin{scope}[dotted]
+\draw (\x,0) -- (\x,-2);
+\draw (1.5,-.5) -- (6,-.5);
+\draw (.5,-1) -- (1.5,-1);
+\draw (2.5,-1) -- (6,-1);
+\draw (.5,-1.5) -- (6,-1.5);
+\end{scope}}
+
+\node[above]  at (1.5,0) {$-1$};
+\node[above]  at (2.5,0) {$0$};
+\node[above]  at (3.5,0) {$1$};
+\node[above]  at (4.5,0) {$2$};
+
+\node[] () at (-.7,-.5) {$x<-1$};
+\node[] () at (-.7,-1) {$x^2+x\ge 0$};
+\node[] () at (-.7,-1.5) {$\IS_{1}$};
+
+\begin{scope}[blue,thick]
+\draw (.5,-.5) -- (1.5,-.5);
+\draw (1.5,-1) -- (2.5,-1);
+\draw[fill=white] (1.5,-.5)circle (1.5pt);
+\draw[fill=white] (1.5,-1)circle (1.5pt);
+\draw[fill=white] (2.5,-1)circle (1.5pt);
+\end{scope}
+%IS2
+\draw[->] (0,-2) -- (6,-2) node [below right] () {$r$};
+
+\foreach \x in {1.5,2.5,3.5,4.5}{
+\draw(\x,-1.9)--(\x,-2.1);
+\begin{scope}[dotted]
+\draw (\x,-2) -- (\x,-4);
+\draw (.5,-2.5) -- (1.5,-2.5);
+\draw (3.5,-2.5) -- (6,-2.5);
+\draw (.5,-3) -- (2.5,-3);
+\draw (.5,-3.5) -- (6,-3.5);
+\end{scope}}
+
+\pattern[pattern= north east lines, pattern color=red] (2.5,-3.5) rectangle (3.5,-3);
+
+\node[] () at (-.7,-2.5) {$-1<x\le 1$};
+\node[] () at (-.7,-3) {$x^2+x\ge 0$};
+\node[] () at (-.7,-3.5) {$\IS_{2}$};
+
+\begin{scope}[blue,thick]
+\draw (1.5,-2.5) -- (3.5,-2.5);
+\draw (2.5,-3) -- (6,-3);
+
+\draw[fill=blue] (1.5,-2.5)circle (1.5pt);
+\draw[fill=white] (3.5,-2.5)circle (1.5pt);
+\draw[fill=blue] (1.5,-3)circle (1.5pt);
+\draw[fill=blue] (2.5,-3)circle (1.5pt);
+\draw[fill=blue] (1.5,-3.5)circle (1.5pt);
+\draw[fill=blue] (2.5,-3.5)circle (1.5pt);
+\draw[fill=white] (3.5,-3.5)circle (1.5pt);
+\end{scope}
+
+%IS3
+\draw[->] (0,-4) -- (6,-4) node [below right] () {$r$};
+
+\foreach \x in {1.5,2.5,3.5,4.5}{
+\draw(\x,-3.9)--(\x,-4.1);
+\begin{scope}[dotted]
+\draw (\x,-4) -- (\x,-6);
+\draw (.5,-4.5) -- (3.5,-4.5);
+\draw (.5,-5) -- (1.5,-5);
+\draw (.5,-5.5) -- (6,-5.5);
+\end{scope}}
+\pattern[pattern= north east lines, pattern color=red] (3.5,-5.5) rectangle (4.5,-5);
+
+\node[] () at (-.7,-4.5) {$x\ge 1$};
+\node[] () at (-.7,-5) {$x^2-x-2\le 0$};
+\node[] () at (-.7,-5.5) {$\IS_{3}$};
+
+\begin{scope}[blue,thick]
+\draw (3.5,-4.5) -- (6,-4.5);
+\draw (1.5,-5) -- (4.5,-5);
+\draw[fill=blue] (3.5,-4.5)circle (1.5pt);
+\draw[fill=blue] (1.5,-5)circle (1.5pt);
+\draw[fill=blue] (4.5,-5)circle (1.5pt);
+\draw[fill=blue] (3.5,-5.5)circle (1.5pt);
+\draw[fill=blue] (4.5,-5.5)circle (1.5pt);
+\end{scope}
+%IS1 unito IS2 unito IS3
+\draw[->] (0,-6) -- (6,-6) node [below right] () {$r$};
+
+\foreach \x in {1.5,2.5,3.5,4.5}{
+\draw(\x,-5.9)--(\x,-6.1);
+\begin{scope}[dotted]
+\draw (\x,-6) -- (\x,-7);
+\end{scope}}
+\node[above]  at (1.5,-6) {$-1$};
+\node[above]  at (2.5,-6) {$0$};
+\node[above]  at (3.5,-6) {$1$};
+\node[above]  at (4.5,-6) {$2$};
+\node[] () at (-.7,-6.5) {$\IS_{1}\cup\IS_{2}\cup\IS_{3}$};
+\pattern[pattern= north east lines, pattern color=Maroon] (2.5,-6) rectangle (4.5,-6.5);
+\draw[fill=blue] (1.5,-6.5)circle (1.5pt);
+\draw[fill=blue] (2.5,-6.5)circle (1.5pt);
+\draw[fill=blue] (4.5,-6.5)circle (1.5pt);
+\end{tikzpicture}

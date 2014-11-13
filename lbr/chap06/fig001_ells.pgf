@@ -1,0 +1,19 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=8mm, y=8mm,font=\small,scale=.9]
+\draw[step=0.8cm,color=gray!30] (-3.5,-2.5) grid (3.5,2.5);
+  \tkzInit[xmin=-3.5,xmax=3.5,ymin=-2.5,ymax=2.5]
+  \begin{scope}[font=\small]
+    \tkzAxeY[orig = false, label options={left = 1pt}]
+    \tkzAxeX[orig = true, label options={below = 1pt}]
+  \end{scope}
+  \tkzFct[domain=-2:2,thick,color=blue]{2*x};
+
+\draw[thick,color=Maroon] (0,0) ellipse (3 and 1.225);
+%il punto A
+\draw[fill=Maroon] (.6,1.2)circle (1.5pt);
+\node[right] at (.65,1.4) {$A \left(\frac{3}{5};\frac{6}{5}\right)$};
+%il punto B
+\draw[fill=Maroon] (-.6,-1.2)circle (1.5pt);
+\node[left] at (-.65,-1.4) {$B \left(-\frac{3}{5};-\frac{6}{5}\right)$};
+
+\end{tikzpicture}

@@ -1,0 +1,47 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+
+\draw[->] (0,0) -- (8,0) node [below right] () {$r$};
+
+\foreach \x in {2,3.5,5,6.5}{
+\draw(\x,3pt)--(\x,-3pt);
+\begin{scope}[dotted]
+\draw (\x,0) -- (\x,-2);
+\draw (0,-.5) -- (2,-.5);
+\draw (6.5,-.5) -- (8,-.5);
+\draw (3.5,-1) -- (5,-1);
+\draw (0,-1.5) -- (2,-1.5);
+\draw (3.5,-1.5) -- (5,-1.5);
+\draw (6.5,-1.5) -- (8,-1.5);
+\end{scope}}
+
+\node[above]  at (2,0) {$\frac{3-2 \sqrt{6}}{3}$};
+\node[above]  at (3.5,0) {$\frac{3- \sqrt{5}}{2}$};
+\node[above]  at (5,0) {$\frac{3+ \sqrt{5}}{2}$};
+\node[above]  at (6.5,0) {$\frac{3+2 \sqrt{6}}{3}$};
+\pattern[pattern= north east lines, pattern color=red] (2,-2) rectangle (3.5,-1.5);
+\pattern[pattern= north east lines, pattern color=red] (5,-2) rectangle (6.5,-1.5);
+
+\node[] () at (-.5,-.5) {$\IS_{1}$};
+\node[] () at (-.5,-1) {$\IS_{2}$};
+\node[] () at (-.5,-1.75) {$\IS$};
+
+\begin{scope}[blue,thick]
+\draw (2,-.5) -- (6.5,-.5);
+\draw (0,-1) -- (3.5,-1);
+\draw (5,-1) -- (8,-1);
+\draw (2,-1.5) -- (3.5,-1.5);
+\draw (5,-1.5) -- (6.5,-1.5);
+
+\draw[fill=blue] (2,-.5)circle (1.5pt);
+\draw[fill=blue] (6.5,-.5)circle (1.5pt);
+\draw[fill=white] (3.5,-1)circle (1.5pt);
+\draw[fill=white] (5,-1)circle (1.5pt);
+\draw[fill=blue] (2,-1.5)circle (1.5pt);
+\draw[fill=blue] (6.5,-1.5)circle (1.5pt);
+\draw[fill=white] (3.5,-1.5)circle (1.5pt);
+\draw[fill=white] (5,-1.5)circle (1.5pt);
+
+\end{scope}
+
+\end{tikzpicture}

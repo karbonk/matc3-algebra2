@@ -1,0 +1,21 @@
+% (c) 2012 Dimitrios Vrettos - d.vrettos@gmail.com
+\begin{tikzpicture}[x=8mm, y=8mm]
+\draw[step=0.8cm,color=gray!30] (-5.5,-4.5) grid (5.5,4.5);
+  \tkzInit[xmin=-5,xmax=5,ymin=-4.5,ymax=4.5]
+  \clip (-5.5,-4.5) rectangle (6,5.5);
+  \begin{scope}[font=\small]
+    \tkzAxeY[orig = false, label options={left = 1pt}]
+    \tkzAxeX[orig = true, label options={below = 1pt}]
+  \end{scope}
+  \tkzFct[domain=-1.5:1.5,thick,color=darkgray]{2*x*x-1}
+  \node [inner sep=0pt, circle, fill=gray!20] (a) at (-1.1, 2.7) {B};
+  \tkzFct[domain=0:3,thick,color=blue]{-2*x*x+6*x-4};
+  \node [inner sep=0pt, circle, fill=gray!20] (a) at (.6, -3) {D};
+  \tkzFct[domain=-3.3:-.7,thick,color=RedOrange]{-2*x*x-8*x-8.5};
+  \node [inner sep=0pt, circle, fill=gray!20] (a) at (-3, -3.5) {E};
+  \tkzFct[domain=1.5:4.5,thick,color=purple]{2*x*x-12*x+18};
+  \node [inner sep=0pt, circle, fill=gray!20] (a) at (2, 3.7) {C};
+  \tkzFct[domain=-4.5:-1.5,thick,color=olive]{2*x*x+12*x+19};
+  \node [inner sep=0pt, circle, fill=gray!20] (a) at (-3.8, 3.5) {A};
+
+\end{tikzpicture}

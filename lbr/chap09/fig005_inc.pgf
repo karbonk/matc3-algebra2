@@ -1,0 +1,17 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[filled/.style={fill=circle area, draw=circle edge, thick},x=10mm,y=10mm,font=\small]
+\def\firstcircle{(1.1,1.5) circle (.8cm)}
+\def\secondcircle{(2.9,1.5) circle (.8cm)}
+
+\definecolor{circle edge}{gray}{0.8}
+\definecolor{circle area}{gray}{0.8}
+    \begin{scope}
+        \clip \firstcircle;
+        \fill[filled] \secondcircle;
+    \end{scope}
+    \draw\firstcircle node {$A$};
+    \draw \secondcircle node {$B$};
+    \node[anchor=south] at (current bounding box.north) {$A \cap B=\emptyset$};
+\draw[rounded corners] (0,0) rectangle (4,3) (-.2,3) node {$\Omega$} ;
+
+\end{tikzpicture}

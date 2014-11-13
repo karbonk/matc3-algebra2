@@ -1,0 +1,28 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+
+  \coordinate(a) at (0,2.598);%il punto A
+  \coordinate(b) at (0,0);%il punto B
+  \coordinate(c) at (4.5,0);%il punto C
+  \coordinate(d) at (3,2.598);%il punto D
+  \coordinate (h) at ($(a)!(d)!(c)$);%trova le coordinate della proiezione di D su a--c
+  \coordinate (h1) at ($(a)!{1/2}!(h)$);
+  \coordinate (h2) at ($(h)!{1/2}!(c)$);
+  \coordinate (a1) at ($(a)!{1/2}!(d)$);
+  \coordinate (d1) at ($(d)!{1/2}!(c)$);
+  \draw (a) -- (b)  -- (c) -- (d) -- cycle;%disegna il trapezio
+  \draw [] (d) -- (h);%perpendicolare da D a a--c
+  \draw [] (a) -- (c);%la diagonale del trapezio
+  \draw (h1) node {$//$} ;
+  \draw (h2) node {$//$} ;
+  \draw (a1) node {$\times$} ;
+  \draw (d1) node {$\times$} ;
+  \draw (4.1,0.4) node {$\bullet$} ;
+  \draw (3.95,0.12) node {$\bullet$} ;
+  \node [label={[name=label node]above:$A$}] at (a) {};
+  \node [label={[name=label node]below:$B$}] at (b) {};
+  \node [label={[name=label node]below:$C$}] at (c) {};
+  \node [label={[name=label node]above:$D$}] at (d) {};
+  \node [label={[name=label node]below:$H$}] at (h) {};
+
+\end{tikzpicture}

@@ -1,0 +1,39 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+  \coordinate(a) at (-2.5,0);
+  \coordinate(d) at (130:2.5);
+  \coordinate(e) at (90:2.5);
+  \coordinate(c) at (50:2.5);
+  \coordinate(b) at (2.5,0);
+  \coordinate(o) at (0,0);
+  \coordinate (h) at ($(a)!(c)!(b)$);%trova le coordinate della proiezione di c su a--b
+  \coordinate (k) at ($(d)!(e)!(c)$);%trova le coordinate della proiezione di e su d--c
+  \fill[color=gray!20](o)--(k)--(c);
+  \fill[color=gray!20](h)--(b)--(c);
+  \draw (-2.5,0) arc (180:0:2.5) -- cycle;% semicirconferenza e diametro
+  \draw (a) -- (d) -- (c) -- (b);%disegna il trapezio
+  \draw [dashdotted] (e) -- (0,0);%da E a O
+  \draw [dotted] (c) -- (h);% c--h
+ \draw [dotted] (o) -- (c);% o--c
+  \node [label={[name=label node]below left:$A$}] at (a) {};
+  \node [label={[name=label node]below right:$B$}] at (b) {};
+  \node [label={[name=label node]above right:$C$}] at (c) {};
+  \node [label={[name=label node]above left:$D$}] at (d) {};
+  \node [label={[name=label node]above:$E$}] at (e) {};
+  \node [label={[name=label node]below:$H$}] at (h) {};
+  \node [label={[name=label node]below left:$K$}] at (k) {};
+  \node [label={[name=label node]below:$O$}] at (o) {};
+  \node[] at (2.1,-.3) {$\frac{25-y}2$};
+  \node[] at (25:2.4) {$x$};
+  \node[] at (70:2.25) {$\frac y 2$};
+  \node[] at (45:1.25) {$\frac {25} 2$};
+  \filldraw[fill=black, draw=black]  (a) circle (1pt);
+  \filldraw[fill=black, draw=black]  (b) circle (1pt);
+  \filldraw[fill=black, draw=black]  (c) circle (1pt);
+  \filldraw[fill=black, draw=black]  (d) circle (1pt);
+  \filldraw[fill=black, draw=black]  (h) circle (1pt);
+  \filldraw[fill=black, draw=black]  (e) circle (1pt);
+  \filldraw[fill=black, draw=black]  (k) circle (1pt);
+  \filldraw[fill=black, draw=black]  (o) circle (1pt);
+
+\end{tikzpicture}

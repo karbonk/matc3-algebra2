@@ -1,0 +1,37 @@
+% (c) 2012 Dimitrios Vrettos - d.vrettos@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+\def\insiemeE{(2,1.5) ellipse (1.6 and 1)}
+\def\firstH {(0,0)--(1.5,0)--(1,3)--(0,3)--cycle};
+\def\secondH {(1.5,0)--(2.5,0)--(3,3)--(1,3)--cycle};
+\def\thirdH {(2.5,0)--(4,0)--(4,3)--(3,3)--cycle};
+\draw[rounded corners] (0,0) rectangle (4,3) (-.2,3) node {$\Omega$} ;
+    \begin{scope}
+       \clip \firstH;
+       \fill[color=gray!20!] \insiemeE;
+    \end{scope}
+    \begin{scope}
+       \clip \secondH;
+       \fill[color=gray!30!] \insiemeE;
+    \end{scope}
+    \begin{scope}
+       \clip \thirdH;
+       \fill[color=gray!40!] \insiemeE;
+    \end{scope}
+\draw \insiemeE;
+\draw(1.5,0)--(1,3);
+\draw(2.5,0)--(3,3);
+\draw (.5,2.7) node {$H_1$} (2,2.7) node {$H_2$} (3.5,2.7) node {$H_3$};
+\draw (3.6,1.5)--(4.5,2.2) node[right]{$E$};
+
+\begin{comment}
+\draw\insiemeB node {$B$};
+\draw\insiemeA node {$A$};
+\draw[fill=blue] (.9,2.2)circle (1.5pt) node[right]{$6$};
+\draw[fill=blue] (3.4,2.3)circle (1.5pt) node[right]{$2$};
+\draw[fill=blue] (1.9,2.3)circle (1.5pt) node[right]{$4$};
+\draw[fill=blue] (2.7,.7)circle (1.5pt) node[right]{$1$};
+\draw[fill=blue] (2,1.6)circle (1.5pt) node[right]{$3$};
+\draw[fill=blue] (1.5,1.4)circle (1.5pt) node[right]{$5$};
+\end{comment}
+
+\end{tikzpicture}

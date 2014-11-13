@@ -1,0 +1,31 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+
+\draw[->] (0,0) -- (4,0) node [below right] () {$r$};
+
+\foreach \x in {1,2,3}{
+\draw(\x,3pt)--(\x,-3pt);
+\begin{scope}[dotted]
+\draw (\x,0) -- (\x,-1.5);
+\end{scope}}
+
+\node[above]  at (1,0) {$0$};
+\node[above]  at (2,0) {$\frac 9 2$};
+\node[above]  at (3,0) {$9$};
+
+\foreach \x in {0.5}{
+\node  at (\x,-.25) {$a$};
+\node  at (\x,-.75) {$b$};
+\node  at (\x,-1.25) {$c$};
+}
+
+\foreach \z in {1.5,2.5,3.5}
+\node  at (\z,-.25) {$+$};
+
+\foreach \zi in {1.5,2.5,3.5}
+\node  at (\zi,-.75) {$+$};
+
+\node  at (1.5,-1.25) {$+$};
+\node  at (2.5,-1.25) {$+$};
+\node  at (3.5,-1.25) {$-$};
+\end{tikzpicture}

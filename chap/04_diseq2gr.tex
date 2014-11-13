@@ -1,0 +1,569 @@
+% (c)~2014 Dimitrios Vrettos - d.vrettos@gmail.com
+% (c)~2014 Claudio Carboncini - claudio.carboncini@gmail.com
+\chapter{Disequazioni di secondo grado}
+\section{Risoluzione delle disequazioni di secondo grado}
+Una disequazione di secondo grado si presenta in una delle seguenti forme:
+\[ax^2+bx+c>0;\; ax^2+bx+c\ge 0;\; ax^2+bx+c<0;\; ax^2+bx+c\le 0. \]
+
+Per risolverla supponiamo che il coefficiente di $x^2$, cioè il coefficiente $a$, sia \textit{positivo}. Se così non fosse, basterebbe cambiare segno a tutti i termini e quindi il verso della disequazione; per esempio, per risolvere la disequazione $-2x^2+3x-1>0$ si può risolvere la disequazione $2x^2-3x+1<0$.
+Quindi si risolve l'equazione associata, cioè si sostituisce il segno della disequazione con l'uguale. Si passa cioè dalla disequazione $ax^2+bx+c>0$ all'equazione $ax^2+bx+c=0$. Possono presentarsi tre casi.
+
+\subsection{Equazione spuria}
+Sono equazioni senza il termine noto: $ax^2+bx=0$.
+
+Questa equazione ammette sempre due radici reali e distinte, di cui una è sempre $0$. Ricordiamo che l'equazione si risolve mettendo $x$ a fattore comune $x(ax+b)=0$ e applicando la legge di annullamento del prodotto, da cui ricaviamo $x=0\ \vee \ ax+b=0\rightarrow x=-\frac b a$. Chiamiamo le due radici $x_1$ e $x_2$. Analogamente a quanto fatto nelle disequazioni di primo grado, poniamo separatamente ogni fattore maggiore di $0$ e confrontiamo i segni dei singoli fattori, come nel seguente grafico.
+\begin{center}
+\input{lbr/chap04/fig001_seg.pgf}
+\end{center}
+Dal grafico si evince che le soluzioni saranno:
+\begin{itemize}
+\item $x<x_1\vee x>x_2$ soluzioni esterne se la disequazione è $ax^2+bx>0$, analogamente $x\le x_1\vee x\ge x_2$ se la disequazione è $ax^2+bx\ge 0$.
+\item $x_1<x<x_2$ soluzioni interne se la disequazione è $ax^2+bx<0$, analogamente $x_1\le x\le x_2$ se la disequazione è $ax^2+bx\le 0$.
+\end{itemize}
+
+\begin{exrig}
+\begin{esempio}
+Risolvere le seguenti disequazioni spurie.
+\begin{itemize}
+\item $3x^2-2x>0$ mettiamo $x$ a fattore comune $x(3x-2)>0$. Soluzioni: $x<0\vee x>\frac 2 3$;
+\item $5x^2+x\le 0$ mettiamo $x$ a fattore comune $x(5x+1)\le 0$. Soluzioni: $-\frac 1 5\le x\le 0$;
+\item $x-3x^2>0$ cambiamo di segno $3x^2-x<0$ da cui $x(3x-1)<0$. Soluzioni: $0<x<\frac 1 3$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+
+\subsection{Equazione pura}
+Sono equazioni senza il termine con la $ x $: $ax^2+c=0$.
+
+Possono esserci due situazioni:
+\begin{itemize*}
+\item $c<0$: in questo caso l'equazione ammette due radici reali opposte: $x_{1,2}=\pm \sqrt{-\frac c a}$: si torna al caso precedente e si ha $x<x_1\vee x>x_2$ se la disequazione è $ax^2+c>0$ oppure $x_1<x<x_2$ se la disequazione è $ax^2+c<0$;
+\item $c>0$: l'equazione non ammette soluzioni reali; il binomio $\mathit{ax}^2+c$ è la somma di un quadrato con un numero positivo, pertanto è sempre positivo. Di conseguenza, la disequazione $\mathit{ax}^2+c>0$ avrà soluzioni per ogni $x$ reale, mentre $\mathit{ax}^2+c<0$ non avrà nessuna soluzione reale.
+\end{itemize*}
+
+\begin{exrig}
+\begin{esempio}
+Risolvere le seguenti disequazioni pure.
+\begin{itemize}
+\item $x^2-4\ge 0$ Soluzioni $x\le -2\vee x\ge 2$;
+\item $2x^2-18\le 0$ soluzioni $-3\le x\le 3$;
+\item $x^2+4>0$ soluzioni $\forall x\in \insR$;
+\item $x^2+9\le 0$ soluzioni nessun valore reale $\IS=\emptyset$;
+\item $1-x^2<0$ cambiamo di segno $x^2-1>0$ soluzioni $x<-1\vee x>1$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+
+\subsection{Equazione completa}
+Sono equazioni con tutti i coefficienti diversi da zero: $ax^2+bx+c=0$.
+
+Si calcola il valore del discriminante $\Delta =b^2-4{ac}$ e a secondo del suo segno possono presentarsi tre casi:
+\paragraph{Primo caso $\Delta >0$}
+L'equazione ammette due radici reali e distinte; il trinomio si scompone in $a(x-x_1)(x-x_2)$. Poiché abbiamo supposto $a$ positivo, il segno del trinomio è dato dalla seguente tabella:
+\begin{center}
+\input{lbr/chap04/fig001_seg.pgf}
+\end{center}
+Per cui la disequazione ${ax}^2+{bx}+c\ge 0$ è verificata per valori esterni alle soluzioni, cioè $x\le x_1\vee x\ge x_2$; mentre la disequazione ${ax}^2+{bx}+c\le 0$ è verificata per valori interni alle soluzioni, cioè $x_1\le x\le x_2$.
+
+\begin{exrig}
+\begin{esempio}
+Risolvere le seguenti disequazioni complete con $\Delta>0$.
+\begin{itemize}
+\item $x^2-3x-4>0$; calcolo il valore del discriminante $\Delta =9+16=25$ e le soluzioni dell’equazione associata $x_1=-1\;\vee \;x_2=4$. Le soluzioni della disequazione sono: $x<-1\;\vee \;x>4$;
+\item $x^2-3x-4<0$, in questo caso le soluzioni della disequazione sono $-1<x<4$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+
+\paragraph{Secondo caso $\Delta =0$} In questo caso le radici dell'equazione associata sono coincidenti $x_1=x_2$, pertanto il trinomio si scompone in $a(x-x_1)^2$. Poiché $a$ è positivo e il quadrato è positivo o al più nullo si possono verificare quattro casi:
+
+\begin{itemize*}
+\item $a(x-x_1)^2>0$ è verificata $\forall x\in \insR\wedge x\neq x_1$;
+\item $a(x-x_1)^2\ge 0$ è verificata $\forall x\in \insR$;
+\item $a(x-x_1)^2<0$ non è mai verificata;
+\item $a(x-x_1)^2\le 0$ è verificata solo per $x=x_1$.
+\end{itemize*}
+
+\begin{exrig}
+\begin{esempio}
+Risolvere le seguenti disequazioni complete con $\Delta=0$.
+\begin{itemize}
+\item $x^2-2x+1>0\ \rightarrow \ (x-1)^2>0$ è verificata $\forall x\in \insR\wedge x\neq 1$;
+\item $4x^2-4x+1\ge 0\ \rightarrow \ (2x-1)^2\ge 0$ è verificata $\forall x\in \insR$;
+\item $x^2+2x+1<0\ \rightarrow \ (x+1)^2<0$ non è mai verificata;
+\item $4x^2+4x+1\le 0\ \rightarrow \ (2x+1)^2\le 0$ è verificata solo per $x=-\frac 1 2$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+
+\paragraph{Terzo caso $\Delta <0$} Studiamo il segno che assume il trinomio in questo caso. Dobbiamo eseguire i seguenti passaggi:
+
+\begin{itemize}
+\item mettiamo il coefficiente $a$ a fattore comune, aggiungendo e togliendo $\frac{b^2} {4a^2}$ ottenendo 
+\[{ax}^2+{bx}+c=a\left(x^2+\frac b ax+\frac{b^2} {4a^2}-\frac{b^2} {4a^2}+\frac c a\right);\]
+\item osserviamo che i primi tre termini costituiscono lo sviluppo del quadrato di un binomio, e riduciamo gli ultimi due allo stesso denominatore ottenendo 
+\[a\left[\left(x+\frac b {2a}\right)^2-\frac{b^2-4{ac}} {4a^2}\right];\]
+\item studiamo ora il segno di questa espressione: $a$ è positivo, nella parentesi quadra si ha una somma in cui $\left(x+\frac b {2a}\right)^2$ essendo un quadrato è sempre positivo, come $-\frac{b^2-4{ac}} {4a^2}=-\frac{\Delta } {4a^2}$ sempre positivo perché $\Delta <0$. Possiamo allora concludere che il trinomio è sempre positivo.
+\end{itemize}
+Si hanno allora le seguenti possibilità con $a>0$:
+
+\begin{itemize}
+\item ${ax}^2+{bx}+c>0$ è verificata $\forall x\in \insR$;
+\item ${ax}^2+{bx}+c\ge 0$ è verificata $\forall x\in \insR$, anche se non può essere uguale a zero;
+\item ${ax}^2+{bx}+c<0$ non è mai verificata;
+\item ${ax}^2+{bx}+c\le 0$ non è mai verificata.
+\end{itemize}
+\newpage
+\begin{exrig}
+\begin{esempio}
+Risolvere le seguenti disequazioni complete con $\Delta<0$.
+\begin{itemize}
+\item $2x^2-3x+4>0 \Rightarrow \Delta =9-32=-23<0$ verificata $\forall x\in \insR$;
+\item $x^2-x+1<0\Rightarrow \Delta =1-4=-3<0$ verificata per nessun valore reale di $x$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+
+I seguenti esempi analizzano la risoluzione di disequazioni di secondo grado con $\Delta \ge 0$.
+\begin{exrig}
+\begin{esempio}
+Determinare l'insieme soluzione della disequazione $-3x^2+2x>0$.
+
+Cambiamo segno per avere il primo coefficiente positivo; la disequazione si trasforma in $3x^2-2x<0$ e l'equazione associata è spuria $3x^2-2x=0$ con le radici $x_1=0\vee x_2=\frac 2 3$. Pertanto la disequazione assegnata ha $\IS=\left\{x\in \insR | 0<x<\frac 2 3\right\}$.
+\end{esempio}
+
+\begin{esempio}
+Determinare l'insieme soluzione della disequazione $2x^2-5\le 0$.
+
+L'equazione associata $2x^2-5=0$ è pura con soluzioni reali $x=\pm \sqrt{\frac 5 2}$. Razionalizzando otteniamo: $x_1=-\frac{\sqrt{10}} 2\vee x_2=+\frac{\sqrt{10}} 2$ e quindi $\IS=\left\{x\in \insR | -\frac{\sqrt{10}} 2\le x\le +\frac{\sqrt{10}} 2\right\}$.
+\end{esempio}
+
+\begin{esempio}
+Determinare l'insieme soluzione della disequazione $2x^2+3x-1>0$.
+
+L'equazione associata è completa $2x^2+3x-1=0$ e il delta: $\Delta =9+8=17$ è positivo, dunque le soluzioni sono $x_1=\frac{-3-\sqrt{17}} 4\vee x_2=\frac{-3+\sqrt{17}} 4$; ci troviamo nel primo caso, quindi l'insieme soluzione della disequazione è: $\IS=\left\{x\in \insR | x<\frac{-3-\sqrt{17}} 4\vee x>\frac{-3+\sqrt{17}} 4\right\}$.
+
+Osserviamo che contemporaneamente sappiamo anche risolvere le altre disequazioni: $2x^2+3x-1<0$ e i casi $2x^2+3x-1\ge 0$; $2x^2+3x-1\le 0$.
+\end{esempio}
+\end{exrig}
+\conclusione Una disequazione di secondo grado si presenta sempre in una delle seguenti forme: ${ax}^2+{bx}+c>0$, ${ax}^2+{bx}+c\ge 0$, ${ax}^2+{bx}+c<0$, ${ax}^2+{bx}+c\le 0$; possiamo sempre supporre positivo il primo coefficiente e, anche se incompleta, per l’equazione associata possiamo sempre pensare ai tre casi generati dal segno del discriminante $\Delta =b^2-4{ac}$. Pertanto avremo:
+\begin{center}
+\begin{threeparttable}
+\begin{tabular}{lllll}
+\toprule
+Delta & $ax^2+bx+c>0$& $ax^2+bx+c\ge0$& $ax^2+bx+c<0$ & $ax^2+bx+c\le0$\\
+\midrule
+ $\Delta >0^{*}$& $ x<x_1\vee x>x_2 $ & $ x\le x_1\vee x\ge x_2 $& $ x_1<x<x_2 $&$ x_1\le x\le x_2 $\\
+$\Delta =0^{**}$& $\forall x\in \insR-\{x_1\} $ & $ \forall x\in \insR $& $ \IS=\emptyset $&$ x=x_1=x_2 $\\
+$\Delta <0^{***}$&$ \forall x\in \insR $ & $ \forall x\in \insR $& $ \IS=\emptyset $&$ \IS=\emptyset $\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item [*] L'equazione associata ha 2 soluzioni reali distinte: $x=x_1\vee x=x_2$.
+\item [**] L'equazione associata ha 2 soluzioni reali coincidenti: $x=x_1=x_2$.
+\item [***] L'equazione associata non ha soluzioni reali.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\vspazio\ovalbox{\risolvii \ref{ese:4.1}, \ref{ese:4.2}, \ref{ese:4.3}, \ref{ese:4.4}, \ref{ese:4.5}, \ref{ese:4.6}}
+\section{Risoluzione grafica di una disequazione di secondo grado}
+Ricordiamo che un polinomio in una sola variabile, solitamente indicata con $x$, è di secondo grado se $2$ è il massimo esponente della variabile. Per \emph{trinomio di secondo grado} intendiamo un polinomio di secondo grado: $ax^2+bx+c$ con $a\in \insR_{0}$, $b\in \insR$, $c\in \insR$. Chiamiamo \emph{zeri del trinomio} i numeri reali soluzione dell'equazione associata $ax^2+bx+c=0$.
+
+\begin{definizione}
+Una funzione che associa ad ogni numero reale $x$ il numero reale $y~=~ax^2~+bx+c$ con $a\in \insR_{0}$, $b\in \insR$, $c\in \insR$ si chiama \emph{funzione polinomiale di secondo grado}.
+\end{definizione}
+
+Nel riferimento cartesiano ortogonale il grafico della funzione è costituito da tutti e soli i punti le cui coordinate soddisfano l’equazione $y=ax^2+bx+c$; se $x_1$ e $x_2$ sono gli zeri reali del trinomio $ax^2+bx+c$ allora attribuendo tali valori alla variabile $x$ si ha $y=0$; essi sono dunque \emph{gli zeri della funzione}, ossia le ascisse dei punti del grafico appartenenti all’asse $x$.
+
+\begin{figure}[b]
+ \begin{minipage}[t]{.45\textwidth}
+\centering
+ \input{./lbr/chap04/fig009_prbl.pgf}
+\caption{Esempio~\ref{ex:4.9}.}\label{fig:4.1}
+ \end{minipage}\hfil
+ \begin{minipage}[t]{.45\textwidth}
+\centering
+ \input{./lbr/chap04/fig010_prbl.pgf}
+\caption{Esempio~\ref{ex:4.10}.}\label{fig:4.2}
+ \end{minipage}
+\end{figure}
+
+\begin{exrig}
+\begin{esempio}
+\label{ex:4.9}
+Determinate gli zeri del trinomio $x^2+x-2$.
+
+Risolviamo l’equazione $x^2+x-2=0$ che avendo il discriminante positivo ammette due soluzioni reali distinte $x_1=-2\vee x_2=1$. I due numeri $1$ e $-2$ sono gli zeri della funzione $y=x^2+x-2$ (figura \ref{fig:4.1}). Nel riferimento cartesiano ortogonale i punti $P_1(-2;0)$ e $P_2(1;0)$ sono i punti del grafico della funzione appartenenti all’asse $x$.
+\end{esempio}
+
+\begin{esempio}
+\label{ex:4.10}
+Determinate gli zeri del trinomio $x^2-4x+4$.
+
+Risolviamo l’equazione $x^2-4x+4=0$ che avendo il discriminante nullo ammette due soluzioni reali coincidenti $x_1=x_2=2$, gli zeri del trinomio sono coincidenti nel numero $ 2 $ e il grafico della funzione $y=x^2-4x+4$  (figura \ref{fig:4.2}) ha due punti coincidenti appartenenti all’asse~$ x $: $P_1\equiv P_2(2;0)$.
+\end{esempio}
+\newpage
+\begin{figure}[b]
+ \begin{minipage}[t]{.45\textwidth}
+\centering
+ \input{./lbr/chap04/fig011_prbl.pgf}
+\caption{Esempio~\ref{ex:4.11}.}\label{fig:4.3}
+ \end{minipage}\hfil
+ \begin{minipage}[t]{.45\textwidth}
+\centering
+ \input{./lbr/chap04/fig013_prbl.pgf}
+\caption{La funzione $y=2x^2$.}\label{fig:4.4}
+ \end{minipage}
+\end{figure}
+
+\begin{esempio}
+\label{ex:4.11}
+Determinate gli zeri del trinomio $x^2-2x+5$.
+
+Risolviamo l’equazione $x^2-2x+5=0$ che avendo il discriminante negativo non ammette soluzioni reali; il trinomio non ha zeri reali e il grafico della funzione $y=x^2-2x+5$ (figura \ref{fig:4.3})non ha punti appartenenti all’asse $x$.
+\end{esempio}
+\end{exrig}
+
+Questi esempi ci hanno permesso di chiarire il collegamento tra il concetto algebrico “zeri di un polinomio” e il concetto geometrico di “punti sull’asse delle ascisse” del grafico della funzione polinomiale di secondo grado. Pertanto studiare il \emph{segno di un trinomio di secondo grado} equivale a determinare quali sono le \emph{ascisse dei punti} della funzione $y=ax^2+bx+c$ (con $a\in \insR_{0}$, $b\in \insR$, $c\in \insR$) che hanno \emph{ordinata positiva} oppure \emph{ ordinata negativa}.
+
+Ricordiamo che nel riferimento cartesiano ortogonale i punti ad ordinata positiva si trovano nel I e nel II quadrante (al di sopra dell’asse x), i punti ad ordinata negativa si trovano nel III e nel IV quadrante (al di sotto dell’asse x), i punti ad ordinata nulla si trovano sull’asse x.
+
+Per studiare il segno del trinomio, dobbiamo tracciare nel riferimento cartesiano il grafico della funzione $y=ax^2+bx+c$ (con $a\in \insR_{0}$, $b\in \insR$, $c\in \insR$).
+
+\subsection{Rappresentazione di una funzione polinomiale di secondo grado sul piano cartesiano}
+Consideriamo la funzione $y=2x^2$ (figura \ref{fig:4.4}) di proporzionalità quadratica definita in tutto $\insR$; sappiamo che il suo grafico è una parabola che volge la concavità verso l’alto essendo il coefficiente della variabile indipendente positivo e che il punto $O(0;0)$ è il suo vertice. Per tracciarne il grafico compiliamo una tabella e riportiamo i punti nel riferimento cartesiano.
+
+$y=2x^2$:\quad
+\begin{tabular} {*{8}{c}}
+$x$ & $-1,5$ & $-1$ & $-0,5$ & $0$ & $0,5$ & $1$ & $1,5$\\
+\midrule
+$y$ & $4,5$ & $2$ & $0,5$ & $0$ & $0,5$ & $2$ & $4,5$\\
+\end{tabular}
+Applichiamo a tutti i punti della tabella la traslazione di vettore $\vec u(1;1)$. Sappiamo che la traslazione modifica le coordinate dei punti secondo l’equazione ${TR}(1,1) \left\{\begin{array}{l}{x'=x+1}\\{y'=y+1}\end{array}\right.$ quindi possiamo compilare la tabella dei punti corrispondenti e infine tracciare il grafico della parabola immagine di $y=2x^2$.
+
+$\vec u(1;1)$:\quad
+\begin{tabular} {*{8}{c}}
+$x$ & $-0,5$ & $0$ & $0,5$ & $1$ & $1,5$ & $2$ & $2,5$\\
+\midrule
+$y$ & $5,5$ & $3$ & $1,5$ & $1$ & $1,5$ & $3$ & $5,5$\\
+\end{tabular}
+\begin{center}
+ \input{./lbr/chap04/fig014_prbl.pgf}
+\end{center}
+Dal grafico possiamo leggere le seguenti informazioni:
+\begin{itemize}
+\item l’immagine della parabola iniziale $ c $, è ancora una parabola $ c' $ essendo la traslazione una isometria;
+\item la parabola $ c' $ volge la concavità verso l’alto, come la parabola iniziale $ c $;
+\item il vertice $O(0;0)$ della parabola $ c $ ha come immagine il vertice $D(1;1)$ della parabola $ c' $, che coincide con l’estremo libero del vettore che definisce la traslazione;
+\item il vettore che individua la traslazione è indicato nella figura con $\vec u$; i vettori $\vec v$ e $\vec w$ rappresentano lo stesso vettore applicato a tre punti presi a caso sulla parabola iniziale.
+\end{itemize}
+La parabola immagine di $y=2x^2$ è rappresentata da una funzione polinomiale di secondo grado che si ottiene ricavando dall’equazione di ${TR}(1,1)$ le coordinate $\left\{\begin{array}{l}{x=x'-1}\\{y=y'-1}\end{array}\right.$ che sostituite nell’equazione di c $(y'-1)=2\cdot (x'-1)^2$ permettono di ottenere l’equazione di $ c':~y~=~2x^2-4x+3$.
+\paragraph{Generalizziamo}
+Data la parabola di equazione $y=ax^2$ e la traslazione \[{TR}(v_x,v_y)\left\{\begin{array}{l}{x'=x+v_x}\\{y'=y+v_y}\end{array}\right.,\] per ottenere l’equazione della curva immagine ricaviamo $\left\{\begin{array}{l}{x=x'-v_x}\\{y=y'-v_y}\end{array}\right.$ da sostituire nell’equazione $y={ax}^2$. Da $(y'-v_y)=a\cdot (x'-v_x)^2$ svolgendo i calcoli si ottiene \[y'=a(x')^2-(2av_x)x'+a(v_x)^2+v_y.\] Se poniamo $-2{av}_x=b$ e $a(v_x)^2+v_y=c$ l’equazione della parabola $c'$ immagine di quella data è $y={ax}^2+{bx}+c$, espressa attraverso un polinomio di secondo grado.
+\paragraph{Viceversa}
+Assegnata la funzione polinomiale di secondo grado $y={ax}^2+{bx}+c$ con $a\neq 0$, sappiamo che il grafico di tale curva è una parabola. In particolare:
+\begin{itemize}
+\item il coefficiente $a$ indica la concavità: verso l’alto se $a>0$, verso il basso se $a<0$;
+\item il coefficiente $c$ indica l'intersezione della parabola con l'asse delle $y$;
+\item dalle formule $-2av_x=b$ e $a(v_x)^2+v_y=c$ ricaviamo le coordinate del suo vertice $v_x=-\frac b{2a}$ e $v_y=c-a\left(-\frac b{2a}\right)^2=\frac{4ac-b^2}{4a}=-\frac{\Delta }{4a}$;
+\item risolvendo l’equazione ${ax}^2+{bx}+c=0$ determiniamo gli eventuali punti di intersezione con l’asse $x$ (gli zeri della funzione);
+\item assegnando alla variabile indipendente valori arbitrari, possiamo ottenere altri punti del grafico.
+\end{itemize}
+
+\begin{exrig}
+\begin{esempio}
+Data la funzione $f: y=x^2-2x-3$ tracciare nel riferimento cartesiano ortogonale il suo grafico.
+Il grafico di tale curva è una parabola:
+\begin{itemize}
+\item essendo il coefficiente $a=1$, la concavità è verso l’alto;
+\item il coefficiente $c=-3$ corrisponde al punto $P(0,-3)$ in cui la parabola incontra l'asse delle $y$;
+\item essendo $ a=1 $, $b=-2$ e $c=-3$ le coordinate del vertice sono $v_x=-\frac{-2} 2=1$ e $v_y=\frac{-12-4} 4=-4$;
+\item le ascisse dei punti $(-1;0)$ e $(3;0)$ rappresentano gli zeri della funzione, soluzione dell'equazione $x^2-2x-3=0$;
+\item altri punti della parabola si trovano assegnando alla variabile indipendente valori arbitrari: per $x=2$ otteniamo $y=(2)^2-2(2)-3=-3$, il punto $P(2;-3)$ è un punto della parabola.
+\end{itemize}
+Possiamo affermare che $f$ è l’immagine di $y=x^2$ nella traslazione di vettore $\vec v(1;-4)$.
+\begin{center}
+ \input{./lbr/chap04/fig016_prbl.pgf}
+\end{center}
+\end{esempio}
+\end{exrig}
+\vspazio\ovalbox{\risolvii \ref{ese:4.7}, \ref{ese:4.8}}
+\subsection{Segno di un trinomio di secondo grado per via grafica}
+\begin{exrig}
+\begin{esempio}
+Studiare il segno del trinomio $x^2-2x-3$.
+
+Si tratta di stabilire per quali valori di $x$ esso assume segno positivo, per quali segno negativo e per quali eventualmente si annulla.
+
+La richiesta è interpretabile anche come la ricerca degli insiemi soluzioni dell’equazione $x^2-2x-3=0$ e delle disequazioni $x^2-2x-3>0$ e $x^2-2x-3<0$.
+
+\emph{Strategia risolutiva}:
+Tracciamo il grafico della funzione $y=x^2-2x-3$ e leggiamo dal grafico gli insiemi richiesti (vedi figura precedente):
+\begin{itemize}
+\item Le ascisse dei punti A e B costituiscono l’insieme soluzione dell’equazione $x^2-2x-3=0$ cioè $x_1=-1\vee x_2=3$;
+\item I valori di $x$ dell’insieme $H=\{x\in \insR | x_A<x<x_B\}$ rendono il trinomio negativo; infatti preso un valore dell’insieme, ad esempio $x=0$, il punto sulla parabola ha ordinata negativa $(-3)$. Segnatelo sul grafico accanto e ripetete per $x=1$, $x=\frac 3 2$, $x=2$;
+\item I valori di $x$ dell’insieme $K=\{x\in \insR | x<x_A\vee x>x_B\}$ rendono il trinomio positivo; infatti preso un valore dell’insieme, ad esempio $x=\frac 7 2$, il punto sulla parabola ha ordinata positiva. Segnatelo sul grafico accanto e ripetete per $x=-\frac{6}{5}$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+\osservazione La ricerca dell’insieme soluzione di una disequazione di secondo grado è sempre interpretabile come la ricerca del segno di un trinomio di secondo grado e quindi risolubile per via grafica. In questi casi non è necessario rappresentare in modo preciso la parabola associata al trinomio, ma basta ricordare quanto detto inizialmente sugli zeri di una funzione.
+\begin{exrig}
+\begin{esempio}
+Risolvi le seguente disequazioni utilizzando il segno del trinomio di secondo grado.
+\begin{itemize}
+\item $x^2+x-2>0$.
+
+Risolviamo l’equazione $x^2+x-2=0$ che avendo il discriminante positivo ammette due soluzioni reali distinte $x_1=-2\vee x_2=1$. I due numeri $1$ e $-2$ sono gli zeri del trinomio e dunque gli zeri della funzione $y=x^2+x-2$; la parabola volge la concavità verso l’alto quindi possiamo grossolanamente rappresentare la sua posizione rispetto all’asse x e dedurre l’insieme soluzione richiesto: $\IS=\{x\in \insR\text{{\textbar} }x<-2\vee x>1\}$ o con notazione insiemistica $(-\infty,-2)\cup (1,+\infty )$;
+\item $x^2-4x+4\le 0$.
+
+Risolviamo l’equazione $x^2-4x+4=0$ che avendo il discriminante nullo ammette due soluzioni reali coincidenti $x_1=x_2=2$: gli zeri del trinomio sono coincidenti nel numero $2$; la parabola $y=x^2-4x+4$ ha il vertice sull’asse $x$ e volge la concavità verso l’alto quindi possiamo grossolanamente rappresentare la sua posizione e dedurre l’insieme soluzione richiesto: $\IS=\{x\in \insR\text{{\textbar} }x=2\}$, nessun valore reale rende il trinomio negativo.;
+\item $x^2-2x+7>0$.
+
+Risolviamo l’equazione $x^2-2x+7=0$ che avendo il discriminante negativo non ammette soluzioni reali; il trinomio non ha zeri reali, la parabola $y=x^2-2x+7$ volge la concavità verso l’alto e non ha punti appartenenti all’asse $x$ quindi possiamo grossolanamente rappresentare la sua posizione e dedurre l’insieme soluzione richiesto: $\IS=\insR$.
+\end{itemize}
+\begin{center}
+ \input{./lbr/chap04/fig016abc_prbl.pgf}
+\end{center}
+\end{esempio}
+\end{exrig}
+\vspazio\ovalbox{\risolvii \ref{ese:4.9}, \ref{ese:4.10}, \ref{ese:4.11}, \ref{ese:4.12}, \ref{ese:4.13}, \ref{ese:4.14}, \ref{ese:4.15}, \ref{ese:4.16}, \ref{ese:4.17}, \ref{ese:4.18}, \ref{ese:4.19}, \ref{ese:4.20}, \ref{ese:4.21},}
+
+\vspazio\ovalbox{ \ref{ese:4.22}, \ref{ese:4.23}, \ref{ese:4.24}, \ref{ese:4.25}, \ref{ese:4.26}}
+
+\begin{figure}[tp]
+\centering
+\input{./lbr/chap04/fig018a1_prbl.pgf}
+\vspace{12pt}
+{\input{./lbr/chap04/fig018b1_prbl.pgf}}
+\vspace{12pt}
+{\input{./lbr/chap04/fig018c1_prbl.pgf}}
+\vspace{12pt}
+{\input{./lbr/chap04/fig018d1_prbl.pgf}}
+\vspace{12pt}
+{\input{./lbr/chap04/fig018e1_prbl.pgf}}
+\vspace{12pt}
+{\input{./lbr/chap04/fig018f1_prbl.pgf}}
+\caption{Risoluzione delle disequazioni di secondo grado}
+\label{fig:subfig10}
+\end{figure}
+
+\section{Segno del trinomio a coefficienti letterali}
+Consideriamo il trinomio $t=kx^2+3x-7$ di secondo grado avente il primo coefficiente dipendente dal parametro $k$. Come possiamo stabilire il segno di questo trinomio, al variare di $k$?
+Sappiamo che stabilire il segno di un trinomio significa determinare i valori reali che attribuiti alla variabile indipendente $x$ rendono il trinomio positivo, nullo o negativo. Evidentemente per valori reali diversi di $k$ avremo una diversa disequazione da risolvere; dobbiamo dunque cercare di analizzare come varia il trinomio a seconda dei valori di $k$ e in seguito studiare il segno del trinomio ottenuto. Questa analisi di situazioni diverse è la \textit{discussione del trinomio a coefficienti parametrici}.
+
+\begin{exrig}
+\begin{esempio}
+Stabilire il segno di $t=kx^2+3x-7$ al variare di $ k $.
+
+Prendiamo in considerazione il segno del primo coefficiente e il segno del discriminante dell’equazione associata $kx^2+3x-7=0$. Il primo coefficiente è maggiore di zero per $k>0$. Il discriminante $\Delta =9+28k$ è maggiore di zero per $k>-\frac 9{28}$. Rappresentiamo la loro reciproca situazione:
+\begin{center}
+ \input{./lbr/chap04/fig019_seg.pgf}
+\end{center}
+\begin{enumerate}[label=(\Alph*)]
+\item $k<-\frac 9{28}$: il primo coefficiente è negativo così come il discriminante, la parabola volge la concavità verso il basso e non ha zeri reali: il trinomio è negativo per qualunque valore reale di $x$;
+\item $k=-\frac 9{28}$: il primo coefficiente è negativo e il discriminante è uguale a zero. La parabola volge la concavità verso il basso e ha due zeri reali coincidenti $x_1=x_2=\frac{14} 3$. Il trinomio si annulla per $x=\frac{14} 3$ mentre per qualunque altro valore di $x$ è negativo;
+\item $-\frac 9{28}<k<0$: il primo coefficiente è negativo e il discriminante è positivo. La parabola volge la concavità verso il basso e ha due zeri reali distinti: il trinomio si annulla per $x=x_1\vee x=x_2$; è positivo per $x_1<x<x_2$; è negativo per $x<x_1\vee x>x_2$;
+\item $k=0$: il trinomio diventa un binomio di primo grado: $t=3x-7$ e quindi $t>0$ per $x>\frac 7 3$, $t<0$ per $x<\frac 7 3$, $t=0$ per $x=\frac 7 3$;
+\item $k>0$: Il primo coefficiente è positivo così come il discriminante. La parabola ha concavità verso l’alto e due zeri reali distinti: il trinomio si annulla per $x=x_1\vee x=x_2$; è negativo per $x_1<x<x_2$; è positivo per $x<x_1\vee x>x_2$\emph{.}
+\end{enumerate}
+\end{esempio}
+
+\begin{esempio}
+Stabilite al variare del parametro $k$ l'insieme soluzione della disequazione $x^2+kx+1<0$.
+
+Prendiamo in considerazione il primo coefficiente e il discriminante dell’equazione associata $x^2+kx+1=0$ e stabiliamo il loro segno: il primo coefficiente è indipendente dal parametro e sempre positivo, essendo il discriminante $\Delta =k^2-4$ si hanno soluzioni reali per $k\le -2\vee k\ge 2$. Rappresentiamo la loro reciproca situazione:
+\begin{center}
+ \input{./lbr/chap04/fig020_seg.pgf}
+\end{center}
+\begin{itemize}
+\item $k<-2\vee k>2$; primo coefficiente positivo e discriminante positivo. La parabola volge la concavità verso l’alto e ha due zeri reali distinti: $x=x_1\vee x=x_2$ quindi $\IS=\{x \in \insR | x_1<x<x_2\}$;
+\item $-2<k<2$; primo coefficiente positivo, il discriminante negativo. La parabola volge la concavità verso l'alto e non ha zeri reali: $\IS=\emptyset$;
+\item $k=-2\vee k=2$; primo coefficiente positivo e \ discriminante uguale a zero La parabola ha concavità verso l'alto e un unico zero reale: $\IS=\emptyset$.
+\end{itemize}
+\end{esempio}
+\end{exrig}
+
+\vspazio\ovalbox{\risolvii \ref{ese:4.27}, \ref{ese:4.28}, \ref{ese:4.29}, \ref{ese:4.30}, \ref{ese:4.31}}
+
+\section{Disequazioni polinomiali di grado superiore al secondo}
+
+\begin{exrig}
+\begin{esempio}
+Un numero è tale che sottraendo al suo cubo il suo triplo si ottiene un numero maggiore del triplo del suo quadrato aumentato di $ 4 $. Determinare l’insieme soluzione del problema.
+
+La richiesta del problema implica la ricerca dell’Insieme Soluzione della disequazione $x^3-3x>3x^2+4$, di terzo grado nella variabile $x$. Scriviamo la disequazione in forma canonica, applicando i principi di equivalenza: $x^3-3x^2-3x-4>0$. Si tratta di una disequazione polinomiale di terzo grado.
+
+Procediamo nella scomposizione in fattori del polinomio $p(x)=x^3-3x^2-3x-4$. Mediante la regola di Ruffini possiamo determinare un suo zero $x=4$ e dunque ottenere $p(x)=(x-4)(x^2+x+1)$.
+
+Determiniamo il segno dei singoli fattori: primo fattore $f_1>0\to x>4$; secondo fattore $f_2>0\to x^2+x+1>0$ disequazione di secondo grado. Il primo coefficiente è positivo e il discriminante \ $\Delta =1-4=-3$ è negativo; la parabola volge la concavità verso l'alto e non ha zeri reali dunque il secondo fattore è positivo per qualunque valore reale di $x$. Costruiamo la tabella dei segni:
+\begin{center}
+ \input{./lbr/chap04/fig021_seg.pgf}
+\end{center}
+$\IS=\{x\in \insR | x>4\}=(4;+\infty )$.
+\end{esempio}
+\end{exrig}
+
+\begin{procedura}
+Risolvere le disequazioni di grado superiore al primo:
+\begin{enumeratea}
+\item scomporre il polinomio di grado $n$ in fattori di primo e secondo grado;
+\item studiare il segno dei singoli fattori;
+\item costruire la tabella dei segni;
+\item cercare gli intervalli in cui il polinomio dato assume il segno richiesto.
+\end{enumeratea}
+\end{procedura}
+
+\begin{exrig}
+\begin{esempio}
+Data la disequazione $-2x(3-2x)-3x^2\left(2-\frac 3 2x\right)\ge 5\left(2x^2-\frac 3{10}x\right)$ determinate il suo $ \IS $
+
+Osserviamo che la disequazione proposta è polinomiale di terzo grado; eseguiamo i calcoli per portarla alla forma $p(x)\ge 0$. Si ottiene $3x^3-8x^2-3x\ge 0$ e con la scomposizione \ si ha $x\cdot (3x^2-8x-3)\ge 0$. Procediamo con lo studio dei segni dei singoli fattori: $f_1\ge 0\rightarrow x\ge 0$ e $f_2\ge 0\rightarrow x\le -\frac 1 3\vee x\ge 3$ e compiliamo \ la tabella dei segni che lasciamo al lettore.
+\begin{center}
+ \input{./lbr/chap04/fig022_seg.pgf}
+\end{center}
+Otteniamo: $\IS=\left\{x\in \insR | -\frac 1 3\le x\le 0\vee x\ge 3\right\}$.
+\end{esempio}
+
+\begin{esempio}
+Risolvere la disequazione: $64x^6-1<0$.
+
+Il binomio al primo membro è una differenza di quadrati, quindi scomponendo si ottiene: $64x^6-1=(8x^3-1)(8x^3+1)=(2x-1)(4x^2+2x+1)(2x+1)(4x^2-2x+1)$.
+
+Si tratta allora di studiare il segno dei singoli fattori: $f_1>0\to x>\frac 1 2$; $f_2>0\to \forall x\in \insR$; $f_3>0\to x>-\frac 1 2$; $f_4>0\to \forall x\in \insR$ e di determinare il segno richiesto dopo aver costruito la tabella dei segni.
+\end{esempio}
+
+\begin{esempio}
+Risolvere la disequazione: $x^4-4x^2-45>0$.
+
+Il trinomio al primo membro è di quarto grado; sappiamo che con la sostituzione $x^2=t$ può essere ricondotto ad un trinomio di secondo grado la cui scomposizione in fattori risulta $(t-9)\cdot (t+5)$ e quindi la disequazione assegnata diventa: $(x^2-9)\cdot (x^2+5)>0$.
+
+Si tratta allora di studiare il segno dei singoli fattori $f_1>0\to x<-3\vee x>3$ e $f_2>0\to \forall x\in \insR$ per poi determinare il segno richiesto dopo aver costruito la tabella dei segni.
+\end{esempio}
+\end{exrig}
+\vspazio\ovalbox{\risolvii \ref{ese:4.32}, \ref{ese:4.33}, \ref{ese:4.34}, \ref{ese:4.35}, \ref{ese:4.36}, \ref{ese:4.37}, \ref{ese:4.38}, \ref{ese:4.39}, \ref{ese:4.40}, \ref{ese:4.41}, \ref{ese:4.42}, \ref{ese:4.43}, \ref {ese:4.44},}
+
+\vspazio\ovalbox{\ref{ese:4.45}, \ref{ese:4.46}, \ref{ese:4.47}, \ref{ese:4.48}, \ref{ese:4.49}, \ref{ese:4.50}, \ref{ese:4.51}, \ref{ese:4.52}, \ref{ese:4.53}, \ref{ese:4.54}, \ref{ese:4.55}, \ref{ese:4.56}, \ref{ese:4.57}}
+
+\section{Disequazioni fratte}
+Ricordiamo che una disequazione è \emph{frazionaria} o \emph{fratta} quando il suo denominatore contiene l’incognita.
+\begin{procedura}
+Soluzione di una disequazione frazionaria:
+\begin{enumeratea}
+\item applicando il primo principio di equivalenza si trasportano tutti i termini al primo membro e si calcola il risultato dell'equazione assegnata $E=\frac{N(x)}{D(x)}$;
+\item si determinano le Condizioni di Esistenza ponendo $D(x)\neq 0$;
+\item impostiamo la disequazione nella forma $\frac{N(x)}{D(x)}\ge 0$ oppure $\frac{N(x)}{D(x)}\le 0$ oppure $\frac{N(x)}{D(x)}<0$ oppure $\frac{N(x)}{D(x)}>0$ a seconda del quesito posto da problema;
+\item si studia il segno del numeratore e del denominatore, ponendo $N(x)>0$ oppure $N(x)\ge 0$ (a secondo della richiesta) e $D(x)>0$;
+\item si costruisce la tabella dei segni, segnando con un punto pieno gli zeri della frazione, se richiesti;
+\item si individuano gli intervalli in cui la frazione assume il segno richiesto.
+\end{enumeratea}
+\end{procedura}
+
+Vediamo attraverso alcuni esempi come procedere.
+\begin{exrig}
+\begin{esempio}
+Data l’espressione $E=\frac 4{4x^2-1}+\frac 1{2x+1}+\frac x{1-2x}$ determinarne, al variare di $x$ in $\insR$, il segno.
+
+\emph{Osservazioni preliminari}
+\begin{itemize*}
+\item L’espressione assegnata è frazionaria, quindi lo studio del segno deve essere circoscritto ai valori di $x$ del Dominio dell’espressione stessa;
+\item studiare il segno di una espressione letterale significa stabilire in quale insieme si trovano i valori della variabile che la rendono positiva, negativa, nulla;
+\item ogni espressione contenente operazioni tra frazioni algebriche ha in generale come risultato una frazione algebrica.
+\end{itemize*}
+
+\emph{Strategia risolutiva}
+\begin{enumeratea}
+\item determiniamo il risultato dell’operazione assegnata: $E=\frac{-2x^2+x+3}{(2x+1)\cdot (2x-1)}$;
+\item determiniamo il dominio: $\CE\, 2x+1\neq 0\wedge 2x-1\neq 0\to D=\insR-\left\{-\frac 1 2,\frac 1 2\right\}$;
+\item impostiamo la disequazione: $\frac{-2x^2+x+3}{(2x+1)\cdot (2x-1)}\ge 0$ che ci permetterà di rispondere al quesito posto dal problema;
+\item studiamo il segno di numeratore e denominatore:
+ \begin{itemize*}
+\item segno $N: -2x^2+x+3\ge 0$ disequazione di secondo grado, quindi dall’equazione associata $-2x^2+x+3=0$, calcoliamo il discriminante: $\Delta =1+24=25$, positivo per cui si hanno due soluzioni reali distinte; la parabola $y=-2x^2+x+3$ ha concavità verso il basso per cui essendo $x_1=-1$ e $x_2=\frac 3 2$ si ha $N\ge 0$ per $-1\le x\le \frac 3 2$;
+\item segno $D$: il denominatore è composto da due fattori di primo grado, quindi $d_1>0$ per $x>-\frac 1 2$ e $d_2>0$ per $x>\frac 1 2$;
+ \end{itemize*}
+\item costruiamo la tabella dei segni:
+\begin{center}
+ \input{./lbr/chap04/fig023_seg.pgf}
+\end{center}
+\item dalla tabella dei segni possiamo ottenere la risposta al problema posto:
+\begin{itemize*}
+\item l’espressione $E$ si annulla per $x=-1\vee x=\frac 3 2$;
+\item l’espressione $E$ è positiva per $x\in A=\left\{x\in \insR | -1<x<-\frac 1 2\vee \frac 1 2<x<\frac 3 2\right\}$;
+\item l’espressione $E$ è negativa per $x\in B=\left\{x\in \insR | x<-1\vee -\frac 1 2<x<\frac 1 2\vee x>\frac 3 2\right\}$.
+\end{itemize*}
+\end{enumeratea}
+\end{esempio}
+
+\begin{esempio}
+Determiniamo l'Insieme Soluzione della disequazione fratta: $3-\frac 1{2x+1}\ge \frac 1{1-x}$.
+\begin{enumeratea}
+\item Trasportiamo al primo membro la frazione del secondo membro $E=3-\frac 1{2x+1}-\frac 1{1-x}$ ed eseguiamo i calcoli ottenendo: $E=\frac{-6x^2+2x+1}{(2x+1)\cdot (1-x)}$;
+\item determiniamo il dominio: $\CE \;2x+1\neq 0\wedge 1-x\neq 0\to D=\insR-\left\{-\frac 1 2,1\right\}$;
+\item impostiamo la disequazione: \ $\frac{-6x^2+2x+1}{(2x+1)\cdot (1-x)}\ge 0$ che ci permetterà di rispondere al quesito posto dal problema;
+\item studiamo il segno del numeratore e del denominatore:
+\begin{itemize*}
+\item segno N: $-6x^2+2x+1\ge 0$ disequazione di secondo grado, quindi scritta l’equazione associata $-6x^2+2x+1=0$, calcoliamone il discriminante: $\frac{\Delta } 4=7$, positivo per cui si hanno due soluzioni $x_{1,2}=\frac{1\pm \sqrt 7} 6$; essendo il primo coefficiente negativo si ha $N\ge 0$ per $\frac{1-\sqrt 7} 6\le x\le \frac{1+\sqrt 7} 6$;
+\item segno D: $-2x^2+x+1>0$ disequazione di secondo grado; il denominatore ha due zeri reali $x=-\frac 1 2$ e $x_2=1$, il primo coefficiente è negativo, pertanto $D>0$ per $-\frac 1 2<x<1$ che rispetta le C.E.: $x_1\neq -\frac 1 2\wedge x_2\neq 1$;
+\end{itemize*}
+\item compiliamo la tabella dei segni:
+\begin{center}
+ \input{./lbr/chap04/fig024_seg.pgf}
+\end{center}
+\item determiniamo l'insieme soluzione: $\IS=\left\{x\in \insR | x<-\frac 1 2\vee \frac{1-\sqrt 7} 6\le x\le \frac{1+\sqrt 7} 6\vee x>1\right\}$.
+\end{enumeratea}
+\end{esempio}
+\end{exrig}
+
+\vspazio\ovalbox{\risolvii \ref{ese:4.58}, \ref{ese:4.59}, \ref{ese:4.60}, \ref{ese:4.61}, \ref{ese:4.62}, \ref{ese:4.63}, \ref{ese:4.64}, \ref{ese:4.65}, \ref{ese:4.66}, \ref{ese:4.67}, \ref{ese:4.68}, \ref{ese:4.69}, \ref {ese:4.70},}
+
+\vspazio\ovalbox{\ref{ese:4.71}, \ref{ese:4.72}, \ref{ese:4.47}, \ref{ese:4.73}, \ref{ese:4.74}}
+
+\section{Sistemi di disequazioni}
+Ricordiamo che risolvere un sistema di disequazioni significa trovare l’insieme dei numeri reali che sono le soluzioni comuni alle disequazioni che lo compongono. Indicate con $d_{1}, d_{2}, \ldots, d_n$ le disequazioni che formano il sistema e $\IS_{1}, \IS_{2}, \ldots,\IS_n$ i rispettivi insieme soluzione, la soluzione del sistema indicata con $\IS$ è data da $\IS=\IS_1\cap \IS_{2,}\ldots \cap \IS_n$.
+
+\begin{problema}
+Nell’equazione $x^2-(k-3)x+k^2-3k+1=0$, determinare per quali valori del parametro $ k $ si ottengono soluzioni reali e concordi.
+\end{problema}
+Abbiamo già affrontato un \ problema di questo tipo discutendo le equazioni parametriche di secondo grado e dunque sappiamo che la richiesta del problema esige che il discriminante $(\Delta )$ sia non negativo affinché le soluzioni siano reali e che il prodotto delle stesse sia positivo. Pertanto il problema è formalizzato con un sistema di disequazioni: $\left\{\begin{array}{l}{\Delta \ge 0}\\{\frac c a>0}\end{array}\right. \to \left\{\begin{array}{l}{k^2-6k+9-4k^2+12k-4\ge 0}\\{k^2-3k+1>0}\end{array}\right.$.
+
+Risolviamo separatamente le due disequazioni del sistema; indicati con $\IS_1$ e $\IS_2$ rispettivamente gli insiemi soluzione della prima e della seconda disequazione, l’insieme soluzione del sistema è dato da $\IS=\IS_1\cap \IS_2$ (insieme intersezione degli insiemi soluzione delle due disequazioni).
+\begin{itemize*}
+\item $d_1$: $-3k^2+6k+5\ge 0$ disequazione di secondo grado avente primo coefficiente negativo e $\frac{\Delta } 4=24$ positivo; la parabola $y=-3k^2+6k+5\ge 0$ ha concavità verso il basso e discriminante positivo, per cui essendo $x_1=\frac{3-2\sqrt 6} 3\vee x_2=\frac{3+2\sqrt 6} 3$ si ottiene $\IS_1=\left\{x\in \insR | \frac{3-2\sqrt 6} 3\le x\le \frac{3+2\sqrt 6} 3\right\}$.
+\item $d_2$: $k^2-3k+1>0$ disequazione di secondo grado avente il primo coefficiente positivo e $\Delta =5$ positivo; la parabola $y=k^2-3k+1>0$ ha concavità verso l'alto e discriminante positivo, quindi $x_1=\frac{3-\sqrt 5} 2\vee x_2=\frac{3+\sqrt 5} 2$ e
+$\IS_2=~\left\{x\in \insR | x<\frac{3-\sqrt 5} 2\vee x>\frac{3+\sqrt 5} 2\right\}$.
+\end{itemize*}
+Per determinare l’Insieme Soluzione del sistema rappresentiamo in un grafico gli insiemi soluzioni delle disequazioni risolte e visualizziamo l’insieme formato dai valori che soddisfano contemporaneamente sia l’una che l’altra: sull’asse reale depositiamo i valori numerici trovati e rappresentiamo su righe distinte i due insiemi soluzione: gli intervalli in cui cadono soluzioni della prima e della seconda disequazione rappresentano l’Insieme Soluzione del sistema.
+\begin{center}
+ \input{./lbr/chap04/fig025_seg.pgf}
+\end{center}
+ $\IS_1=\left\{x\in \insR\left|\frac{3-2\sqrt 6} 3\le x<\frac{3-\sqrt 5} 2\vee \frac{3+\sqrt 5} 2<x\le \frac{3+2\sqrt 6} 3\right.\right\}$ o scritto utilizzando gli intervalli $\left.\left[\frac{3-2\sqrt 6} 3;\frac{3-\sqrt 5} 2\right.\right)\cup \left.\left(\frac{3+\sqrt 5} 2;\frac{3+2\sqrt 6} 3\right.\right]$.
+
+\begin{problema}
+Risolvere il seguente sistema di disequazioni: $ \left\{\begin{array}{l}2x^3-9x^2+10x-3\le 0\\ \frac{x^2+x+1}{\ x^3-x}\ge 0 \\3-4x<0 \end{array}\right.$.
+\end{problema}
+Il sistema è formato da tre disequazioni; risolviamo separatamente ciascuna disequazione:
+
+\begin{itemize*}
+\item $d_1$: $2x^3-9x^2+10x-3\le 0$ di terzo grado, scomponiamo in fattori. $x=1$ è uno zero del polinomio quindi con la regola di Ruffini otteniamo $d_1$: $(x-1)\cdot (2x^2-7x+3)\le 0$. L'equazione di secondo grado $2x^2-7x+3=0$ ha soluzioni reali $x_1=\frac 1 2\vee x=3$. Si tratta allora di studiare il segno dei singoli fattori e di determinare il segno richiesto dopo aver costruito la tabella dei segni:
+\begin{center}
+ \input{./lbr/chap04/fig026_seg.pgf}
+\end{center}
+L'insieme soluzione, tenendo conto che cerchiamo i valori per i quali $d_1$ risulta minore o uguale a $0$ è $\IS_1=\left\{x\in \insR | x\le\frac 1 2\vee 1\le x\le 3\right\}$.
+
+\item $d_2$: $\frac{x^2+x+1}{x^3-x}\ge 0$ è una disequazione fratta, per prima cosa scomponiamo in fattori il denominatore: $\frac{x^2+x+1}{x(x^2-1)}\ge 0$.
+Studiamo poi il segno dei singoli fattori o divisori, tenendo conto che $x^2+x+1=0$ ha $\Delta <0$, per cui $x^2+x+1$ è sempre positivo.
+\begin{center}
+ \input{./lbr/chap04/fig027_seg.pgf}
+\end{center}
+L'insieme soluzione, per $d_2\ge 0$ è $\IS_2=\left\{x\in \insR | -1<x<0\vee x>1\right\}$.
+\item $d_3:3-4x<0$ è di primo grado per cui l'insieme soluzione è $\IS_3=\left\{x\in \insR | x>\frac 3 4\right\}$.
+\end{itemize*}
+Ricordiamo che la ricerca dell’Insieme Soluzione del sistema si effettua determinando l’insieme $\IS_1\cap \IS_2\cap \IS_3$ individuabile attraverso il grafico:
+\begin{center}
+ \input{./lbr/chap04/fig028_seg.pgf}
+\end{center}
+Il sistema è quindi verificato per $1<x\le 3$.
+
+\vspazio\ovalbox{\risolvii \ref{ese:4.75}, \ref{ese:4.76}, \ref{ese:4.77}, \ref{ese:4.78}, \ref{ese:4.79}, \ref{ese:4.80}, \ref{ese:4.81}, \ref{ese:4.82}, \ref{ese:4.83}}
+\newpage
+\input{./chap/04_esercizi}
+\cleardoublepage

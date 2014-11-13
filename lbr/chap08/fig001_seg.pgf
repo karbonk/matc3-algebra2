@@ -1,0 +1,80 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+%IS1
+\draw[->] (0,0) -- (8,0) node [below right] () {$r$};
+
+\foreach \x in {2,4,6}{
+\draw(\x,3pt)--(\x,-3pt);
+\begin{scope}[dotted]
+\draw (\x,0) -- (\x,-2);
+\draw (6,-.5) -- (8,-.5);
+\draw (0.5,-1) -- (2,-1);
+\draw (6,-1) -- (8,-1);
+\draw (0.5,-1.5) -- (2,-1.5);
+\draw (6,-1.5) -- (8,-1.5);
+\end{scope}}
+
+\node[above]  at (2,0) {$-5$};
+\node[above]  at (4,0) {$0$};
+\node[above]  at (6,0) {$5$};
+\pattern[pattern= north east lines, pattern color=red] (2,-2) rectangle (6,-1.5);
+
+\node[] () at (-.7,-.5) {$x-5<0$};
+\node[] () at (-.7,-1) {$25-x^2\ge 0$};
+\node[] () at (-.7,-1.75) {$\IS_{1}$};
+
+\begin{scope}[blue,thick]
+\draw (.5,-.5) -- (6,-.5);
+\draw (2,-1) -- (6,-1);
+
+\draw[fill=white] (6,-.5)circle (1.5pt);
+\draw[fill=blue] (2,-1)circle (1.5pt);
+\draw[fill=blue] (6,-1)circle (1.5pt);
+\draw[fill=white] (6,-1.5)circle (1.5pt);
+\draw[fill=blue] (2,-1.5)circle (1.5pt);
+
+\end{scope}
+%IS2
+\draw[->] (0,-2.5) -- (8,-2.5) node [below right] () {$r$};
+
+\foreach \x in {4,6}{
+\draw(\x,-2.4)--(\x,-2.6);
+\begin{scope}[dotted]
+\draw (\x,-2.5) -- (\x,-4.5);
+\draw (.5,-3) -- (6,-3);
+\draw (.5,-3.5) -- (4,-3.5);
+\draw (6,-3.5) -- (8,-3.5);
+\draw (.5,-4) -- (8,-4);
+\end{scope}}
+
+\node[above]  at (4,-2.5) {$0$};
+\node[above]  at (6,-2.5) {$5$};
+
+\node[] () at (-.7,-3) {$x^2-x\ge0$};
+\node[] () at (-.7,-3.5) {$2x^2-10x<0$};
+\node[] () at (-.7,-4.25) {$\IS_{2}$};
+
+\begin{scope}[blue,thick]
+\draw (6,-3) -- (8,-3);
+\draw (4,-3.5) -- (6,-3.5);
+\draw[fill=white] (6,-3)circle (1.5pt);
+\draw[fill=white] (4,-3.5)circle (1.5pt);
+\draw[fill=white] (6,-3.5)circle (1.5pt);
+\end{scope}
+%IS1 unito IS2
+\draw[->] (0,-5) -- (8,-5) node [below right] () {$r$};
+
+\foreach \x in {2,6}{
+\draw(\x,-4.9)--(\x,-5.1);
+\begin{scope}[dotted]
+\draw (\x,-5) -- (\x,-6);
+\end{scope}}
+\node[above]  at (2,-5) {$-5$};
+\node[above]  at (6,-5) {$5$};
+\node[] () at (-.7,-5.75) {$\IS_{1}\cup\IS_{2}$};
+\pattern[pattern= north east lines, pattern color=Maroon] (2,-5.5) rectangle (6,-6);
+\draw[fill=blue] (2,-5.5)circle (1.5pt);
+\draw[fill=white] (6,-5.5)circle (1.5pt);
+\draw[dotted] (.5,-5.5) -- (4,-5.5);
+\draw[dotted] (6,-5.5) -- (8,-5.5);
+\end{tikzpicture}

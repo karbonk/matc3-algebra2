@@ -1,0 +1,29 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=8mm, y=8mm]
+\draw[step=0.8cm,color=gray!30] (-3.5,-1.2) grid (3.5,4.5);
+  \tkzInit[xmin=-3,xmax=3,ymin=-1,ymax=4.5]
+  \clip (-3.5,-1.5) rectangle (4,5.5);
+  \begin{scope}[font=\small]
+    \tkzAxeY[orig = false, label options={left = 1pt}]
+    \tkzAxeX[orig = true, label options={below = 1pt}]
+    \node [label={[name=label node]$\vec{u}$}] at (.5,.4) {};
+    \node [label={[name=label node]$\vec{w}$}] at (-.6,2.2) {};
+    \node [label={[name=label node]$\vec{v}$}] at (1.6,3.1) {};
+  \end{scope}
+  \tkzFct[domain=-2:2,thick,color=Maroon]{2*x*x}
+  \tkzFct[domain=-2:4,thick,color=blue]{2*x*x-4*x+3};
+  %il vettore u
+  \draw[fill=orange] (0,0)circle (1.5pt);
+  \draw[fill=blue] (1,1)circle (1.5pt);
+  \draw[->] (0,0) --(1,1);
+  %il vettore w
+  \draw[fill=orange] (-1,2)circle (1.5pt);
+  \draw[fill=blue] (0,3)circle (1.5pt);
+  \draw[->] (-1,2) --(0,3);
+  %il vettore v
+  \draw[fill=orange] (1.2,2.88)circle (1.5pt);
+  \draw[fill=blue] (2.2,3.88)circle (1.5pt);
+  \draw[->] (1.2,2.88) --(2.2,3.88);
+  \node [color=Maroon] at (-1.8,4.4) {c};
+  \node [color=blue] at (2.8,4.4) {c'};
+\end{tikzpicture}

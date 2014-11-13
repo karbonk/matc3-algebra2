@@ -1,0 +1,15 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=6mm, y=6mm,font=\small,scale=.7]
+\draw[step=0.6cm,color=gray!30] (-4.5,-4.5) grid (4.5,4.5);
+  \tkzInit[xmin=-4.5,xmax=4.5,ymin=-4.5,ymax=4.5]
+  \begin{scope}[font=\small]
+    \tkzAxeY[orig = false, label options={left = 1pt}]
+    \tkzAxeX[orig = true, label options={below = 1pt}]
+  \end{scope}
+   \pgfmathsetmacro{\e}{1.41421}   % eccentricity
+    \pgfmathsetmacro{\a}{2}
+    \pgfmathsetmacro{\b}{(\a*sqrt((\e)^2-1)} 
+    \draw[thick,color=Maroon] plot[domain=-1.5:1.5] ({\a*cosh(\x)},{\b*sinh(\x)});
+    \draw[thick,color=Maroon] plot[domain=-1.5:1.5] ({-\a*cosh(\x)},{\b*sinh(\x)});
+    \tkzFct[domain=-4:4,thick,color=blue]{-1.5*x};
+\end{tikzpicture}

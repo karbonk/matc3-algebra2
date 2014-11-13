@@ -1,0 +1,53 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+
+\draw[->] (0,0) -- (8,0) node [below right] () {$r$};
+
+\foreach \x in {1,2.3,3.4,4.5,5.6,6.7}{
+\draw(\x,3pt)--(\x,-3pt);
+\begin{scope}[dotted]
+\draw (\x,0) -- (\x,-2.5);
+\draw (3.4,-.5) -- (5.6,-.5);
+\draw (6.7,-.5) -- (8,-.5);
+\draw (0,-1) -- (1,-1);
+\draw (2.3,-1) -- (5.6,-1);
+\draw (0,-1.5) -- (4.5,-1.5);
+\draw (0,-2) -- (5.6,-2);
+\draw (6.7,-2) -- (8,-2);
+\end{scope}}
+
+\node[above]  at (1,0) {$-1$};
+\node[above]  at (2.3,0) {$0$};
+\node[above]  at (3.4,0) {$\frac{1}{2}$};
+\node[above]  at (4.5,0) {$\frac{3}{4}$};
+\node[above]  at (5.6,0) {$1$};
+\node[above]  at (6.7,0) {$3$};
+\pattern[pattern= north east lines, pattern color=red] (5.6,-2.5) rectangle (6.7,-2);
+
+\node[] () at (-.5,-.5) {$\IS_{1}$};
+\node[] () at (-.5,-1) {$\IS_{2}$};
+\node[] () at (-.5,-1.5) {$\IS_{3}$};
+\node[] () at (-.5,-2.25) {$\IS$};
+
+\begin{scope}[blue,thick]
+\draw (0,-.5) -- (3.4,-.5);
+\draw (5.6,-.5) -- (6.7,-.5);
+\draw (1,-1) -- (2.3,-1);
+\draw (5.6,-1) -- (8,-1);
+\draw (4.5,-1.5) -- (8,-1.5);
+\draw (5.6,-2) -- (6.7,-2);
+
+\draw[fill=blue] (3.4,-.5)circle (1.5pt);
+\draw[fill=blue] (5.6,-.5)circle (1.5pt);
+\draw[fill=blue] (6.7,-.5)circle (1.5pt);
+\draw[fill=white] (1,-1)circle (1.5pt);
+\draw[fill=white] (2.3,-1)circle (1.5pt);
+\draw[fill=white] (5.6,-1)circle (1.5pt);
+\draw[fill=white] (4.5,-1.5)circle (1.5pt);
+
+\draw[fill=white] (5.6,-2)circle (1.5pt);
+\draw[fill=blue] (6.7,-2)circle (1.5pt);
+
+\end{scope}
+
+\end{tikzpicture}

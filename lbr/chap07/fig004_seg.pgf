@@ -1,0 +1,31 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+
+\draw[->] (0,0) -- (6,0) node [below right] () {$r$};
+
+\foreach \x in {1.5,4.5}{
+\draw(\x,3pt)--(\x,-3pt);
+\begin{scope}[dotted]
+\draw (\x,0) -- (\x,-1.7);
+\end{scope}}
+
+\node[left] at (0,-0.15) {Segno di};
+\node[left] at (0,-0.5) {$x+1$};
+\node[left] at (0,-1) {$x^2-1$};
+
+\node[above]  at (1.5,0) {$-1$};
+\node[above]  at (4.5,0) {$1$};
+
+\node[] at (.75,-0.5) {$-$};
+\node[] at (3,-0.5) {$+$};
+\node[] at (5.25,-0.5) {$+$};
+
+\node[] at (.75,-1) {$+$};
+\node[] at (3,-1) {$-$};
+\node[] at (5.25,-1) {$+$};
+
+\draw[fill=blue] (1.5,-.5)circle (1.5pt);
+\draw[fill=blue] (1.5,-1)circle (1.5pt);
+\draw[fill=blue] (4.5,-1)circle (1.5pt);
+
+\end{tikzpicture}

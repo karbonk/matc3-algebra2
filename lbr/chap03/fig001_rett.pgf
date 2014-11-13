@@ -1,0 +1,14 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+  \draw (1,1) rectangle (5,2);
+  \draw (1,1)--(5,2);
+  \node [label={[name=label node]left:$A$}] at (1,1) {};
+  \node [label={[name=label node]left:$D$}] at (1,2) {};
+  \node [label={[name=label node]right:$C$}] at (5,2) {};
+  \node [label={[name=label node]right:$B$}] at (5,1) {};
+
+  \foreach \x in {1,5}
+    \foreach \y in {1,2}
+      \filldraw[fill=black, draw=black]  (\x,\y) circle (1pt);
+
+\end{tikzpicture}

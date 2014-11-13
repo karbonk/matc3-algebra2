@@ -1,0 +1,62 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+
+% prima parabola;
+  \draw (-1,0) parabola[parabola height=-2cm] +(3,0);
+  \draw[->] (-1,-1) -- (2,-1) node [below right] () {$x$};
+  \draw[fill=blue] (-.55,-1)circle (1.5pt);
+  \draw[fill=blue] (1.55,-1)circle (1.5pt);
+  \node[below right] at (-.55,-1) {$x_1$};
+  \node[below left] at (1.55,-1) {$x_2$};
+  \node[above right] at (1.6,-1) {$+$};
+  \node[above left] at (-.6,-1) {$+$};
+  \node[] at (.55,-1.4) {$-$};
+  \node[] at (.55,-.25) {$\Delta>0$};
+  \node[] at (.55,0) {$a>0$};
+%segno
+  \node[] at (4,0) {$ax^2+bx+c=0$};
+  \node[] at (4,-1) {$ax^2+bx+c>0$};
+  \node[] at (4,-2) {$ax^2+bx+c<0$};
+
+%Insieme soluzione
+%primo insieme
+\begin{scope}[dotted]
+\draw[->] (6,0) -- (10,0);
+\end{scope}
+\node[below]  at (7,0) {$x_1$};
+\node[below]  at (9,0) {$x_2$};
+\node[above]  at (8,0) {$x=x_1 \vee x=x_2$};
+\begin{scope}[blue,thick]
+\draw[fill=blue] (7,0)circle (1.5pt);
+\draw[fill=blue] (9,0)circle (1.5pt);
+\end{scope}
+%secondo insieme
+\begin{scope}[dotted]
+\draw (7,-1) -- (9,-1);
+\end{scope}
+\node[below]  at (7,-1) {$x_1$};
+\node[below]  at (9,-1) {$x_2$};
+\node[above]  at (8,-1) {$x<x_1 \vee x>x_2$};
+\begin{scope}[blue,thick]
+\draw (6,-1) -- (7,-1);
+\draw[->] (9,-1) -- (10,-1);
+\draw[fill=white] (7,-1)circle (1.5pt);
+\draw[fill=white] (9,-1)circle (1.5pt);
+\end{scope}
+
+%terzo insieme
+\begin{scope}[dotted]
+\draw (6,-2) -- (7,-2);
+\draw[->] (9,-2) -- (10,-2);
+\end{scope}
+\node[below]  at (7,-2) {$x_1$};
+\node[below]  at (9,-2) {$x_2$};
+\begin{scope}[blue,thick]
+\draw (7,-2) -- (9,-2);
+\draw[fill=white] (7,-2)circle (1.5pt);
+\draw[fill=white] (9,-2)circle (1.5pt);
+\end{scope}
+\node[above]  at (8,-2) {$x_1<x<x_2$};
+
+\end{tikzpicture}
+

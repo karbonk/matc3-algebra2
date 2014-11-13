@@ -1,0 +1,37 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small,scale=1.3]
+
+  \coordinate(a) at (0,0);%il punto A
+  \coordinate(v1) at (70:5);%il punto V1
+  \coordinate(o) at (35:1.5);%il centro del cerchio O
+  \coordinate(h) at (1.23,0);%il punto H
+  \coordinate (b) at (2.46,0);%il punto B
+  \coordinate(v2) at (1.23,6);%il punto v2
+  \coordinate (v) at (intersection of a--v1 and h--v2);
+  \coordinate (c) at ($(v)!(o)!(b)$);%trova le coordinate della proiezione di o su v--b
+  \draw[] (o) circle (0.86);%disegna il cerchio di centro
+  \draw[] (v) -- (a) -- (b) -- cycle;%disegna v2--h--a
+  \draw[dashed] (v) -- (h);%disegna v--h
+  \draw[dashed] (o) -- (c);%disegna o--c
+  \draw (h) ellipse (1.23cm and 0.4cm);
+  \node [label={[name=label node]above:$V$}] at (v) {};
+  \node [label={[name=label node]left:$A$}] at (a) {};
+  \node [label={[name=label node]below:$H$}] at (h) {};
+  \node [label={[name=label node]right:$B$}] at (b) {};
+  \node [label={[name=label node]left:$O$}] at (o) {};
+  \node [label={[name=label node]right:$C$}] at (c) {};
+\begin{comment}
+  \coordinate (h2) at ($(h)!{1/2}!(c)$);
+  \coordinate (a1) at ($(a)!{1/2}!(d)$);
+  \coordinate (d1) at ($(d)!{1/2}!(c)$);
+  \draw (a) -- (b)  -- (c) -- (d) -- cycle;%disegna il trapezio
+  \draw [] (d) -- (h);%perpendicolare da D a a--c
+  \draw [] (a) -- (c);%la diagonale del trapezio
+  \draw (h1) node {$//$} ;
+  \draw (h2) node {$//$} ;
+  \draw (a1) node {$\times$} ;
+  \draw (d1) node {$\times$} ;
+  \draw (4.1,0.4) node {$\bullet$} ;
+  \draw (3.95,0.12) node {$\bullet$} ;
+\end{comment}
+\end{tikzpicture}

@@ -1,0 +1,64 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+
+\def\rettangolo{-- ++(3,0) -- ++(0,2) -- ++(-3,0) -- cycle}
+\def\insieme_int{-- ++(4,0) -- ++(0,3) -- ++(-4,0) -- cycle}
+ %insieme1
+\fill[rounded corners, color=gray!20!] (0,.5) -- (0,2) -- (3,2) -- (3,1.5) -- cycle;
+\draw[rounded corners] (0,0) \rettangolo;
+\node at (1.5,2.2) {$P(A)=1/2$};
+\draw (0,.5) -- (3,1.5);
+\draw[fill=blue] (.7,1.5) circle (1.5pt) node[right] {$T$};
+\draw[fill=blue] (2.3,.5) circle (1.5pt) node[right] {$C$};
+%insieme 2
+\fill[rounded corners, color=gray!20!] (4.5,0) -- (6.5,0) -- (6.5,1) -- (4.5,1) -- cycle;
+\draw[rounded corners] (3.5,0) \rettangolo;
+\draw (3.5,1) -- (6.5,1);
+\foreach \x in {4.5,5.5}{
+\draw (\x,0)--(\x,2);
+\draw (\x,0)--(\x,2);}
+\foreach \x in {3.8,4.8,5.8}
+   \foreach \y in {0.5,1.5}
+   { \draw[fill=blue] (\x,\y) circle (1.5pt);}
+\draw node[right] at (3.8,1.5) {$2$};
+\draw node[right] at (4.8,1.5) {$4$};
+\draw node[right] at (5.8,1.5) {$1$};
+
+\draw node[right] at (3.8,0.5) {$3$};
+\draw node[right] at (4.8,0.5) {$6$};
+\draw node[right] at (5.8,0.5) {$5$};
+\node at (5,2.2) {$P(B)=2/6$};
+\node at (3.25,1) {$\times$};
+%insieme risultato
+\fill[color=gray!20!] (8,.5) -- (8,1.5) -- (9,1.5) -- (9,.5) -- cycle;
+\fill[color=gray!20!] (9,1.5) -- (9,2.5) -- (10,2.5) -- (10,1.5) -- cycle;
+\draw[rounded corners] (7,-.5) \insieme_int;
+\node at (9,2.7) {$P(A \cap B )=2/12$};
+\node at (6.75,1) {$=$};
+\foreach \x in {8,9,10}{
+\draw (\x,-.5)--(\x,2.5);
+\draw (\x,-.5)--(\x,2.5);
+\draw (\x,-.5)--(\x,2.5);}
+\foreach \y in {.5,1.5}{
+\draw (7,\y)--(11,\y);
+\draw (7,\y)--(11,\y);}
+
+\foreach \x in {7.5,8.5,9.5,10.5}
+   \foreach \y in {0.2,1.2,2.2}
+   { \draw[fill=blue] (\x,\y) circle (1.5pt);}
+\draw node[below] at (7.5,0.2) {$(T,1)$};
+\draw node[below] at (8.5,0.2) {$(C,1)$};
+\draw node[below] at (9.5,0.2) {$(C,2)$};
+\draw node[below] at (10.5,0.2) {$(C,6)$};
+
+\draw node[below] at (7.5,1.2) {$(T,2)$};
+\draw node[below] at (8.5,1.2) {$(T,5)$};
+\draw node[below] at (9.5,1.2) {$(C,3)$};
+\draw node[below] at (10.5,1.2) {$(C,4)$};
+
+\draw node[below] at (7.5,2.2) {$(T,3)$};
+\draw node[below] at (8.5,2.2) {$(T,4)$};
+\draw node[below] at (9.5,2.2) {$(T,6)$};
+\draw node[below] at (10.5,2.2) {$(C,5)$};
+
+\end{tikzpicture}

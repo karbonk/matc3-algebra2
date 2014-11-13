@@ -1,0 +1,7 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+\definecolor{circle area}{gray}{0.9}
+\draw[rounded corners, fill=circle area] (0,0) rectangle (4,3) (-.2,3) node {$\Omega$} ;
+\node[]  at (.5,.4) {$\bar{A}$};
+\draw[fill=white](2,1.5) circle (1) (2,1.5) node {$A$};
+\end{tikzpicture}

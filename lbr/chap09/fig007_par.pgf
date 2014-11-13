@@ -1,0 +1,23 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+\draw[rounded corners] (0,0) rectangle (4,3) (-.2,3) node {$\Omega$} ;
+%insiemi F ed E
+\draw [name path=curva1] (.5, 3) .. controls(2,1) .. (1.5, 0);
+\draw [color=white, name path=curva2] (2.5, 3) .. controls(.5,1.5) .. (2.5, 0);
+\coordinate [name intersections={of=curva1 and curva2, by={a,b}}];
+\draw (a) -- (2.5,3);
+\draw (b) -- (2.5,0);
+%insiemi B ed D
+\draw [name path=elipse1] (2.8,1.5) ellipse (1 and .7);
+\draw [color=white, name path=linea1] (3.5,3) -- (2.5,0);
+\coordinate [name intersections={of=elipse1 and linea1, by={c,d}}];
+\draw (c) -- (3.5,3);
+\draw (d) -- (2.5,0);
+
+\node at (.5,1.4) {$A$};
+\node at (2.7,2.6) {$B_1$};
+\node at (2.6,1.5) {$C$};
+\node at (3.5,.5) {$D_1$};
+\node at (1.9,.18) {$E$};
+\node at (1.4,2.6) {$F$};
+\end{tikzpicture}

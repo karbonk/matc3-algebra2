@@ -1,0 +1,9 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=10mm,y=10mm,font=\small]
+
+  \draw (1,1) -- (1,2) -- (3.5,1) -- cycle;
+  \node [label={[name=label node]left:$A$}] at (1,2) {};
+  \node [label={[name=label node]right:$B$}] at (3.5,1) {};
+  \node [label={[name=label node]left:$C$}] at (1,1) {};
+
+\end{tikzpicture}

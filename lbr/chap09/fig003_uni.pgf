@@ -1,0 +1,14 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[filled/.style={fill=circle area, draw=black, thin},x=10mm,y=10mm,font=\small]
+
+\def\firstcircle{(1.4,1.5) circle (1cm)}
+\def\secondcircle{(2.7,1.5) circle (1cm)}
+
+\definecolor{circle area}{gray}{.9}
+
+ \draw[filled] \firstcircle node {$A$}
+                  \secondcircle node {$B$};
+ \node[anchor=south] at (current bounding box.north) {$A \cup B$};
+\draw[rounded corners] (0,0) rectangle (4,3) (-.2,3) node {$\Omega$} ;
+
+\end{tikzpicture}

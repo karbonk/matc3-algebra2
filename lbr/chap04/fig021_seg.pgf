@@ -1,0 +1,27 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[font=\small,x=10mm, y=10mm]
+
+\draw[->] (0,0) -- (6,0) node [below right] () {$x$};
+
+\draw(3,3pt)--(3,-3pt);
+\begin{scope}[dotted]
+\draw (3,0) -- (3,-1.5);
+\end{scope}
+\node[] at (-.5,-0.5) {Segno di $f_1$};
+\node[] at (-.5,-1) {Segno di $f_2$};
+\node[] at (-.5,-1.5) {Segno di $p$};
+\node[above]  at (3,0) {$4$};
+\node[] at (1.5,-0.5) {$-$};
+\node[] at (4.5,-0.5) {$+$};
+\node[] at (1.5,-1) {$+$};
+\node[] at (3,-1) {$+$};
+\node[] at (4.5,-1) {$+$};
+\node[] at (1.5,-1.5) {$-$};
+\node[] at (4.5,-1.5) {$+$};
+
+\begin{scope}[blue,thick]
+\draw[fill=blue] (3,-1.5)circle (1.5pt);
+\draw[fill=blue] (3,-.5)circle (1.5pt);
+\end{scope}
+
+\end{tikzpicture}

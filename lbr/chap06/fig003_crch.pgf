@@ -1,0 +1,12 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=8mm, y=8mm,font=\small,scale=.9]
+\draw[step=0.8cm,color=gray!30] (-2.5,-2.5) grid (5.5,4.5);
+  \tkzInit[xmin=-2.5,xmax=5,ymin=-2.5,ymax=4]
+  \begin{scope}[font=\small]
+    \tkzAxeY[orig = false, label options={left = 1pt}]
+    \tkzAxeX[orig = true, label options={below = 1pt}]
+  \end{scope}
+\tkzFct[domain=-3:5.5,thick,color=blue]{-0.75*x+3};
+
+\draw[thick,color=Maroon] (0,0) circle (2);
+\end{tikzpicture}

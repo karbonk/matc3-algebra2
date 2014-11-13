@@ -1,0 +1,17 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+\begin{tikzpicture}[x=7mm, y=7mm, scale=.6]
+\draw[step=0.7cm,color=gray!30] (-4.5,-4.5) grid (6.5,6.5);
+  \tkzInit[xmin=-4,xmax=6,ymin=-4,ymax=6]
+  \begin{scope}[font=\small]
+    \tkzAxeX[orig = false, label options={below = 1pt}]
+    \tkzAxeY[orig = true, label options={left = 1pt}]
+  \end{scope}
+  \tkzFct[domain=-5.5:0,thick,color=Maroon]{4/x}
+  \tkzFct[domain=-0:5.5,thick,color=Maroon]{4/x}
+\tkzFct[domain=-2:6,thick,color=blue]{-x+5};
+ \draw[fill=Maroon] (1,4)circle (1.5pt);
+\node[right] at (1,4) {$A (1;4)$};
+\draw[fill=Maroon] (4,1)circle (1.5pt);
+\node[right] at (4,1) {$B ((4;1)$};
+
+\end{tikzpicture}

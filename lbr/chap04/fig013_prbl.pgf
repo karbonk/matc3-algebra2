@@ -1,0 +1,12 @@
+% (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
+% (c) 2014 Dimitrios Vrettos - d.vrettos@gmail.com
+\begin{tikzpicture}[x=8mm, y=8mm]
+\draw[step=0.8cm,color=gray!30] (-3.5,-.5) grid (3.5,6.5);
+  \tkzInit[xmin=-3,xmax=3,ymin=-1,ymax=5]
+  \clip (-3.5,-.5) rectangle (4,6.5);
+  \begin{scope}[font=\small]
+    \tkzAxeY[orig = false, label options={left = 1pt}]
+    \tkzAxeX[orig = true, label options={below = 1pt}]
+  \end{scope}
+  \tkzFct[domain=-2:2,thick,color=Maroon]{2*x*x}
+\end{tikzpicture}
