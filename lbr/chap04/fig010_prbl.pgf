@@ -11,5 +11,6 @@
   \end{scope}
   \tkzFct[domain=-1:5,thick,color=Maroon]{x*x-4*x+4};
   \draw[fill=orange] (2,0)circle (1.5pt);
+  \node[above] at (2,0) {$P_{1\text{,}2}$};
 
 \end{tikzpicture}

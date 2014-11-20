@@ -1,11 +1,11 @@
 % (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
 \begin{tikzpicture}[x=10mm,y=10mm,font=\small]
-  \draw (1,1) rectangle (5,2);
-  \draw (1,1)--(2.6,4.4);
-  \draw (4.2,1)--(2.6,4.4);
-  \draw (2.6,2)--(2.6,4.4);
+  \draw (1,1) rectangle (5,2); %ABCD
+  \draw (1,1)--(2.6,4.4); %AF
+  \draw (4.2,1)--(2.6,4.4); %EF
+  \draw [dashed] (2.6,4.4) -- (2.6,2);
   \draw [dotted] (2.6,2) -- (2.6,1);
-  \node (x) at (4.7,.7) {$x$};
+  \node (x) at (4.6,.7) {$x$};
   \node (h) at (2.3,3) {$3x$};
   \node [label={[name=label node]below left:$A$}] at (1,1) {};
   \node [label={[name=label node]above left:$D$}] at (1,2) {};
@@ -14,10 +14,10 @@
   \node [label={[name=label node]below:$E$}] at (4.2,1) {};
   \node [label={[name=label node]above:$F$}] at (2.6,4.4) {};
 
-  \foreach \x in {1,5}
-    \foreach \y in {1,2}
-      \filldraw[fill=black, draw=black]  (\x,\y) circle (1pt);
-      \filldraw[fill=black, draw=black]  (2.6,4.4) circle (1pt);
-      \filldraw[fill=black, draw=black]  (4.2,1) circle (1pt);
+%  \foreach \x in {1,5}
+%    \foreach \y in {1,2}
+%      \filldraw[fill=black, draw=black]  (\x,\y) circle (1pt);
+%      \filldraw[fill=black, draw=black]  (2.6,4.4) circle (1pt);
+%      \filldraw[fill=black, draw=black]  (4.2,1) circle (1pt);
 
 \end{tikzpicture}

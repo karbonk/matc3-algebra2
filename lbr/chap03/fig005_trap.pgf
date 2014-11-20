@@ -6,22 +6,23 @@
   \coordinate(c) at (60:2.5);
   \coordinate(b) at (2.5,0);
   \coordinate (h) at ($(a)!(c)!(b)$);%trova le coordinate della proiezione di c su a--b
-  \draw (-2.5,0) arc (180:0:2.5) -- cycle;% semicirconferenza e diametro
-  \draw (a) -- (d) -- (c) -- (b);%disegna il trapezio
+  \draw [dotted] (-2.5,0) arc (180:0:2.5) -- cycle;% semicirconferenza e diametro
+  \draw (a) -- (d) -- (c) -- (b) -- (a);%disegna il trapezio
   \draw [dotted] (e) -- (0,0);%da E a O
   \draw [dotted] (c) -- (h);% c--h
   \draw [dotted] (e) -- (b);% e--b
+  \draw [dotted] (c) -- (a);% c--a
   \node [label={[name=label node]below left:$A$}] at (a) {};
   \node [label={[name=label node]below right:$B$}] at (b) {};
   \node [label={[name=label node]above right:$C$}] at (c) {};
   \node [label={[name=label node]above left:$D$}] at (d) {};
   \node [label={[name=label node]above:$E$}] at (e) {};
   \node [label={[name=label node]below:$H$}] at (h) {};
-  \filldraw[fill=black, draw=black]  (a) circle (1pt);
-  \filldraw[fill=black, draw=black]  (b) circle (1pt);
-  \filldraw[fill=black, draw=black]  (c) circle (1pt);
-  \filldraw[fill=black, draw=black]  (d) circle (1pt);
-  \filldraw[fill=black, draw=black]  (h) circle (1pt);
-  \filldraw[fill=black, draw=black]  (e) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (a) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (b) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (c) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (d) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (h) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (e) circle (1pt);
 
 \end{tikzpicture}

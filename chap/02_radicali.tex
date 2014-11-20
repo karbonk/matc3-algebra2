@@ -3,22 +3,22 @@
 \chapter{Radicali}
 \section{Radici}
 \subsection{Radici quadrate}
-Ricordiamo che il quadrato di un numero reale r è il numero che si ottiene moltiplicando r per se stesso. Il quadrato di un numero è sempre un numero non negativo; numeri opposti hanno lo stesso quadrato: $(+3)^2=9$, $(-2)^2=+4$, $(-5)^2=(+5)^2=+25$.
+Ricordiamo che il quadrato di un numero reale $a$ è il numero che si ottiene moltiplicando $a$ per se stesso. Il quadrato di un numero è sempre un numero non negativo; numeri opposti hanno lo stesso quadrato: $(+3)^2=9$,~~$(-2)^2=+4$,~~$(-5)^2=(+5)^2=+25$.
 
 L'operazione inversa dell'elevamento al quadrato si chiama \emph{radice quadrata}. La radice quadrata di un numero reale $a$ è allora quel numero che elevato al quadrato, cioè, che moltiplicato per se stesso, dà il numero $a$.
 
-Osserviamo che non esiste la radice quadrata di un numero negativo, poiché non esiste nessun numero che elevato al quadrato possa dare come risultato un numero negativo.
+\osservazione Non esiste la radice quadrata di un numero negativo, poiché non esiste nessun numero che elevato al quadrato possa dare come risultato un numero negativo.
 
 \begin{definizione}
-Si dice \emph{radice quadrata} di un numero reale positivo o nullo quel numero reale positivo o nullo che elevato al quadrato dà come risultato il numero dato.
-In simboli~$\sqrt a=b \Leftrightarrow b^2=a$ dove $a,b\in \insR^{+}\cup \{0\}$.
+Si dice \emph{radice quadrata} di un numero reale $a$ positivo o nullo quel numero reale positivo o nullo che elevato al quadrato dà come risultato $a$.
+In simboli~$\sqrt{a}=b \Leftrightarrow b^2=a$ dove $a$, $b\in \insR^{+}\cup \{0\}$.
 \end{definizione}
 
-Il simbolo $\sqrt{\,\,}$ è il simbolo della radice quadrata; il numero $a$ è detto \emph{radicando}, il numero $b$ è detto \emph{radice quadrata} di $a$.
+Il simbolo $\sqrt{\phantom{5}}$ è il simbolo della radice quadrata; il numero $a$ è detto \emph{radicando}, il numero $b$ è detto \emph{radice quadrata} di $a$.
 
-Dalla definizione $\sqrt{a^2}=a$ con $a\ge 0$, quindi $\sqrt{81}=9$ perché $9^2=81$; $\sqrt{\frac 9{64}}=\frac 3 8$ perché~$\left(\frac 3 8\right)^2=\frac 9{64}$ .
+Dalla definizione $\sqrt{a^2}=a$ con $a\ge 0$, quindi $\sqrt{81}=9$ perché $9^2=81$; $\sqrt{\frac{9}{64}}=\frac{3}{8}$ perché~$\left(\frac{3}{8}\right)^2=\frac{9}{64}$.
 
-\osservazione $\sqrt{81}=\sqrt{(-9)^2}$, ma non è vero che $\sqrt{(-9)^2}=-9$ perché nella definizione di radice quadrata abbiamo imposto che il risultato dell'operazione di radice quadrata sia sempre un numero positivo o nullo.
+\osservazione $\sqrt{81}=\sqrt{(-9)^2}$, ma $\sqrt{(-9)^2}\neq-9$ perché nella definizione di radice quadrata abbiamo imposto che il risultato dell'operazione di radice quadrata sia sempre un numero positivo o nullo.
 Questa osservazione ci induce a porre molta attenzione quando il radicando è un'espressione letterale: in questo caso $\sqrt{a^2}=a$ non è del tutto corretto poiché $a$ può assumere sia valori positivi sia valori negativi. Scriveremo correttamente~$\sqrt{a^2}=\valass{a}$.
 
 \begin{exrig}
@@ -26,16 +26,16 @@ Questa osservazione ci induce a porre molta attenzione quando il radicando è un
 Radici quadrate
  \begin{multicols}{2}
 \begin{itemize}
-\item $\sqrt 4=2$ infatti $2^2=4$;
-\item $\sqrt{\dfrac 9{16}}=\dfrac 3 4$ infatti $\left(\dfrac 3 4\right)^2=\dfrac 9{16}$;
-\item $\sqrt{0,01}=0,1$ infatti $0,1^2=0,01$;
-\item $\sqrt 1=1$ infatti $1^2=1$;
-\item $\sqrt 0=0$ infatti $0^2=0$;
-\item $\sqrt{-16}$ non esiste, radicando negativo;
-\item $\sqrt{11}$ esiste ma non è un numero intero né razionale, è un numero irrazionale;
-\item $\sqrt{x^2}=\left|x\right|$ dobbiamo mettere il valore assoluto al risultato perché non conoscendo il segno di $x$ dobbiamo imporre che il risultato sia sicuramente positivo;
-\item $\sqrt{a^2-4a+4}=\sqrt{(a-2)^2}=\left|a-2\right|$ dobbiamo mettere il valore assoluto perché $a-2$ può anche essere negativo;
-\item $\sqrt{9(x+1)^2}=3\left|x+1\right|$.
+\item $\sqrt{4}=2\:$ infatti $2^2=4$;
+\item $\sqrt{\dfrac{9}{16}}=\dfrac{3}{4}\:$ infatti $\left(\dfrac{3}{4}\right)^2=\dfrac{9}{16}$;
+\item $\sqrt{\np{0,01}}=\np{0,1}\:$ infatti $\np{0,1}^2=\np{0,01}$;
+\item $\sqrt{1}=1\:$ infatti $1^2=1$;
+\item $\sqrt{0}=0\:$ infatti $0^2=0$;
+\item $\sqrt{-16}\:$ non esiste poiché il radicando è negativo;
+\item $\sqrt{11}\:$ esiste ma non è un numero intero né razionale, è un numero irrazionale;
+\item $\sqrt{x^2}=\left|x\right|\:$ dobbiamo mettere il valore assoluto al risultato perché non conoscendo il segno di $x$ dobbiamo imporre che il risultato sia sicuramente positivo;
+\item $\sqrt{a^2-4a+4}=\sqrt{(a-2)^2}=\left|a-2\right|\:$ dobbiamo mettere il valore assoluto perché $a-2$ potrebbe essere negativo;
+\item $\sqrt{9(x+1)^2}=3\left|x+1\right|\:$ dobbiamo mettere il valore assoluto perché $x+1$ potrebbe essere negativo.
 \end{itemize}
 \end{multicols}
 \end{esempio}
@@ -43,121 +43,129 @@ Radici quadrate
 
 \subsection{Radici cubiche}
 \begin{definizione}
- Si dice \emph{radice cubica} di un numero reale $a$ quel numero che, elevato al cubo, dà come risultato $a$. In simboli $\sqrt[3]a=b \Leftrightarrow b^3=a$ dove $a,b\in \insR$.
+ Si dice \emph{radice cubica} di un numero reale $a$ quel numero che, elevato al cubo, dà come risultato $a$. In simboli $\sqrt[3]{a}=b \Leftrightarrow b^3=a$ dove $a$, $b\in \insR$.
 \end{definizione}
+
 Puoi notare che la radice cubica di un numero reale esiste sempre sia per i numeri positivi o nulli, sia per i numeri negativi.
+
 \begin{exrig}
 \begin{esempio}
 Radici cubiche
  \begin{multicols}{2}
  \begin{itemize}
-\item $\sqrt[3]{-8}=-2$ infatti $\left(-2\right)^3=-8$;
-\item $\sqrt[3]{125}=5$ infatti $5^3=125$;
-\item $\sqrt[3]1=1$ infatti $1^3=1$;
-\item $\sqrt[3]0=0$ infatti $0^3=0$;
-\item $\sqrt[3]{-1000}=-10$ infatti $\left(-10\right)^3=-1000$;
-\item $\sqrt[3]{\dfrac 1 8}=\dfrac 1 2$ infatti $\left(\dfrac 1 2\right)^3=\dfrac 1 8$;
-\item $\sqrt[3]{0,125}=0,5$ infatti $(0,5)^3=0,125$;
-\item $\sqrt[3]{x^3}=x$ per le radici cubiche non si deve mettere il valore assoluto;
-\item $\sqrt[3]{x^3+3x^2+3x+1}=\sqrt[3]{(x+1)^3}=x+1$ non si deve mettere il valore assoluto.
+\item $\sqrt[3]{-8}=-2\:$ infatti $\left(-2\right)^3=-8$;
+\item $\sqrt[3]{125}=5\:$ infatti $5^3=125$;
+\item $\sqrt[3]{1}=1\:$ infatti $1^3=1$;
+\item $\sqrt[3]{0}=0\:$ infatti $0^3=0$;
+\item $\sqrt[3]{\dfrac{1}{8}}=\dfrac{1}{2}\:$ infatti $\left(\dfrac{1}{2}\right)^3=\dfrac{1}{8}$;
+\item $\sqrt[3]{\np{0,125}}=\np{0,5}\:$ infatti $(\np{0,5})^3=\np{0,125}$;
+\item $\sqrt[3]{\np{-1000}}=-10\:$ infatti $\left(-10\right)^3=\np{-1000}$;
+\item $\sqrt[3]{x^3}=x\:$ (per le radici cubiche non si deve mettere il valore assoluto);
+\item $\sqrt[3]{x^3+3x^2+3x+1}=\sqrt[3]{(x+1)^3}=x+1\:$ (non si deve mettere il valore assoluto).
 \end{itemize}
 \end{multicols}
 \end{esempio}
 \end{exrig}
+
 Osserva che la radice cubica di un numero mantiene sempre lo stesso segno del numero in quanto il cubo di un numero reale conserva sempre il segno della base.
 
-
 \subsection{Radici n-esime}
-Oltre alle radici quadrate e cubiche si possono considerare radici di indice qualsiasi. Si parla in generale di radice n-esima per indicare una radice con un qualsiasi indice $n$.
+
+Oltre alle radici quadrate e cubiche si possono considerare radici di indice qualsiasi. Si parla in generale di radice $n$-esima per indicare una radice con un qualsiasi indice $n$.
 
 \begin{definizione}
-Si dice \emph{radice n-esima} di un numero reale a quel numero $b$ che elevato ad $n$ dà come risultato $a$.
-In simboli~$\sqrt[n]a=b \Leftrightarrow b^n=a$ con $n\in \insN, n\ge 2$.
+Si dice \emph{radice $n$-esima} di un numero reale a quel numero $b$ che elevato ad $n$ dà come risultato $a$.
+In simboli~$\sqrt[n]{a}=b \Leftrightarrow b^n=a$ con $n\in \insN$, $n\ge 2$.
 
-Non si definisce la radice di indice $0$ e la scrittura $\sqrt[0]a$ è priva di significato. Alla scrittura~$\sqrt[1]a$ si dà il valore $a$.
+Non si definisce la radice di indice $0$ e la scrittura $\sqrt[0]{a}$ è priva di significato. Alla scrittura~$\sqrt[1]{a}$ si dà il valore $a$.
 \end{definizione}
-Quando si tratta con le radici n-esime di un numero reale, bisogna fare attenzione se l’indice della radice è pari o dispari. Si presentano infatti i seguenti casi:
+
+Quando si tratta con le radici $n$-esime di un numero reale, bisogna fare attenzione se l'indice della radice è pari o dispari. Si presentano infatti i seguenti casi:
 \begin{itemize}
- \item se l’indice $n$ è dispari $\sqrt[n]a$ è definita per qualsiasi valore di $a\in \insR$, inoltre è negativa se~$a<0$, positiva se $a>0$ e nulla se $a=0$;
- \item se l’indice $n$ è pari $\sqrt[n]a$ è definita solo per i valori di $a\geq 0$ e si ha che $\sqrt[n]a\ge 0$.
+ \item se l'indice $n$ è \emph{dispari} $\sqrt[n]{a}$ è definita per qualsiasi valore di $a\in \insR$, inoltre è negativa se~$a<0$, positiva se $a>0$ e nulla se $a=0$;
+ \item se l'indice $n$ è \emph{pari} $\sqrt[n]{a}$ è definita solo per i valori di $a\geq 0$ e si ha che $\sqrt[n]{a}\ge 0$.
 \end{itemize}
-\newpage
+%\newpage
+\pagebreak
 \begin{exrig}
 \begin{esempio}
-Radici n-esime
+Radici $n$-esime
 \begin{multicols}{2}
  \begin{itemize}
- \item $\sqrt[4]{16}=2$ infatti $2^4=16$;
- \item $\sqrt[4]{-16}$ non esiste infatti $(-2)^4=+16$;
- \item $\sqrt[5]{32}=2$ infatti $2^5=16$;
- \item $\sqrt[4]1=1$ infatti $1^4=1$;
- \item $\sqrt[n]0=0$;
- \item $\sqrt[5]{-1}=-1$ infatti $(-1)^5=-1$;
- \item $\sqrt[4]{x^4}=\left|x\right|$ va messo il valore assoluto perché l'indice della radice è pari;
- \item $\sqrt[5]{x^5}=x$ non va messo il valore assoluto perché l'indice della radice è dispari.
+ \item $\sqrt[4]{16}=2\:$ infatti $2^4=16$;
+ \item $\sqrt[4]{-16}\:$ non esiste, poiché $(-2)^4=+16$;
+ \item $\sqrt[5]{32}=2\:$ infatti $2^5=32$;
+ \item $\sqrt[5]{-32}=-2\:$ infatti $(-2)^5=-32$;
+ \item $\sqrt[4]{1}=1\:$ infatti $1^4=1$;
+ \item $\sqrt[n]{0}=0$;
+ \item $\sqrt[5]{-1}=-1\:$ infatti $(-1)^5=-1$;
+ \item $\sqrt[4]{x^4}=\left|x\right|\:$ va messo il valore assoluto perché l'indice della radice è pari;
+ \item $\sqrt[5]{x^5}=x\:$ non va messo il valore assoluto perché l'indice della radice è dispari.
 \end{itemize}
 \end{multicols}
 \end{esempio}
 \end{exrig}
 
-\ovalbox{\risolvii \ref{ese:2.1}, \ref{ese:2.2}, \ref{ese:2.3}, \ref{ese:2.4},\ref{ese:2.5}, \ref{ese:2.6},\ref{ese:2.7}, \ref{ese:2.8},\ref{ese:2.9}, \ref{ese:2.10}}
+\ovalbox{\risolvii \ref{ese:2.1}, \ref{ese:2.2}, \ref{ese:2.3}, \ref{ese:2.4}, \ref{ese:2.5}, \ref{ese:2.6}, \ref{ese:2.7}, \ref{ese:2.8}, \ref{ese:2.9}, \ref{ese:2.10}}
 
 \section{Condizioni di esistenza}
+
 Quando il radicando è un'espressione letterale dobbiamo fare molta attenzione a operare su di esso.
 Le \emph{condizioni di esistenza}, in breve si può scrivere $\CE$, di un radicale con radicando letterale, sono le condizioni cui devono soddisfare le variabili che compaiono nel radicando affinché la radice abbia significato.
 
-Supponiamo di avere $\sqrt[n]{A(x)}$ con $A(x)$ espressione nell’indeterminata $x$, dobbiamo distinguere i seguenti casi:
+Supponiamo di avere $\sqrt[n]{A(x)}$ con $A(x)$ espressione nella variabile $x$, dobbiamo distinguere i seguenti casi:
 \begin{itemize*}
-\item se $n$ è pari la radice esiste per tutti i valori di $x$ che rendono non negativo il radicando, cioè $\CE A(x)\ge 0$;
-\item se $n$ è dispari la radice esiste per qualsiasi valore della variabile $x$, purché esista il radicando stesso.
+\item se $n$ è \emph{pari} la radice esiste per tutti i valori di $x$ che rendono non negativo il radicando, cioè $\CE\: A(x)\ge 0$;
+\item se $n$ è \emph{dispari} la radice esiste per qualsiasi valore della variabile $x$, purché esista il radicando stesso.
 \end{itemize*}
 
 \begin{exrig}
 \begin{esempio}
 Condizioni di esistenza
  \begin{itemize}
- \item $\sqrt x$:\quad $\CE x\ge 0$;
- \item $\sqrt[3]x$:\quad $\CE \forall x\in \insR$;
- \item $\sqrt{-x}$:\quad $\CE x\le 0$;
- \item $\sqrt[3]{-x}$:\quad $\CE \forall x\in \insR$;
- \item $\sqrt{x-1}$:\quad $\CE x-1\ge 0 \Rightarrow x\ge 1$;
- \item $\sqrt{a^2+1}$:\quad $\CE \forall a\in \insR$, infatti $a^2$ è sempre positivo pertanto $a^2+1>0, \forall a\in \insR$;
- \item $\sqrt[3]{\frac 1{x+1}}$:\quad la radice cubica è definita per valori sia positivi sia negativi del radicando, tuttavia bisogna comunque porre la condizione che il denominatore della frazione non sia nullo, quindi $\CE x+1\neq 0 \Rightarrow x\neq -1$;
- \item $\sqrt[4]{xy}$:\quad $\CE xy\ge 0$;
+ \item $\sqrt{x}$:\quad $\CE\: x\ge 0$;
+ \item $\sqrt[3]{x}$:\quad $\CE\: \forall x\in \insR$;
+ \item $\sqrt{-x}$:\quad $\CE\: x\le 0$;
+ \item $\sqrt[3]{-x}$:\quad $\CE\: \forall x\in \insR$;
+ \item $\sqrt{x-1}$:\quad $\CE\: x-1\ge 0 \:\Rightarrow\: x\ge 1$;
+ \item $\sqrt{a^2+1}$:\quad $\CE\: \forall a\in \insR$, infatti $a^2$ è sempre positivo pertanto $a^2+1>0$, $\forall a\in \insR$;
+ \item $\sqrt[3]{\frac{1}{x+1}}$:\quad la radice cubica è definita per valori sia positivi sia negativi del radicando, tuttavia bisogna comunque porre la condizione che il denominatore della frazione non sia nullo, quindi $\CE\: x+1\neq 0 \:\Rightarrow\: x\neq -1$;
+ \item $\sqrt[4]{xy}$:\quad $\CE\: xy\ge 0$;
  \item $\sqrt[5]{a^2(a-3)}$: poiché la radice ha indice dispari non occorre porre alcuna condizione di esistenza.
 \end{itemize}
 \end{esempio}
 
 \begin{esempio}
- Determina le condizioni di esistenza della seguente espressione: $\sqrt x+\sqrt{x+1}$.
+ Determina le condizioni di esistenza della seguente espressione: $\sqrt{x}+\sqrt{x+1}$.
 
-C.E. $\sqrt x$ esiste per $x\ge 0$, $\sqrt{x+1}$ esiste per $x+1\ge 0$, quindi per individuare le condizioni di esistenza dell'espressione occorre risolvere il sistema $\left\{\begin{array}{l} x\ge0\\ x+1\ge0\end{array}\right.\Rightarrow\left\{\begin{array}{l}x\ge0\\x\ge-1\end{array}\right.$.
+$\CE$: $\sqrt{x}$ esiste per $x\ge 0$, $\sqrt{x+1}$ esiste per $x+1\ge 0\:\Rightarrow\: x\ge -1$, quindi per individuare le condizioni di esistenza dell'espressione occorre risolvere il sistema $\left\{\begin{array}{l} x\ge0\\ x\ge-1\end{array}\right.$.
 \begin{center}
  \input{./lbr/chap02/fig001_is.pgf}
 \end{center}
 
-In definitiva $\CE x\ge 0$.
+In definitiva $\CE\: x\ge 0$.
 \end{esempio}
 
 \begin{esempio}
  Determina le condizioni di esistenza della radice $\sqrt[4]{\dfrac{x-1}{x+1}}$.
 
-C.E. $\dfrac{x-1}{x+1}\ge 0$. Occorre discutere il segno della frazione $f$, combinando il segno del numeratore $N$ e del denominatore $D$:
+$\CE\: \dfrac{x-1}{x+1}\ge 0$. Il segno della frazione $F$ si ottiene dalla combinazione del segno del numeratore $N$ e del denominatore $D$:
 \begin{center}
  \input{./lbr/chap02/fig002_seg.pgf}
 \end{center}
-Pertanto C.E. $x<-1\vee x\ge 1$.
+Pertanto $\CE\: x<-1\vee x\ge 1$.
 \end{esempio}
 \end{exrig}
 
-\vspazio\ovalbox{\risolvii \ref{ese:2.11}, \ref{ese:2.12}, \ref{ese:2.13}, \ref{ese:2.14},\ref{ese:2.15}}
+\vspazio\ovalbox{\risolvii \ref{ese:2.11}, \ref{ese:2.12}, \ref{ese:2.13}, \ref{ese:2.14}, \ref{ese:2.15}}
 
 \section{Potenze ad esponente razionale}
-In questo paragrafo ci proponiamo di scrivere la radice n-esima di un numero reale $a\geq0$ sotto forma di potenza di $a$, vogliamo cioè che sia:
-$\sqrt[n]a=a^x$.
+
+In questo paragrafo ci proponiamo di scrivere la radice $n$-esima di un numero reale $a\geq0$ sotto forma di potenza di $a$, vogliamo cioè che sia:
+$\sqrt[n]{a}=a^x$.
 
 \paragraph {Caso con esponente positivo}
-Elevando ambo i membri dell’uguaglianza alla potenza n otteniamo: $\left(\sqrt[n]a\right)^n=\left(a^x\right)^n$ da cui si ottiene $a=a^{n\cdot x}$.
+Elevando ambo i membri dell'uguaglianza alla potenza n otteniamo: $\left(\sqrt[n]a\right)^n=\left(a^x\right)^n$ da cui si ottiene $a=a^{n\cdot x}$.
 Trattandosi di due potenze con base~$a{\geq}0$, l'uguaglianza è resa possibile solo se sono uguali gli esponenti. In altre parole, deve essere: $1=n\cdot x \Rightarrow x=\dfrac 1 n$, quindi: $\sqrt[n]a=a^{\frac 1 n}$.
 
 Vediamo ora di generalizzare la formula. Sia $m$ un numero intero positivo, possiamo scrivere $a^{\frac m n}=\left(a^{\frac 1 n}\right)^m$ e quindi $a^{\frac m n}=\left(\sqrt[n]a\right)^m$.
@@ -172,14 +180,14 @@ Vediamo ora di generalizzare la formula. Sia $m$ un numero intero positivo, poss
 \end{exrig}
 
 \paragraph{Caso con esponente negativo}
-Per definire la potenza ad esponente razionale negativo è necessario imporre la restrizione $a{\neq}0$, infatti risulta:
-$a^{-\frac m n}=\dfrac 1{a^{\frac m n}}=\left(\dfrac 1 a\right)^{\frac m n}$
+Per definire la potenza ad esponente razionale negativo è necessario imporre la restrizione $a \neq 0$, infatti risulta:
+$a^{-\frac{m}{n}}=\dfrac{1}{a^{\frac{m}{n}}}=\left(\dfrac{1}{a}\right)^{\frac{m}{n}}$
 
 \begin{exrig}
 \begin{esempio}
  Calcola le seguenti potenze a esponente razionale negativo.
  \begin{itemize*}
- \item $27^{-\frac 2 3}=\dfrac 1{\left(\sqrt[3]{27}\right)^2}=\dfrac 1{3^2}=\dfrac 1 9$;
+ \item $27^{-\frac{2}{3}}=\dfrac 1{\left(\sqrt[3]{27}\right)^2}=\dfrac 1{3^2}=\dfrac 1 9$;
  \item $125^{-\frac 2 3}=\sqrt[3]{125^{-2}}=\sqrt[3]{(5^3)^{-2}}=\sqrt[3]{(5^{-2})^3}=5^{-2}=\dfrac 1{25}$;
  \item $\left(\dfrac 1 8\right)^{-\frac 3 2}=\sqrt{\left(\dfrac 1 8\right)^{-3}}=\sqrt{8^3}=\sqrt{(2^3)^3}=\sqrt{2^9}$;
  \item $\left(\dfrac 1{49}\right)^{-\frac 1 2}=(49)^{\frac 1 2}=\sqrt{49}=7$.
@@ -189,14 +197,14 @@ $a^{-\frac m n}=\dfrac 1{a^{\frac m n}}=\left(\dfrac 1 a\right)^{\frac m n}$
 
 In generale si dà la seguente
 \begin{definizione}
-Si dice \emph{potenza a esponente razionale} $\frac m n$ di un numero reale positivo $a$ l’espressione:
- $a^{\frac m n}=\sqrt[n]{a^m}=\left(\sqrt[n]a\right)^m$ con $\frac m n\in \insQ$.
+Si dice \emph{potenza a esponente razionale} $\dfrac{m}{n}$ di un numero reale positivo $a$ l'espressione:
+ $a^{\frac{m}{n}}=\sqrt[n]{a^m}=\left(\sqrt[n]{a}\right)^m$ con $\dfrac{m}{n}\in \insQ$.
 \end{definizione}
 
-Perché abbiamo dovuto imporre la condizione che a sia un numero positivo?
-Partiamo dall’espressione $a^{\frac 1 n}$ con $n\in \insN-\{0\}$, se $n$ è dispari la potenza $a^{\frac 1 n}$ è sempre definita per ogni valore della base $a$, mentre se è pari $a^{\frac 1 n}$ è definita solo per $a{\geq}0$.
+Perché abbiamo dovuto imporre la condizione che $a$ sia un numero positivo?
+Partiamo dall'espressione $a^{\frac{1}{n}}$ con $n\in \insN-\{0\}$, se $n$ è dispari la potenza $a^{\frac{1}{n}}$ è sempre definita per ogni valore della base $a$, mentre se è pari $a^{\frac{1}{n}}$ è definita solo per $a\geq 0$.
 
-Nel caso generale $a^{\frac m n}$ con $\frac m n\in \insQ$ la formula $a^{\frac m n}=\left(\sqrt[n]a\right)^m$ è falsa se $a<0$.
+Nel caso generale, quindi, $a^{\frac{m}{n}}$ con $\dfrac{m}{n}\in \insQ$ la formula $a^{\frac{m}{n}}=\left(\sqrt[n]{a}\right)^m$ è falsa se $a<0$.
 
 Consideriamo il seguente esempio:
  $(-2)^{\frac 6 6}=\left[(-2)^{\frac 1 6}\right]^6=\left(\sqrt[6]{-2}\right)^6$ non è definita nei numeri reali perché non esiste la radice sesta di un numero negativo.
@@ -206,26 +214,26 @@ Arriviamo pertanto a due risultati differenti.
 
 Per estendere la definizione al caso di basi negative sarebbe necessario stabilire un ordine di priorità delle operazioni ma ciò andrebbe contro la proprietà commutativa del prodotto degli esponenti di una potenza di potenza.
 
-\vspazio\ovalbox{\risolvii \ref{ese:2.16}, \ref{ese:2.17}, \ref{ese:2.18}, \ref{ese:2.19},\ref{ese:2.20}}
+\vspazio\ovalbox{\risolvii \ref{ese:2.16}, \ref{ese:2.17}, \ref{ese:2.18}, \ref{ese:2.19}, \ref{ese:2.20}}
 
 \section{Semplificazione di radici}
 
 \begin{proposizione}
-Il valore di una radice in $\insR^+\cup \{0\}$ non cambia se moltiplichiamo l'indice della radice e l'esponente del radicando per uno stesso numero intero positivo. In simboli $\sqrt[n]{a^m}=\sqrt[\mathit{nt}]{a^{\mathit{mt}}}$ con $a\ge 0$ e $m,n,t\in \insN-\{0\}$.
+Il valore di una radice in $\insR^+\cup \{0\}$ non cambia se moltiplichiamo l'indice della radice e l'esponente del radicando per uno stesso numero intero positivo. In simboli $\sqrt[n]{a^m}=\sqrt[nt]{a^{mt}}$ con $a\ge 0$ e $m$, $n$, $t\in \insN-\{0\}$.
 \end{proposizione}
-\newpage
+\pagebreak
 \begin{exrig}
  \begin{esempio}
  Radici equivalenti.
  \begin{itemize}
- \item $\sqrt 2=\sqrt[4]{2^2}$ abbiamo moltiplicato per $2$ indice della radice ed esponente del radicando;
- \item $\sqrt[3]a=\sqrt[9]{a^3}$ abbiamo moltiplicato per $3$ indice della radice ed esponente del radicando.
+ \item $\sqrt{2}=\sqrt[4]{2^2}$: abbiamo moltiplicato per $2$ indice della radice ed esponente del radicando;
+ \item $\sqrt[3]{a}=\sqrt[9]{a^3}$: abbiamo moltiplicato per $3$ indice della radice ed esponente del radicando.
 \end{itemize}
  \end{esempio}
 \end{exrig}
 
 \begin{proposizione}
-Il valore di una radice in $\insR^+\cup \{0\}$ non cambia se dividiamo l'indice della radice e l'esponente del radicando per un loro divisore comune. In simboli $\sqrt[nt]{a^{mt}}=\sqrt[n]{a^m}$ con $a\ge 0$ e $m,n,t\in \insN-\{0\}$.
+Il valore di una radice in $\insR^{+}\cup \{0\}$ non cambia se dividiamo l'indice della radice e l'esponente del radicando per un loro divisore comune. In simboli $\sqrt[nt]{a^{mt}}=\sqrt[n]{a^m}$ con $a\ge 0$ e $m$, $n$, $t\in \insN-\{0\}$.
 \end{proposizione}
 
 \begin{exrig}
@@ -238,16 +246,20 @@ Semplificazione di radici
  \item $\sqrt[8]{2^6}=2^{\frac 6 8}$: semplificando la frazione dell'esponente otteniamo $2^{\frac 3 4}=\sqrt[4]{2^3}$;
  \item $\sqrt[6]{\left(\dfrac 1 5\right)^{-9}}=\sqrt[6]{5^9}=\sqrt[2]{5^3}$;
  \item $\sqrt[4]{(-3)^2}=\sqrt[4]{3^2}=\sqrt 3$;
- \item $\sqrt{10^{-4}}$: semplificando per $2$ indice della radice ed esponente del radicando si ottiene~$10^{-2}=\frac 1{100}$;
- \item $\sqrt{30\cdot 27\cdot 10}$: scomponendo in fattori primi otteniamo \[\sqrt{30\cdot 27\cdot 10}=\sqrt{2\cdot 3\cdot 5\cdot 3^3\cdot 2\cdot 5}=\sqrt{2^2\cdot 3^4\cdot 5^2}.\] Osserviamo che tutti gli esponenti del radicando e l'indice della radice hanno un divisore, quindi $\sqrt{2^2\cdot 3^4\cdot 5^2}=2\cdot 3^2\cdot 5=90$
+ \item $\sqrt{10^{-4}}$: semplificando per $2$ indice della radice ed esponente del radicando si ottiene~$10^{-2}=\dfrac 1{100}$;
+ \item $\sqrt{30\cdot 27\cdot 10}$: scomponendo in fattori primi otteniamo \[\sqrt{30\cdot 27\cdot 10}=\sqrt{2\cdot 3\cdot 5\cdot 3^3\cdot 2\cdot 5}=\sqrt{2^2\cdot 3^4\cdot 5^2}.\] Osserviamo che tutti gli esponenti del radicando e l'indice della radice hanno in comune il divisore 2, quindi $\sqrt{2^2\cdot 3^4\cdot 5^2}=2\cdot 3^2\cdot 5=90.$
 \end{itemize}
 \end{esempio}
 \end{exrig}
 
-Se il radicando è un'espressione letterale, quindi sia positiva che negativa, dobbiamo scrivere
- \[\sqrt[nt]{a^{mt}}=\left\{\begin{array}{l}
- \sqrt[n]{a^m} \text{ se la potenza }t \text{ che abbiamo semplificato è dispari }\\
- \sqrt[n]{\left|a^m\right|}\text{, se }t\text{ è pari.}\end{array}\right.\]
+Se il radicando è un'espressione letterale, quindi è possibile che sia positiva che negativa, dobbiamo scrivere
+\[
+\sqrt[nt]{a^{mt}}=
+\begin{cases}
+\sqrt[n]{a^m} & \text{ se }t\text{ è dispari}\\
+\sqrt[n]{\left|a^m\right|} & \text{ se }t\text{ è pari}
+\end{cases}.
+\]
 
 \begin{exrig}
  \begin{esempio}
@@ -265,14 +277,14 @@ Semplificazione di radici con espressione letterale come radicando.
 
 La proprietà invariantiva si può applicare per semplificare i radicali se la base del radicando è positiva o nulla, se fosse negativa si potrebbe perdere la concordanza del segno. Per esempio~$\sqrt[10]{(-2)^6}\neq \sqrt[5]{(-2)^3}$, infatti il primo radicando è positivo mentre il secondo è negativo.
 
-Invece $\sqrt[9]{(-2)^3}=\sqrt[3]{-2}$ perché in questo caso la concordanza del segno è conservata, infatti pur essendo la base negativa, l’esponente resta dispari, conservando il segno della base.
+Invece $\sqrt[9]{(-2)^3}=\sqrt[3]{-2}$ perché in questo caso la concordanza del segno è conservata, infatti pur essendo la base negativa, l'esponente resta dispari, conservando il segno della base.
 
 Se il radicando ha base negativa e nella semplificazione il suo esponente passa da pari a dispari è necessario mettere il radicando in valore assoluto: $\sqrt[10]{(-2)^6}=\sqrt[5]{\left|-2^3\right|}$.
 
-Se il radicando è letterale si segue la stessa procedura: ogni volta che studiando il segno del radicando si trova che la base può essere negativa, se l’esponente del radicando passa da pari a dispari, si mette il modulo per garantire la concordanza del segno:
-$\sqrt[10]{x^6}=\sqrt[5]{\left|x^3\right|}$, $\CE \forall x \in \insR$.
+Se il radicando è letterale si segue la stessa procedura: ogni volta che studiando il segno del radicando si trova che la base può essere negativa, se l'esponente del radicando passa da pari a dispari, si mette il modulo per garantire la concordanza del segno:
+$\sqrt[10]{x^6}=\sqrt[5]{\left|x^3\right|}$, $\CE\: \forall x \in \insR$.
 
-\vspazio\ovalbox{\risolvii \ref{ese:2.21}, \ref{ese:2.22}, \ref{ese:2.23}, \ref{ese:2.24},\ref{ese:2.25},\ref{ese:2.26},\ref{ese:2.27},\ref{ese:2.28},\ref{ese:2.29},\ref{ese:2.30},\ref{ese:2.31}}
+\vspazio\ovalbox{\risolvii \ref{ese:2.21}, \ref{ese:2.22}, \ref{ese:2.23}, \ref{ese:2.24}, \ref{ese:2.25}, \ref{ese:2.26}, \ref{ese:2.27}, \ref{ese:2.28}, \ref{ese:2.29}, \ref{ese:2.30}, \ref{ese:2.31}}
 
 \section{Moltiplicazione e divisione di radici}
 Prima di operare con i radicali letterali, è necessario determinare le condizioni di esistenza: il prodotto di due radicali esiste là dove sono soddisfatte le condizioni di esistenza di tutti i fattori; il quoziente esiste là dove sono soddisfatte le condizioni di esistenza di dividendo e divisore, con il divisore diverso da zero.
@@ -285,7 +297,7 @@ Per effettuare la moltiplicazione o la divisione tra radici aventi lo stesso rad
 Moltiplicazione e divisione di radici con lo stesso radicando.
 \begin{itemize}
 \item $\sqrt[4]6\cdot \sqrt[3]6=6^{\frac 1 4}\cdot 6^{\frac 1 3}=6^{\frac 1 4+\frac 1 3}=6^{\frac 7{12}}=\sqrt[12]{6^7}$;
-\item $\sqrt[4]6:\sqrt[3]6=6^{\frac 1 4}:6^{\frac 1 3}=6^{\frac 1 4-\frac 1 3}=6^{-\frac 1{12}}=\frac 1{\sqrt[12]6}$.
+\item $\sqrt[4]6:\sqrt[3]6=6^{\frac 1 4}:6^{\frac 1 3}=6^{\frac 1 4-\frac 1 3}=6^{-\frac 1{12}}=\dfrac 1{\sqrt[12]6}$.
 \end{itemize}
  \end{esempio}
 \end{exrig}
@@ -298,7 +310,7 @@ Allo stesso modo, il quoziente di due radici che hanno lo stesso indice è una r
 \[\sqrt[n]a:\sqrt[n]b=\sqrt[n]{a:b} \Rightarrow \dfrac{\sqrt[n]a}{\sqrt[n]b}=\sqrt[n]{\dfrac a b}.\]
 
 Per rendersi conto di questa proprietà si possono trasformare le radici in potenze ad esponenti razionali e applicare le proprietà delle potenze:
- \[\sqrt[n]a\cdot \sqrt[n]b=a^{\frac 1 n}\cdot b^{\frac 1 n}=(ab)^{\frac 1 n}=\sqrt[n]{ab},\quad \sqrt[n]a:\sqrt[n]b=a^{\frac 1 n}:b^{\frac 1 n}=\left(\dfrac a b\right)^{\frac 1 n}=\sqrt[n]{\dfrac a b}.\]
+ \[\sqrt[n]a\cdot \sqrt[n]b=a^{\frac 1 n}\cdot b^{\frac 1 n}=(ab)^{\frac 1 n}=\sqrt[n]{ab}\text{,}\quad \sqrt[n]a:\sqrt[n]b=a^{\frac 1 n}:b^{\frac 1 n}=\left(\dfrac a b\right)^{\frac 1 n}=\sqrt[n]{\dfrac a b}.\]
 
 \begin{exrig}
  \begin{esempio}
@@ -329,13 +341,13 @@ Ridurre due o più radici allo stesso indice:
 Moltiplicazione e divisione di radici con indice diverso.
 \begin{itemize}
 \item $\sqrt 2\cdot \sqrt[3]2=\sqrt[6]{2^3}\cdot \sqrt[6]{2^2}=\sqrt[6]{2^3\cdot 2^2}=\sqrt[6]{2^5}$. Gli indici delle radici sono $2$ e $3$, il loro~$\mcm$ è~$6$, il primo radicando va elevato a~$6:2$ cioè~$3$, mentre il secondo radicando va elevato a~$6:3$ cioè~$2$;
-\item $\sqrt[3]{\frac 3 2}\cdot \sqrt[4]{\frac 8{27}}:\sqrt[6]{\frac 2 3}=\sqrt[12]{\frac{3^4}{2^4}\cdot \frac{8^3}{27^3}:\frac{2^2}{3^2}}=\sqrt[12]{\frac{3^4}{2^4}\cdot \frac{2^9}{3^9}:\frac{2^2}{3^2}}=\sqrt[12]{\frac{3^6\cdot 2^9}{3^9\cdot 2^6}}=\sqrt[12]{\frac{2^3}{3^3}}=\sqrt[4]{\frac 2 3}$. Il~$mcm$ tra gli indici delle radici è $12$. Il primo radicando va elevato a $12:3=4$; il secondo radicando va elevato a $12:4=3$; il terzo va elevato a $12:6=2$.
+\item $\sqrt[3]{\frac 3 2}\cdot \sqrt[4]{\frac 8{27}}:\sqrt[6]{\frac 2 3}=\sqrt[12]{\frac{3^4}{2^4}\cdot \frac{8^3}{27^3}:\frac{2^2}{3^2}}=\sqrt[12]{\frac{3^4}{2^4}\cdot \frac{2^9}{3^9}:\frac{2^2}{3^2}}=\sqrt[12]{\frac{3^6\cdot 2^9}{3^9\cdot 2^6}}=\sqrt[12]{\frac{2^3}{3^3}}=\sqrt[4]{\frac 2 3}$. Il $\mcm$ tra gli indici delle radici è $12$. Il primo radicando va elevato a $12:3=4$, il secondo radicando va elevato a $12:4=3$ e il terzo va elevato a $12:6=2$.
 \end{itemize}
  \end{esempio}
 
 \begin{esempio}
- $\dfrac{\sqrt[3]{x^2y}\cdot \sqrt{xy}}{\sqrt[6]{x^2y^3}},\, \CE x>0\wedge y>0$.
-Il~$\mcm$ degli indici delle radici è $6$, quindi:
+ $\dfrac{\sqrt[3]{x^2y}\cdot \sqrt{xy}}{\sqrt[6]{x^2y^3}}$, $\CE\: x>0\wedge y>0$.
+Il $\mcm$ degli indici delle radici è $6$, quindi:
 \[
 \frac{\sqrt[3]{x^2y}\cdot \sqrt{\mathit{xy}}}{\sqrt[6]{x^2y^3}}=\sqrt[6]{\frac{\left(x^2y\right)^2\cdot (xy)^3}{x^2y^3}}=\sqrt[6]{\frac{x^4y^2x^3y^3}{x^2y^3}}=\sqrt[6]{\frac{x^7y^5}{x^2y^3}}=\sqrt[6]{x^5y^2}.
 \]
@@ -345,7 +357,7 @@ Il~$\mcm$ degli indici delle radici è $6$, quindi:
  $\sqrt[3]{\dfrac{ax+a}{x^2+2x+1}}\cdot \sqrt{\dfrac{x^2-2x+1}{ax-a}}$.
 \begin{enumeratea}
 \item Scomponiamo in fattori i radicandi $\sqrt[3]{\dfrac{a(x+1)}{(x+1)^2}}\cdot \sqrt{\dfrac{(x-1)^2}{a(x-1)}}$;
-\item $\CE$\, $x+1\neq 0\wedge a(x-1)>0\Rightarrow x\neq -1\wedge ((a>0\wedge x>1)\vee (a<0\wedge x<1))$;
+\item $\CE\: x+1\neq 0\wedge a(x-1)>0\:\Rightarrow\: x\neq -1\wedge ((a>0\wedge x>1)\vee (a<0\wedge x<1))$;
 \item Semplifichiamo le frazioni di ciascun radicando $\sqrt[3]{\dfrac a{x+1}}\cdot \sqrt{\dfrac{x-1} a}$;
 \item Trasformiamo nello stesso indice: il~$\mcm$ degli indici è~$6$, quindi:
 \[
@@ -358,7 +370,7 @@ Il~$\mcm$ degli indici delle radici è $6$, quindi:
  $\sqrt[3]{\dfrac{x^2}{x^2-2x+1}}:\sqrt[4]{\dfrac{x^4-2x^2+1}{x^2-1}}$.
 \begin{enumeratea}
 \item Scomponiamo in fattori i radicandi $\sqrt[3]{\dfrac{x^2}{(x-1)^2}}:\sqrt[4]{\dfrac{(x-1)^2\cdot (x+1)^2}{(x+1)(x-1)}}$;
-\item $\CE$\, $(x-1)(x+1)>0\Rightarrow x<-1\vee x>1$. L'operazione che dobbiamo eseguire è una divisione e dunque il divisore deve essere diverso da zero, quindi $x\neq -1\wedge x\neq 1$, comunque già implicite nelle C.E. trovate;
+\item $\CE\:(x-1)(x+1)>0\:\Rightarrow\: x<-1\vee x>1$. L'operazione che dobbiamo eseguire è una divisione e dunque il divisore deve essere diverso da zero, quindi $x\neq -1\wedge x\neq 1$, comunque già implicite nelle $\CE$ trovate;
 \begin{center}
  \input{./lbr/chap02/fig003_seg.pgf}
 \end{center}
@@ -370,26 +382,35 @@ $\sqrt[12]{\left[\frac{x^2}{(x-1)^2}\right]^4}:\sqrt[12]{(x-1)^3 (x+1)^3}\Righta
 \end{esempio}
 \end{exrig}
 
-\vspazio\ovalbox{\risolvii \ref{ese:2.32}, \ref{ese:2.33}, \ref{ese:2.34}, \ref{ese:2.35},\ref{ese:2.36},\ref{ese:2.37},\ref{ese:2.38},\ref{ese:2.39}}
+\vspazio\ovalbox{\risolvii \ref{ese:2.32}, \ref{ese:2.33}, \ref{ese:2.34}, \ref{ese:2.35}, \ref{ese:2.36}, \ref{ese:2.37}, \ref{ese:2.38}, \ref{ese:2.39}}
 
 \section{Portare un fattore sotto il segno di radice}
-Per portare un fattore dentro il segno di radice bisogna elevarlo all’indice della radice:
-\begin{itemize*}
- \item $a\sqrt[n]b=\sqrt[n]{a^n\cdot b}$ se $n$ è pari e $a\ge 0$;
- \item $a\sqrt[n]b=-\sqrt[n]{a^n\cdot b}$ se $n$ è pari e $a<0$;
- \item $a\sqrt[n]b=\sqrt[n]{a^n\cdot b}$ se $n$ è dispari.
-\end{itemize*}
+Per portare un fattore dentro il segno di radice bisogna elevarlo all'indice della radice:
+\[
+a\sqrt[n]b=
+\begin{cases}
+\sqrt[n]{a^n\cdot b} & \text{ se }n\text{ è pari e }a\ge 0\\
+-\sqrt[n]{a^n\cdot b} & \text{ se }n\text{ è pari e }a<0\\
+\sqrt[n]{a^n\cdot b} & \text{ se }n\text{ è dispari}
+\end{cases}.
+\]
 
-Ricordando che abbiamo posto $\sqrt[1]a=a$, portare un fattore sotto radice quivale a svolgere la moltiplicazione tra una radice di indice $1$ e una radice di indice qualsiasi.
+%\begin{itemize*}
+% \item $a\sqrt[n]b=\sqrt[n]{a^n\cdot b}$ se $n$ è pari e $a\ge 0$;
+% \item $a\sqrt[n]b=-\sqrt[n]{a^n\cdot b}$ se $n$ è pari e $a<0$;
+% \item $a\sqrt[n]b=\sqrt[n]{a^n\cdot b}$ se $n$ è dispari.
+%\end{itemize*}
+
+Ricordando che abbiamo posto $\sqrt[1]a=a$, portare un fattore sotto radice quivale a svolgere la moltiplicazione tra una radice di indice $1$ e una radice di indice $n$ qualsiasi.
 \begin{exrig}
  \begin{esempio}
  Portare un numero reale dentro il segno di radice.
  \begin{itemize}
  \item $2\cdot \sqrt[3]7=\sqrt[3]{2^3\cdot 7}=\sqrt[3]{56}$;
  \item $3\cdot \sqrt{\frac 2{21}}=\sqrt{3^2\cdot \frac 2{21}}=\sqrt{9\cdot \frac 2{21}}=\sqrt{\frac 6 7}$;
- \item $-\frac 1 2\sqrt 3$\, lasciamo fuori dalla radice il segno meno $-\frac 1 2\sqrt 3=-\sqrt{\left(\frac 1 2\right)^2\cdot 3}=-\sqrt{\frac 3 4}$;
+ \item $-\frac 1 2\sqrt 3\:$ (lasciamo il segno ``$-$'' fuori dalla radice) $\:\Rightarrow\:-\frac 1 2\sqrt 3=-\sqrt{\left(\frac 1 2\right)^2\cdot 3}=-\sqrt{\frac 3 4}$;
  \item $-\frac 1 3\cdot \sqrt{12}=-\sqrt{\left(\frac 1 3\right)^2\cdot 12}=-\sqrt{\frac 1 9\cdot 12}=-\sqrt{\frac 4 3}$;
- \item $(1-\sqrt 2)\cdot \sqrt 3=-(\sqrt 2-1)\cdot \sqrt 3=-\sqrt{(\sqrt 2-1)^2\cdot 3}$;
+ \item $\left(1-\sqrt 2\right)\cdot \sqrt 3=-	\left(\sqrt 2-1\right)\cdot \sqrt 3=-\sqrt{(\sqrt 2-1)^2\cdot 3}$;
  \item $-2\sqrt[3]5=\sqrt[3]{(-2)^3\cdot 5}=\sqrt[3]{-40}$.
  \end{itemize}
  \end{esempio}
@@ -397,47 +418,55 @@ Ricordando che abbiamo posto $\sqrt[1]a=a$, portare un fattore sotto radice quiv
  \begin{esempio}
  Portare una espressione letterale dentro il segno di radice.
  \begin{itemize}
- \item $a\cdot \sqrt[3]b=\sqrt[3]{a^3b}$\, l'indice della radice è dispari pertanto si porta sotto radice senza alcuna condizione;
- \item $(x-1)\cdot \sqrt[3]x=\sqrt[3]{(x-1)^3\cdot x}$\, l'indice della radice è dispari, non sono necessarie condizioni sulla $x$;
- \item $(x-2)\sqrt y$\, osserviamo che il radicale esiste per $y\ge 0$.
+ \item $a\cdot \sqrt[3]b=\sqrt[3]{a^3b}\:$ l'indice della radice è dispari pertanto $a$ si porta sotto radice senza alcuna condizione;
+ \item $(x-1)\cdot \sqrt[3]x=\sqrt[3]{(x-1)^3\cdot x}\:$ l'indice della radice è dispari, non sono necessarie condizioni sulla $x$;
+ \item $(x-2)\sqrt y\:$ osserviamo che il radicale (indice 2, pari) esiste per $y\ge 0$.
  Per portare dentro il segno di radice il coefficiente $(x-2)$ bisogna fare la distinzione:
  \[
- (x-2)\sqrt y=\left\{\begin{array}{l}\sqrt{(x-2)^2y}\text{, se }x\ge 2\\-(2-x)\sqrt y=-\sqrt{(2-x)^2y}\text{, se }x<2;\end{array}\right.
+ (x-2)\sqrt y=
+ \begin{cases}
+ \sqrt{(x-2)^2y} & \text{ se }x\ge 2\\
+ -(2-x)\sqrt y=-\sqrt{(2-x)^2y} & \text{ se }x<2
+ \end{cases};
  \]
- \item $(x-1)\sqrt{x-2}$.\, Il radicale esiste per $x-2\ge 0\ \to \ x\ge 2$, per questi valori il coefficiente esterno $(x-1)$ è positivo e può essere portato dentro la radice: \[(x-1)\sqrt{x-2}=\sqrt{(x-1)^2(x-2)};\]
- \item $\frac{a-1}{a+3}\cdot \sqrt{\frac{a+2}{(a-1)^2}}$. Determiniamo le condizioni di esistenza del radicale: per l'esistenza della frazione $\frac{a+2}{(a-1)^2}$ deve essere $(a-1)^2\neq 0$, ovvero $a\neq 1$. Affinché il radicando sia positivo o nullo, essendo il denominatore sempre positivo (ovviamente per $a\neq 1$) è sufficiente che sia $a+2\geqslant 0$ ovvero $a\geqslant -2$. Pertanto le condizioni di esistenza sono~ $a\geqslant -2$ e $a\neq 1$.
+ \item $(x-1)\sqrt{x-2}\:$ il radicale esiste per $x-2\ge 0\ \:\Rightarrow\: \ x\ge 2$, per questi valori $(x-1)\ge 0$ e può essere portato dentro la radice: \[(x-1)\sqrt{x-2}=\sqrt{(x-1)^2(x-2)};\]
+ \item $\dfrac{a-1}{a+3}\cdot \sqrt{\dfrac{a+2}{(a-1)^2}}$. Determiniamo le condizioni di esistenza del radicale: per l'esistenza della frazione $\dfrac{a+2}{(a-1)^2}$ deve essere $(a-1)^2\neq 0$, ovvero $a\neq 1$. Affinché il radicando sia positivo o nullo, essendo il denominatore sempre positivo (ovviamente per $a\neq 1$) è sufficiente che sia $a+2\geqslant 0$ ovvero $a\geqslant -2$. Pertanto le condizioni di esistenza sono~ $a\geqslant -2$ e $a\neq 1$.
 
  Studiamo ora il segno della frazione algebrica da portare sotto radice: tale frazione è positiva o nulla per $a<-3\vee a\geqslant 1$, è negativa per $-3<a\leqslant 1$.
 
- Se $a>1$ si ha $\frac{a-1}{a+3}\cdot \sqrt{\frac{a+2}{(a-1)^2}}=\sqrt{\frac{(a-1)^2}{(a+3)^2}\cdot \frac{a+2}{(a-1)^2}}=\sqrt{\frac{a+2}{(a+3)^2}}$.
+ Se $a>1$ si ha $\dfrac{a-1}{a+3}\cdot \sqrt{\dfrac{a+2}{(a-1)^2}}=\sqrt{\dfrac{(a-1)^2}{(a+3)^2}\cdot \dfrac{a+2}{(a-1)^2}}=\sqrt{\dfrac{a+2}{(a+3)^2}}$.
 
  Se $-2<a<1$ il fattore da portare sotto radice è negativo, quindi:
- \[-\left(-\frac{a-1}{a+3}\right)\cdot \sqrt{\frac{a+2}{(a-1)^2}}=-\sqrt{\frac{[-(a-1)]^2}{(a+3)^2}\cdot \frac{a+2}{(a-1)^2}}=-\sqrt{\frac{a+2}{(a+3)^2}}\]
+ \[-\left(-\frac{a-1}{a+3}\right)\cdot \sqrt{\frac{a+2}{(a-1)^2}}=-\sqrt{\frac{[-(a-1)]^2}{(a+3)^2}\cdot \frac{a+2}{(a-1)^2}}=-\sqrt{\frac{a+2}{(a+3)^2}}.\]
 
- Se $a=-2$ l'espressione da calcolare vale zero mentre il caso $a=1$ è escluso dalla condizione di esistenza.
+ Se $a=-2$ l'espressione vale zero.
+ 
+ Il caso $a=1$ è comunque escluso dalla condizione di esistenza.
  \end{itemize}
  \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:2.40}, \ref{ese:2.41}}
-\section{Portare un fattore fuori dal segno di radice}
-È possibile portare fuori dal segno di radice quei fattori aventi come esponente un numero che sia maggiore o uguale all’indice della radice. In generale si inizia scomponendo in fattori irriducibili il radicando, ottenendo un radicale del tipo $\sqrt[n]{a^m}$ con $m\ge n$.
 
-\paragraph{I° modo:} si esegue la divisione intera $m:n$ ottenendo un quoziente $q$ e un resto $r$. Per la proprietà della divisione si ha $m=n\cdot q+r$ quindi $\sqrt[n]{a^m}=\sqrt[n]{a^{n\cdot q+r}}$ e per le proprietà delle potenze $\sqrt[n]{a^{n\cdot q+r}}=\sqrt[n]{(a^q)^n\cdot a^r}$ e per la regola del prodotto di due radici con medesimo indice si ottiene:
-\[\sqrt[n]{a^{n\cdot q+r}}=\sqrt[n]{(a^q)^n\cdot a^r}=\sqrt[n]{(a^q)^n}\cdot \sqrt[n]{a^r}=a^q\cdot \sqrt[n]{a^r}\text{ con } r<n.\]
+\section{Portare un fattore fuori dal segno di radice}
+
+È possibile portare fuori dal segno di radice quei fattori aventi come esponente un numero che sia maggiore o uguale all'indice della radice. In generale si inizia scomponendo in fattori irriducibili il radicando, ottenendo un radicale del tipo $\sqrt[n]{a^m}$ con $m\ge n$.
+
+\paragraph{I° modo:} si esegue la divisione intera $m:n$ ottenendo un quoziente $q$ e un resto $r$. Per la proprietà della divisione si ha $\;m=n\cdot q+r\;$ quindi $\sqrt[n]{a^m}=\sqrt[n]{a^{n\cdot q+r}}$ e per le proprietà delle potenze $\sqrt[n]{a^{n\cdot q+r}}=\sqrt[n]{(a^q)^n\cdot a^r}$ e per la regola del prodotto di due radici con medesimo indice si ottiene:
+\[\sqrt[n]{a^{n\cdot q+r}}=\sqrt[n]{(a^q)^n\cdot a^r}=\sqrt[n]{(a^q)^n}\cdot \sqrt[n]{a^r}=a^q\cdot \sqrt[n]{a^r}\:\text{ con } r<n.\]
 Notiamo che il fattore “fuori“ dalla radice ha per esponente il quoziente della divisione intera, mentre il fattore che rimane “dentro“ ha per esponente il resto della divisione stessa.
 
- $\sqrt[3]{a^8}=\ldots $ eseguiamo la divisione $8:3$ con $q=2$ e $r=2$, otteniamo $\sqrt[3]{a^8}=a^2\cdot \sqrt[3]{a^2}$.
+ $\sqrt[3]{a^8}=\ldots\:$ eseguiamo la divisione $8:3$ con $q=2$ e $r=2$, quindi $\sqrt[3]{a^8}=a^2\cdot \sqrt[3]{a^2}$.
 
 \paragraph{II° modo:} si può trasformare la potenza del radicando nel prodotto di due potenze con la stessa base; una avente esponente multiplo dell'indice della radice e l'altra avente per esponente la differenza tra l'esponente iniziale e il multiplo trovato. Consideriamo il seguente esempio:
 
- $\sqrt[3]{a^8}=\ldots $ il multiplo di $3$ più vicino a $8$ è $6$ quindi, otteniamo 
+ $\sqrt[3]{a^8}=\ldots\:$ il multiplo di $3$ più vicino a $8$ è $6$, quindi 
 \[\sqrt[3]{a^8}=\sqrt[3]{a^6\cdot a^2}=\sqrt[3]{a^6}\cdot \sqrt[3]{a^2}=a^2\cdot \sqrt[3]{a^2}.\]
 
 \begin{exrig}
  \begin{esempio}
  Portare un numero reale fuori dal segno di radice.
 \begin{itemize}
- \item $\sqrt{1200}$ Si scompone in fattori primi il radicando $1200=2^4\cdot 5^2\cdot 3$ ne segue allora che $\sqrt{1200}=\sqrt{2^4\cdot 5^2\cdot 3}=2^2\cdot 5\sqrt 3=20\sqrt 3$;
+ \item $\sqrt{\np{1200}}$ Si scompone in fattori primi il radicando $\np{1200}=2^4\cdot 5^2\cdot 3$ ne segue allora che $\sqrt{\np{1200}}=\sqrt{2^4\cdot 5^2\cdot 3}=2^2\cdot 5\sqrt 3=20\sqrt 3$;
  \item $\sqrt{75}=\sqrt{5^2\cdot 3}=5\sqrt 3$;
  \item $\sqrt{720}=\sqrt{2^4\cdot 3^2\cdot 5}=2^2\cdot 3\cdot \sqrt 5=12\sqrt 5$.
 \end{itemize}
@@ -445,39 +474,48 @@ Notiamo che il fattore “fuori“ dalla radice ha per esponente il quoziente de
 \end{exrig}
 
 Quando portiamo fuori dalla radice un termine letterale dobbiamo verificare se l'indice della radice è pari o dispari e se il termine che portiamo fuori è positivo o negativo. In particolare:
-\[\sqrt[n]{a^nb}=\left\{\begin{array}{l}
- a\sqrt[n]b\text{, se }n\text{ dispari;}\\
- \valass a\sqrt[n]b\text{, se }n\text{ pari.}\end{array}\right.\]
+\[
+\sqrt[n]{a^nb}=
+\begin{cases}
+a\sqrt[n]b & \text{ se }n\text{ è dispari}\\
+\valass a\sqrt[n]b & \text{ se }n\text{ è pari}
+\end{cases}.
+\]
 
 \begin{exrig}
  \begin{esempio}
  Portare una espressione letterale fuori dal segno di radice.
 \begin{itemize}
- \item $\sqrt{2a^2}=\valass a\sqrt 2$ bisogna mettere $a$ in valore assoluto perché sotto radice poteva essere sia negativo che positivo, la radice invece deve essere sempre positiva; se $a<0$ la relazione~$\sqrt{2a^2}=a\sqrt 2$ è errata;
+ \item $\sqrt{2a^2}=\valass a\sqrt 2$: bisogna mettere $a$ in valore assoluto perché sotto radice poteva essere sia negativo che positivo, la radice (di indice 2, pari) invece deve essere sempre positiva; se $a<0$ la relazione~$\sqrt{2a^2}=a\sqrt 2$ è errata;
  \item $\sqrt[3]{a^5b^7cd^3}$ occorre eseguire le divisioni intere tra gli esponenti e l'indice della radice. Cominciamo da $a^5$ risulta $5:3 = 1$ con resto uguale a $2$; per $b^7$ si ha $7:3$ con quoziente~$2$ e resto~$1$; l'esponente di $c$ è minore dell'indice; per $d^3$ si ha $3:3$ con quoziente $1$ e resto~$0$. In definitiva $\sqrt[3]{a^5b^7cd^3}={ab}^2 d\sqrt[3]{a^2{bc}}$, o anche:
 \[\sqrt[3]{a^5b^7cd^3}=\sqrt[3]{(a^3a^2)(b^6b)cd^3}=\sqrt[3]{a^3b^6d^3}\cdot \sqrt[3]{a^2bc}=ab^2d^3\sqrt[3]{a^2bc}.\]
 In questo caso non c'è da mettere il valore assoluto perché l'indice della radice è dispari;
- \item $\sqrt[3]{\dfrac{3^3x^3y}{z^6}}$,\, $\CE z\neq 0\,\sqrt[3]{\dfrac{3^3x^3y}{z^6}}=3\dfrac x{z^2}\sqrt[3]y$;
+ \item $\sqrt[3]{\dfrac{3^3x^3y}{z^6}}=3\dfrac x{z^2}\sqrt[3]y$, $\:\CE\: z\neq 0$;
  \item$\sqrt[4]{4x^4-4x^5}$ scomponiamo il radicando per poter studiare le condizioni di esistenza del radicale e portare fuori qualche fattore: 
- \[\sqrt[4]{4x^4-4x^5}=\sqrt[4]{4x^4(1-x)} \CE 1-x\ge 0\Rightarrow \ x\le 1.\]
+ \[\sqrt[4]{4x^4-4x^5}=\sqrt[4]{4x^4(1-x)}\quad \CE\: 1-x\ge 0\:\Rightarrow\: x\le 1.\]
  Pertanto:
- \[\sqrt[4]{4x^4-4x^5}=\sqrt[4]{4x^4(1-x)}=\valass x\sqrt[4]{4(1-x)}=\left\{\begin{array}{l}
- x\sqrt[4]{4(1-x)}\text{, se }0\le x\le 1\\
- -x\sqrt[4]{4(1-x)}\text{, se }x<0.\end{array};\right.\]
- \item $\sqrt{3(a-1)^2}=\valass{a-1}\sqrt 3=\left\{\begin{array}{l}
- (a-1)\sqrt 3\text{, se }a>1\\
- 0\text{, se }a=1\\
- (1-a)\sqrt 3\text{, se }a<1.\end{array}\right.$.
+ \[\sqrt[4]{4x^4-4x^5}=\sqrt[4]{4x^4(1-x)}=\valass x\sqrt[4]{4(1-x)}=
+ \begin{cases}
+ x\sqrt[4]{4(1-x)} & \text{ se }0\le x\le 1\\
+ -x\sqrt[4]{4(1-x)} & \text{ se }x<0
+ \end{cases};\]
+ \item $\sqrt{3(a-1)^2}=\valass{a-1}\sqrt 3=
+ \begin{cases}
+ (a-1)\sqrt 3 & \text{ se }a>1\\
+ 0 & \text{ se }a=1\\
+ (1-a)\sqrt 3 & \text{ se }a<1
+ \end{cases}$.
 \end{itemize}
  \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:2.42}, \ref{ese:2.43}, \ref{ese:2.44}, \ref{ese:2.45}}
 
 \section{Potenza di radice e radice di radice}
+
 Per elevare a potenza una radice si eleva a quella potenza il radicando: $\left(\sqrt[n]a\right)^m=\sqrt[n]{a^m}$.
 Si capisce il perché di questa proprietà trasformando, come negli altri casi, la radice in potenza con esponente frazionario:
 $\left(\sqrt[n]a\right)^m=\left(a^{\frac 1 n}\right)^m=a^{\frac m n}=\sqrt[n]{a^m}$.
-\newpage
+%\newpage
 \begin{exrig}
  \begin{esempio}
  Potenza di radice.
@@ -503,26 +541,30 @@ La radice di un'altra radice è uguale a una radice con lo stesso radicando e co
  \end{esempio}
 
  \begin{esempio}
- Data l'espressione $E=\sqrt[5]{3\cdot\sqrt{2}}$ ridurla ad unico radicale.
+ Data l'espressione $\sqrt[5]{3\cdot\sqrt{2}}$ ridurla ad unico radicale.
 
  In questo caso non possiamo subito applicare la regola annunciata, ma dobbiamo portare il fattore esterno dentro la radice più interna ottenendo $\sqrt[5]{\sqrt{3^2 \cdot 2}}=\sqrt[10]{18}$.
 
- Osserviamo che l'espressione $E=\sqrt[5]{3+\sqrt{2}}$ non si può ridurre ad unico radicale, se non sotto determinate condizioni che analizzeremo in seguito.
+ Osserviamo che in genere l'espressione $\sqrt[n]{a+\sqrt{b}}$ non si può ridurre ad unico radicale, se non sotto determinate condizioni che analizzeremo in seguito.
  \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:2.46}, \ref{ese:2.47}, \ref{ese:2.48}, \ref{ese:2.49}}
 
 \section{Somma di radicali}
-Si dice \emph{radicale} un’espressione del tipo $a\sqrt[n]b$ con $a$ e $b$ numeri reali, $b{\geq}0$ ed $n\in \insN$. Il numero $a$ prende il nome di \emph{coefficiente} del radicale.
+
+\begin{definizione}
+Si dice \emph{radicale} un'espressione del tipo $a\sqrt[n]b$ con $a$ e $b$ numeri reali, $b{\geq}0$ ed $n\in \insN$. Il numero $a$ prende il nome di \emph{coefficiente} del radicale.
+\end{definizione}
 
 Operare con i radicali è simile al modo di operare con i monomi. Infatti è possibile effettuare somme algebriche soltanto se i radicali hanno lo stesso indice e lo stesso radicando, mentre si possono sempre effettuare moltiplicazioni e divisioni dopo averli ridotti allo stesso indice.
 \begin{definizione}
  Due radicali si dicono \emph{simili} se hanno lo stesso indice e lo stesso radicando.
 \end{definizione}
 
-È possibile effettuare somme algebriche soltanto se i radicali sono simili, si eseguono le somme allo stesso modo in cui si eseguono le somme algebriche dei monomi.
+\`E possibile effettuare somme algebriche soltanto se i radicali sono simili, si eseguono le somme allo stesso modo in cui si eseguono le somme algebriche dei monomi.
 
-Attenzione l'operazione $\sqrt 2+\sqrt 3=\sqrt 5$\, è errata in quanto i radicali addendi non sono simili.
+Attenzione, l'operazione $\sqrt 2+\sqrt 3=\sqrt 5$\, è errata in quanto i radicali addendi non sono simili poiché hanno lo stesso indice (2) ma non lo stesso radicando.
+\pagebreak
 \begin{exrig}
  \begin{esempio}
 Esegui le seguenti somme di radicali.
@@ -535,8 +577,8 @@ Esegui le seguenti somme di radicali.
  \item $2\sqrt 5-\sqrt 5=\sqrt 5$;
  \item $\frac 1 2\sqrt 7-\frac 4 3\sqrt 7=\left(\frac 1 2-\frac 4 3\right)\sqrt 7=\frac{3-8} 6\sqrt 7=-\frac 5 6\sqrt 7$;
  \item $3\sqrt 2+2\sqrt 3-2\sqrt 2+3\sqrt 3=(3-2)\sqrt 2+(2+3)\sqrt 3=\sqrt 2+5\sqrt 3$\, abbiamo sommato i radicali simili;
- \item $2\sqrt a+3\sqrt a=5\sqrt a,\,\CE a\ge 0$;
- \item $\sqrt[4]{a^5}+\sqrt[4]{a^3}\cdot \sqrt a+\sqrt[4]{a^6}:\sqrt[4]a$. Poniamo le condizioni di esistenza $a>0$ e svolgiamo i calcoli: $\sqrt[4]{a^5}+\sqrt[4]{a^3\cdot a^2}+\sqrt[4]{a^6:a}=\sqrt[4]{a^5}+\sqrt[4]{a^5}+\sqrt[4]{a^5}=3\sqrt[4]{a^5}=3\sqrt[4]{a^4\cdot a}=3a\sqrt[4]a$.
+ \item $2\sqrt a+3\sqrt a=5\sqrt a$, $\CE\: a\ge 0$;
+ \item $\sqrt[4]{a^5}+\sqrt[4]{a^3}\cdot \sqrt a+\sqrt[4]{a^6}:\sqrt[4]a$. Poniamo le condizioni di esistenza ($a>0$) e svolgiamo i calcoli: $\sqrt[4]{a^5}+\sqrt[4]{a^3\cdot a^2}+\sqrt[4]{a^6:a}=\sqrt[4]{a^5}+\sqrt[4]{a^5}+\sqrt[4]{a^5}=3\sqrt[4]{a^5}=3\sqrt[4]{a^4\cdot a}=3a\sqrt[4]a$.
 \end{itemize}
  \end{esempio}
 \end{exrig}
@@ -559,7 +601,8 @@ Le espressioni con radicali possono essere trasformate in potenze con esponente 
  \begin{esempio}
 Trasforma i radicali in potenze con esponente frazionario applicando le proprietà delle potenze.
 \begin{itemize}
- \item $\dfrac{\sqrt a\cdot \sqrt[3]{a^2\cdot b}}{\sqrt[6]{a^5\cdot b}}=\dfrac{a^{\frac 1 2}\cdot a^{\frac 2 3}\cdot b^{\frac 1 3}}{a^{\frac 5 6}\cdot b^{\frac 1 6}}=a^{\frac 1 2+\frac 2 3-\frac 5 6}\cdot b^{\frac 1 3-\frac 1 6}=a^{\frac 2 6}\cdot b^{\frac 1 6}=\sqrt[6]{a^2b}$;
+ \item $\dfrac{\sqrt a\cdot \sqrt[3]{a^2\cdot b}}{\sqrt[6]{a^5\cdot b}}$.
+ \[\dfrac{\sqrt a\cdot \sqrt[3]{a^2\cdot b}}{\sqrt[6]{a^5\cdot b}}=\dfrac{a^{\frac 1 2}\cdot a^{\frac 2 3}\cdot b^{\frac 1 3}}{a^{\frac 5 6}\cdot b^{\frac 1 6}}=a^{\frac 1 2+\frac 2 3-\frac 5 6}\cdot b^{\frac 1 3-\frac 1 6}=a^{\frac 2 6}\cdot b^{\frac 1 6}=\sqrt[6]{a^2b}.\]
  \item $\sqrt{\dfrac{\sqrt[3]{a^2}\cdot \sqrt b}{\sqrt[5]{a^2}}}\cdot \sqrt[3]{\dfrac{\sqrt[4]{a^6b}}{a\sqrt[3]b}}$.
  \begin{align*}
  \sqrt{\frac{\sqrt[3]{a^2}\cdot \sqrt b}{\sqrt[5]{a^2}}}\cdot \sqrt[3]{\frac{\sqrt[4]{a^6b}}{a\sqrt[3]b}}&=\left(\frac{a^{\frac 2 3}\cdot b^{\frac 1 2}}{a^{\frac 2 5}}\right)^{\frac 1 2}\left(\frac{a^{\frac 3 2}\cdot b^{\frac 1 4}}{ab^{\frac 1 3}}\right)^{\frac 1 3}\\
@@ -584,13 +627,14 @@ Trasforma i radicali in potenze con esponente frazionario applicando le propriet
 \vspazio\ovalbox{\ref{ese:2.63}, \ref{ese:2.64}, \ref{ese:2.65}, \ref{ese:2.66}, \ref{ese:2.67}}
 
 \section{Razionalizzazione del denominatore di una frazione}
-Nel calcolo di espressioni che contengono radicali può capitare che al denominatore compaiano dei radicali. Per migliorare l'approssimazione si cerca di evitare questa situazione e operare affinché non compaiano radicali al denominatore. Questa operazione prende il nome di \emph{razionalizazione del denominatore}.
 
-Razionalizzare il denominatore di una frazione vuol dire trasformare una frazione in una frazione equivalente avente per denominatore un’espressione nella quale non compaiano radici.
+Nel calcolo di espressioni che contengono radicali può capitare che al denominatore compaiano dei radicali. Per semplificare l'espressione e migliorare l'approssimazione si cerca di evitare questa situazione e operare affinché non compaiano radicali al denominatore.\footnote{la divisione per un numero irrazionale comporta un calcolo laborioso e potenzialmente più soggetto ad errori di approssimazione.} Questa operazione prende il nome di \emph{razionalizzazione del denominatore}.
+
+Razionalizzare il denominatore di una frazione vuol dire quindi trasformare una frazione in una frazione equivalente avente per denominatore un'espressione nella quale non compaiano radici.
 
 \paragraph{I° Caso:} la frazione è del tipo $\dfrac a{\sqrt b}$.
 
-Per razionalizzare il denominatore di una frazione di questo tipo basta moltiplicare numeratore e denominatore per $\sqrt b$, che prende il nome di fattore razionalizzante: \[\dfrac {a} {\sqrt b} = \dfrac{a\sqrt b}{\sqrt b\cdot \sqrt b}=\dfrac{a\sqrt b}b.\]
+Per razionalizzare il denominatore di una frazione di questo tipo basta moltiplicare numeratore e denominatore per $\sqrt b$, che prende il nome di \emph{fattore razionalizzante}: \[\dfrac {a} {\sqrt b} = \dfrac{a\sqrt b}{\sqrt b\cdot \sqrt b}=\dfrac{a\sqrt b}b.\]
 
 \begin{exrig}
  \begin{esempio}
@@ -603,20 +647,21 @@ Razionalizza il denominatore delle seguenti espressioni.
  \end{esempio}
 \end{exrig}
 
-\paragraph{II° Caso:} la frazione è del tipo $\dfrac a{\sqrt[n]{b^m}}$ con $n>m$.
+\paragraph{II° Caso:} la frazione è del tipo $\dfrac a{\sqrt[n]{b^m}}$~~con $n>m$.
 
 In questo caso il fattore razionalizzante è $\sqrt[n]{b^{n-m}}$. Infatti si ha:
 \begin{equation*}
 \dfrac a{\sqrt[n]{b^m}}=\dfrac{a\sqrt[n]{b^{n-m}}}{\sqrt[n]{b^m}\cdot \sqrt[n]{b^{(n-m)}}}=\dfrac{a\sqrt[n]{b^{n-m}}}{\sqrt[n]{b^m\cdot b^{n-m}}}=\dfrac{a\sqrt[n]{b^{n-m}}}{\sqrt[n]{b^n}}=\dfrac{a\sqrt[n]{b^{n-m}}} b
 \end{equation*}
-Se abbiamo un'espressione in cui l'esponente del radicando supera l'indice della radice, prima di razionalizzare possiamo portare fuori dalla radice.
+
+Nel caso in cui $n<m$, prima di razionalizzare possiamo portare fuori dalla radice parte del radicando.
 
 \begin{exrig}
  \begin{esempio}
 Razionalizza il denominatore delle seguenti espressioni.
 \begin{itemize}
- \item $\dfrac 1{\sqrt[3]2}$:\, il fattore razionalizzante è $\sqrt[3]{2^2}$ quindi:\[\dfrac 1{\sqrt[3]2}=\dfrac{1\cdot \sqrt[3]{2^2}}{\sqrt[3]2\cdot \sqrt[3]{2^2}}=\dfrac{\sqrt[3]4}{\sqrt[3]{2^3}}=\dfrac{\sqrt[3]4} 2;\]
- \item $\dfrac{ab}{\sqrt[4]{xa^2b^3}}$:\, il fattore razionalizzante è $\sqrt[4]{x^3a^2b}$ quindi: \[\dfrac{ab}{\sqrt[4]{xa^2b^3}}=\dfrac{ab\cdot \sqrt[4]{x^3a^2b}}{\sqrt[4]{xa^2b^3}\cdot \sqrt[4]{x^3a^2b}}=\dfrac{ab\sqrt[4]{x^3a^2b}}{\sqrt[4]{x^4a^4b^4}}=\dfrac{ab\sqrt[4]{x^3a^2b}}{xab}=\dfrac{\sqrt[4]{x^3a^2b}} x;\]
+ \item $\dfrac 1{\sqrt[3]2}$:\, il fattore razionalizzante è $\sqrt[3]{2^2}$, quindi:\[\dfrac 1{\sqrt[3]2}=\dfrac{1\cdot \sqrt[3]{2^2}}{\sqrt[3]2\cdot \sqrt[3]{2^2}}=\dfrac{\sqrt[3]4}{\sqrt[3]{2^3}}=\dfrac{\sqrt[3]4} 2;\]
+ \item $\dfrac{ab}{\sqrt[4]{xa^2b^3}}$:\, il fattore razionalizzante è $\sqrt[4]{x^3a^2b}$, quindi: \[\dfrac{ab}{\sqrt[4]{xa^2b^3}}=\dfrac{ab\cdot \sqrt[4]{x^3a^2b}}{\sqrt[4]{xa^2b^3}\cdot \sqrt[4]{x^3a^2b}}=\dfrac{ab\sqrt[4]{x^3a^2b}}{\sqrt[4]{x^4a^4b^4}}=\dfrac{ab\sqrt[4]{x^3a^2b}}{xab}=\dfrac{\sqrt[4]{x^3a^2b}} x;\]
  \item $\dfrac 1{\sqrt[3]{b^5}}=\dfrac 1{b\sqrt[3]{b^2}}=\dfrac{1\cdot \sqrt[3]b}{b\sqrt[3]{b^2}\cdot \sqrt[3]b}=\dfrac{\sqrt[3]b}{b^2}$.
 \end{itemize}
  \end{esempio}
@@ -625,7 +670,7 @@ Razionalizza il denominatore delle seguenti espressioni.
 
 \paragraph{III° Caso:} la frazione è del tipo $\dfrac x{\sqrt a+\sqrt b}$ oppure $\dfrac x{\sqrt a-\sqrt b}$.
 
-Per questo tipo di frazione occorre sfruttare il prodotto notevole $(a+b)(a-b)=a^2-b^2$ . Il fattore razionalizzante nel primo caso è $\sqrt a-\sqrt b$, nel secondo è $\sqrt a+\sqrt b$.
+Per questo tipo di frazione occorre sfruttare il prodotto notevole $(u+v)(u-v)=u^2-v^2$; ponendo $\sqrt[3]a = u$ e $\sqrt[3]b = v$ si moltiplicano numeratore e denominatore per il fattore che ci consente di ottenere al denominatore $u^2-v^2$ cioè $\sqrt{a^2}-\sqrt{b^2}$. Il fattore razionalizzante nel primo caso è quindi $\sqrt a-\sqrt b$ e nel secondo è $\sqrt a+\sqrt b$.
 Sviluppiamo solo il primo caso, poiché il secondo è del tutto analogo:
 \begin{equation*}
 \dfrac x{\sqrt a+\sqrt b}=\dfrac{x\cdot (\sqrt a-\sqrt b)}{(\sqrt a+\sqrt b)\cdot (\sqrt a-\sqrt b)}=\dfrac{x(\sqrt a-\sqrt b)}{\sqrt{a^2}-\sqrt{b^2}}=\dfrac{x(\sqrt a-\sqrt b)}{a-b}
@@ -637,29 +682,29 @@ Razionalizza il denominatore delle seguenti espressioni.
 \begin{itemize}
  \item $\dfrac 2{\sqrt 3-\sqrt 5}=\dfrac{2\cdot (\sqrt 3+\sqrt 5)}{(\sqrt 3-\sqrt 5)\cdot (\sqrt 3+\sqrt 5)}=\dfrac{2(\sqrt 3+\sqrt 5)}{\sqrt{3^2}-\sqrt{5^2}}=\dfrac{2(\sqrt 3+\sqrt 5)}{-2}=-(\sqrt 3+\sqrt 5)$;
  \item $\dfrac{\sqrt 2}{3-\sqrt 2}=\dfrac{\sqrt 2\cdot (3+\sqrt 2)}{(3-\sqrt 2)\cdot (3+\sqrt 2)}=\dfrac{\sqrt 2(3+\sqrt 2)}{3^2-\sqrt{2^2}}=\dfrac{\sqrt 2(3+\sqrt 2)}{9-2}=\dfrac{\sqrt 2(3+\sqrt 2)} 7$;
- \item $\dfrac{1+\sqrt a}{1-\sqrt a}=\dfrac{(1+\sqrt a)\cdot (1+\sqrt a)}{(1-\sqrt a)(1+\sqrt a)}=\dfrac{(1+\sqrt a)^2}{1-\sqrt{a^2}}=\dfrac{1+2\sqrt a+a}{1-a}$ con $a\ge 0\wedge a\neq 1$.
+ \item $\dfrac{1+\sqrt a}{1-\sqrt a}=\dfrac{(1+\sqrt a)\cdot (1+\sqrt a)}{(1-\sqrt a)(1+\sqrt a)}=\dfrac{(1+\sqrt a)^2}{1-\sqrt{a^2}}=\dfrac{1+2\sqrt a+a}{1-a}\:$ con $a\ge 0\wedge a\neq 1$.
 \end{itemize}
  \end{esempio}
 \end{exrig}
 
 \paragraph{IV° Caso:} la frazione è del tipo $\dfrac x{\sqrt a+\sqrt b+\sqrt c}$
 
-Anche in questo caso si utilizza il prodotto notevole della differenza di quadrati, solo che va ripetuto più volte.
+Anche in questo caso si utilizza il prodotto notevole della differenza di quadrati, solo che l'operazione va ripetuta più volte.
 
 \begin{exrig}
  \begin{esempio}
 Razionalizza $\dfrac 1{\sqrt 2+\sqrt 3+\sqrt 5}$.
 
-Il fattore di razionalizzazione è in questo caso $\sqrt 2+\sqrt 3-\sqrt 5$ quindi:
+Il fattore di razionalizzazione è in questo caso $\sqrt 2+\sqrt 3-\sqrt 5$, quindi:
  \[\dfrac 1{\sqrt 2+\sqrt 3+\sqrt 5}\cdot \dfrac{\sqrt 2+\sqrt 3-\sqrt 5}{\sqrt 2+\sqrt 3-\sqrt 5}=\dfrac{\sqrt 2+\sqrt 3-\sqrt 5}{(\sqrt 2+\sqrt 3)^2-5}=\dfrac{\sqrt 2+\sqrt 3-\sqrt 5}{2+3+2\sqrt 6-5}=\dfrac{\sqrt 2+\sqrt 3-\sqrt 5}{2\sqrt 6};\]
- ora il fattore razionalizzante di questa frazione è $\sqrt 6$:
+ il fattore razionalizzante di questa frazione è $\sqrt 6$:
  \[\dfrac{\sqrt 2+\sqrt 3-\sqrt 5}{2\sqrt 6}\cdot \dfrac{\sqrt 6}{\sqrt 6}=\dfrac{\sqrt{12}+\sqrt{18}-\sqrt{30}}{2\cdot 6}=\dfrac{2\sqrt 3+3\sqrt 2-\sqrt{30}}{12}.\]
  \end{esempio}
 \end{exrig}
 
-\paragraph{V° Caso:} la frazione è del tipo $\dfrac x{\sqrt[3]a+\sqrt[3]b}$.
+\paragraph{V° Caso:} la frazione è del tipo $\dfrac x{\sqrt[3]a+\sqrt[3]b}$ oppure $\dfrac x{\sqrt[3]a-\sqrt[3]b}$.
 
-In questo caso si utilizza il prodotto notevole $(a+b)(a^2-ab+b^2)=a^3+b^3$ e quello analogo~$(a-b)(a^2+ab+b^2)=a^3-b^3$.
+In questo caso si utilizza il prodotto notevole $(u+v)(u^2-uv+v^2)=u^3+v^3$ e quello analogo~$(u-v)(u^2+uv+v^2)=u^3-v^3$; ponendo $\sqrt[3]a = u$ e $\sqrt[3]b = v$ si moltiplicano numeratore e denominatore per il fattore che ci consente di ottenere al denominatore $u^3+v^3$ o $u^3-v^3$, cioè $\sqrt[3]{a^3}+\sqrt[3]{b^3}$ o $\sqrt[3]{a^3}-\sqrt[3]{b^3}$. Sviluppiamo soltanto il primo caso:
 \begin{align*}
 \frac x{\sqrt[3]a+\sqrt[3]b}=\frac x{\sqrt[3]a+\sqrt[3]b}\cdot \frac{\sqrt[3]{a^2}-\sqrt[3]{ab}+\sqrt[3]{b^2}}{\sqrt[3]{a^2}-\sqrt[3]{ab}+\sqrt[3]{b^2}}=&\frac{x\left(\sqrt[3]{a^2}-\sqrt[3]{ab}+\sqrt[3]{b^2}\right)}{(\sqrt[3]a)^3+(\sqrt[3]b)^3}\\
 &=\frac{x\left(\sqrt[3]{a^2}-\sqrt[3]{ab}+\sqrt[3]{b^2}\right)}{a+b}.
@@ -669,16 +714,19 @@ In questo caso si utilizza il prodotto notevole $(a+b)(a^2-ab+b^2)=a^3+b^3$ e qu
  \begin{esempio}
 Razionalizza $\dfrac 1{\sqrt[3]{2}-\sqrt[3]{3}}$.
 
-Il fattore di razionalizzazione è in questo caso $\sqrt[3]{2^2}+\sqrt[3]{2\cdot 3}+\sqrt[3]{3^2}$ quindi:
+Il fattore di razionalizzazione è in questo caso $\sqrt[3]{2^2}+\sqrt[3]{2\cdot 3}+\sqrt[3]{3^2}$, quindi:
  \[\dfrac{1\cdot \left(\sqrt[3]{2^2}+\sqrt[3]{2\cdot 3}+\sqrt[3]{3^2}\right)}{\left(\sqrt[3]2-\sqrt[3]3\right)\cdot \left(\sqrt[3]{2^2}+\sqrt[3]{2\cdot 3}+\sqrt[3]{3^2}\right)}=\dfrac{\sqrt[3]{2^2}+\sqrt[3]{2\cdot 3}+\sqrt[3]{3^2}}{2-3}=-\left(\sqrt[3]4+\sqrt[3]6+\sqrt[3]9\right).\]
  \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:2.68}, \ref{ese:2.69}, \ref{ese:2.70}, \ref{ese:2.71}, \ref{ese:2.72}, \ref{ese:2.73}, \ref{ese:2.74}, \ref{ese:2.75}, \ref{ese:2.76}}
 
 \section{Radicali doppi}
-Si dice radicale doppio un'espressione del tipo $\sqrt{a+\sqrt b}$ oppure $\sqrt{a-\sqrt b}$.
 
-I radicali doppi possono essere trasformati nella somma algebrica di due radicali semplici se l'espressione $a^2-b$ è un quadrato perfetto. La formula per ottenere la trasformazione in radicali semplici è:
+\begin{definizione}
+Si dice \emph{radicale doppio} un'espressione del tipo $\sqrt{a+\sqrt b}$ oppure $\sqrt{a-\sqrt b}$.
+\end{definizione}
+
+Se l'espressione $a^2-b$ è un quadrato perfetto, i radicali doppi possono essere trasformati nella somma algebrica di due radicali semplici per mezzo della seguente formula:
 
 \begin{equation*}
 \sqrt{a\pm \sqrt b}=\sqrt{\dfrac{a+\sqrt{a^2-b}} 2}\pm \sqrt{\dfrac{a-\sqrt{a^2-b}} 2}
@@ -689,30 +737,32 @@ I radicali doppi possono essere trasformati nella somma algebrica di due radical
 Trasforma, se possibile, i seguenti radicali doppi in radicali semplici.
 \begin{itemize}
  \item $\sqrt{7-\sqrt{40}}=\sqrt{\dfrac{7+\sqrt{49-40}} 2}-\sqrt{\dfrac{7-\sqrt{49-40}} 2}=\sqrt{\dfrac{7+3} 2}-\sqrt{\dfrac{7-3} 2}=\sqrt 5-\sqrt 2$;
- \item $\sqrt{2-\sqrt 3}=\sqrt{\dfrac{2+\sqrt{2^2-3}} 2}-\sqrt{\dfrac{2-\sqrt{2^2-3}} 2}=\sqrt{\dfrac 3 2}-\sqrt{\dfrac 1 2}=\dfrac{\sqrt 3-\sqrt 2}{\sqrt 2}$, razionalizzando il denominatore si ottiene: $\dfrac{\sqrt 3-\sqrt 2}{\sqrt 2}=\dfrac{(\sqrt 3-\sqrt 2)\cdot \sqrt 2}{\sqrt 2\cdot \sqrt 2}=\dfrac{\sqrt 6-\sqrt 2} 2$;
+ \item $\sqrt{2-\sqrt 3}=\sqrt{\dfrac{2+\sqrt{2^2-3}} 2}-\sqrt{\dfrac{2-\sqrt{2^2-3}} 2}=\sqrt{\dfrac 3 2}-\sqrt{\dfrac 1 2}=\dfrac{\sqrt 3-\sqrt 2}{\sqrt 2}$, razionalizzando il denominatore si ottiene: $\dfrac{\sqrt 3-\sqrt 2}{\sqrt 2}=\dfrac{(\sqrt 3-\sqrt 2)\cdot \sqrt 2}{\sqrt 2\cdot \sqrt 2}=\dfrac{\sqrt 6-2} 2$;
  \item $\sqrt{7+2\sqrt 6}=\sqrt{7+\sqrt{24}}$\, per applicare la formula abbiamo portato il fattore $2$ dentro la radice: $\sqrt{7+\sqrt{24}}=\sqrt{\dfrac{7-\sqrt{49-24}} 2}+\sqrt{\dfrac{7-\sqrt{49-24}} 2}=\sqrt{\dfrac{7+5} 2}+\sqrt{\dfrac{7-5} 2}=\sqrt 6+1$;
- \item $\sqrt{5+\sqrt 3}=\sqrt{\dfrac{5+\sqrt{25-3}} 2}+\sqrt{\dfrac{5-\sqrt{25-3}} 2}=\sqrt{\dfrac{5+\sqrt{22}} 2}+\sqrt{\dfrac{5-\sqrt{22}} 2}$\, la formula non è stata di alcuna utilità in quanto il radicale doppio non è stato eliminato.
+ \item $\sqrt{5+\sqrt 3}=\sqrt{\dfrac{5+\sqrt{25-3}} 2}+\sqrt{\dfrac{5-\sqrt{25-3}} 2}=\sqrt{\dfrac{5+\sqrt{22}} 2}+\sqrt{\dfrac{5-\sqrt{22}} 2}$\, la formula non è stata di alcuna utilità in quanto il radicale doppio non è stato eliminato: in questo caso infatti $5^2-3 = 25-3=22$ non è un quadrato perfetto.
 \end{itemize}
  \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:2.77}, \ref{ese:2.78}, \ref{ese:2.79}}
 
 \section{Equazioni, disequazioni e sistemi a coefficienti irrazionali}
+
 Avendo imparato come operare con i radicali puoi risolvere equazioni, sistemi e disequazioni con coefficienti irrazionali.
 
 \subsection{Equazioni di primo grado}
+
 \begin{exrig}
 \begin{esempio}
 Risolvi le seguenti equazioni.
 \begin{itemize}
- \item $\sqrt 3x=9\Rightarrow \ x=\dfrac 9{\sqrt 3} \Rightarrow x=\dfrac 9{\sqrt 3}\cdot \dfrac{\sqrt 3}{\sqrt 3}=\dfrac{9\sqrt 3} 3=3\sqrt 3$;
+ \item $\sqrt 3x=9\:\Rightarrow\: x=\dfrac 9{\sqrt 3} =\dfrac 9{\sqrt 3}\cdot \dfrac{\sqrt 3}{\sqrt 3}=\dfrac{9\sqrt 3} 3=3\sqrt 3$;
  \item $(\sqrt 3-1)x-\sqrt 6=2x-\sqrt 2(3\sqrt 2+1)+1$.
  \begin{align*}
 &(\sqrt 3-1)x-\sqrt 6=2x-\sqrt 2(3\sqrt 2+1)+1\\
- \Rightarrow&\sqrt 3x-x-\sqrt 6=2x-3\cdot 2-\sqrt 2+1\\
- \Rightarrow&\sqrt 3x-3x=\sqrt 6-\sqrt 2-5\\
- \Rightarrow &x(\sqrt 3-3)=\sqrt 6-\sqrt 2-5\\
- \Rightarrow &x=\dfrac{\sqrt 6-\sqrt 2-5}{\sqrt 3-3}.
+ \Rightarrow\:&\sqrt 3x-x-\sqrt 6=2x-3\cdot 2-\sqrt 2+1\\
+ \Rightarrow\:&\sqrt 3x-3x=\sqrt 6-\sqrt 2-5\\
+ \Rightarrow\:&x(\sqrt 3-3)=\sqrt 6-\sqrt 2-5\\
+ \Rightarrow\:&x=\dfrac{\sqrt 6-\sqrt 2-5}{\sqrt 3-3}.
  \end{align*}
 Razionalizziamo ora il denominatore:
  \[x=\dfrac{\sqrt 6-\sqrt 2-5}{\sqrt 3-3}\cdot \dfrac{\sqrt 3+3}{\sqrt 3+3}=\dfrac{3\sqrt 2+3\sqrt 6-\sqrt 6-5\sqrt 3-15}{3-9}=%\dfrac{2\sqrt 6-5\sqrt 3-15}{-6}=
@@ -726,8 +776,12 @@ Razionalizziamo ora il denominatore:
 \begin{esempio}
 Risolvi le seguenti disequazioni.
  \begin{itemize}
- \item $(\sqrt 3-1)x\le \sqrt 3$ il coefficiente dell'incognita è positivo, quindi: $x\le \dfrac{\sqrt 3}{\sqrt 3-1}$ e poi razionalizzando $x\le \dfrac{3+\sqrt 3} 2$;
- \item $2x\cdot(1-\sqrt 2)\ge -3\sqrt 2$ il coefficiente dell'incognita è negativo, quindi $x\le \dfrac{-3\sqrt 2}{2(1-\sqrt 2)}$ e poi razionalizzando $x\le 3+\dfrac 3 2\sqrt 2$.
+ \item $(\sqrt 3-1)x\le \sqrt 3$.
+
+Il coefficiente dell'incognita è positivo, quindi $x\le \dfrac{\sqrt 3}{\sqrt 3-1}$ e razionalizzando si ha $x\le \dfrac{3+\sqrt 3} 2$;
+ \item $2x(1-\sqrt 2)\ge -3\sqrt 2$.
+
+Il coefficiente dell'incognita è negativo, quindi $x\le \dfrac{-3\sqrt 2}{2(1-\sqrt 2)}$ e razionalizzando si ha $x\le 3+\dfrac 3 2\sqrt 2$.
  \end{itemize}
 
 \end{esempio}
@@ -748,7 +802,7 @@ Eseguiamo i calcoli per ottenere la forma canonica:
  {2x+x\sqrt 2+y=2\sqrt 2+x\sqrt 2}\\
  {x-y\sqrt 2-y=-\dfrac{\sqrt 2} 2-y\sqrt 2}
  \end{array}
-\right.\Rightarrow
+\right.\:\Rightarrow\:
 \left\{\begin{array}{l}
  {2x+y=2\sqrt 2}\\
  {x-y=-\dfrac{\sqrt 2} 2}
@@ -759,12 +813,12 @@ e con il metodo di riduzione, sommando le due equazioni otteniamo:
  {3x=2\sqrt 2-\dfrac{\sqrt 2} 2}\\
  {y=2\sqrt 2-2x}
  \end{array}
-\right.\Rightarrow
+\right.\:\Rightarrow\:
 \left\{\begin{array}{l}
  {x=\dfrac{\sqrt 2} 2}\\
  {y=2\sqrt 2-2\dfrac{\sqrt 2} 2}
  \end{array}
-\right.\Rightarrow
+\right.\:\Rightarrow\:
 \left\{\begin{array}{l}
  {x=\dfrac{\sqrt 2} 2}\\
  {y=\sqrt 2}

@@ -1,0 +1,13 @@
+% (c) 2014 Daniele Masini - d.masini.it@gmail.com
+\begin{tikzpicture}[x=10mm, y=3mm]
+\draw[xstep=1,ystep=2,color=gray!30] (-.7,-8.5) grid (6.8,15.5);
+\tkzInit[xmin=-.7,xmax=6,xstep=1,ymin=-8.5,ymax=14.5,ystep=1]
+\clip (-.7,-8.5) rectangle (6.8,15.5);
+\begin{scope}[font=\small]
+  \tkzLabelY[orig=false,step=2,label options={left=1pt}]
+  \tkzDrawY[label=$a_n$]
+  \tkzLabelX[orig=false,label options={below=1pt}]
+  \tkzDrawX[label=$n$]
+%  \node[below left] at (0,0) {$O$};
+\end{scope}
+\end{tikzpicture}

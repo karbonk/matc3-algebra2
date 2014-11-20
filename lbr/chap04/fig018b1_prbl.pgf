@@ -9,7 +9,7 @@
   \node  at (\x,-1.85) {$+$};
   }
   \node[below] at (.55,-2) {$x_1=x_2$};
-  \node[] at (.55,-.5) {$\Delta=0$};
+  \node[] at (.55,-.75) {$\Delta=0$};
   \node[] at (.55,-.25) {$a>0$};
 %segno
   \node[] at (4,0) {$ax^2+bx+c=0$};

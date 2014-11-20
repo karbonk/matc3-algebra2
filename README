@@ -37,7 +37,7 @@ essere presente nella stessa directory del file
 README. In caso contrario, visitare l'indirizzo:
 http://www.latex-project.org/lppl.txt
 
-Ogni singolo file *tex, *pgf, *htx riporta il nome e
+Ogni singolo file *tex, *pgf, riporta il nome e
 l'indirizzo e-mail delle persone che hanno lavorato
 per la stesura del codice.
 
@@ -69,11 +69,11 @@ Riassumendo:
 
  3. COMPILAZIONE
 -----------------------
-Deve essere compilato il file algebra2_3ed_colori.tex in pdfLaTeX. Poichè
+Deve essere compilato il file algebra2_3ed_stampa.tex in pdfLaTeX. Poichè
 vengono caricati dei programmi esterni, la compilazione deve avere abilitata
 l'opzione --shell-escape (o --enable-write18). Se, invece, si desidera
 compilare dal terminale, si dia (due volte) il comando
-	  $ pdflatex --shell-escape algebra2_3ed_colori.tex
+	  $ pdflatex --shell-escape algebra2_3ed_stampa.tex
 In alternativa, si può utilizzare il Makefile:
    	  $ make pdf
 che produce il libro completo.

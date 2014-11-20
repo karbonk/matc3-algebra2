@@ -10,7 +10,7 @@
 \end{scope}}
 
 \node[left] at (0,-0.1) {Segno di};
-\node[left] at (.25,-0.5) {$x^2+x+1$};
+\node[left] at (0,-0.5) {$x^2+x+1$};
 \node[left] at (0,-1) {$x$};
 \node[left] at (0,-1.5) {$x^2-1$};
 \node[left] at (0,-2) {$d_2$};

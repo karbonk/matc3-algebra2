@@ -9,6 +9,8 @@
   \end{scope}
   \tkzFct[domain=-3:2,thick,color=Maroon]{x*x+x-2};
   \draw[fill=orange] (-2,0)circle (1.5pt);
+  \node[above right] at (-2,0) {$P_1$};
   \draw[fill=orange] (1,0)circle (1.5pt);
+  \node[above left] at (1,0) {$P_2$};
 
 \end{tikzpicture}

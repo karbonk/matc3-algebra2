@@ -11,7 +11,7 @@
   \node[above right] at (1.6,-1) {$+$};
   \node[above left] at (-.6,-1) {$+$};
   \node[] at (.55,-1.4) {$-$};
-  \node[] at (.55,-.25) {$\Delta>0$};
+  \node[] at (.55,-.50) {$\Delta>0$};
   \node[] at (.55,0) {$a>0$};
 %segno
   \node[] at (4,0) {$ax^2+bx+c=0$};

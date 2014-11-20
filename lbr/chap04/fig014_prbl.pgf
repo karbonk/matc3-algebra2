@@ -24,6 +24,7 @@
   \draw[fill=orange] (1.2,2.88)circle (1.5pt);
   \draw[fill=blue] (2.2,3.88)circle (1.5pt);
   \draw[->] (1.2,2.88) --(2.2,3.88);
-  \node [color=Maroon] at (-1.8,4.4) {c};
-  \node [color=blue] at (2.8,4.4) {c'};
+  \node [color=Maroon] at (-1.8,4.4) {$p$};
+  \node [color=blue] at (2.8,4.4) {$p'$};
+  \node [below right] at (1,1) {$D$};
 \end{tikzpicture}

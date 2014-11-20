@@ -1,0 +1,18 @@
+% (c) 2014 Daniele Masini - d.masini.it@gmail.com
+\begin{tikzpicture}[x=10mm, y=10mm]
+\draw[xstep=1,ystep=1,color=gray!30] (-.5,-1.5) grid (10.8,3.8);
+\tkzInit[xmin=-.7,xmax=10,xstep=1,ymin=-1.5,ymax=3,ystep=1]
+\clip (-.7,-1.7) rectangle (10.8,3.8);
+\begin{scope}[font=\small]
+  \tkzLabelY[orig=false,label options={left=1pt}]
+  \tkzDrawY[label=$a_n$]
+  \tkzLabelX[orig=false,label options={below=1pt}]
+  \tkzDrawX[label=$n$]
+%  \node[below left] at (0,0) {$O$};
+\end{scope}
+\foreach \x in {1,...,10}
+{
+  \draw[fill=orange] (\x,{(3*\x*\x-5)/(\x*\x+1)}) circle (1.5pt);
+  \node[above right] at (\x,{(3*\x*\x-5)/(\x*\x+1)}) {$P_{\x}$};
+}
+\end{tikzpicture}

@@ -12,7 +12,7 @@
   \node[below left] at (-.6,1) {$-$};
   \node[] at (.55,1.4) {$+$};
   \node[] at (.55,0) {$\Delta>0$};
-  \node[] at (.55,.25) {$a<0$};
+  \node[] at (.55,.5) {$a<0$};
 %segno
   \node[] at (4,2) {$ax^2+bx+c=0$};
   \node[] at (4,1) {$ax^2+bx+c>0$};

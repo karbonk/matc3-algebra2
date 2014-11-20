@@ -1,11 +1,11 @@
-# makefile per algebra2_3ed_colori
+# makefile per algebra2_3ed_completo
 #
 # (c) 2014 Dimitrios Vrettos - d.vrettos@gmail.com
 # v1.0
 #
-NAME = algebra2_3ed_colori
+NAME = algebra2_3ed_completo
 
-SHORT_NAME = algebra2_clr
+SHORT_NAME = algebra2_stm
 
 TEX = $(NAME).tex
 

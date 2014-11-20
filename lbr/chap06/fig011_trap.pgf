@@ -10,8 +10,8 @@
   \coordinate (k) at ($(d)!(e)!(c)$);%trova le coordinate della proiezione di e su d--c
   \fill[color=gray!20](o)--(k)--(c);
   \fill[color=gray!20](h)--(b)--(c);
-  \draw (-2.5,0) arc (180:0:2.5) -- cycle;% semicirconferenza e diametro
-  \draw (a) -- (d) -- (c) -- (b);%disegna il trapezio
+  \draw[dotted] (-2.5,0) arc (180:0:2.5);% semicirconferenza
+  \draw (a) -- (d) -- (c) -- (b) -- (a);%disegna il trapezio
   \draw [dashdotted] (e) -- (0,0);%da E a O
   \draw [dotted] (c) -- (h);% c--h
  \draw [dotted] (o) -- (c);% o--c

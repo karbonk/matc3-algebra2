@@ -1,18 +1,30 @@
 % (c) 2013 Claudio Carboncini - claudio.carboncini@gmail.com
-\begin{tikzpicture}[x=10mm, y=10mm, font=\scriptsize]
-  \draw [->] (0,0) -- (3,0) node [below] () {$r$};
+\begin{tikzpicture}[x=10mm, y=10mm, font=\footnotesize]
+  \draw [->] (0,0) -- (3.5,0) node [below] () {$r$};
   \draw (1,0) rectangle (2,1);
-  \draw (1,0) -- (2,1);
+  \draw[RoyalBlue, thick] (1,0) -- (2,1);
 
   \coordinate[label=below:$O$] (O) at (1,0);
   \coordinate[label=below:$A$] (A) at (2,0);
   \coordinate[label=above:$C$] (C) at (1,1);
   \coordinate[label=above:$B$] (B) at (2,1);
 
-  \begin{scope}[xshift=35mm]
-    \draw [->] (0,0) -- (3,0) node [below] () {$r$};
+  \foreach \x in {1,...,3}{
+    \draw (\x,-0.5mm) -- (\x,0.5mm);
+  }
+  \node[below] at (3,0) {2};
+  
+  \begin{scope}[yshift=-7mm]
+    \draw (1,0) -- (2,0);
+    \draw (1,-0.5mm) -- (1,0.5mm);
+    \draw (2,-0.5mm) -- (2,0.5mm);
+    \node[above] at (1.5,0) {1};
+  \end{scope}
+  
+  \begin{scope}[xshift=40mm]
+    \draw [->] (0,0) -- (3.5,0) node [below] () {$r$};
     \draw (1,0) rectangle (2,1);
-    \draw (1,0) -- (2,1);
+    \draw[RoyalBlue, thick] (1,0) -- (2,1);
 
     \coordinate[label=below:$O$] (O) at (1,0);
     \coordinate[label=below:$A$] (A) at (2,0);
@@ -20,7 +32,19 @@
     \coordinate[label=above:$B$] (B) at (2,1);
     \coordinate[label=below:$K$] (K) at (2.414,0);
 
-    \draw[dashed] (2.414,0) arc [start angle=0, end angle=65,radius=1.414cm,];
+    \draw[dashed] (2.414,0) arc [start angle=0, end angle=65,radius=1.414cm];
+
+    \foreach \x in {1,...,3}{
+      \draw (\x,-0.5mm) -- (\x,0.5mm);
+    }
+    \node[below] at (3,0) {2};
+  
+    \begin{scope}[yshift=-7mm]
+      \draw (1,0) -- (2,0);
+      \draw (1,-0.5mm) -- (1,0.5mm);
+      \draw (2,-0.5mm) -- (2,0.5mm);
+      \node[above] at (1.5,0) {1};
+    \end{scope}
 
   \end{scope}
 \end{tikzpicture}

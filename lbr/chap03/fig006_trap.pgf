@@ -9,28 +9,32 @@
   \coordinate(c1) at (6,1.732);
   \coordinate(b1) at (7,0);
   \coordinate(t) at (0,0);
+  \coordinate(ta) at (0,-0.5);
   \coordinate(t1) at (5,0);
-  \draw (-2,0) arc (180:0:2) -- cycle;% semicirconferenza e diametro primo trapezio
-  \draw (3,0) arc (180:0:2) -- cycle;% semicirconferenza e diametro secondo trapezio
-  \draw (a) -- (d) -- (c) -- (b);%disegna il trapezio
-  \draw (a1) -- (d1) -- (c1) -- (b1);%disegna il secondo trapezio
+  \coordinate(t1a) at (5,-0.5);
+  \draw [dotted] (-2,0) arc (180:0:2) -- cycle;% semicirconferenza e diametro primo trapezio
+  \draw [dotted] (3,0) arc (180:0:2) -- cycle;% semicirconferenza e diametro secondo trapezio
+  \draw (a) -- (d) -- (c) -- (b) -- (a);%disegna il trapezio
+  \draw (a1) -- (d1) -- (c1) -- (b1) -- (a1);%disegna il secondo trapezio
   \node [label={[name=label node]below:$A$}] at (a) {};
   \node [label={[name=label node]below:$B$}] at (b) {};
   \node [label={[name=label node]right:$C$}] at (c) {};
   \node [label={[name=label node]left:$D$}] at (d) {};
-  \node [label={[name=label node]below:$BC=10\,  cm$}] at (t) {};
+  \node [label={[name=label node]below:$\overline{BC}=10\unit{cm}$}] at (t) {};
+  \node [label={[name=label node]below:$\overline{CD}=27\unit{cm}$}] at (ta) {};
   \node [label={[name=label node]below:$A$}] at (a1) {};
   \node [label={[name=label node]below:$B$}] at (b1) {};
   \node [label={[name=label node]right:$C$}] at (c1) {};
   \node [label={[name=label node]left:$D$}] at (d1) {};
-  \node [label={[name=label node]below:$BC=15\,  cm$}] at (t1) {};
-  \filldraw[fill=black, draw=black]  (a) circle (1pt);
-  \filldraw[fill=black, draw=black]  (b) circle (1pt);
-  \filldraw[fill=black, draw=black]  (c) circle (1pt);
-  \filldraw[fill=black, draw=black]  (d) circle (1pt);
-  \filldraw[fill=black, draw=black]  (a1) circle (1pt);
-  \filldraw[fill=black, draw=black]  (b1) circle (1pt);
-  \filldraw[fill=black, draw=black]  (c1) circle (1pt);
-  \filldraw[fill=black, draw=black]  (d1) circle (1pt);
+  \node [label={[name=label node]below:$\overline{BC}=15\unit{cm}$}] at (t1) {};
+  \node [label={[name=label node]below:$\overline{CD}=22\unit{cm}$}] at (t1a) {};
+%  \filldraw[fill=black, draw=black]  (a) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (b) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (c) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (d) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (a1) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (b1) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (c1) circle (1pt);
+%  \filldraw[fill=black, draw=black]  (d1) circle (1pt);
 
 \end{tikzpicture}

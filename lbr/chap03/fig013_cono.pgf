@@ -9,10 +9,13 @@
   \coordinate(v2) at (1.23,6);%il punto v2
   \coordinate (v) at (intersection of a--v1 and h--v2);
   \coordinate (c) at ($(v)!(o)!(b)$);%trova le coordinate della proiezione di o su v--b
-  \draw[] (o) circle (0.86);%disegna il cerchio di centro
-  \draw[] (v) -- (a) -- (b) -- cycle;%disegna v2--h--a
+  \draw[fill=gray!20!white] (o) circle (0.86);%disegna il cerchio di centro
+%  \draw[] (v) -- (a) -- (b) -- cycle;%disegna v2--h--a
+  \draw[] (v) -- (a);%disegna v--a
+  \draw[] (v) -- (b);%disegna v--b
   \draw[dashed] (v) -- (h);%disegna v--h
   \draw[dashed] (o) -- (c);%disegna o--c
+  \draw[dotted] (a) -- (b);%disegna a--b
   \draw (h) ellipse (1.23cm and 0.4cm);
   \node [label={[name=label node]above:$V$}] at (v) {};
   \node [label={[name=label node]left:$A$}] at (a) {};

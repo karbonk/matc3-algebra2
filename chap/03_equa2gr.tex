@@ -3,7 +3,7 @@
 \chapter{Equazioni di secondo grado}
 \section{Le equazioni di secondo grado in una incognita}
 
-Consideriamo il seguente problema: “ in un triangolo rettangolo l'ipotenusa è più lunga del cateto minore di 4 cm, mentre l'altro cateto è più lungo del cateto minore di 2 cm. Si vogliono trovare le misure dei tre lati”.
+Consideriamo il seguente problema: ``in un triangolo rettangolo l'ipotenusa è più lunga del cateto minore di $4\unit{cm}$, mentre l'altro cateto è più lungo del cateto minore di $2\unit{cm}$. Si vogliono determinare le misure dei tre lati''.
 
 Si può formalizzare il problema indicando con $x$ la misura incognita del cateto minore. La lunghezza dell'ipotenusa sarà $x + 4$, mentre quella dell'altro cateto $x + 2$. Applicando il teorema di Pitagora si ha: $x ^{2 } + ( x + 2 ) ^{2 } = ( x + 4 ) ^{2 }$. Dopo aver effettuato i calcoli e aver portato tutti i termini a sinistra del predicato uguale abbiamo: $x ^{2}-4x-12=0$.
 \begin{center}
@@ -11,102 +11,126 @@ Si può formalizzare il problema indicando con $x$ la misura incognita del catet
 \end{center}
 Questa è una equazione di secondo grado in una incognita in quanto la variabile $x$ vi compare elevata al secondo grado.
 \begin{definizione}
-Si dice \emph{equazione di secondo grado}, un’equazione del tipo: $a x ^{2 } + b x + c = 0$ con $a, b, c \in \insR$ e $a \neq 0$. I valori $a$, $b$, $c$ prendono il nome di \emph{coefficienti} e, in particolare, $c$ viene detto \emph{termine noto}.
+Si dice \emph{equazione di secondo grado}, un'equazione del tipo: $a x ^{2} + b x + c = 0$ con $a$, $b$, $c \in \insR$ e $a \neq 0$. I valori $a$, $b$, $c$ prendono il nome di \emph{coefficienti} e, in particolare, $c$ viene detto \emph{termine noto}.
 \end{definizione}
 
-Un’equazione di secondo grado si definisce:
+Un'equazione di secondo grado si definisce:
 \begin{description*}
- \item \emph{monomia} quando il secondo e il terzo coefficiente sono nulli $a x ^{2}=0$;
- \item \emph{incompleta pura} quando il secondo coefficiente è nullo $a x ^{2 } + c = 0$;
- \item \emph{incompleta spuria} quando il terzo coefficiente è nullo $a x ^{2 } + b x = 0$;
- \item \emph{completa} quando i tre coefficienti sono tutti diversi da zero $a x ^{2 } + b x + c = 0$.
+ \item \emph{monomia} quando il secondo e il terzo coefficiente sono nulli: $\:a x ^{2}=0$;
+ \item \emph{(incompleta) pura} quando il secondo coefficiente è nullo: $\:a x ^{2} + c = 0$;
+ \item \emph{(incompleta) spuria} quando il terzo coefficiente è nullo: $\:a x ^{2} + b x = 0$;
+ \item \emph{completa} quando i tre coefficienti sono tutti diversi da zero: $\:a x ^{2} + b x + c = 0$.
 \end{description*}
 
-\subsection{Risoluzione di un'equazione di secondo grado pura}
-Il coefficiente della $x$ è nullo e l’equazione si presenta nella forma: $ax ^{2 } + c = 0$.
-Si risolve portando a secondo membro il termine noto e dividendo per il coefficiente di $x^2$:
-\[a x ^{2 } + c = 0 \Rightarrow a x ^{2 } = - c \Rightarrow x
-^{2 } = - \frac{c }{a } \Rightarrow x _{1,2} = \pm \sqrt{- \frac{c}{a}}.\]
-\newpage
+\subsection{Risoluzione di un'equazione di secondo grado incompleta pura}
+
+Il coefficiente della $x$ è nullo e l'equazione si presenta nella forma: $ax ^{2 } + c = 0$.
+Si risolve portando al secondo membro il termine noto e dividendo per il coefficiente di $x^2$:
+\[a x ^{2} + c = 0 \quad\Rightarrow\quad a x ^{2 } = - c \quad\Rightarrow\quad x
+^{2} = - \frac{c }{a } \quad\Rightarrow\quad x _{1\text{,}2} = \pm \sqrt{- \frac{c}{a}}.\]
+\pagebreak
 \begin{exrig}
 \begin{esempio}
  Risoluzione di equazioni pure.
 \begin{itemize}
-\item $4 x ^{2} - 9 =0$ risoluzione
-$4 x ^{2 } = + 9 \Rightarrow x ^{2 } = \frac{9 }{4 }
-\Rightarrow x _{1,2 } = \pm \sqrt{\frac{9 }{4 } } \Rightarrow x_{1} = - \frac{3 }{2 } \vee x _{2 } = + \frac{3 }{2 }$
-\item $4 x ^{2 } + 9 = 0$ risoluzione $4 x ^{2 } + 9 = 0 \Rightarrow x ^{2 } = - \frac{9 }{4 }$. L’equazione non ammette soluzioni reali in quanto il quadrato di un numero reale non è mai negativo.
+\item $4 x ^{2} - 9 =0$.
+
+Risoluzione: $4 x ^{2 } = + 9 \:\Rightarrow\: x ^{2 } = \frac{9 }{4 }
+\:\Rightarrow\: x _{1\text{,}2 } = \pm \sqrt{\frac{9 }{4 } } \:\Rightarrow\: x_{1} = - \frac{3 }{2 } \vee x _{2 } = + \frac{3 }{2 }$.
+\item $4 x ^{2 } + 9 = 0$.
+
+Risoluzione: $4 x ^{2 } = -9 \:\Rightarrow\: x ^{2 } = - \frac{9 }{4 }$. L'equazione non ammette soluzioni reali in quanto il quadrato di un numero reale non è mai negativo.
 \end{itemize}
 \end{esempio}
 \end{exrig}
 
 Le soluzioni dell'equazione incompleta pura $ax ^{2 } + c = 0$ dipendono dal segno di
-$- \frac{c }{a }$:
-\begin{description*}
-\item se $-c/a>0$, ovvero se $a$ e $c$ sono discordi, l’equazione ammette \emph{due soluzioni reali distinte opposte} $x _{1 } = - \sqrt{- \frac{c }{a}} \vee x_{2}= + \sqrt{-\frac{c}{a}}$;
-\item se $-c/a<0$, ovvero se $a$ e $c$ sono concordi, l’equazione \emph{non ammette soluzioni reali};
-\item se $-c/a=0$, allora $c =0$, l'equazione ha \emph{due soluzioni reali coincidenti nulle} $x_{1}=x_{2} =0$.
-\end{description*}
+$- \dfrac{c }{a }$:
+\begin{itemize*}
+\item se $-c/a>0$, ovvero se $a$ e $c$ sono discordi, l'equazione ammette \emph{due soluzioni reali distinte opposte}: $x _{1 } = - \sqrt{- \frac{c }{a}} \vee x_{2}= + \sqrt{-\frac{c}{a}}$;
+\item se $-c/a<0$, ovvero se $a$ e $c$ sono concordi, l'equazione \emph{non ammette soluzioni reali};
+\item se $-c/a=0$, allora $c =0$, l'equazione ha \emph{due soluzioni reali coincidenti nulle}: $x_{1}=x_{2} =0$.
+\end{itemize*}
 
 \vspazio\ovalbox{\risolvii \ref{ese:3.1}, \ref{ese:3.2}, \ref{ese:3.3}, \ref{ese:3.4}}
 
 \subsection{Risoluzione di un'equazione incompleta spuria}
-Un'equazione incompleta spuria si presenta nella forma: $a x ^{2 } + b x = 0$.
+
+Un'equazione incompleta spuria si presenta nella forma: $a x ^{2} + b x = 0$.
 Per risolverla, si raccoglie a fattore comune la
 $x$; precisamente $x ( a x + b ) = 0$.
 Applicando la legge di annullamento del prodotto si ottiene
-$x_{1} = 0$ oppure $ax + b = 0$ da cui $x_{2} = - \frac{b}{a}$.
+$x_{1} = 0$ oppure $ax + b = 0$ da cui $x_{2} = - \dfrac{b}{a}$.
 Pertanto un'equazione di questo tipo ha sempre due soluzioni reali distinte di cui una nulla.
 \begin{exrig}
 \begin{esempio}
 Risoluzione di equazioni incomplete spurie.
 \begin{itemize}
-\item $2 x^{2} - 4 x = 0$. Raccogliendo a fattor comune si ha: $2 x ( x - 2 ) = 0$ da cui, applicando la legge di annullamento del prodotto, segue $2x = 0 \vee x - 2 = 0$ da cui $x_{1} = 0 \vee x_{2} = 2$;
-\item $x ^{2 } + x = 0$. Raccogliendo $x$ a fattore comune, si ha $x ( x + 1 ) = 0$, da cui, applicando la legge di annullamento del prodotto, segue $x = 0 \vee x + 1 = 0$ da cui $x_{1} = 0 \vee x_{2} = - 1$.
+\item $2 x^{2} - 4 x = 0$.
+
+Raccogliendo a fattor comune si ha: $2 x ( x - 2 ) = 0$ da cui, applicando la legge di annullamento del prodotto, segue $2x = 0 \vee x - 2 = 0$ da cui $x_{1} = 0 \vee x_{2} = 2$;
+\item $x ^{2 } + x = 0$.
+
+Raccogliendo $x$ a fattore comune, si ha $x ( x + 1 ) = 0$, da cui, applicando la legge di annullamento del prodotto, segue $x = 0 \vee x + 1 = 0$ da cui $x_{1} = 0 \vee x_{2} = - 1$.
 \end{itemize}
 \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:3.5}, \ref{ese:3.6}, \ref{ese:3.7}, \ref{ese:3.8}, \ref{ese:3.9}, \ref{ese:3.10}, \ref{ese:3.11}}
 
 \section{Risoluzione di un'equazione completa}
-Per risolvere l’equazione di secondo grado completa si applica una formula che si ottiene utilizzando il metodo del completamento del quadrato:
-\begin{description*}
-\item $a x^{2} + b x + c=0$: equazione completa di secondo grado;
-\item $4 a^{2} x^{2} + 4 a b x + 4 a c=0$: si moltiplicano ambo i membri per $4a$;
-\item $4 a^{2} x^{2} + 4 a b x + 4 a c + b^{2}=b^{2}$: si aggiunge ad ambo i membri $b^{2}$;
-\item $4 a^{2} x^{2} + 4 a b x + b^{2}=b^{2} - 4 a c$: si porta $4ac$ a secondo membro;
-\item $( 2 a x + b )^{2}=b^{2} - 4 a c$: il primo membro risulta il quadrato di un binomio;
-\item $k=2 a x + b$: si sostituisce il binomio $2ax + b$ con la la variabile $k$;
-\item $k^{2}=b^{2} - 4 a c$: l'equazione diventa un'equazione di secondo grado pura in $k$;
-\item $k_{1,2}=\pm \sqrt{b^{2} - 4 a c}$: si calcolano le soluzioni in $k$;
-\item $2 a x + b=\pm \sqrt{b^{2} - 4 a c}$: al posto di $k$ si mette il binomio $2ax + b$;
-\item $2 a x=- b \pm \sqrt{b^{2} - 4 a c}$: si separa il monomio con l’incognita;
-\item $x_{1,2}=\frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a}$: si risolve l'equazione di primo grado rispetto alla $x$.
-\end{description*}
+
+L'equazione di secondo grado completa si presenta nella forma $a x ^{2} + b x = 0$ e per risolverla si applica una formula che si ottiene utilizzando il metodo del completamento del quadrato:
+
+\begin{tabular}{ll}
+equazione completa di secondo grado & $a x^{2} + b x + c=0$\\
+si moltiplicano ambo i membri per $4a$ & $4 a^{2} x^{2} + 4 a b x + 4 a c=0$\\
+si aggiunge $b^{2}$ ad ambo i membri & $4 a^{2} x^{2} + 4 a b x + 4 a c + b^{2}=b^{2}$\\
+si porta $4ac$ al secondo membro & $4 a^{2} x^{2} + 4 a b x + b^{2}=b^{2} - 4 a c$\\
+il primo membro risulta il quadrato di un binomio & $( 2 a x + b )^{2}=b^{2} - 4 a c$\\
+si pone $k=2ax + b$ e l'equazione diventa pura in $k$ & $k^{2}=b^{2} - 4 a c$\\
+si calcolano le soluzioni in $k$ & $k_{1\text{,}2}=\pm \sqrt{b^{2} - 4 a c}$\\
+al posto di $k$ si sostituisce $2ax + b$ & $2 a x + b=\pm \sqrt{b^{2} - 4 a c}$\\
+si separa il monomio con l'incognita & $2 a x=- b \pm \sqrt{b^{2} - 4 a c}$\\
+si risolve rispetto all'incognita $x$ & $x_{1\text{,}2}=\dfrac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a}$\\
+\end{tabular}
+
+%\begin{description*}
+%\item $a x^{2} + b x + c=0$: equazione completa di secondo grado;
+%\item $4 a^{2} x^{2} + 4 a b x + 4 a c=0$: si moltiplicano ambo i membri per $4a$;
+%\item $4 a^{2} x^{2} + 4 a b x + 4 a c + b^{2}=b^{2}$: si aggiunge ad ambo i membri $b^{2}$;
+%\item $4 a^{2} x^{2} + 4 a b x + b^{2}=b^{2} - 4 a c$: si porta $4ac$ a secondo membro;
+%\item $( 2 a x + b )^{2}=b^{2} - 4 a c$: il primo membro risulta il quadrato di un binomio;
+%\item $k=2 a x + b$: si sostituisce il binomio $2ax + b$ con la la variabile $k$;
+%\item $k^{2}=b^{2} - 4 a c$: l'equazione diventa un'equazione di secondo grado pura in $k$;
+%\item $k_{1,2}=\pm \sqrt{b^{2} - 4 a c}$: si calcolano le soluzioni in $k$;
+%\item $2 a x + b=\pm \sqrt{b^{2} - 4 a c}$: al posto di $k$ si mette il binomio $2ax + b$;
+%\item $2 a x=- b \pm \sqrt{b^{2} - 4 a c}$: si separa il monomio con l'incognita;
+%\item $x_{1,2}=\frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a}$: si risolve l'equazione di primo grado rispetto alla $x$.
+%\end{description*}
 
 Da quanto ottenuto possiamo osservare che:
 \begin{itemize}
 \item la soluzione si ottiene esclusivamente operando sui coefficienti
 dell'equazione;
-\item il valore dell'incognita si ottiene con due calcoli: $x_{1} = \frac{- b - \sqrt{b^{2} - 4 ac}}{2 a}$ e $ x_{2} = \frac{- b + \sqrt{b^{2} - 4 ac}}{2 a}$;
-\item nel calcolo è coinvolta l'estrazione di radice quadrata: l'espressione $b^{2} - 4 ac$ prende il nome di \emph{discriminante} e si è solito porre
-$b^{2} - 4 ac = \Delta (\text{ Delta})$.
+\item il valore dell'incognita si ottiene con due calcoli:
+\[x_{1} = \dfrac{- b - \sqrt{b^{2} - 4 ac}}{2 a}\quad\text{e}\quad x_{2} = \dfrac{- b + \sqrt{b^{2} - 4 ac}}{2 a}\;;\]
+\item nel calcolo è coinvolta l'estrazione di radice quadrata: l'espressione $b^{2} - 4 ac$ prende il nome di \emph{discriminante} e si è soliti indicarla con il simbolo $\Delta$ (delta).
 \end{itemize}
 
-Questa formula si può applicare anche ai tipi di equazioni incomplete che abbiamo già studiato. La parola discriminante deriva dal verbo \emph{discrimen} (divisione); in effetti, il $\Delta$ permette di effettuare una distinzione tra la tipologia delle soluzioni di un’equazione di secondo grado.
+Questa formula può essere applicata anche ai tipi di equazioni incomplete che abbiamo già studiato. Il termine discriminante deriva dal sostantivo latino \emph{discrimen} (divisione, punto di separazione); in effetti, il valore assunto da $\Delta$ permette di effettuare una distinzione tra la tipologia delle soluzioni di un'equazione di secondo grado.
 Si possono infatti presentare tre casi:
 \begin{itemize}
-\item Primo caso. $\Delta=b^{2} - 4 a c > 0$ il radicale $\sqrt{\Delta}$ è un numero reale e l’equazione ammette \emph{due soluzioni reali e
-distinte}: $x_{1}=\frac{- b - \sqrt{\Delta}}{2 a} \vee x_{2} = \frac{- b + \sqrt{\Delta}}{2 a}$;
-\item Secondo caso. $\Delta=b^{2} - 4 a c=0$ l’equazione ammette \emph{due radici reali e coincidenti}: $x_{1}=x_{2}=- \frac{b}{2 a}$;
-\item Terzo caso. $\Delta=b^{2} - 4 a c < 0$, l ’equazione \emph{non ammette soluzioni reali}.
+\item Primo caso: $\Delta=b^{2} - 4 a c > 0$. Il radicale $\sqrt{\Delta}$ è un numero reale e l'equazione ammette \emph{due soluzioni reali e
+distinte}: $x_{1}=\dfrac{- b - \sqrt{\Delta}}{2 a} \vee x_{2} = \dfrac{- b + \sqrt{\Delta}}{2 a}$;
+\item Secondo caso: $\Delta=b^{2} - 4 a c=0$. Il radicale $\sqrt{\Delta} = 0$, quindi l'equazione ammette \emph{due radici reali e coincidenti}: $x_{1}=x_{2}=- \dfrac{b}{2 a}$;
+\item Terzo caso: $\Delta=b^{2} - 4 a c < 0$. Il radicale $\sqrt{\Delta}$ non è un numero reale, quindi l'equazione \emph{non ammette soluzioni reali}.
 \end{itemize}
 
 Riassumendo e schematizzando si ha:
 \begin{center}
 \begin{tabular}{ll}
 \toprule
-\multicolumn{2}{c} {$a x^{2} + b x + c=0$ con~$a \neq 0$}\vspace{1.05ex}\\
+\multicolumn{2}{c} {$a x^{2} + b x + c=0$~~con~~$a \neq 0$}\vspace{1.05ex}\\
 Discriminante & Soluzioni\\
 \midrule
 $\Delta > 0$ & Due soluzioni reali e distinte: $x_{1}=\frac{- b - \sqrt{\Delta}}{2 a} \vee x_{2} = \frac{- b + \sqrt{\Delta}}{2 a}$\\
@@ -115,84 +139,102 @@ $\Delta < 0$ & Nessuna soluzione reale: $I.S.=\emptyset$ \\
 \bottomrule
 \end{tabular}
 \end{center}
-
+\pagebreak
 \begin{exrig}
 \begin{esempio}
 Risoluzione di equazioni complete.
 \begin{itemize}
-\item $3 x^{2} - 5 x + 2=0$. $a = + 3, b = - 5, c = + 2$. Calcolo del discriminante: 
-\[\Delta = b^{2} - 4 ac = ( - 5 )^{2} - 4 ( + 3 ) ( + 2 ) = 25 - 24 = 1.\]
+\item $3 x^{2} - 5 x + 2=0$.
+
+ $a = + 3$, $b = - 5$, $c = + 2$. Calcolo del discriminante: 
+\[\Delta = b^{2} - 4 ac = (-5)^{2}-4\cdot(+3)\cdot(+2) = 25 - 24 = 1.\]
  Poiché $\Delta > 0$ l'equazione ammette due soluzioni reali e distinte 
-\[x_{1,2} = \frac{- b \pm \sqrt{\Delta}}{2 a} \Rightarrow x_{1,2} = \frac{- (- 5) \pm \sqrt{1}}{( + 2 ) ( + 3 )} \Rightarrow x_{1,2} = \frac{5 \pm 1}{6} \Rightarrow x_{1} = 1 \vee x_{2} = \frac{2}{3};\]
-\item $4 x^{2} - 12 x + 9=0$. $a = + 4, b = - 12, c = + 9$. Calcolo del discriminante: 
-\[\Delta=( - 12 )^{2} - 4 ( + 4 ) ( + 9 )=144 - 144 =0.\] 
+\[x_{1\text{,}2} = \frac{- b \pm \sqrt{\Delta}}{2 a} \:\Rightarrow\: x_{1\text{,}2} = \frac{- (- 5) \pm \sqrt{1}}{2\cdot(+3)} \:\Rightarrow\: x_{1\text{,}2} = \frac{5 \pm 1}{6} \:\Rightarrow\: x_{1} = 1 \vee x_{2} = \frac{2}{3};\]
+\item $4 x^{2} - 12 x + 9=0$.
+
+ $a = + 4$, $b = - 12$, $c = + 9$. Calcolo del discriminante: 
+\[\Delta=(-12)^{2} -4\cdot(+4)\cdot(+9)=144 - 144 =0.\] 
 Poiché $\Delta = 0$ l'equazione ammette due soluzioni reali coincidenti 
-\[x_{1,2} = - \frac{b}{2 a} \Rightarrow x_{1,2} = \frac{- ( - 12)}{2 ( + 4 )} = \frac{12}{8} \Rightarrow x_{1} = x_{2} = \frac{3}{2};\]
-\item $x^{2} - x + 3=0$. $a = + 1, b = - 1, c = + 3$. Calcolo del discriminante: 
-\[\Delta = ( - 1 )^{2} - 4 ( + 1 ) ( + 3 ) = 1 - 12 = - 11.\] Poiché $\Delta < 0$ l'equazione non ammette soluzioni reali.
+\[x_{1\text{,}2} = - \frac{b}{2 a} \:\Rightarrow\: x_{1\text{,}2} = \frac{-(-12)}{2\cdot(+4)} = \frac{12}{8} \:\Rightarrow\: x_{1} = x_{2} = \frac{3}{2};\]
+\item $x^{2} - x + 3=0$.
+
+ $a = + 1$, $b = - 1$, $c = + 3$. Calcolo del discriminante: 
+\[\Delta = (-1)^{2} - 4\cdot(+1)\cdot(+3) = 1 - 12 = - 11.\]
+Poiché $\Delta < 0$ l'equazione non ammette soluzioni reali.
 \end{itemize}
 \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:3.12}, \ref{ese:3.13}, \ref{ese:3.14}, \ref{ese:3.15}, \ref{ese:3.16}, \ref{ese:3.17}, \ref{ese:3.18}, \ref{ese:3.19}}
 
 \subsection{Formula ridotta per equazioni di secondo grado}
+
 Se nell'equazione
 $a x^{2} + b x + c=0$ il coefficiente $b$ è un numero pari, conviene applicare una formula, detta \emph{formula ridotta}, che semplifica i calcoli.
 
 Supponiamo $b=2 k$, l'equazione $a x^{2} + b x + c=0$ diventa $a x^{2} + 2 k x + c=0$ e nella formula risolutiva dell'equazione si ottiene:
-\[x_{1,2}=\frac{- 2 k \pm \sqrt{( 2 k )^{2}-4 a c}}{2 a}=\frac{- 2 k \pm 2 \sqrt{k^{2} - a c}}{2 a}=\frac{- k \pm \sqrt{k^{2} - a c}}{a}.\]
-Dato che $b=2 k$ quindi $k=\frac{b}{2}$ la formula ridotta che conviene utilizzare quando $b$ è pari è:
-\[x_{1,2}=\frac{\left( - \frac{b}{2} \right) \pm \sqrt{\left(\frac{b}{2} \right)^{2} - a c}}{a}.\]
+\[x_{1\text{,}2}=\frac{- 2 k \pm \sqrt{( 2 k )^{2}-4 a c}}{2 a}=\frac{- 2 k \pm 2 \sqrt{k^{2} - a c}}{2 a}=\frac{- k \pm \sqrt{k^{2} - a c}}{a}.\]
+Dato che $b=2 k$ si ha $k=\frac{b}{2}$ e quindi la formula che conviene utilizzare quando $b$ è pari è:
+\[x_{1\text{,}2}=\frac{-\frac{b}{2} \pm \sqrt{\left(\frac{b}{2} \right)^{2} - a c}}{a}.\]
 
-La quantità sotto radice, uguale a $\frac{\Delta}{4}$, è detta anche \emph{discriminante ridotto}.
-
+La quantità sotto radice, uguale a $\dfrac{\Delta}{4}$, è detta anche \emph{discriminante ridotto}.
+\pagebreak
 \begin{exrig}
 \begin{esempio}
  Applicazione della formula ridotta nella risoluzione di equazioni complete.
 \begin{itemize}
-\item $x^{2} - 4 x + 3=0$. Il coefficiente di primo grado è pari, per cui conviene utilizzare la formula ridotta: 
-\[\frac{-(-2 ) \pm \sqrt{(-2)^{2}-1( 3 )}}{1}=2 \pm \sqrt{1}\Rightarrow  x_{1} = 1 \vee x_{2} = 3;\]
-\item $- x^{2} - 2 x + 24=0$. Applichiamo la formula ridotta: 
-\[\frac{- ( - 1 ) \pm \sqrt{( -1 )^{2} - ( - 1 ) ( 24 )}}{- 1}=- 1 \pm \sqrt{25}\Rightarrow x_{1} = - 6 \vee x_{2} = 4;\]
-\item $- 3 x^{2} - 6 x + 12=0$. Per prima cosa dividiamo l’equazione per $- 3$, per il secondo principio di equivalenza, si ha l’equazione equivalente~$x^{2} + 2 x - 4=0$. Poiché il coefficiente della~$x$ è pari si può applicare la formula ridotta: 
-\[x_{1,2}=- 1 \pm \sqrt{1 + 4} = - 1\pm \sqrt{5}\Rightarrow x_{1} = - 1 + \sqrt{5} \vee x_{2} = - 1 - \sqrt{5}.\]
+\item $x^{2} - 4 x + 3=0$.
+
+ Il coefficiente di primo grado è pari, per cui conviene utilizzare la formula ridotta: 
+\[x_{1\text{,}2}=\frac{-(-2 ) \pm \sqrt{(-2)^{2}-1\cdot(+3)}}{1}=2 \pm \sqrt{1}\:\Rightarrow\:  x_{1} = 1 \vee x_{2} = 3;\]
+\item $- x^{2} - 2 x + 24=0$.
+
+ Applichiamo la formula ridotta: 
+\[x_{1\text{,}2}=\frac{- ( - 1 ) \pm \sqrt{( -1 )^{2} - (-1)\cdot(+24)}}{-1}=- 1 \pm \sqrt{25}\:\Rightarrow\: x_{1} = - 6 \vee x_{2} = 4;\]
+\item $- 3 x^{2} - 6 x + 12=0$.
+
+ Per prima cosa dividiamo l'equazione per $- 3$. Per il secondo principio di equivalenza, si ha l'equazione equivalente~$x^{2} + 2 x - 4=0$. Poiché il coefficiente della~$x$ è pari si può applicare la formula ridotta: 
+\[x_{1\text{,}2}=- 1 \pm \sqrt{1 + 4} = - 1\pm \sqrt{5}\:\Rightarrow\: x_{1} = - 1 + \sqrt{5} \vee x_{2} = - 1 - \sqrt{5}.\]
 \end{itemize}
 \end{esempio}
 \end{exrig}
 
-Quando $b$ è pari e $a = 1$, la formula si dice \emph{ridottissima}: $x_{1,2}=\left( - \frac{b}{2} \right) \pm \sqrt{\left( \frac{b}{2} \right)^{2} - c}$.
-\newpage
+Quando $b$ è pari e $a = 1$, la formula si dice \emph{ridottissima}: $x_{1\text{,}2}=-\frac{b}{2} \pm \sqrt{\left( \frac{b}{2} \right)^{2} - c}$.
+%\newpage
 \begin{exrig}
 \begin{esempio}
  Applicazione della formula ridottissima nella risoluzione di equazioni complete.
 \begin{itemize}
-\item $x^{2} - 6 x + 8 = 0$. Il coefficiente $b$ è pari e il coefficiente $a=1$, quindi possiamo applicare la formula ridottissima $x_{1,2} = 3 \pm \sqrt{9 - 8}$, quindi $x_{1}=2 \vee x_{2} = 4$.
+\item $x^{2} - 6 x + 8 = 0$.
+
+Il coefficiente $b$ è pari e il coefficiente $a=1$, quindi possiamo applicare la formula ridottissima $x_{1\text{,}2} = 3 \pm \sqrt{9 - 8}$, quindi $x_{1}=2 \vee x_{2} = 4$.
 \end{itemize}
 \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:3.20}, \ref{ese:3.21}, \ref{ese:3.22}, \ref{ese:3.23}, \ref{ese:3.24}}\vspazio
 
-Riassumiamo e schematizziamo la risoluzione di un’equazione di secondo grado:
+Riassumiamo e schematizziamo la risoluzione di un'equazione di secondo grado:
 \begin{center}
 \begin{tabular}{llll}
 \toprule
 \multicolumn{4}{c} {Equazioni incomplete}\vspace{1.05ex}\\
-Coefficienti & Nome & Equazione & Soluzioni\\
+Coefficienti & Tipo & Equazione & Soluzioni\\
 \midrule
-$b = 0, c = 0$ & Monomia & $a x^{2}=0$ & $x_{1}=x_{2}=0$\\
-$b = 0, c \neq 0$ & Pura & $a x^{2} + c=0$ & $\IS=\emptyset$ se~$a \cdot c>0$\\
-& & & $x_{1,2} = \pm \sqrt{- \frac{c}{a}}$ se~$a \cdot c<0$\\
-$b \neq 0, c = 0$ & Spuria & $a x^{2} + b x=0$ & $x_{1} = 0 \vee x_{2} = - \frac{b}{a}$ \vspace{1.1ex}\\
+$b = 0$, $c = 0$ & Monomia & $a x^{2}=0$ & $x_{1}=x_{2}=0$\\
+$b = 0$, $c \neq 0$ & Pura & $a x^{2} + c=0$ & $\begin{cases} \IS=\emptyset & \text{ se~~}ac>0 \\ x_{1\text{,}2} = \pm \sqrt{- \frac{c}{a}} & \text{ se~~}ac<0\\ \end{cases}$ \\
+% $b = 0$, $c \neq 0$ & Pura & $a x^{2} + c=0$ & \IS=\emptyset $ se $ac>0$\\
+% & & & $x_{1\text{,}2} = \pm \sqrt{- \frac{c}{a}}$~~se~$a \cdot c<0$\\
+$b \neq 0$, $c = 0$ & Spuria & $a x^{2} + b x=0$ & $x_{1} = 0 \vee x_{2} = - \frac{b}{a}$ \vspace{1.1ex}\\
 \toprule
 \multicolumn{4}{c} {Equazione completa \, $ax^2+bx+c=0$}\vspace{1.05ex}\\
 Discriminante & \multicolumn{2}{l} {Numero soluzioni} & Soluzioni\\
 \midrule
-$\Delta > 0$ & \multicolumn{2}{l} {Due soluzioni reali e distinte}& $x_{1,2}=\frac{-b\pm{\sqrt {b^{2}-4ac}}}{2a}$\\
+$\Delta > 0$ & \multicolumn{2}{l} {Due soluzioni reali e distinte}& $x_{1\text{,}2}=\frac{-b\pm{\sqrt {b^{2}-4ac}}}{2a}$\\
 $\Delta = 0$ & \multicolumn{2}{l} {Due soluzioni reali e coincidenti} & $x_{1}=x_{2}=-\frac{b}{2a}$\\
 $\Delta < 0$ & \multicolumn{2}{l} {Nessuna soluzione reale}& $\IS=\emptyset$\\
 \bottomrule
 \end{tabular}
 \end{center}
+
 \vspazio\ovalbox{\risolvii \ref{ese:3.25}, \ref{ese:3.26}, \ref{ese:3.27}, \ref{ese:3.28}, \ref{ese:3.29}, \ref{ese:3.30}, \ref{ese:3.31}, \ref{ese:3.32}, \ref{ese:3.33}, \ref{ese:3.34}, \ref{ese:3.35}}
 
 \subsection{Equazioni che si possono risolvere con opportune sostituzioni}
@@ -201,40 +243,45 @@ $\Delta < 0$ & \multicolumn{2}{l} {Nessuna soluzione reale}& $\IS=\emptyset$\\
 \begin{esempio}
 Risoluzione di equazioni con sostituzioni.
 \begin{itemize}
-\item $( x - 1 )^{2} = 16$. Sostituendo $x - 1 = t$ l'equazione diventa $t^{2} = 16$, le cui soluzioni sono $t_{1} = - 4 \vee t_{2} = + 4$. Per determinare la $x$ sostituiamo i valori di $t$ trovati nella relazione~$x - 1 = t$. Si ha $x - 1 = - 4 \vee x - 1 = + 4$ quindi l’equazione assegnata ammette le due soluzioni
+\item $( x - 1 )^{2} = 16$.
+
+Sostituendo $x - 1 = t$ l'equazione diventa $t^{2} = 16$, le cui soluzioni sono $t_{1} = - 4 \vee t_{2} = + 4$. Per determinare la $x$ sostituiamo i valori di $t$ trovati nella relazione~$x - 1 = t$. Si ha $x - 1 = - 4 \vee x - 1 = + 4$ quindi l'equazione assegnata ammette le due soluzioni
 $x_{1} = - 3 \vee x_{2} = 5$;
-\item $( x - 1 )^{2} + 2 ( x - 1 ) = 0$. Sostituendo $x - 1 = t$ l'equazione diventa $t^{2} + 2t = 0$ le cui soluzioni sono $t ( t + 2 ) = 0 \Rightarrow t_{1} = 0 \vee t + 2 = 0 \Rightarrow t_{2} = - 2$. Sostituendo $x - 1 = t$ si ha $x - 1 = 0 \vee x - 1 = - 2$ quindi l’equazione assegnata ammette le due soluzioni~$x_{1} = - 1 \vee x_{2} = 1$.
+\item $( x - 1 )^{2} + 2 ( x - 1 ) = 0$.
+
+Sostituendo $x - 1 = t$ l'equazione diventa $t^{2} + 2t = 0$ le cui soluzioni sono $t ( t + 2 ) = 0 \Rightarrow t_{1} = 0 \vee t + 2 = 0 \Rightarrow t_{2} = - 2$. Sostituendo $x - 1 = t$ si ha $x - 1 = 0 \vee x - 1 = - 2$ quindi l'equazione assegnata ammette le due soluzioni~$x_{1} = - 1 \vee x_{2} = 1$.
 \end{itemize}
 \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:3.36}, \ref{ese:3.37}, \ref{ese:3.38}}
 
 \section{Discussione e risoluzione di equazioni numeriche frazionarie}
-Un’equazione in cui compare l’incognita al denominatore si chiama \emph{frazionaria o fratta.}
+
+Un'equazione in cui compare l'incognita al denominatore si chiama \emph{frazionaria o fratta.}
 
 \begin{exrig}
 \begin{esempio}
-Risolvere la seguente equazione $\dfrac{3 x + 2}{1 + x}=\dfrac{2 x + 3}{x - 2}$.
+Risolvere la seguente equazione:~~$\dfrac{3 x + 2}{1 + x}=\dfrac{2 x + 3}{x - 2}$.
  \paragraph{Passo I} Determiniamo il $\mcm$ dei denominatori: $\mcm = ( 1 + x ) \cdot ( x - 2 )$.
- \paragraph{Passo II} Imponiamo le \emph{Condizioni} di \emph{Esistenza} ($\CE$): $\CE x \neq - 1 \wedge x \neq 2$. La ricerca dei valori che risolvono l'equazione si restringe ai numeri reali appartenenti all’insieme, $\Dom = \insR - \{- 1, 2 \}$ detto \emph{Dominio} dell’equazione o \emph{Insieme} di \emph{Definizione} (abbreviato $\ID$).
- \paragraph{Passo III} Applichiamo il primo principio d’equivalenza trasportando al primo membro la frazione del secondo membro $\frac{3 x + 2}{1 + x} - \frac{2 x + 3}{x - 2} = 0$. Riduciamo allo stesso denominatore ($\mcm$): 
+ \paragraph{Passo II} Imponiamo le \emph{condizioni di esistenza} ($\CE$): $\CE\: x \neq - 1 \wedge x \neq 2$. La ricerca dei valori che risolvono l'equazione si restringe ai numeri reali appartenenti all'insieme, $\Dom = \insR - \{-1$, $2\}$ detto \emph{dominio} dell'equazione o \emph{insieme di definizione} (abbreviato $\ID$).
+ \paragraph{Passo III} Applichiamo il primo principio d'equivalenza trasportando al primo membro la frazione del secondo membro $\frac{3 x + 2}{1 + x} - \frac{2 x + 3}{x - 2} = 0$. Riduciamo allo stesso denominatore ($\mcm$): 
 \[\frac{( 3 x + 2 ) \cdot ( x - 2 ) - ( 2 x + 3 ) \cdot ( 1 + x )}{( 1 +x ) \cdot ( x - 2 )}=0.\]
- \paragraph{Passo IV} Moltiplichiamo ambo i membri per il $\mcm$, certamente diverso da zero per le condizioni poste; l’equazione diventa: $( 3 x + 2 ) \cdot ( x - 2 ) - ( 2 x + 3 ) \cdot ( 1 + x )=0$.
- \paragraph{Passo V} L’equazione che si ottiene è di secondo grado; portiamo l’equazione alla forma canonica: $3 x^{2} - 6 x + 2 x - 4 - 2 x - 3 - 2 x^{2} - 3 x=0 \Rightarrow x^{2} - 9 x - 7=0$.
- \paragraph{Passo VI} Calcoliamo il discriminante: $\Delta=b^{2} - 4 a c=81 + 28 = 109$. Il discriminante è positivo quindi l’equazione è determinata e ammette due soluzioni reali distinte: 
-\[x_{1,2}=\frac{9 \pm \sqrt{109}}{2} \Rightarrow x_{1}=\frac{9 - \sqrt{109}}{2} \vee x_{2}=\frac{9 + \sqrt{109}}{2}.\]
- \paragraph{Passo VII} Confrontiamo le soluzioni con le Condizioni di Esistenza; in questo caso le radici appartengono all’insieme \emph{D}; diciamo che sono accettabili e l’insieme soluzione è: $\IS=\left\{\frac{9 - \sqrt{109}}{2}, \frac{9 +\sqrt{109}}{2} \right\}$.
+ \paragraph{Passo IV} Moltiplichiamo ambo i membri per il $\mcm$, certamente diverso da zero per le condizioni poste; l'equazione diventa: $( 3 x + 2 ) \cdot ( x - 2 ) - ( 2 x + 3 ) \cdot ( 1 + x )=0$.
+ \paragraph{Passo V} L'equazione che si ottiene è di secondo grado; portiamo l'equazione alla forma canonica: $3 x^{2} - 6 x + 2 x - 4 - 2 x - 3 - 2 x^{2} - 3 x=0 \:\Rightarrow\: x^{2} - 9 x - 7=0$.
+ \paragraph{Passo VI} Calcoliamo il discriminante: $\Delta=b^{2} - 4 a c=81 + 28 = 109$. Il discriminante è positivo quindi l'equazione è determinata e ammette due soluzioni reali distinte: 
+\[x_{1\text{,}2}=\frac{9 \pm \sqrt{109}}{2} \quad\Rightarrow\quad x_{1}=\frac{9 - \sqrt{109}}{2} \:\vee\: x_{2}=\frac{9 + \sqrt{109}}{2}.\]
+ \paragraph{Passo VII} Confrontiamo le soluzioni con le $\CE$; in questo caso le radici appartengono all'insieme $\Dom$; diciamo che sono accettabili e l'insieme soluzione è: $\IS=\left\{\frac{9 - \sqrt{109}}{2}\text{, }\frac{9 +\sqrt{109}}{2} \right\}$.
  \end{esempio}
 
  \begin{esempio}
-Risolvere la seguente equazione $\dfrac{x^{2}}{x^{2} - 3 x + 2}=\dfrac{x - 2}{x - 1} +\dfrac{1}{x + 2}$.
+Risolvere la seguente equazione:~~$\dfrac{x^{2}}{x^{2} - 3 x + 2}=\dfrac{x - 2}{x - 1} +\dfrac{1}{x + 2}$.
  \paragraph{Passo I} Determiniamo il $\mcm$ dei denominatori. Scomponiamo in fattori i denominatori. Riscriviamo: $\frac{x^{2}}{( x - 2 ) ( x - 1 )}=\frac{x - 2}{x - 1} +\frac{1}{x + 2}$ il $\mcm$ è $( x - 2 ) ( x - 1 ) ( x + 2 )$.
- \paragraph{Passo II} Imponiamo le Condizioni di Esistenza: $\CE x \neq 1 \wedge x \neq 2 \wedge x \neq - 2$ quindi $\Dom = \insR - \{ 1, 2, - 2 \}=\ID$
- \paragraph{Passo III} Trasportiamo al primo membro ed uguagliamo a zero; riduciamo allo stesso denominatore ($\mcm$) i membri dell’equazione: 
-\[\frac{x^{3} + 2 x^{2} - x^{2} + 3 x - 2 - x^{3} - 2 x^{2} + 4x^{2} + 8 x - 4 x - 8}{( x - 2 ) ( x - 1 ) ( x + 2 )}~=~0.\]
- \paragraph{Passo IV} Applichiamo il secondo principio di equivalenza moltiplicando ambo i membri per il $\mcm$, certamente diverso da zero per le condizioni poste in precedenza; l’equazione diventa: $3 x^{2} + 7 x - 10 = 0$.
- \paragraph{Passo V} Calcoliamo il discriminante: $\Delta=b^{2} - 4 a c=49 + 120=169$. Il discriminante è positivo, l’equazione determinata e ammette due soluzioni reali distinte: $x_{1,2}=\frac{- 7 \pm 13}{6}$ cioè~$x_{1}=-\frac{10}{3} \vee x_{2}=1$.
- \paragraph{Passo VI} Confrontiamo con le $\CE$; in questo caso solo $x_{1}$ appartiene all’insieme $\Dom$; diciamo che l’insieme soluzione è: $\IS=\left\{-\frac{10}{3}\right\}$ mentre $x_{2} = 1$ non è accettabile.
+ \paragraph{Passo II} Imponiamo le Condizioni di Esistenza: $\CE\: x \neq 1 \wedge x \neq 2 \wedge x \neq - 2$ quindi $\Dom = \ID =\insR - \{-2$, $1$, $2\}$
+ \paragraph{Passo III} Trasportiamo al primo membro ed uguagliamo a zero; riduciamo allo stesso denominatore ($\mcm$) i membri dell'equazione: 
+\[\frac{x^{3} + 2 x^{2} - x^{2} + 3 x - 2 - x^{3} - 2 x^{2} + 4x^{2} + 8 x - 4 x - 8}{( x - 2 ) ( x - 1 ) ( x + 2 )} = 0.\]
+ \paragraph{Passo IV} Applichiamo il secondo principio di equivalenza moltiplicando ambo i membri per il $\mcm$, certamente diverso da zero per le condizioni poste in precedenza; l'equazione diventa: $3 x^{2} + 7 x - 10 = 0$.
+ \paragraph{Passo V} Calcoliamo il discriminante: $\Delta=b^{2} - 4 a c=49 + 120=169$. Il discriminante è positivo, l'equazione determinata e ammette due soluzioni reali distinte: $x_{1\text{,}2}=\frac{- 7 \pm 13}{6}$ cioè~$x_{1}=-\frac{10}{3} \vee x_{2}=1$.
+ \paragraph{Passo VI} Confrontiamo con le $\CE$; in questo caso solo $x_{1}$ appartiene all'insieme $\Dom$; diciamo che l'insieme soluzione è: $\IS=\left\{-\frac{10}{3}\right\}$ mentre $x_{2} = 1$ non è accettabile.
 \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:3.39}, \ref{ese:3.40}, \ref{ese:3.41}, \ref{ese:3.42}, \ref{ese:3.43}, \ref{ese:3.44}, \ref{ese:3.45}, \ref{ese:3.46}, \ref{ese:3.47}, \ref{ese:3.48}, \ref{ese:3.49}, \ref{ese:3.50}, \ref{ese:3.51},}
@@ -244,43 +291,44 @@ Risolvere la seguente equazione $\dfrac{x^{2}}{x^{2} - 3 x + 2}=\dfrac{x - 2}{x 
 \section{Discussione e risoluzione di equazioni letterali}
 Ricordiamo la seguente definizione:
 \begin{definizione}
-Una equazione è \emph{letterale} se i coefficienti dell’incognita sono espressioni letterali, cioè se oltre all’incognita (in genere indicata con
-la lettera $x$) compare un’altra lettera (in genere $a, b, k, \ldots$) detta parametro.
+Una equazione è \emph{letterale} se i coefficienti dell'incognita sono espressioni letterali, cioè se oltre all'incognita (in genere indicata con
+la lettera $x$) compare un'altra lettera (in genere $a$, $b$, $k$, \ldots) detta \emph{parametro}.
 \end{definizione}
 
 \begin{exrig}
 \begin{esempio}
-Data l'equazione $k x^{2} - ( 2 k - 1 ) x + ( k - 3 ) = 0$, discutere al variare di $k$ la realtà delle sue soluzioni.
+Data l'equazione $k x^{2} - ( 2 k - 1 ) x + ( k - 3 ) = 0$, discutere, al variare di $k$, la realtà delle sue soluzioni.
 
-L’equazione è letterale di secondo grado nell’incognita $x$, i cui coefficienti dipendono dal parametro $k$. Il parametro $k$ può assumere qualunque valore numerico e l’equazione rappresenta una famiglia di equazioni le cui caratteristiche variano a seconda dei valori attribuiti al parametro. Notiamo subito che se
-$k$ assume il valore zero, l’equazione non è più di secondo grado. Se $k$ assume il valore $3$, l’equazione è ancora di secondo grado ma è incompleta (spuria) perché priva del termine noto.
+L'equazione è letterale di secondo grado nell'incognita $x$, i cui coefficienti dipendono dal parametro $k$. Il parametro $k$ può assumere qualunque valore numerico e l'equazione rappresenta una famiglia di equazioni le cui caratteristiche variano a seconda dei valori attribuiti al parametro. Notiamo subito che se
+$k$ assume il valore zero, l'equazione non è più di secondo grado. Se $k$ assume il valore $3$, l'equazione è ancora di secondo grado ma è incompleta (spuria) perché priva del termine noto.
 
-\emph{Discutere} un’equazione letterale di secondo grado significa analizzare come varia il suo insieme delle soluzioni al variare del parametro.
+\emph{Discutere} un'equazione letterale significa analizzare come varia il suo insieme delle soluzioni al variare del parametro.
 
-Ricordando la formula $x_{1,2}=\frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a}$ in cui compaiono i tre coefficienti $a, b, c$ possiamo dire che:
+Ricordando la formula $x_{1\text{,}2}=\frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a}$ in cui compaiono i tre coefficienti $a$, $b$, $c$ possiamo dire che, nel caso considerato:
  \begin{itemize*}
- \item il primo coefficiente è $k$, se $k = 0$ l’equazione diventa $x - 3 = 0$ di primo grado con $\IS = \{3\}$;
- \item il secondo coefficiente è $-2k+1$, se questo è nullo, ossia se $k = \frac{1}{2}$ l’equazione diventa $\frac{1}{2} x^{2} - \frac{5}{2}=0$, equazione pura con due soluzioni reali opposte $x_{1} = - \sqrt{5} \vee x_{2} = \sqrt{5}$;
- \item il terzo coefficiente è $k-3$, se è nullo, cioè se $k = 3$ l’equazione diventa $3 x^{2} - 5 x = 0$, equazione spuria con due soluzioni reali $x_{1} = 0 \vee x_{2} = \frac{5}{3}$.
+ \item il primo coefficiente è $k$, se $k = 0$ l'equazione diventa $x - 3 = 0$ di primo grado con $\IS = \{3\}$;
+ \item il secondo coefficiente è $-2k+1$, se questo è nullo, ossia se $k = \frac{1}{2}$ l'equazione diventa $\frac{1}{2} x^{2} - \frac{5}{2}=0$, equazione pura con due soluzioni reali opposte $x_{1} = - \sqrt{5} \vee x_{2} = \sqrt{5}$;
+ \item il terzo coefficiente è $k-3$, se è nullo, cioè se $k = 3$ l'equazione diventa $3 x^{2} - 5 x = 0$, equazione spuria con due soluzioni reali $x_{1} = 0 \vee x_{2} = \frac{5}{3}$.
  \end{itemize*}
 
-Per tutti i valori di $k$ dell’insieme $\insR - \left\{ 0, \frac{1}{2},3 \right\}$ l’equazione è completa, l’esistenza di soluzioni reali dipende dal discriminante $\Delta = \left( - 2 k + 1 \right)^{2} - 4 k \left( k - 3 \right) = 8 k + 1$, quindi se
+Per tutti i valori di $k \in \insR - \left\{ 0\text{, }\frac{1}{2}\text{, }3 \right\}$ l'equazione è completa, pertanto l'esistenza di soluzioni reali dipende dal discriminante $\Delta = \left( - 2 k + 1 \right)^{2} - 4 k \left( k - 3 \right) = 8 k + 1$, quindi
 \begin{itemize*}
- \item $8 k + 1 < 0 \Rightarrow k < - \frac{1}{8}$ l’equazione non ammette soluzioni reali e $\IS = \emptyset$;
- \item $8 k + 1 \geq 0 \Rightarrow k \geq - \frac{1}{8}$. In particolare se $ k>-\frac{1}{8} $ l’equazione ammette due soluzioni reali distinte $ x_{1,2} = \frac{\left(2 k - 1 \right) \pm \sqrt{8 k + 1}}{2 k}$, se $ k=- \frac{1}{8} $ coincidenti $ x_{1} = x_{2}=5$.
+ \item se $8 k + 1 < 0 \:\Rightarrow\: k < - \frac{1}{8}$ l'equazione non ammette soluzioni reali: $\IS = \emptyset$;
+ \item se $8 k + 1 > 0 \:\Rightarrow\: k > - \frac{1}{8}$ l'equazione ammette due soluzioni reali distinte $ x_{1\text{,}2} = \frac{\left(2 k - 1 \right) \pm \sqrt{8 k + 1}}{2 k}$
+ \item se $k=- \frac{1}{8}$ l'equazione ammette due soluzioni reali coincidenti $ x_{1} = x_{2}=5$.
 \end{itemize*}
 Riassumendo e schematizzando si ha:
 \begin{center}
 \begin{tabular}{lll}
 \toprule
-\multicolumn{3}{c} {$k x^{2} - ( 2 k - 1 ) x + ( k - 3 ) = 0$ con $k \in \insR$}\vspace{1.05ex}\\
+\multicolumn{3}{c} {$k x^{2} - ( 2 k - 1 ) x + ( k - 3 ) = 0$~~con~~$k \in \insR$}\vspace{1.05ex}\\
 Parametro & Insieme Soluzione & Equazione\\
 \midrule
 $k = 0$ & $x = 3$ & di primo grado\\
 $k = \frac{1}{2}$ & $x_{1} = - \sqrt{5} \vee x_{2} = + \sqrt{5}$ & pura\\
 $k = 3$ & $x_{1} = 0 \vee x_{2} = \frac{5}{3}$ & spuria\\
-$k \in \insR - \left\{ 0, \frac{1}{2}, 3 \right\}$ & & completa, $\Delta = 8 k + 1$\\
-$k < - \frac{1}{8}$ & $\Delta < 0$ non esistono soluzioni reali $I.S. = \emptyset$& \\
+$k \in \insR - \left\{ 0\text{, }\frac{1}{2}\text{, }3 \right\}$ & & completa, $\Delta = 8 k + 1$\\
+$k < - \frac{1}{8}$ & $\Delta < 0$ non esistono soluzioni reali, $I.S. = \emptyset$& \\
 $k \geq - \frac{1}{8}$ & $\Delta \geq 0$ esistono soluzioni reali & \\
 $k > - \frac{1}{8}$ & $x_{1}=\frac{\left( 2 k - 1 \right) - \sqrt{8 k + 1}}{2k}\vee x_{2}=\frac{\left( 2 k - 1 \right) + \sqrt{8 k + 1}}{2 k}$ & \\
 $k = - \frac{1}{8}$ & $x_{1} = x_{2}=5$ &\\
@@ -290,23 +338,23 @@ $k = - \frac{1}{8}$ & $x_{1} = x_{2}=5$ &\\
 \end{esempio}
 
 \begin{esempio}
-Data l’equazione $x^2 - 3 x + 1 - k = 0$, discutere al variare di $k \in \insR$, la realtà delle radici.
+Data l'equazione $x^2 - 3 x + 1 - k = 0$, discutere, al variare di $k \in \insR$, la realtà delle radici.
 
-Il primo e il secondo coefficiente non dipendono dal parametro $k$, quindi analizziamo il terzo coefficiente. Se $k = 1$ l’equazione diventa un'equazione spuria con due radici reali $x_{1} = 0 \vee x_{2} = 3$. Per tutti i valori di $k$ dell’insieme $\insR - \{1\}$ l’equazione è completa, l’esistenza di soluzioni reali dipende dal discriminante $\Delta = 9 - 4 ( 1 - k ) = 4 k + 5$, quindi se:
+Il primo e il secondo coefficiente non dipendono dal parametro $k$, quindi analizziamo il terzo coefficiente. Se $k = 1$ l'equazione diventa un'equazione spuria con due radici reali $x_{1} = 0 \vee x_{2} = 3$. Per tutti i valori di $k$ dell'insieme $\insR - \{1\}$ l'equazione è completa e l'esistenza di soluzioni reali dipende dal discriminante $\Delta = 9 - 4 ( 1 - k ) = 4 k + 5$, quindi:
 \begin{itemize*}
- \item $k < - \frac{5}{4}$ l’equazione non ammette soluzioni reali e $\IS = \emptyset$;
- \item $k \geq - \frac{5}{4}$ l’equazione ammette due radici reali distinte se $k >-\frac{5}{4}\Rightarrow x_{1,2} =\frac{3 \pm\sqrt{4 k +5}}{2}$, coincidenti se $k=- \frac{5}{4} \Rightarrow x_{1} = x_{2} = \frac{3}{2}$.
+ \item se $k < - \frac{5}{4}$ l'equazione non ammette soluzioni reali: $\IS = \emptyset$;
+ \item se $k \geq - \frac{5}{4}$ l'equazione ammette due radici reali. Esse sono distinte se $k >-\frac{5}{4}\:\Rightarrow\: x_{1\text{,}2} =\frac{3 \pm\sqrt{4 k +5}}{2}$ e coincidenti se $k=- \frac{5}{4} \:\Rightarrow\: x_{1} = x_{2} = \frac{3}{2}$.
 \end{itemize*}
 Riassumendo e schematizzando si ha:
 \begin{center}
 \begin{tabular}{lll}
 \toprule
-\multicolumn{3}{c} {$x^{2} - 3 x + 1 - k = 0$ con $k \in \insR$}\vspace{1.05ex}\\
+\multicolumn{3}{c} {$x^{2} - 3 x + 1 - k = 0$~~con~~$k \in \insR$}\vspace{1.05ex}\\
 Parametro & Insieme Soluzione & Equazione\\
 \midrule
 $k = 1$ & $x_{1} = 0 \vee x_{2} = 3$ & spuria\\
 $k \in \insR - \{1\}$ & & completa, $\Delta = 4 k + 5$\\
-$k < - \frac{5}{4}$ & $\Delta < 0$ non esistono soluzioni reali $I.S. = \emptyset$& \\
+$k < - \frac{5}{4}$ & $\Delta < 0$ non esistono soluzioni reali, $I.S. = \emptyset$& \\
 $k \geq - \frac{5}{4}$ & $\Delta \geq 0$ esistono soluzioni reali & \\
 $k > - \frac{5}{4}$ & $x_{1}=\frac{3 - \sqrt{4 k + 5}}{2} \vee x_{2}=\frac{3 + \sqrt{4 k + 5}}{2}$ & \\
 $k = - \frac{5}{4}$ & $x_{1} = x_{2}=\frac{3}{2}$ &\\
@@ -316,77 +364,76 @@ $k = - \frac{5}{4}$ & $x_{1} = x_{2}=\frac{3}{2}$ &\\
 \end{esempio}
 
 \begin{esempio}
-Discutere la seguente equazione letterale: $\frac{x^{2}}{m - 1} + 3 + m=\frac{2 m x}{m - 1} \left( 1 +\frac{1}{m} \right)$.
+Discutere l'equazione letterale:~~$\dfrac{x^{2}}{m - 1} + 3 + m=\dfrac{2 m x}{m - 1} \left( 1 +\dfrac{1}{m} \right)$.
 
-L’equazione pur presentando delle frazioni è intera, in quanto l’incognita $x$ non compare al denominatore. Se~$m = 0$ oppure~$m = 1$ l’equazione è priva di significato, quindi le Condizioni di Esistenza sono $ m \neq 0 \wedge m \neq 1$.
+L'equazione, pur presentando delle frazioni, è intera in quanto l'incognita $x$ non compare al denominatore. Se~$m = 0$ oppure~$m = 1$ l'equazione è priva di significato, quindi poniamo $\CE\: m \neq 0 \wedge m \neq 1$.
 
 Trasportiamo a sinistra del segno di uguaglianza i termini di destra ed eseguiamo il calcolo nella parentesi: 
-\[\frac{x^{2}}{m - 1} + 3 + m - \frac{2 m x}{m - 1} \left( 1 +\frac{1}{m} \right) = 0 \Rightarrow \frac{x^{2}}{m - 1} + 3 + m - \frac{2 m x}{m - 1} - \frac{2 m x}{m - 1} \cdot \frac{1}{m} = 0.\]
-Semplifichiamo $m$ nell’ultimo termine, poiché nelle $\CE m \neq 0$, si ottiene
+\[\frac{x^{2}}{m - 1} + 3 + m - \frac{2 m x}{m - 1} \left( 1 +\frac{1}{m} \right) = 0 \:\Rightarrow\: \frac{x^{2}}{m - 1} + 3 + m - \frac{2 m x}{m - 1} - \frac{2 \cancel{m} x}{m - 1} \cdot \frac{1}{\cancel{m}} = 0.\]
+Semplifichiamo $m$ nell'ultimo termine, poiché nelle $\CE m \neq 0$, si ottiene
 \[\frac{x^{2}}{m - 1} + 3 + m - \frac{2 mx}{m - 1} - \frac{2 x}{m - 1}=0.\]
-Riduciamo allo stesso denominatore $m - 1$, eliminiamo il denominatore essendo $m \neq 1$ per le $\CE$ si ha: $x^{2} + 3 m - 3 + m^{2} - m - 2 m x - 2 x = 0$.
-Scriviamo l’equazione di secondo grado in forma canonica $x^{2} - 2 x ( m + 1 ) + m^{2} + 2 m - 3 = 0$.
+Riduciamo allo stesso denominatore $m - 1$ ed eliminiamo il denominatore, essendo $m \neq 1$ per le $\CE$; si ha: $x^{2} + 3 m - 3 + m^{2} - m - 2 m x - 2 x = 0$, che scritta in forma canonica diventa $x^{2} - 2 x ( m + 1 ) + m^{2} + 2 m - 3 = 0$.
 
 \emph{Discussione}
 \begin{itemize*}
-\item il primo coefficiente essendo uguale a $1$ non dipende dal valore del parametro, quindi l’equazione è di secondo grado per qualunque valore di $m \in \insR - \{0, 1\}$;
-\item il secondo coefficiente è $- 2 (m + 1)$: se $m = - 1$ l’equazione diventa $x^{2} - 4 = 0$, equazione pura con due soluzioni reali opposte $x_{1} = - 2 \vee x_{2} = 2$;
-\item il terzo coefficiente è $m^{2} + 2 m - 3$: se $m^{2} + 2 m - 3 = 0 \Rightarrow m = 1 \vee m = - 3$ (non consideriamo il caso $m = 1$ per le $\CE$) l’equazione diventa $x^{2} + 4 x = 0$, equazione spuria con due soluzioni reali $x_{1} = 0 \vee x_{2} = - 4$.
+\item il primo coefficiente, essendo uguale a $1$, non dipende dal valore del parametro~$m$, quindi l'equazione è di secondo grado per qualunque valore di $m \in \insR - \{0$, $1\}$;
+\item il secondo coefficiente è $- 2 (m + 1)$: se $m = - 1$ l'equazione diventa $x^{2} - 4 = 0$, equazione pura con due soluzioni reali opposte $x_{1} = - 2 \vee x_{2} = 2$;
+\item il terzo coefficiente è $m^{2} + 2 m - 3$: se $m^{2} + 2 m - 3 = 0 \:\Rightarrow\: m = 1 \vee m = - 3$ (non consideriamo il caso $m = 1$ per le $\CE$) l'equazione diventa $x^{2} + 4 x = 0$, equazione spuria con due soluzioni reali $x_{1} = 0 \vee x_{2} = - 4$.
 \end{itemize*}
-Prima conclusione: per tutti i valori di $m$ nell’insieme $\insR -\{ 0, 1, -1, -3 \}$ l’equazione è completa e l’esistenza di soluzioni reali dipende dal discriminante. Calcoliamo il discriminante: $\frac{\Delta}{4}~=~( m + 1 )^{2} - ( m^{2} + 2 m - 3 ) = 4$; esso risulta indipendente dal valore del parametro~$m$ e sempre positivo, l’equazione ammette due soluzioni reali distinte $x_{1} = m - 1 \vee x_{2} = m + 3$.
+Prima conclusione: per tutti i valori di $m \in \insR -\{0$, $1$, $-1$, $-3\}$ l'equazione è completa e l'esistenza di soluzioni reali dipende dal discriminante. Calcoliamo il discriminante: $\frac{\Delta}{4} = ( m + 1 )^{2} - ( m^{2} + 2 m - 3 ) = 4$; esso risulta indipendente dal valore del parametro~$m$ e sempre positivo, quindi l'equazione ammette sempre due soluzioni reali distinte $x_{1} = m - 1 \vee x_{2} = m + 3$.
 
 Riassumendo in una tabella tutti i risultati ottenuti:
 \begin{center}
 \begin{tabular}{lll}
 \toprule
-\multicolumn{3}{c} {$\frac{x^{2}}{m - 1} + 3 + m=\frac{2 m x}{m - 1} \left( 1 + \frac{1}{m} \right)$ con $m \in \insR$}\vspace{1.05ex}\\
+\multicolumn{3}{c} {$\frac{x^{2}}{m - 1} + 3 + m=\frac{2 m x}{m - 1} \left( 1 + \frac{1}{m} \right)$~~con~~$m \in \insR$}\vspace{1.05ex}\\
 Parametro & Insieme Soluzione & Equazione\\
 \midrule
 $m = 0 \vee m=1$ & & priva di significato\\
 $m =-1$ & $x_{1}=- 2 \vee x_{2}=2$ & pura\\
-$m = - 3$ & $x_{1}=0 \vee x_{2}=- 4$ & spuria\\
-$m \in \insR - \{ 0, 1,-1, -3 \}$ & $x_{1} = m - 1 \vee x_{2} = m + 3$ & completa: $\Delta = 4$\\
+$m = -3$ & $x_{1}=0 \vee x_{2}=- 4$ & spuria\\
+$m \in \insR - \{0$, $1$, $-1$, $-3\}$ & $x_{1} = m - 1 \vee x_{2} = m + 3$ & completa: $\Delta = 16$\\
 \bottomrule
 \end{tabular}
 \end{center}
 \end{esempio}
 
 \begin{esempio}
-Discutere l'equazione parametrica $\frac{k + x}{2 x} \left( \frac{k + x}{k - x} + \frac{k - x}{k + x} \right)=k + \frac{2 k}{k x - x^{2}} - 1$.
+Discutere l'equazione parametrica~$\dfrac{k + x}{2 x} \left( \dfrac{k + x}{k - x} + \dfrac{k - x}{k + x} \right)=k + \dfrac{2 k}{k x - x^{2}} - 1$.
 
-L’equazione è fratta, poiché nel denominatore compare l’incognita $x$. Trasportiamo i termini del secondo membro a sinistra del segno uguale e scomponiamo in fattori i denominatori: 
-\[\frac{k + x}{2 x} \left( \frac{k + x}{k - x} + \frac{k - x}{k +x} \right) - k - \frac{2 k}{x ( k - x )} + 1=0; \CE x \neq 0 \wedge x \neq k \wedge x \neq - k.\]
-Svolgiamo i calcoli nella parentesi e moltiplichiamo $\frac{k^{2} + x^{2}}{x ( k - x )} - k - \frac{2 k}{x ( k - x )} + 1=0$;
-Riduciamo allo stesso denominatore ed eliminiamo il denominatore $k x^{2} + k x \cdot ( 1 - k ) + k \cdot ( k - 2 )=0$;
+L'equazione è fratta, poiché l'incognita $x$ compare nel denominatore. Trasportiamo i termini del secondo membro a sinistra del segno di uguaglianza e scomponiamo in fattori i denominatori: 
+\[\frac{k + x}{2 x} \left( \frac{k + x}{k - x} + \frac{k - x}{k +x} \right) - k - \frac{2 k}{x ( k - x )} + 1=0\qquad \CE\: x \neq 0 \wedge x \neq k \wedge x \neq - k.\]
+Svolgiamo i calcoli nella parentesi e moltiplichiamo: $\frac{k^{2} + x^{2}}{x ( k - x )} - k - \frac{2 k}{x ( k - x )} + 1=0$;
+Riduciamo allo stesso denominatore ed eliminiamo il denominatore: $k x^{2} + k x \cdot ( 1 - k ) + k \cdot ( k - 2 )=0$;
 
 \emph{Discussione}
 \begin{itemize}
- \item Il primo coefficiente è $k$, se $k = 0$ le $\CE$ si riducono a $x \neq 0$ e l’equazione diventa $0x = 0$ indeterminata, quindi $I.S. = \insR - \{ 0\}$ per le condizioni poste sull’incognita. Avendo studiato il caso $k=0$, possiamo ora supporre $k \neq 0$, dividiamo tutti i coefficienti per $k$, l’equazione diventa $x^{2} + x \cdot ( 1 - k ) + ( k - 2 )=0$;
- \item il secondo coefficiente è $1-k$, se $k = 1$ le $\CE$ sono $x \neq 0 \wedge x \neq 1 \wedge x \neq - 1$ e l’equazione diventa $x^{2} - 1 = 0$, le soluzioni sono $x_{1} = -1 \vee x_{2} = 1$ che non sono accettabili per le $\CE$;
- \item il terzo coefficiente è $k-2$, se $k = 2$ le $\CE$ sono $x \neq 0 \wedge x \neq 2 \wedge x \neq - 2$ e l’equazione diventa $x^{2} - x = 0$ le cui soluzioni sono $x_{1} = 0 \vee x_{2} = 1$ di cui $x_{1} = 0$ non accettabile per le $\CE$
+ \item Il primo coefficiente è $k$, se $k = 0$ le $\CE$ si riducono a $x \neq 0$ e l'equazione diventa $0x = 0$ indeterminata, quindi $I.S. = \insR - \{ 0\}$ per le condizioni poste sull'incognita. Avendo studiato il caso $k=0$, possiamo ora supporre $k \neq 0$. Dividiamo tutti i coefficienti per $k$, l'equazione diventa $x^{2} + x \cdot ( 1 - k ) + ( k - 2 )=0$;
+ \item il secondo coefficiente è $1-k$, se $k = 1$ le $\CE$ sono $x \neq 0 \wedge x \neq 1 \wedge x \neq - 1$ e l'equazione diventa $x^{2} - 1 = 0$, le soluzioni sono $x_{1} = -1 \vee x_{2} = 1$ che non sono accettabili per le $\CE$;
+ \item il terzo coefficiente è $k-2$, se $k = 2$ le $\CE$ sono $x \neq 0 \wedge x \neq 2 \wedge x \neq - 2$ e l'equazione diventa $x^{2} - x = 0$ le cui soluzioni sono $x_{1} = 0 \vee x_{2} = 1$ di cui $x_{1} = 0$ non è accettabile per le $\CE$
 \end{itemize}
-Per $k \in \insR - \{0, 1, 2\}$ l’equazione è completa, l’esistenza di soluzioni reali dipende dal discriminante $\Delta = (1 - k)^{2}-4(k-2)=(k-3)^{2}$, essendo
-$\Delta \geq 0\, \forall k$, si avranno sempre due soluzioni reali: coincidenti se $k = 3 \Rightarrow x_{1} = x_{2} = 1$ accettabili essendo le
-$\CE x \neq - 3 \wedge x \neq 0 \wedge x \neq 3$; distinte se $k \neq 3 \Rightarrow x_{1} = 1 \vee x_{2} = k - 2$ e confrontando con le C.E. si ottiene $x_{1} = 1$
-non accettabile se $k = - 1$; $x_{2}$ sempre accettabile per $k \in \mathbb{R} - \{ 0,1,2,3, - 1 \}$.
+Per $k \in \insR - \{0$, $1$, $2\}$ l'equazione è completa, l'esistenza di soluzioni reali dipende dal discriminante $\Delta = (1 - k)^{2}-4(k-2)=(k-3)^{2}$, essendo
+$\Delta \geq 0\; \forall k$, si avranno sempre due soluzioni reali: coincidenti se $k = 3 \:\Rightarrow\: x_{1} = x_{2} = 1$ accettabili essendo le
+$\CE\: x \neq - 3 \wedge x \neq 0 \wedge x \neq 3$; distinte se $k \neq 3 \:\Rightarrow\: x_{1} = 1 \vee x_{2} = k - 2$ e, confrontando con le $\CE$, si $x_{1} = 1$
+non è accettabile se $k = - 1$, mentre $x_{2}$ è sempre accettabile per $\forall k \in \insR - \{0$, $1$, $2$, $3$, $-1\}$.
 
 Riassumendo in una tabella tutti i risultati ottenuti:
 \begin{center}
 \begin{threeparttable}
 \begin{tabular}{llll}
 \toprule
-\multicolumn{3}{c} {$\frac{k + x}{2 x} \left( \frac{k + x}{k - x} + \frac{k - x}{k + x} \right)=k + \frac{2 k}{k x - x^{2}} - 1$ con $m \in \insR$}\vspace{1.05ex}\\
+\multicolumn{4}{c} {$\frac{k + x}{2 x} \left( \frac{k + x}{k - x} + \frac{k - x}{k + x} \right)=k + \frac{2 k}{k x - x^{2}} - 1$~~con~~$k \in \insR$}\vspace{1.05ex}\\
 Parametro & Incognita & Insieme Soluzione & Equazione\\
 \midrule
  & $x \neq -k \wedge x \neq 0 \wedge x \neq k$ & & \\
 $k = 0$ & $x \neq 0$ & $\IS= \insR - \{ 0\}$ & indeterm.\\
 $k = 1$ & $x \neq -1 \wedge x \neq 0 \wedge x \neq 1$ & $[x_{1} = - 1 \vee x_{2} = 1]^{*}$ & pura\\
 $k = 2$ & $x \neq -2 \wedge x \neq 0 \wedge x \neq 2$ & $x_{1} = 0^{*} \vee x_{2} = 1$ & spuria\\
-$k \in \insR - \{0, 1, 2 \}$ & & & completa\\
+$k \in \insR - \{0$, $1$, $2\}$ & & & completa\\
 $k = 3$ & $x \neq - 3 \wedge x \neq 0 \wedge x \neq 3$ & $x_{1} = x_{2} = 1$ & \\
-$k \in \insR - \{0, 1, 2, 3 \}$ & $x \neq - k \wedge x \neq 0 \wedge x \neq k$ & $x_{1} = 1 \vee x_{2} = k - 2$ & \\
+$k \in \insR - \{0$, 1, 2, $3\}$ & $x \neq - k \wedge x \neq 0 \wedge x \neq k$ & $x_{1} = 1 \vee x_{2} = k - 2$ & \\
 $k = - 1$ & & $x_{1} = 1^{*}$ & \\
-$k \in \insR -\{0, 1, 2, 3, -1 \}$ & & $x_{2} = k - 2$ & \\
+$k \in \insR -\{-1$, 0, 1, 2, $3\}$ & & $x_{2} = k - 2$ & \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
@@ -396,33 +443,35 @@ $k \in \insR -\{0, 1, 2, 3, -1 \}$ & & $x_{2} = k - 2$ & \\
 \end{center}
 \end{esempio}
 \end{exrig}
-\vspazio\ovalbox{\risolvii \ref{ese:3.54}, \ref{ese:3.55}, \ref{ese:3.56}, \ref{ese:3.57}, \ref{ese:3.58}, \ref{ese:3.59}, \ref{ese:3.60}, \ref{ese:3.61}, \ref{ese:3.62}, \ref{ese:3.63}, \ref{ese:3.64}, \ref{ese:3.65}, \ref{ese:3.66}.}
+\vspazio\ovalbox{\risolvii \ref{ese:3.54}, \ref{ese:3.55}, \ref{ese:3.56}, \ref{ese:3.57}, \ref{ese:3.58}, \ref{ese:3.59}, \ref{ese:3.60}, \ref{ese:3.61}, \ref{ese:3.62}, \ref{ese:3.63}, \ref{ese:3.64}, \ref{ese:3.65}, \ref{ese:3.66}}
 
 \section{Relazioni tra soluzioni e coefficienti}
-Consideriamo una generica equazione di secondo grado $a x^{2} + b x + c = 0$ nell’ipotesi in cui ammetta soluzioni reali (cioè $\Delta \geq 0$), sommiamo e moltiplichiamo le soluzioni (o radici) dell'equazione:
+
+Consideriamo una generica equazione di secondo grado $a x^{2} + b x + c = 0$ nell'ipotesi in cui ammetta soluzioni reali (cioè $\Delta \geq 0$), sommiamo e moltiplichiamo le soluzioni (o radici) dell'equazione:
 \begin{align*}
-& x_{1} + x_{2} = \frac{- b - \sqrt{\Delta}}{2 a} + \frac{- b + \sqrt{\Delta}}{2 a} = - \frac{2 b}{2 a}=- \frac{b}{a};\\
-& x_{1} \cdot x_{2}=\left( \frac{- b - \sqrt{\Delta}}{2 a} \right) \cdot \left( \frac{- b + \sqrt{\Delta}}{2 a} \right)= \frac{b^{2} - \Delta}{4 a^2}=\frac{b^{2} + 4 a c - b^{2}}{4 a^{2}} =\frac{4 a c}{4 a^{2}}=\frac{c}{a}.
+& x_{1} + x_{2} = \frac{- b - \sqrt{\Delta}}{2 a} + \frac{- b + \sqrt{\Delta}}{2 a} = - \frac{\cancel{2} b}{\cancel{2} a}=- \frac{b}{a};\\
+& x_{1} \cdot x_{2}=\left( \frac{- b - \sqrt{\Delta}}{2 a} \right) \cdot \left( \frac{- b + \sqrt{\Delta}}{2 a} \right)= \frac{b^{2} - \Delta}{4 a^2}=\frac{\cancel{b^{2}} + 4 a c - \cancel{b^{2}}}{4 a^{2}} =\frac{\cancel{4 a} c}{\cancel{4} a^{\cancel{2}}}=\frac{c}{a}.
 \end{align*}
 Quindi, la somma delle radici è $x_{1} + x_{2}=- \dfrac{b}{a}$ e il prodotto delle radici è $x_{1} \cdot x_{2}=\dfrac{c}{a}$.
 
-Osserviamo che queste relazioni tra radici e coefficienti dell’equazione valgono anche nel caso in cui le radici non siano reali ($\Delta<0$).
+Osserviamo che queste relazioni tra radici e coefficienti dell'equazione valgono anche nel caso in cui le radici non siano reali ($\Delta<0$).
 \begin{exrig}
 \begin{esempio}
-Determinare somma e prodotto delle soluzioni dell’equazione $a x^{2} + b x +c = 0$ senza risolverla.
+Determinare somma e prodotto delle soluzioni dell'equazione $a x^{2} + b x +c = 0$, nei casi seguenti, senza risolverla.
  \begin{itemize}
  \item $2 x^{2} + 11 x - 3 = 0$.
 
  Calcolo il discriminante $\Delta = 145 > 0$ pertanto le radici sono reali e distinte. Applicando le precedenti formule si ha: 
-\[x_{1} + x_{2} = - \frac{11}{2}; x_{1} \cdot x_{2} = - \frac{3}{2}.\]
+\[x_{1} + x_{2} = - \frac{11}{2}\quad\text{ e }\quad x_{1} \cdot x_{2} = - \frac{3}{2}.\]
 
  \item $x^{2} \sqrt{2} + 3 x - 2 \sqrt{2} = 0$.
+ 
  Calcolo il discriminante $\Delta = 25 > 0$ pertanto le radici sono reali e distinte. Applicando le precedenti formule si ha: 
-\[x_{1} + x_{2} = - \frac{3}{\sqrt{2}} = - \frac{3 \sqrt{2}}{2}; x_{1} \cdot x_{2} = - \frac{2 \sqrt{2}}{\sqrt{2}} = - 2.\]
+\[x_{1} + x_{2} = - \frac{3}{\sqrt{2}} = - \frac{3 \sqrt{2}}{2}\quad\text{ e }\quad x_{1} \cdot x_{2} = - \frac{2 \sqrt{2}}{\sqrt{2}} = - 2.\]
 
  \item $x^{2} + 2 x + 15 = 0$.
 
- Calcolo il discriminante $\Delta = - 56 < 0$ le radici non sono reali anche se la loro somma e il loro prodotto sono reali, infatti applicando le precedenti formule si ha: $x_{1} + x_{2} = - 2$ e~$x_{1} \cdot x_{2} = 15$.
+ Calcolo il discriminante $\Delta = - 56 < 0$ pertanto le radici non sono reali anche se la loro somma e il loro prodotto sono reali, infatti applicando le precedenti formule si ha: $x_{1} + x_{2} = - 2$ e~~$x_{1} \cdot x_{2} = 15$.
 
  \item $x^{2} - 12 x + 36 = 0$.
 
@@ -431,92 +480,93 @@ Determinare somma e prodotto delle soluzioni dell’equazione $a x^{2} + b x +c 
 \end{esempio}
 
 \begin{esempio}
-Determina le radici dell’equazione $x^{2} + 2 x - 15 = 0$ senza applicare la formula risolutiva, ma sfruttando la somma e il prodotto delle radici stesse.
+Determina le radici dell'equazione $x^{2} + 2 x - 15 = 0$ senza applicare la formula risolutiva, ma sfruttando la somma e il prodotto delle radici stesse.
 
 Calcolo il discriminante $\Delta = 64$, le radici sono reali. Esse hanno come somma~$- \frac{b}{a} = -2$ e come prodotto $\frac{c}{a} = -15$.
 
-Le coppie di interi che hanno per prodotto $-15$ sono $(-3; 5),(3;-5), (15,-1),(-15; 1)$. Tra tutte queste coppie l'unica che ha per somma $-2$ è la coppia $(-5;3)$.
+Le coppie di interi che hanno per prodotto $-15$ sono $(5;-3)$, $(-5;3)$, $(15;-1)$ e $(-15;1)$. Tra tutte queste coppie l'unica che ha per somma $-2$ è la coppia $(-5;3)$.
 Pertanto le soluzioni dell'equazione sono $x_{1} = -5 \vee x_{2} = 3$.
 \end{esempio}
 
 \begin{esempio}
 Si determini la relazione che lega i coefficienti della generica equazione di secondo grado alla somma dei reciproci delle radici.
 
-Si vuole cioè esprimere $\frac{1}{x_{1}} + \frac{1}{x_{2}}$ attraverso i coefficienti $a$, $b$, $c$ dell’equazione. Osserviamo in via preliminare che tale somma è possibile con la condizione $x_{1} \neq 0 \wedge x_{2} \neq 0$ che implica $c \neq 0$. Si ha: 
+Si vuole cioè esprimere $\frac{1}{x_{1}} + \frac{1}{x_{2}}$ attraverso i coefficienti $a$, $b$, $c$ dell'equazione generica. Osserviamo in via preliminare che tale somma è possibile con la condizione $x_{1} \neq 0 \wedge x_{2} \neq 0$ che implica $c \neq 0$. Si ha: 
 \[\frac{1}{x_{1}} + \frac{1}{x_{2}} = \frac{x_{2} + x_{1}}{x
 _{1} \cdot x_{2}} = \frac{- \frac{b}{a}}{\frac{c}{a}} = - \frac{b}{c}.\]
 \end{esempio}
 
 \begin{esempio}
-Si determini la relazione che lega i coefficienti della generica equazione di secondo grado alla differenza delle radici
+Si determini la relazione che lega i coefficienti della generica equazione di secondo grado alla differenza delle radici.
 
 Poiché non abbiamo informazioni a priori su quale delle due soluzioni sia la maggiore, calcoliamo il valore assoluto della differenza richiesta. Il calcolo diventa: \[
-\left\lvert x_{1} - x_{2} \right\rvert = \left\lvert \frac{- b -\sqrt{\Delta}}{2 a} - \frac{- b + \sqrt{\Delta}}{2 a} \right\rvert =\left\lvert - \frac{2 \sqrt{\Delta}}{2 a} \right\rvert = \left\lvert -\frac{\sqrt{\Delta}}{a} \right\rvert.
+\left\lvert x_{1} - x_{2} \right\rvert = \left\lvert \frac{- b -\sqrt{\Delta}}{2 a} - \frac{- b + \sqrt{\Delta}}{2 a} \right\rvert =\left\lvert - \frac{2 \sqrt{\Delta}}{2 a} \right\rvert = \left\lvert -\frac{\sqrt{\Delta}}{a} \right\rvert = \left\lvert -\frac{\sqrt{b^2-4ac}}{a} \right\rvert.
 \]
 \end{esempio}
 \end{exrig}
-\vspazio\ovalbox{\risolvii \ref{ese:3.67}, \ref{ese:3.68}, \ref{ese:3.69}, \ref{ese:3.70}, \ref{ese:3.71}, \ref{ese:3.72}, \ref{ese:3.73}, \ref{ese:3.74}, \ref{ese:3.75}, \ref{ese:3.76}.}
+\vspazio\ovalbox{\risolvii \ref{ese:3.67}, \ref{ese:3.68}, \ref{ese:3.69}, \ref{ese:3.70}, \ref{ese:3.71}, \ref{ese:3.72}, \ref{ese:3.73}, \ref{ese:3.74}, \ref{ese:3.75}, \ref{ese:3.76}}
 
 \subsection{Determinare due numeri conoscendone la somma e il prodotto}
-Consideriamo la generica equazione di secondo grado $a x^{2} + bx + c = 0$ nell’ipotesi in cui ammetta soluzioni reali $x_{1}$ e $x_{2}$. Essendo $a \neq 0$, è possibile dividere ambo i membri per $a$, ottenendo: $x^{2} + \frac{b}{a} x + \frac{c}{a} = 0$. Dato che $s = x_{1} + x_{2} = - \frac{b}{a}$ e $p = x_{1} \cdot x_{2} = \frac{c}{a}$ si avrà $x^{2} - s x + p = 0$.
 
-Tale equazione risolve quindi la classe di problemi del tipo: “\emph{determinare due numeri che sommati danno $s$ e moltiplicati danno $p$}”.
+Consideriamo la generica equazione di secondo grado $a x^{2} + bx + c = 0$ nell'ipotesi in cui ammetta soluzioni reali $x_{1}$ e $x_{2}$. Essendo $a \neq 0$, è possibile dividere ambo i membri per $a$, ottenendo: $x^{2} + \dfrac{b}{a} x + \dfrac{c}{a} = 0$. Dato che, per quanto visto precedentemente, $s = x_{1} + x_{2} = - \dfrac{b}{a}$ e $p = x_{1} \cdot x_{2} = \dfrac{c}{a}$, si ha $x^{2} - s x + p = 0$.
 
-Dall’equazione $x^{2} - s x + p = 0$ discende che tali numeri esistono e sono reali se e solo se $\Delta~=~s^{2}~-4p~\geq~0$ ovvero se il quadrato della somma è maggiore o uguale al quadruplo del loro prodotto.
+Tale equazione risolve quindi la classe di problemi del tipo: ``determinare due numeri la cui somma è $s$ e il cui prodotto è $p$''.
 
+Dall'equazione $x^{2} - s x + p = 0$ discende che tali numeri esistono e sono reali se e solo se $\Delta =s^{2}-4p\geq 0$ ovvero se il quadrato della somma è maggiore o uguale al quadruplo del loro prodotto.
+\pagebreak
 \begin{exrig}
 \begin{esempio}
 Determinare due numeri che sommati danno $12$ e moltiplicati danno $35$.
 
-L’equazione che risolve il problema è: $x^{2} - 12 x + 35 = 0$. Le soluzioni sono $x_{1} = 5 \vee x_{2} = 7$.
+L'equazione che risolve il problema è: $x^{2} - 12 x + 35 = 0$. Le soluzioni sono $x_{1} = 5 \vee x_{2} = 7$.
 \end{esempio}
 
 \begin{esempio}
 Determinare due numeri che sommati danno $5$ e moltiplicati danno $9$.
 
-L’equazione che risolve il problema è: $x^{2} - 5 x + 9 = 0$. Poiché $\Delta = s^{2} - 4 p = 25 - 36 = - 11$, l’equazione non ammette soluzioni reali e, di conseguenza, non esistono due numeri reali aventi la somma e il prodotto richiesti.
+L'equazione che risolve il problema è: $x^{2} - 5 x + 9 = 0$. Poiché $\Delta = s^{2} - 4 p = 25 - 36 = - 11$, l'equazione non ammette soluzioni reali e, di conseguenza, non esistono due numeri reali aventi la somma e il prodotto richiesti.
 \end{esempio}
 \end{exrig}
-\vspazio\ovalbox{\risolvii \ref{ese:3.77}, \ref{ese:3.78}, \ref{ese:3.79}, \ref{ese:3.80}.}
+\vspazio\ovalbox{\risolvii \ref{ese:3.77}, \ref{ese:3.78}, \ref{ese:3.79}, \ref{ese:3.80}}
 
 \subsection{Problemi di natura geometrica di secondo grado}
 
 \begin{problema}
-Determinate la misura della diagonale di un rettangolo avente il perimetro di $80\unit{m}$. e l’area di $375\unit{m^2}$.
+Determinate la misura della diagonale di un rettangolo avente il perimetro di $80\unit{m}$ e l'area di $375\unit{m^2}$.
 \end{problema}
 
 \begin{center}
  \input{./lbr/chap03/fig001_rett.pgf}
 \end{center}
 
-\emph{Dati}: $2 p = 80 \unit{m}$, $\Area = 375\unit{m^2}$.
+\emph{Dati}: $2p = 2(\overline{AB}+\overline{BC})= 80\unit{m}$, $\Area = 375\unit{m^2}$.
 
-\emph{Obiettivo}: $\overline {AC}$.
-
+\emph{Obiettivo}: $\overline{AC}$.
 
 \begin{soluzione}
 
-$\overline {AC} = \sqrt{\overline {AB}^{2} + \overline {BC}^{2}}$ per il teorema di Pitagora sul triangolo $ABC$.
+$\overline{AC} = \sqrt{\overline{AB}^{2} + \overline{BC}^{2}}$ per il teorema di Pitagora applicato al triangolo $ABC$ retto in $B$.
 
-Sono incognite le misura dei lati, quindi poniamo $\overline {AB} = x$ e $\overline {BC} = y $ con $x > 0$ e $y > 0$.
+Sono incognite le misura dei lati, quindi poniamo $\overline{AB}=x$ e $\overline {BC}=y$ con $x>0$ e $y>0$.
 
 Il problema si formalizza con il sistema:
 $\left\{ \begin{array}{l} x + y = 40 \\x \cdot y = 375 \end{array}\right.$
-che esprime la ricerca di due numeri nota la loro somma $40$ e il loro prodotto $375$. I numeri richiesti sono le soluzioni reali positive dell’equazione $t^{2} - 40 t + 375 = 0$ e precisamente $t_{1} = 15 \vee t_{2} = 25$.
+che esprime la ricerca di due numeri nota la loro somma $40$ e il loro prodotto $375$. I numeri richiesti sono le soluzioni reali positive dell'equazione $t^{2} - 40 t + 375 = 0$ e precisamente $t_{1} = 15 \vee t_{2} = 25$.
 
-Per come abbiamo disegnato la figura abbiamo quindi: $AB = 25\unit{m}; BC = 15\unit{m}$ da cui $\overline {AC} = \sqrt{\overline {AB}^{2} + \overline {BC}^{2}} =\sqrt{850} = 5 \sqrt{34}$.
+Per come abbiamo disegnato la figura abbiamo quindi: $\overline{AB} = 25\unit{m}$ e $\overline{BC} = 15\unit{m}$, da cui $\overline{AC} = \sqrt{\overline{AB}^{2} + \overline{BC}^{2}} =\sqrt{850} = 5 \sqrt{34}\unit{m}$.
 \end{soluzione}
-\vspazio\ovalbox{\risolvii \ref{ese:3.81}, \ref{ese:3.82}, \ref{ese:3.83}.}
+\vspazio\ovalbox{\risolvii \ref{ese:3.81}, \ref{ese:3.82}, \ref{ese:3.83}}
 
 \section{Scomposizione del trinomio di secondo grado}
-Si consideri il trinomio di secondo grado: $a x^{2} + b x + c$ e sia $a x^{2} + b x + c = 0$ (con $\Delta \geq 0$) l’equazione associata a tale trinomio. Effettuiamo le seguenti operazioni:
+
+Si consideri il trinomio di secondo grado: $a x^{2} + b x + c$ e sia $a x^{2} + b x + c = 0$ (con $\Delta \geq 0$) l'equazione associata a tale trinomio. Effettuiamo le seguenti operazioni:
 \begin{itemize*}
 \item si mette in evidenza $a$: $a x^{2} + b x + c = a \left( x^{2} + \frac{b}{a} x + \frac{c}{a} \right)$;
 \item si sostituiscono le relazioni trovate nel precedente paragrafo riguardo la somma e il prodotto delle soluzioni $x_{1}$ e $x_{2}$: $a \left( x^{2} + \frac{b}{a} x + \frac{c}{a} \right) = a \left[x^{2} - ( x_{1} + x_{2} ) x + x_{1} \cdot x_{2} \right]$;
 \item si svolgono i calcoli nella parentesi quadra:
-\[a \left[ x^{2} - ( x_{1} + x_{2} ) x + x_{1} \cdot x_{2}\right] = a\left[ x^{2} - x_{1} x - x_{2} x + x_{1} \cdot x_{2}\right];\]
+\[a \left[ x^{2} - ( x_{1} + x_{2} ) x + x_{1} x_{2}\right] = a\left[ x^{2} - x_{1} x - x_{2} x + x_{1} x_{2}\right];\]
 \item si effettua il raccoglimento parziale e si ottiene:
-\[a \left[x^{2} - x_{1} x - x_{2} x + x_{1} \cdot x_{2}\right] = a \left[ {x \left(x - x_{1} \right) - x_{2} \left( x - x_{1}\right)}\right] = a \left( x - x_{1} \right) \left( x - x_{2} \right).\]
+\[a \left[x^{2} - x_{1} x - x_{2} x + x_{1} x_{2}\right] = a \left[ {x \left(x - x_{1} \right) - x_{2} \left( x - x_{1}\right)}\right] = a \left( x - x_{1} \right) \left( x - x_{2} \right).\]
 \end{itemize*}
 
 Sulla base del segno di $\Delta$ è possibile distinguere i casi illustrati in tabella:
@@ -527,47 +577,53 @@ Discriminante & Soluzioni & Scomposizione \\
 \midrule
 Caso I:\quad $\Delta > 0$ & $x_{1} \neq x_{2}$ & $a x^{2} + b x + c=a ( x - x_{1} ) ( x - x_{2} )$\\
 Caso II:\quad $\Delta = 0$ & $x_{1} = x_{2}$ & $a x^{2} + b x + c=a ( x - x_{1} )^{2}$ \\
-Caso III:\quad $\Delta < 0$ & $x_{1,} x_{2} \notin \insR$ & $a x^{2} + b x + c$\quad è irriducibile \\
-%\bottomrule
+Caso III:\quad $\Delta < 0$ & $x_{1}$, $x_{2} \notin \insR$ & $a x^{2} + b x + c$\quad è irriducibile \\
+\bottomrule
 \end{tabular*}
 \end{center}
 \begin{exrig}
 \begin{esempio}
-Scomporre in fattori seguenti trinomi.
+Scomporre in fattori i seguenti trinomi.
 \begin{itemize}
 \item $x^{2} - 5 x + 6$.
 
-Calcolo le soluzioni dell'equazione $x^{2} - 5 x + 6 = 0$, con soluzioni $x_{1,2} = \dfrac{5 \pm \sqrt{25 - 24}}{2}$ cioè $x_{1} = 2 \vee x_{2} = 3$. Applicando la formula ottenuta nel I caso si ha: \[x^{2} - 5 x + 6=( x - 2 ) ( x - 3 ).\]
+Calcolo le soluzioni dell'equazione $x^{2} - 5 x + 6 = 0$. Si ha $x_{1\text{,}2} = \dfrac{5 \pm \sqrt{25 - 24}}{2}$, cioè $x_{1} = 2 \vee x_{2} = 3$. Applicando la formula ottenuta nel caso I si ha: \[x^{2} - 5 x + 6=( x - 2 ) ( x - 3 ).\]
 \item $x^{2} - 12 x + 36$.
 
-Poiché $\Delta = 144 - 144 = 0$ il trinomio è un quadrato del binomio e applicando la formula ottenuta nel secondo caso si ha: $x^{2} - 12 x + 36=( x - 6 )^{2}$.
+Poiché $\Delta = 144 - 144 = 0$ il trinomio è un quadrato di un binomio e applicando la formula ottenuta nel caso II si ha: $x^{2} - 12 x + 36=( x - 6 )^{2}$.
 \item $2 x^{2} + 3 x + 5$.
 
-Essendo $\Delta=9 - 40=- 31$, il trinomio è irriducibile.
+Essendo $\Delta=9 - 40=-31$, il trinomio è irriducibile.
 \item $- 5 x^{2} + 2 x + 1$.
 
-Calcolo le radici dell’equazione associata $- 5 x^{2} + 2 x + 1 = 0$: $x_{1,2} = \frac{- 2 \pm \sqrt{24}}{- 10} = \frac{1 \pm \sqrt{6}}{5}$ quindi $x_{1} = \frac{1 - \sqrt{6}}{5} \vee x_{2} = \frac{1 + \sqrt{6}}{5}$ e scrivo la scomposizione: \[- 5 x^{2} + 2 x + 1=- 5 \left( x - \frac{1 - \sqrt{6}}{5} \right) \left( x - \frac{1 + \sqrt{6}}{5} \right).\]
+Calcolo le radici dell'equazione associata $- 5 x^{2} + 2 x + 1 = 0$: $x_{1\text{,}2} = \frac{- 2 \pm \sqrt{24}}{- 10} = \frac{1 \pm \sqrt{6}}{5}$ quindi $x_{1} = \frac{1 - \sqrt{6}}{5} \vee x_{2} = \frac{1 + \sqrt{6}}{5}$ e scrivo la scomposizione: \[- 5 x^{2} + 2 x + 1=- 5 \left( x - \frac{1 - \sqrt{6}}{5} \right) \left( x - \frac{1 + \sqrt{6}}{5} \right).\]
 \end{itemize}
 \end{esempio}
 
 \begin{esempio}
-Scrivere un’equazione di secondo grado che ammetta le seguenti soluzioni $x_{1} = \frac{1}{2}$ e $x_{2} = 3$.
+Scrivere un'equazione di secondo grado che ammetta le seguenti soluzioni $x_{1} = \frac{1}{2}$ e $x_{2} = 3$.
 
-Per quanto visto nel paragrafo, si ha: $\left(x-\frac{1}{2} \right) \left(x + 3 \right)=0$ da cui: $x^{2} + 3 x-\frac{1}{2} x - \frac{3}{2}=0$ cioè: $x^{2} + 5 x - \frac{3}{2}=0$ ovvero: $2 x^{2} + 5 x-3=0$.
+Per quanto visto nel paragrafo, si ha
+\begin{align*}
+&\left(x-\frac{1}{2} \right) \left(x + 3 \right)=0\\
+\Rightarrow\: & x^{2} + 3 x-\frac{1}{2} x - \frac{3}{2}=0\\
+\Rightarrow\: & x^{2} + 5 x - \frac{3}{2}=0\\
+\Rightarrow\: & 2 x^{2} + 5 x-3=0
+\end{align*}
 \end{esempio}
 \end{exrig}
 
 \osservazione
-Si vuole scomporre in fattori il trinomio $m = 4 x^{2} + 2 x - 6$, avente tutti i coefficienti pari. Anche se osserviamo che tutti i suoi coefficienti sono pari, \emph{non possiamo dividire per due}, non essendo una equazione. Il polinomio $m = 2 x^{2} + x - 3$ è diverso da quello assegnato, mentre le equazioni associate all’uno e all’altro sono equivalenti. Nel procedere alla scomposizione possiamo usare l’equazione $2 x^{2} + x - 3 = 0$ le cui radici sono:
-$x_{1} = - \frac{3}{2} \vee x_{2} = 1$ e operare la scomposizione del trinomio assegnato: $p = 4 x^{2} + 2 x - 6 = 4 \left( x + \frac{3}{2} \right) ( x - 1)$.
+Si vuole scomporre in fattori il trinomio $m = 4 x^{2} + 2 x - 6$, avente tutti i coefficienti pari. Anche se osserviamo che tutti i suoi coefficienti sono pari, non possiamo dividire per due, non essendo un'equazione. Il polinomio $m = 2 x^{2} + x - 3$ è diverso da quello assegnato, mentre le equazioni associate all'uno e all'altro sono equivalenti. Nel procedere alla scomposizione, una volta trovate le radici, per ottenere le quali possiamo anche usare l'equazione equivalente $2 x^{2} + x - 3 = 0$, è necessario moltiplicare per $a$. Quindi, in questo caso le radici sono $x_{1} = - \frac{3}{2} \vee x_{2} = 1$ e pertanto il trinomio assegnato si scompone come: $4 x^{2} + 2 x - 6 = 4 \left( x + \frac{3}{2} \right) ( x - 1)$.
 
-\vspazio\ovalbox{\risolvii \ref{ese:3.84}, \ref{ese:3.85}, \ref{ese:3.86}, \ref{ese:3.87}.}
+\vspazio\ovalbox{\risolvii \ref{ese:3.84}, \ref{ese:3.85}, \ref{ese:3.86}, \ref{ese:3.87}}
 
 \section{Regola di Cartesio}
-Se in un’equazione di secondo grado i coefficienti sono tutti diversi da zero e il discriminante è non negativo, è possibile avere delle informazioni sui
+
+Se in un'equazione di secondo grado i coefficienti sono tutti diversi da zero e il discriminante è non negativo, è possibile avere delle informazioni sui
 segni delle soluzioni senza calcolarle esplicitamente.
 
-In un’equazione $a x^{2} + b x + c = 0$, dove i coefficienti sono tutti non nulli, le coppie di coefficienti $(a, b)$ e~$(b, c)$ sono dette coppie di \emph{coefficienti consecutivi}. Una coppia di coefficienti consecutivi presenta:
+In un'equazione $a x^{2} + b x + c = 0$, dove i coefficienti sono tutti non nulli, le coppie di coefficienti $(a;b)$ e~$(b;c)$ sono dette coppie di \emph{coefficienti consecutivi}. Una coppia di coefficienti consecutivi presenta:
 \begin{itemize*}
 \item una \emph{permanenza} se i coefficienti hanno lo stesso segno;
 \item una \emph{variazione} se i coefficienti hanno segni diversi.
@@ -577,14 +633,14 @@ In un’equazione $a x^{2} + b x + c = 0$, dove i coefficienti sono tutti non nu
 \begin{esempio}
 Determinare le variazioni e le permanenze nelle seguenti equazioni:
 \begin{center}
-\begin{tabular*}{.9\textwidth}{@{\extracolsep{\fill}}*{6}{c}}
+\begin{tabular*}{.9\textwidth}{@{\extracolsep{\fill}}*{10}{c}}
 \toprule
-Equazione & $a$ & & $b$ & & $c$ \\
+Equazione & $a$ & & & & $b$ & & & & $c$ \\
 \midrule
-$+ 2 x^{2} - 3 x - 1$ & $+ \rightarrow$ & variazione & $\leftarrow - \rightarrow$ & permanenza & $\leftarrow -$\\
-$- x^{2} - 3 x - 1$ & $- \rightarrow$ & permanenza & $\leftarrow - \rightarrow$ & permanenza & $\leftarrow -$\\
-$- 3 x^{2} + 4 x - 1$ & $- \rightarrow$ & variazione & $\leftarrow + \rightarrow$ & variazione & $\leftarrow -$\\
-$+ 2 x^{2} + x - 1$ & $+ \rightarrow$ & permanenza & $\leftarrow + \rightarrow$ & variazione & $\leftarrow -$\\
+$2 x^{2} - 3 x - 1$ & $+$ & $\rightarrow$ & variazione & $\leftarrow$ & $-$ & $\rightarrow$ & permanenza & $\leftarrow$ & $-$\\
+$- x^{2} - 3 x - 1$ & $-$ & $\rightarrow$ & permanenza & $\leftarrow$ & $-$ & $\rightarrow$ & permanenza & $\leftarrow$ & $-$\\
+$- 3 x^{2} + 4 x - 1$ & $-$ & $\rightarrow$ & variazione & $\leftarrow$ & $+$ & $\rightarrow$ & variazione & $\leftarrow$ & $-$\\
+$2 x^{2} + x - 1$ & $+$ & $\rightarrow$ & permanenza & $\leftarrow$ & $+$ & $\rightarrow$ & variazione & $\leftarrow$ & $-$\\
 \end{tabular*}
 \end{center}
 
@@ -592,105 +648,106 @@ $+ 2 x^{2} + x - 1$ & $+ \rightarrow$ & permanenza & $\leftarrow + \rightarrow$ 
 \end{exrig}
 
 \begin{teorema}[di Cartesio]
-In un’equazione di secondo grado $a x^{2} + b x + c = 0$ con $a, b, c \neq 0$ e $\Delta \geq 0$, il numero di radici positive è uguale al numero di variazioni presenti nelle coppie di coefficienti consecutivi. Se vi è una sola variazione, le radici sono discordi e il valore assoluto maggiore è quello della radice positiva se la variazione è nella coppia $(a,b)$, mentre è della radice negativa se la variazione è nella coppia $(b,c)$.
+In un'equazione di secondo grado $a x^{2} + b x + c = 0$ con $a$, $b$, $c \neq 0$ e $\Delta \geq 0$, il numero di radici positive è uguale al numero di variazioni presenti nelle coppie di coefficienti consecutivi. Se vi è una sola variazione, le radici sono discordi e il valore assoluto maggiore è quello della radice positiva se la variazione è nella coppia $(a;b)$, mentre è della radice negativa se la variazione è nella coppia $(b;c)$.
 \end{teorema}
 
 \begin{exrig}
 \begin{esempio}
 Determinare il segno delle soluzioni dell'equazione $x^2 + 2 x - 3 = 0$ senza risolverla.
 
-L'equazione $x^2 + 2 x - 3 = 0$ ha soluzioni reali in quanto $\Delta = 16 > 0$, dal momento che vi è una sola variazione, quello della coppia $(b,c)$, l’equazione ha radici discordi e il valore assoluto maggiore è quello della radice negativa.
+L'equazione $x^2 + 2 x - 3 = 0$ ha soluzioni reali in quanto $\Delta = 16 > 0$. Dal momento che vi è una sola variazione, quella della coppia $(b;c)$, l'equazione ha radici discordi e il valore assoluto maggiore è quello della radice negativa.
 
-Dimostriamo quanto è stato affermato tenendo presente che $x_{1} + x_{2} = - \frac{b}{a}$ e $x_{1}\cdot x_{2} = \frac{c}{a}$; nell’equazione proposta si ha:
-$x_{1} + x_{2} = - 2$ e $x_{1} \cdot x_{2} = - 3$ dunque prodotto negativo e somma negativa. Il prodotto di due numeri è negativo quando i fattori sono discordi, quindi una soluzione è positiva e una è negativa. Chiamiamo $x_1$ la soluzione negativa e $x_2$ la soluzione positiva, poiché $x_{1} + x_{2} = - 2 < 0$
-deduciamo che in valore assoluto è più grande il numero negativo, cioè $\valass{x_{1}} > \valass{x_{2}}$.
+Dimostriamo quanto è stato affermato tenendo presente che $x_{1} + x_{2} = - \frac{b}{a}$ e $x_{1}\cdot x_{2} = \frac{c}{a}$; nell'equazione proposta si ha:
+$x_{1} + x_{2} = - 2$ e $x_{1} \cdot x_{2} = - 3$ dunque prodotto negativo e somma negativa. Il prodotto di due numeri è negativo quando i fattori sono discordi, quindi una soluzione è positiva e una è negativa. Chiamiamo $x_1$ la soluzione negativa e $x_2$ la soluzione positiva, poiché $x_{1} + x_{2} = - 2 < 0$ deduciamo che in valore assoluto è più grande il numero negativo, cioè $\valass{x_{1}} > \valass{x_{2}}$.
 \end{esempio}
 
 \begin{esempio}
 Determinare il segno delle soluzioni delle seguenti equazioni senza risolverle.
 \begin{itemize}
-	\item L'equazione $2 x^{2} - 6 x - 56$ ha soluzioni reali in quanto $\Delta = 484 > 0$; dal momento che vi è una sola variazione, l’equazione ha radici discordi
-	e il valore assoluto maggiore è quello della radice positiva dal momento che la variazione è nella coppia $(a,b)$.
-	\item L’equazione 	$- 3 x^{2} - 24 x - 21 = 0$ ha soluzioni reali in quanto $\Delta = 324 > 0$; dal momento che non vi sono variazioni, l’equazione ha due radici
-	negative.
-	\item L’equazione 	$x^{2} - 10 x + 25 = 0$ ha due soluzioni coincidenti in quanto $\Delta = 0$; dal momento che vi sono due variazioni, le due radici coincidenti sono positive.
+	\item $2 x^{2} - 6 x - 56 = 0$. L'equazione ha soluzioni reali in quanto $\Delta = 484 > 0$; dal momento che vi è una sola variazione le radici sono discordi
+	e il valore assoluto maggiore è quello della radice positiva poiché che la variazione è nella coppia $(a;b)$.
+	\item $-3 x^{2} - 24 x - 21 = 0$. L'equazione ha soluzioni reali in quanto $\Delta = 324 > 0$; dal momento che non vi sono variazioni, l'equazione ha due radici negative.
+	\item $x^{2} - 10 x + 25 = 0$. L'equazione ha due soluzioni coincidenti in quanto $\Delta = 0$; dal momento che vi sono due variazioni, le due radici coincidenti sono positive.
 \end{itemize}
 \end{esempio}
 \end{exrig}
-\vspazio\ovalbox{\risolvii \ref{ese:3.88}, \ref{ese:3.89}, \ref{ese:3.90}.}
+\vspazio\ovalbox{\risolvii \ref{ese:3.88}, \ref{ese:3.89}, \ref{ese:3.90}}
 
 \section{Equazioni parametriche}
 
 \begin{definizione}
-Si definisce \emph{parametrica} un’equazione i cui coefficienti dipendono da un parametro.
-\end{definizione}
-L’equazione $3 x^{2} + ( k - 1 ) x + ( 2 - 3 k ) = 0$ è parametrica di secondo grado nell’incognita $x$; i~suoi coefficienti dipendono dal valore del parametro $k$ e quindi la natura e il segno delle sue soluzioni dipendono da $k$.
 
-In molti problemi di applicazione della matematica in situazioni reali in cui compare un parametro, non interessa tanto determinare le soluzioni dell’equazione che formalizza il problema, quanto sapere se le soluzioni hanno determinate caratteristiche.
-Sappiamo che attraverso i coefficienti di un’equazione di secondo grado si possono determinare alcune relazioni tra le sue soluzioni:
+Si definisce \emph{parametrica} un'equazione i cui coefficienti dipendono da un parametro.
+\end{definizione}
+
+L'equazione $3 x^{2} + ( k - 1 ) x + 2 - 3 k= 0$ è parametrica di secondo grado nell'incognita $x$; i suoi coefficienti dipendono dal valore del parametro $k$ e quindi la natura e il segno delle sue soluzioni dipendono da $k$.
+
+In molti problemi di applicazione della matematica in situazioni reali in cui compare un parametro, non interessa tanto determinare le soluzioni dell'equazione che formalizza il problema, quanto sapere se le soluzioni hanno determinate caratteristiche.
+Sappiamo che attraverso i coefficienti di un'equazione di secondo grado si possono determinare alcune relazioni tra le sue soluzioni:
 \begin{itemize*}
 \item soluzioni reali se $\Delta = b^{2} - 4 a c \geq 0$; reali coincidenti se $\Delta = 0$, reali distinte se $\Delta > 0$;
-\item la somma delle soluzioni è $x_{1} + x_{2} = - \frac{b}{a}$;
-\item il prodotto delle soluzioni è $x_{1} \cdot x_{2} = \frac{c}{a}$.
+\item la somma delle soluzioni è $x_{1} + x_{2} = - \dfrac{b}{a}$;
+\item il prodotto delle soluzioni è $x_{1} \cdot x_{2} = \dfrac{c}{a}$.
 \end{itemize*}
 
-Nell’equazione $3 x^{2} + ( k - 1 ) x + ( 2 - 3 k ) = 0$ si ha $\Delta = ( k - 1 )^{2} - 12 ( 2 - 3 k )$ dipendente dal parametro $k$.
-Dall'analisi del $\Delta$ si potranno dedurre quali condizioni deve verificare $k$ affinché esistano soluzioni reali. Dall'analisi di somma e prodotto
-$x_{1} + x_{2} = - \frac{( k - 1 )}{3}; x_{1} \cdot x_{2} =\frac{( 2 - 3 k )}{3}$ potremo stabilire il segno delle soluzioni reali ed altre caratteristiche delle soluzioni.
+Nell'equazione $3 x^{2} + ( k - 1 ) x + 2 - 3 k = 0$ si ha $\Delta = ( k - 1 )^{2} - 12 ( 2 - 3 k )$ dipendente dal parametro $k$.
+Dall'analisi del $\Delta$ si potranno dedurre quali condizioni deve verificare $k$ affinché esistano soluzioni reali. Analizzando somma e prodotto
+$x_{1} + x_{2} = - \frac{( k - 1 )}{3}$ e $x_{1} \cdot x_{2} =\frac{( 2 - 3 k )}{3}$ potremo stabilire il segno ed altre caratteristiche delle soluzioni.
 
 \begin{exrig}
 \begin{esempio}
-Assegnata l’equazione $( k + 1 ) x^{2} + ( 2 k + 3 ) x + k = 0$ stabilire per quale valore di $k$
+Assegnata l'equazione $( k + 1 ) x^{2} + ( 2 k + 3 ) x + k = 0$, stabilire per quale valore di $k$
 \begin{enumeratea}
-\item l’equazione si riduce al primo grado;
-\item l’equazione ammette soluzioni reali distinguendo i casi “soluzioni coincidenti” e “soluzioni distinte”;
-\item la somma delle soluzioni sia nulla determinando in tal caso le soluzioni.
+\item l'equazione si riduce al primo grado;
+\item l'equazione ammette soluzioni reali distinguendo i casi ``soluzioni coincidenti'' e ``soluzioni distinte'';
+\item la somma delle soluzioni sia nulla, determinando in tal caso le soluzioni.
 \end{enumeratea}
-\emph{Svolgimento guidato}
+\emph{Svolgimento}
 \begin{enumeratea}
-\item l’equazione diventa di primo grado se il coefficiente $a$ si annulla cioè $k + 1 = 0$ quindi $k = - 1$. In questo caso si ha una sola soluzione reale $ x=1 $;
+\item l'equazione diventa di primo grado se il coefficiente $a$ si annulla, cioè se $k + 1 = 0$ quindi $k = - 1$. In tal caso si ha una sola soluzione reale $ x=1 $;
 \item studiamo il segno del discriminante: $\Delta = ( 2 k + 3 )^{2} - 4 k ( k + 1 ) \geq 0$ da cui ricaviamo 
-\[4 k^{2} + 12 k + 9 - 4 k^{2} - 4 k \geq 0 \Rightarrow 8 k + 9 \geq 0.\] 
-In questo caso se $k = - \frac{9}{8}$ le soluzioni sono coincidenti, se $k > - \frac{9}{8}$ le soluzioni sono reali distinte, se invece $ k<-\frac{9}{8} $ non ci sono soluzioni reali;
-\item dalla formula ricaviamo $x_{1} + x_{2} = - \frac{( 2 k + 3 )}{( k + 1 )}$ e quindi ponendo $2 k + 3 = 0$ si ha somma nulla se $k = - \frac{3}{2}$. Il valore $k = - \frac{3}{2}$ è minore di $k = - \frac{9}{8}$, pertanto non ci sono soluzioni reali. Sostituendo $k = - \frac{3}{2}$ l'equazione diventa $ x^2+3=0 \to x^2=-3$ impossibile!
+\[4 k^{2} + 12 k + 9 - 4 k^{2} - 4 k \geq 0 \:\Rightarrow\: 8 k + 9 \geq 0.\] 
+Pertanto se $k = - \frac{9}{8}$ le soluzioni sono coincidenti, se $k > - \frac{9}{8}$ le soluzioni sono reali distinte, se invece $ k<-\frac{9}{8} $ non ci sono soluzioni reali;
+\item dalla formula della somma delle soluzioni ricaviamo $x_{1} + x_{2} = - \frac{( 2 k + 3 )}{( k + 1 )}$ e quindi la somma sarà nulla se $2 k + 3 = 0 \:\Rightarrow\: k = - \frac{3}{2}$. Poiché $- \frac{3}{2} < - \frac{9}{8}$, per $k = - \frac{3}{2}$ non ci sono soluzioni reali, infatti sostituendolo nell'equazione quest'ultima diventa $ x^2+3=0 \Rightarrow x^2=-3$ impossibile!
 \end{enumeratea}
 \end{esempio}
 \end{exrig}
 \vspazio\ovalbox{\risolvii \ref{ese:3.91}, \ref{ese:3.92}, \ref{ese:3.93}, \ref{ese:3.94}, \ref{ese:3.95}, \ref{ese:3.96}, \ref{ese:3.97}, \ref{ese:3.98}, \ref{ese:3.99}, \ref{ese:3.100}, \ref{ese:3.101}, \ref{ese:3.102},}
 
-\vspazio\ovalbox{\ref{ese:3.103}, \ref{ese:3.104}, \ref{ese:3.105}, \ref{ese:3.106}, \ref{ese:3.107}, \ref{ese:3.108}, \ref{ese:3.109}, \ref{ese:3.110}, \ref{ese:3.111}.}
+\vspazio\ovalbox{\ref{ese:3.103}, \ref{ese:3.104}, \ref{ese:3.105}, \ref{ese:3.106}, \ref{ese:3.107}, \ref{ese:3.108}, \ref{ese:3.109}, \ref{ese:3.110}, \ref{ese:3.111}}
 
 \section{Problemi di secondo grado in una incognita}
- \epigraph{La risoluzione dei problemi \ldots serve ad acuire l'ingegno e a dargli la facoltà di penetrare
+
+ \epigraph{La risoluzione dei problemi [\ldots] serve ad acuire l'ingegno e a dargli la facoltà di penetrare
  l'intera ragione di tutte le cose.}{{\scshape{R. Descartes}}}
 
-Sappiamo che nel corso degli studi o nell’attività lavorativa possono presentarsi problemi di diversa natura: di tipo economico, scientifico, sociale; possono riguardare insiemi numerici o figure geometriche. La matematica ci può aiutare a risolvere i problemi quando essi possono essere tradotti in “forma matematica”, quando cioè è possibile trascrivere in simboli le relazioni che intercorrono tra le grandezze presenti nel problema e quando si può costruire, tramite queste relazioni, un modello matematico che ci permetta di raggiungere la soluzione al quesito.
+Sappiamo che nel corso degli studi o nell'attività lavorativa possono presentarsi problemi di diversa natura: di tipo economico, scientifico, sociale; possono riguardare insiemi numerici o figure geometriche. La matematica ci può aiutare a risolvere i problemi quando essi possono essere tradotti in ``forma matematica'', quando cioè è possibile trascrivere in simboli le relazioni che intercorrono tra le grandezze presenti nel problema e quando si può costruire, tramite queste relazioni, un modello matematico che ci permetta di raggiungere la soluzione al quesito.
 
 Affronteremo problemi di tipo algebrico o geometrico, che potranno essere formalizzati attraverso equazioni di secondo grado in una sola incognita.
 Teniamo presente, prima di buttarci nella risoluzione del problema, alcuni passi che ci aiuteranno a costruire il modello matematico:
 \begin{itemize*}
-\item la lettura “attenta” del testo al fine di individuare l’ambiente del problema, le parole chiave, i dati e le informazioni implicite, l’obiettivo;
-\item la scelta della grandezza incognita del problema, la descrizione dell’insieme in cui si ricerca il suo valore, le condizioni che devono essere soddisfatte dall’incognita;
-\item la traduzione in “forma matematica” delle relazioni che intercorrono tra i dati e l’obiettivo, cioè l’individuazione del modello matematico (equazione risolvente).
+\item la lettura ``attenta'' del testo al fine di individuare l'ambiente del problema, le parole chiave, i dati e le informazioni implicite, l'obiettivo;
+\item la scelta della grandezza incognita del problema, la descrizione dell'insieme in cui si ricerca il suo valore, le condizioni che devono essere soddisfatte dall'incognita;
+\item la traduzione in ``forma matematica'' delle relazioni che intercorrono tra i dati e l'obiettivo, cioè l'individuazione del modello matematico (equazione risolvente).
 \end{itemize*}
-Dopo aver risolto l’equazione occorre confrontare la soluzione trovata con le condizioni poste dal problema.
+Dopo aver risolto l'equazione occorre confrontare la soluzione trovata con le condizioni poste dal problema.
 
 \begin{problema}
-Nel triangolo rettangolo $ABC$, rettangolo in $C$ l’ipotenusa supera il cateto maggiore $CB$ di $2\unit{m}$; la differenza tra i cateti è $23\unit{m}$. Determinare la misura del perimetro e l’area di $ABC$.
+Nel triangolo rettangolo $ABC$ rettangolo in $C$, l'ipotenusa $AB$ supera il cateto maggiore $BC$ di $2\unit{m}$; la differenza tra i cateti è $23\unit{m}$. Determinare la misura del perimetro e l'area del triangolo.
 \end{problema}
 
 \begin{multicols}{3}
 \emph{Dati}
 
-$\overline {AB} = \overline {CB} + 2$;
+$\overline {AB} = \overline {BC} + 2$;
 
-$\overline {CB} - \overline {AC} = 23$;
+$\overline {BC} - \overline {AC} = 23$;
 
-$A \widehat {C} B = \text{ retto}$.
+$A \widehat {C} B = 90\grado$.
 
 \emph{Obiettivo}
 
-$2 p$;
+$2p$;
 
 Area.
 
@@ -699,96 +756,99 @@ Area.
 
 \begin{soluzione}
 
-Osserva che $2 p = \overline {AB} + \overline {BC} + \overline {AC}$ e $\Area =\frac{\overline {BC} \cdot \overline {AC}}{2}$.
-Poni $\overline {BC} = x$; dai dati si ha $\overline {AB} = x + 2$ e $\overline{AC} = x - 23$ con
+Osserva che $2p = \overline {AB} + \overline {BC} + \overline {AC}$ e $\Area =\frac{\overline {BC} \cdot \overline {AC}}{2}$.
+Ponendo $\overline {BC} = x$, si ha $\overline {AB} = x + 2$~~e~~$\overline{AC} = x - 23$~~con
 $\left\{\begin{array}{l} x > 0 \text{ essendo misura di un segmento} \\x >23 \text{ poiché } \overline {AC} \text{ deve essere positiva}
 \end{array}\right.$.
 
-Essendo il triangolo rettangolo, i lati sono legati dal teorema di Pitagora
-quindi si deve verificare: $\overline {AB}^{2}= \overline {AC}^{2} + \overline {BC}^{2}\rightarrow ( x + 2 )^{2} = ( x - 23 )^{2} + x^{2}$. Sviluppando i calcoli si ottiene l'equazione risolvente di secondo grado, in forma canonica: $x^{2} - 50 x + 525 = 0 \text{ con } \Delta = 400$. L’equazione è determinata con il discriminante positivo, quindi esistono due soluzioni reali distinte: $x_{1} = 15 \vee x_{2} = 35$ entrambe positive. Ai fini del problema $x_{1} = 15$ non è accettabile, quindi il problema ha una sola soluzione e $\overline {BC} = 35$; $\overline {AB} = 37$; $\overline {AC} = 12$. Conclusione: $2 p = 35 + 37 + 12 = 84\unit{m}$; $ \Area = 210\unit{m^{2}}$.
+Essendo rettangolo, i lati del triangolo sono legati dal teorema di Pitagora
+quindi si deve verificare: $\overline {AB}^{2}= \overline {AC}^{2} + \overline {BC}^{2}\:\Rightarrow\: ( x + 2 )^{2} = ( x - 23 )^{2} + x^{2}$. Sviluppando i calcoli si ottiene l'equazione risolvente di secondo grado, in forma canonica: $x^{2} - 50 x + 525 = 0$ con $\Delta = 400$. L'equazione è quindi determinata pertanto esistono due soluzioni reali distinte: $x_{1} = 15 \vee x_{2} = 35$ entrambe positive. Ai fini del problema $x_{1} = 15$ non è accettabile, quindi il problema ha una sola soluzione: $\overline {BC} = 35 \:\Rightarrow\: \overline {AB} = 37$ e $\overline {AC} = 12$. Conclusione: $2p = 35 + 37 + 12 = 84\unit{m}$~~e~~$\Area = 210\unit{m^{2}}$.
 \end{soluzione}
 
 \begin{problema}
-Un padre aveva $26$ anni alla nascita del figlio; moltiplicando le età attuali del padre e del figlio si trova il triplo del quadrato dell’età del figlio; calcolare le due età.
+Un padre aveva $26$ anni alla nascita del figlio; moltiplicando le età attuali del padre e del figlio si ottiene il triplo del quadrato dell'età del figlio; calcolare le due età.
 \end{problema}
-Indichiamo con $p$ l’età attuale del padre e con $f$ l’età del figlio
 
-\emph{Dati}: $p = f + 26;\; p \cdot f = 3 f^{2}$.
+Indichiamo con $p$ l'età attuale del padre e con $f$ l'età attuale del figlio.
 
-\emph{Obiettivo}: $f,\; p$.
+\emph{Dati}: $p = f + 26$~~e~~$p \cdot f = 3 f^{2}$.
+
+\emph{Obiettivo}: $f$, $p$.
 
 \begin{soluzione}
 I dati permettono di impostare la relazione $(f + 26) \cdot f = 3 \cdot f^{2}$ che esprime il legame tra le età di oggi del padre e del figlio; siamo di
-fronte ad un'equazione di secondo grado nell’incognita $f$. La soluzione dell’equazione deve essere espressa da un numero positivo poiché esprime l'età.
+fronte ad un'equazione di secondo grado nell'incognita $f$. La soluzione dell'equazione deve essere espressa da un numero positivo poiché esprime l'età.
 Risolviamo l'equazione $2 f^{2} - 26 f = 0$ le cui soluzioni sono $f_{1} = 0 \vee f_{2} = 13$. Per le condizioni poste la soluzione del problema è
-$f = 13$. Quindi oggi il figlio ha $13$ anni e il padre $39$ anni.
+$f = 13$. Quindi oggi il figlio ha $13$ anni e, di conseguenza, il padre $39$.
 \end{soluzione}
 
 \begin{problema}
 Il trapezio isoscele $ABCD$ è inscritto in una semicirconferenza di diametro $AB$ di misura $25\unit{cm}$; determina le misure dei lati del trapezio sapendo che il
-perimetro è $62\unit{cm}$.
+suo perimetro è $62\unit{cm}$.
 \end{problema}
 
 \begin{multicols}{2}
 \emph{Dati}
 
-$\overline {AB} = 25$; $2 p = 62$;
+$\overline {AB} = 25$;~~$2p = 62$;
 
-$AB \parallel DC$; $\overline {AD} = \overline {CB}$.
+$AB \parallel CD$;~~$\overline {AD} = \overline {BC}$.
 
 \emph{Obiettivo}
 
-$\overline {DC}$; $ \overline {CB}$.
+$\overline {CD}$;~~$ \overline {BC}$.
 
  \input{./lbr/chap03/fig005_trap.pgf}
 \end{multicols}
 
 \begin{soluzione}
-$\overline {AB} + \overline {DC} + 2 \overline {BC} = 62$; fissiamo come incognita la misura in cm di $BC$: $\overline {BC} = x$.
-Determiniamo le condizioni sull’incognita: dovrà essere $x > 0$ poiché rappresenta la misura di un segmento e inoltre affinché esista
-realmente il trapezio isoscele il punto $C$ non deve coincidere con il punto medio $E$ dell’arco $DC$ cioè $ CB<EB $, quindi $x < \dfrac{25}{2} \sqrt{2}$.
+$\overline {AB} + \overline {CD} + 2 \overline {BC} = 62$; fissiamo come incognita $\overline {BC} = x$.
+Determiniamo le condizioni sull'incognita: dovrà essere $x > 0$ poiché rappresenta la misura di un segmento e inoltre affinché esista
+realmente il trapezio isoscele il punto $C$ non deve coincidere con il punto medio $E$ dell'arco $CD$ cioè $ CB<EB $, quindi $x < \dfrac{25}{2} \sqrt{2}$.
 
-Tracciata l’altezza $CH (H \in AB)$ si ha $\overline {DC} = \overline {AB} - 2 \overline {HB}$ e per il 1° teorema di Euclide sul triangolo~$ACB$, rettangolo in
-$C$, $\overline {HB}: \overline {CB} = \overline {CB} : \overline{AB}$; determiniamo quindi la misura di $HB$ in funzione dell’incognita fissata:
-$\overline {HB} = \dfrac{x^{2}}{25}$ da cui $\overline {DC} = 25 - \dfrac{2 x^{2}}{25}$.
+Tracciata l'altezza $CH$ ($H \in AB$) si ha $\overline {CD} = \overline {AB} - 2 \overline {HB}$ e per il 1° teorema di Euclide\footnote{in ogni triangolo rettangolo ciascun cateto è medio proporzionale tra l'ipotenusa e la proiezione del cateto stesso sull'ipotenusa.} sul triangolo~$ACB$, rettangolo in
+$C$ (poiché insiste su una semicirconferenza con diametro $AB$), $\overline {HB}: \overline {CB} = \overline {CB} : \overline{AB}$; determiniamo quindi la misura di $HB$ in funzione dell'incognita fissata:
+$\overline {HB} = \dfrac{x^{2}}{25}$ da cui $\overline{CD} = 25 - \dfrac{2 x^{2}}{25}$.
 
-Costruiamo l’equazione risolvente: $25 + 2 x + 25 - \dfrac{2 x^{2}}{25} = 62 \rightarrow x^{2} - 25 x + 150 = 0$ che ha soluzioni $x_{1} = 10 \vee x_{2} = 15$, entrambe accettabili. Si hanno dunque due trapezi inscritti che risolvono il problema.
+Costruiamo l'equazione risolvente: $25 + 2 x + 25 - \dfrac{2 x^{2}}{25} = 62 \:\Rightarrow\: x^{2} - 25 x + 150 = 0$ che ha soluzioni $x_{1} = 10 \vee x_{2} = 15$, entrambe accettabili. Si hanno dunque due trapezi inscritti che risolvono il problema. Poiché $\overline{CD}= 2p-\overline{AB}-2\overline{BC}$ si ha $\overline{CD}=62-25-10=27\unit{cm}$ o $\overline{CD}=62-25-15=22\unit{cm}$.
 \begin{center}
  \input{./lbr/chap03/fig006_trap.pgf}
 \end{center}
 \end{soluzione}
 
 \begin{problema}
-Un capitale di $25000$ euro viene depositato in banca a un tasso di interesse annuo $c$. Gli interessi maturati durante il primo anno non vengono ritirati.
-Nell'anno seguente si investono sia il capitale sia gli interessi maturati a un tasso di interesse annuo aumentato dello $0,5\%$. Alla fine dei due anni si ritira
-la somma di $26291,10$ euro. Calcola i tassi di interesse praticati dalla banca.
+Un capitale di \officialeuro~$\np{25000}$ viene depositato in banca a un tasso di interesse annuo $c$. Gli interessi maturati durante il primo anno non vengono ritirati.
+Nell'anno seguente si investono sia il capitale sia gli interessi maturati a un tasso di interesse annuo aumentato dello $\np{0,5}\%$. Alla fine dei due anni si ritira
+la somma di \officialeuro~$\np{26291,10}$. Calcola i tassi di interesse praticati dalla banca.
 \end{problema}
 Assumiamo come incognita $c$ il tasso di interesse praticato il primo anno, espresso come numero decimale e
-non in forma percentuale. Il tasso praticato nel secondo anno sarà $c+0,005$.
+non in forma percentuale. Il tasso praticato nel secondo anno sarà $c+\np{0,005}$.
 
 \begin{soluzione}
-Alla fine del primo anno in banca rimane tra capitale e interessi \[25000 + 25000 \cdot c = 25000 ( 1 + c ).\] Nel secondo anno il tasso praticato è $c+0,005$ che va applicato alla somma $25000(1+c)$. Si~ottiene quindi l'equazione \[25000 ( 1 + c ) ( 1 + c + 0,005 ) = 26291,10.\]
-Moltiplicando le parentesi tonde si ha $25000 ( 1,005 + c + 1,005 c + c^{2} ) = 26291,10$ e poi dividendo per $25000$ e ordinando otteniamo
-$c^{2} + 2,005 c - 0,046644=0$ con soluzioni
-\[c_{1,2}~=~\dfrac{- 2,005 \pm \sqrt{4,020025 + 0,186576}}{2} = \dfrac{-2,005 \pm 2,051}{2}\Rightarrow c_{1} = - 2,028 \vee c_{2} = 0,023.\]
-La soluzione $c_1$ è negativa e non accettabile. La risposta al problema è $0,023$ cioè $2,3\%$ il primo anno e $2,8\%$ il secondo anno.
+Alla fine del primo anno in banca si hanno tra capitale e interessi \[\np{25000} + \np{25000} \cdot c = \np{25000} ( 1 + c ).\] Nel secondo anno il tasso praticato è $c+\np{0,005}$ che va applicato alla somma $\np{25000}(1+c)$. Si ottiene quindi l'equazione \[\np{25000} ( 1 + c ) ( 1 + c + \np{0,005} ) = \np{26291,10}.\]
+Moltiplicando le parentesi tonde si ha $\np{25000} ( \np{1,005} + c + \np{1,005} c + c^{2} ) = \np{26291,10}$ e poi dividendo per $\np{25000}$ e ordinando otteniamo
+$c^{2} + \np{2,005} c - \np{0,046644}=0$ con soluzioni
+\[c_{1\text{,}2} = \dfrac{- \np{2,005} \pm \sqrt{\np{4,020025} + \np{0,186576}}}{2} = \dfrac{\np{-2,005} \pm \np{2,051}}{2}\:\Rightarrow\: c_{1} = \np{-2,028} \vee c_{2} = \np{0,023}.\]
+La soluzione $c_1$ è negativa e pertanto non accettabile. La risposta al problema è $\np{0,023}$ cioè $\np{2,3}\%$ il primo anno e quindi $\np{2,8}\%$ il secondo anno.
 \end{soluzione}
+
 \vspazio\ovalbox{\risolvii \ref{ese:3.112}, \ref{ese:3.113}, \ref{ese:3.114}, \ref{ese:3.115}, \ref{ese:3.116}, \ref{ese:3.117}, \ref{ese:3.118}, \ref{ese:3.119}, \ref{ese:3.120}, \ref{ese:3.121}, \ref{ese:3.122},}
 
 \vspazio\ovalbox{\ref{ese:3.123}, \ref{ese:3.124}, \ref{ese:3.125}, \ref{ese:3.126}, \ref{ese:3.127}, \ref{ese:3.128}, \ref{ese:3.129}, \ref{ese:3.130}, \ref{ese:3.131}, \ref{ese:3.132}, \ref{ese:3.133}, \ref{ese:3.134}, \ref{ese:3.135}, \ref{ese:3.136},}
 
-\vspazio\ovalbox{\ref{ese:3.137}, \ref{ese:3.138}, \ref{ese:3.139}, \ref{ese:3.140}, \ref{ese:3.141}, \ref{ese:3.142}, \ref{ese:3.143}, \ref{ese:3.144}, \ref{ese:3.145}, \ref{ese:3.146}, \ref{ese:3.147}, \ref{ese:3.148}, \ref{ese:3.149}, \ref{ese:3.150}.}
+\vspazio\ovalbox{\ref{ese:3.137}, \ref{ese:3.138}, \ref{ese:3.139}, \ref{ese:3.140}, \ref{ese:3.141}, \ref{ese:3.142}, \ref{ese:3.143}, \ref{ese:3.144}, \ref{ese:3.145}, \ref{ese:3.146}, \ref{ese:3.147}, \ref{ese:3.148}, \ref{ese:3.149}, \ref{ese:3.150}}
 
 \subsection{Problemi con un parametro}
-I problemi che abbiamo proposto sono caratterizzati da dati numerici e di conseguenza le soluzioni numeriche dell’equazione risolvente sono facilmente
-confrontabili con le condizioni poste sull’incognita. Abbiamo anche visto che le soluzioni dell’equazione non sempre sono soluzioni del problema e
+
+I problemi che abbiamo proposto sono caratterizzati da dati numerici e di conseguenza le soluzioni numeriche dell'equazione risolvente sono facilmente
+confrontabili con le condizioni poste sull'incognita. Abbiamo anche visto che le soluzioni dell'equazione non sempre sono soluzioni del problema e
 può anche succedere che il problema abbia due soluzioni.
 
-Affrontiamo ora un problema letterale, nel quale alcuni dati sono espressi da lettere. In questi problemi dovremo rispettare le condizioni poste sull’incognita, ma anche analizzare per quali valori della lettera il problema ammette soluzioni reali. Dovremo quindi procedere con la discussione dell’equazione parametrica risolvente per stabilire se il problema letterale ammette soluzioni.
+Affrontiamo ora un problema letterale, nel quale alcuni dati sono espressi da lettere. In questi problemi dovremo rispettare le condizioni poste sull'incognita, ma anche analizzare per quali valori della lettera il problema ammette soluzioni reali. Dovremo quindi procedere con la discussione dell'equazione parametrica risolvente per stabilire se il problema letterale ammette soluzioni.
 
 \begin{problema}
-Sul lato $ a $ dell’angolo $ a \widehat{V} b $ di $ 60\grado $ si fissano i punti $ A $ e $ B $ tali che $ \overline{VA } = 2 k $ e $ \overline {VB} = 8 k $.
-Determina sul lato $ b $ un punto $ P $ in modo che il rapporto tra $ PB $ e $ PA $ sia $ 2 $.
+Sul lato $ a $ dell'angolo $ a \widehat{V} b $ di $ 60\grado $ si fissano i punti $ A $ e $ B $ tali che $ \overline{VA} = 2 k $ e $ \overline {VB} = 8 k $.
+Determina sul lato $ b $ un punto $ P $ in modo che il rapporto tra $\overline{PB}$ e $\overline{PA}$ sia $2$.
 \end{problema}
 
 \begin{multicols}{2}
@@ -801,7 +861,7 @@ $\overline {VA} = 2 k; \;
 
 \emph{Obiettivo}
 
-$P \in b \text{ tale che } \dfrac{PB}{PA} = 2$.
+$P \in b \text{ tale che } \dfrac{\overline{PB}}{\overline{PA}} = 2$.
 \begin{center}
  \input{./lbr/chap03/fig010_ango.pgf}
 \end{center}
@@ -812,24 +872,21 @@ $k > 0$.
 
 \begin{soluzione}
 La posizione del punto $ P $ sul lato $ b $ sarà individuata dalla distanza di $ P $ da $ V $: poniamo quindi $\overline {VP} = x$ con $x > 0$ e determiniamo
-$\overline {PB}$ e $\overline {PA}$ in funzione di $ x $ per poter sfruttare la richiesta contenuta nell’obiettivo come equazione risolvente.
+$\overline {PB}$ e $\overline {PA}$ in funzione di $ x $ per poter sfruttare la richiesta contenuta nell'obiettivo come equazione risolvente.
 
-Sia $ M $ il piede della perpendicolare da $ B $ al lato $ b $; nel triangolo rettangolo $ PMB $ si ha $\overline {PB}^{2} = \overline {BM}^{2} + \overline {PM}^{2}$(*) per il teorema di Pitagora. Nel triangolo $ BVM $, rettangolo in $ M $ con l’angolo $ V $ di $ 60\grado $ si ha $\overline {BM} = \frac{1}{2} \overline {BV} \cdot \sqrt{3} = 4 k\cdot \sqrt{3}$; $\overline {PM} = \overline {VP} - \overline {VM}$ e $\overline {VM} = \frac{1}{2} \overline {VB} = 4 k$; per quanto detto sul triangolo $ BVM $, quindi $\overline {PM} = x - 4 k$; sostituendo in (*) si ottiene $\overline {PB}^{2} = 48 k^{2} + ( x - 4 k )^{2}$.
+Sia $ M $ il piede della perpendicolare da $ B $ al lato $ b $; nel triangolo rettangolo $ PMB $ si ha $\overline {PB}^{2} = \overline {BM}^{2} + \overline {PM}^{2}$ (*) per il teorema di Pitagora. Nel triangolo $ BVM $, rettangolo in $ M $ con l'angolo $ V $ di $ 60\grado $ si ha $\overline {BM} = \frac{1}{2} \overline {BV} \cdot \sqrt{3} = 4 k\cdot \sqrt{3}$; $\overline {PM} = \overline {VP} - \overline {VM}$ e $\overline {VM} = \frac{1}{2} \overline {VB} = 4 k$; per quanto detto sul triangolo $ BVM $, si ha che $\overline {PM} = x - 4 k$; sostituendo in (*) si ottiene $\overline {PB}^{2} = 48 k^{2} + ( x - 4 k )^{2}$.
 
-Sia $ N $ il piede della perpendicolare da $ A $ al lato $ b $; nel triangolo rettangolo $ PNA $, con analogo ragionamento otteniamo: $\overline {PA}^{2} = \overline {AN}^{2} + \overline {PN}^{2}$ (**) per il teorema di Pitagora. Nel triangolo $ AVN $, rettangolo in $ N $ con l’angolo $ V $ di $ 60\grado $ si ha
+Sia $ N $ il piede della perpendicolare da $ A $ al lato $ b $; nel triangolo rettangolo $ PNA $, con analogo ragionamento otteniamo: $\overline {PA}^{2} = \overline {AN}^{2} + \overline {PN}^{2}$ (**) per il teorema di Pitagora. Nel triangolo $ AVN $, rettangolo in $ N $ con l'angolo $ V $ di $ 60\grado $, si ha
 $\overline {AN} = \frac{1}{2} \overline {AV} \cdot \sqrt{3} = k \cdot \sqrt{3}$; $ \overline {VN} = \frac{1}{2} \overline {AV} = k$ e $\overline {PN} = \overline {VP} - \overline {VN} = x - k$; sostituendo in (**) si ottiene $\overline {PA}^{2} = 3 k^{2} + ( x - k )^{2}$.
 
-Determiniamo l’equazione risolvente ricordando che il rapporto tra due segmenti è uguale al rapporto tra le rispettive misure ed elevando al quadrato
-si ha $\frac{\overline {PB}^{2}}{\overline {PA}^{2}} = 4$. Sostituendo quanto trovato si ottiene l’equazione $48 k^{2} + ( x - 4 k )^{2} = 4 \cdot \left[ 3 k^{2} + ( x - k )^{2} \right]$ da cui $x^{2} = 16 k^{2}$. Si tratta di un'equazione di secondo grado pura, avente due soluzioni reali opposte essendo il secondo membro positivo, quindi $x_{1} = - 4 k$ e $x_2=4 k$; per le condizioni poste solo $ x_2 $ è accettabile.
+Determiniamo l'equazione risolvente ricordando che il rapporto tra due segmenti è uguale al rapporto tra le rispettive misure ed elevando al quadrato
+si ha $\frac{\overline {PB}^{2}}{\overline {PA}^{2}} = 4$. Sostituendo quanto trovato si ottiene l'equazione $48 k^{2} + ( x - 4 k )^{2} = 4 \cdot \left[ 3 k^{2} + ( x - k )^{2} \right]$ da cui $x^{2} = 16 k^{2}$. Si tratta di un'equazione di secondo grado pura avente due soluzioni reali opposte, essendo il secondo membro positivo. Quindi $x_{1} = -4 k$ e $x_2=4 k$; per le condizioni poste solo $ x_2 $ è accettabile.
 
 Con quale punto della figura tracciata inizialmente viene a coincidere il punto $ P $ che risolve il problema?
 \end{soluzione}
-\vspazio\ovalbox{\risolvii \ref{ese:3.151}, \ref{ese:3.152}, \ref{ese:3.153}, \ref{ese:3.154}, \ref{ese:3.155}, \ref{ese:3.156}, \ref{ese:3.157}, \ref{ese:3.158}, \ref{ese:3.159}.}
 
-%----------------------------------------------------------------------------------
-\begin{comment}
+\vspazio\ovalbox{\risolvii \ref{ese:3.151}, \ref{ese:3.152}, \ref{ese:3.153}, \ref{ese:3.154}, \ref{ese:3.155}, \ref{ese:3.156}, \ref{ese:3.157}, \ref{ese:3.158}, \ref{ese:3.159}}
 
-\end{comment}
 \newpage
 \input{./chap/03_esercizi.tex}
 \cleardoublepage

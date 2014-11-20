@@ -4,14 +4,14 @@
   \coordinate(v) at (0,0);%il vertice dell'angolo
   \coordinate(a) at (60:4);%la retta a
   \coordinate(b) at (4,0);%la retta b
-  \coordinate(a1) at (60:0.8);%il punto A
+  \coordinate(a1) at (60:1.8);%il punto A
   \coordinate(b1) at (60:3.2);%il punto B
   \coordinate(p) at (3.2,0);%il punto P
   \coordinate (m) at ($(v)!(b1)!(p)$);%trova le coordinate della proiezione di b su v--p
   \coordinate (n) at ($(v)!(a1)!(p)$);%trova le coordinate della proiezione di b su v--p
   \draw (a) -- (v)  -- (b);%disegna l'angolo
-  \draw (b1) -- (p);%disegna il segmento b--p
-  \draw (a1) -- (p);%disegna il segmento a--p
+  \draw [dotted] (b1) -- (p);%disegna il segmento b--p
+  \draw [dotted] (a1) -- (p);%disegna il segmento a--p
   \draw [dotted] (a1) -- (n);%perpendicolare da A a b
   \draw [dotted] (b1) -- (m);%perpendicolare da B a b
   \node [label={[name=label node]left:$V$}] at (v) {};
@@ -22,5 +22,8 @@
   \node [label={[name=label node]below:$M$}] at (m) {};
   \node [label={[name=label node]below:$N$}] at (n) {};
   \node [label={[name=label node]above:$b$}] at (b) {};
-
+  \filldraw[fill=black, draw=black]  (a1) circle (1pt);
+  \filldraw[fill=black, draw=black]  (b1) circle (1pt);
+  \filldraw[fill=black, draw=black]  (p) circle (1pt);
+  \draw [<->] (3mm,0) arc (0:60:3mm);
 \end{tikzpicture}
