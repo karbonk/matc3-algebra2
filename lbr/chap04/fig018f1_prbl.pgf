@@ -15,20 +15,20 @@
   \node[] at (4,0) {$ax^2+bx+c<0$};
 %Insieme soluzione
 %primo insieme
-\begin{scope}[dotted]
+\begin{scope}[blue,thick]
 \draw[->] (6,2) -- (10,2);
 \end{scope}
-\node[above]  at (8,2) {$\IS=\emptyset$};
+\node[above]  at (8,2) {$\forall x \in \insR$};
 %secondo insieme
 \begin{scope}[dotted]
 \draw[->] (6,0) -- (10,0);
 \end{scope}
 \node[above]  at (8,0) {$\IS=\emptyset$};
 %terzo insieme
-\begin{scope}[blue,thick]
+\begin{scope}[dotted]
 \draw[->] (6,1) -- (10,1);
 \end{scope}
-\node[above]  at (8,1) {$\forall x \in \insR$};
+\node[above]  at (8,1) {$\IS=\emptyset$};
 
 \end{tikzpicture}
 
