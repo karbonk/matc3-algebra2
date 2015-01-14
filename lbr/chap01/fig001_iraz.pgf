@@ -30,7 +30,7 @@
     \coordinate[label=below:$A$] (A) at (2,0);
     \coordinate[label=above:$C$] (C) at (1,1);
     \coordinate[label=above:$B$] (B) at (2,1);
-    \coordinate[label=below:$K$] (K) at (2.414,0);
+    \coordinate[label=below:$\sqrt{2}$] (K) at (2.414,0);
 
     \draw[dashed] (2.414,0) arc [start angle=0, end angle=65,radius=1.414cm];
 
