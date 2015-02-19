@@ -10,6 +10,7 @@
   \node [label={[name=label node]right:$C$}] at (5,3) {};
   \node [label={[name=label node]right:$B$}] at (5,1) {};
   \node [label={[name=label node]left:$G$}] at (1,2) {};
+  \node [label={[name=label node]right:$F$}] at (2,2) {};
   \node [label={[name=label node]above:$E$}] at (2,3) {};
 
 %  \foreach \x in {1,5}

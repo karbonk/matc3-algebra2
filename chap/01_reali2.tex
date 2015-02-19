@@ -147,14 +147,14 @@ Il numero $\pi$ è invece un numero decimale con infinite cifre, non periodico. 
 3,141 592 653 589 793 238 462 643 383 279 502 884 197 169 399 375 105 820 974 944 592 307 816 406 286
 208 998 628 034 825 342 117 067 982 148 086 513 282 306 647 093 844 609 550 582 231 725 359 408 128 481 117 450 284 102
 701 938 521 105 559 644 622 948 954 930 381 964 428 810 975 665 933 446 128 475 648 233 786 783 165 271 201 909 145 648
-566 923 460 348 610 454 326 648 213 393 607 260 \ldots
+566 923 460 348 \ldots % 610 454 326 648 213 393 607 260 \ldots
 %$\pi=\np{3,141592653589793238462643383279502884197169399375105820974944592}$
 %$307\,816\,406\,286\,208\,998\,628\,034\,825\,342\,117\,067\,982\,148\,086\,513\,282\,306\,647\,093\,844\,609\,550\,582\,231$
 %$725\,359\,408\,128\,481\,117\,450\,284\,102\,701\,938\,521\,105\,559\,644\,622\,948\,954\,930\,381\,964\,428\,810\,975\,665$
 %$933\,446\,128\,475\,648\,233\,786\,783\,165\,271\,201\,909\,145\,648\,566\,923\,460\,348\,610\,454\,326\,648\,213\,393\,607$
 %$260\,\ldots$
 
-Nonostante i numeri irrazionali siano stati scoperti dallo stesso Pitagora\footnote{filosofo, matematico, taumaturgo, astronomo, scienziato e politico della Grecia antica (570 $\aC$ ca. - 495 $\aC$ ca.).} o dai suoi allievi nel $IV$~secolo~$\aC$, solo nel $XIX$~secolo Augustin-Louis Cauchy\footnote{matematico e ingegnere francese (1789 - 1857).} e Richard Dedekind\footnote{matematico tedesco (1831 - 1916).} sono giunti a una formulazione rigorosa dei numeri reali.
+Nonostante i numeri irrazionali siano stati scoperti dallo stesso Pitagora\footnote{filosofo, matematico, astronomo, scienziato e politico della Grecia antica (570 $\aC$ ca. - 495 $\aC$ ca.).} o dai suoi allievi nel $IV$~secolo~$\aC$, solo nel $XIX$~secolo Augustin-Louis Cauchy\footnote{matematico e ingegnere francese (1789 - 1857).} e Richard Dedekind\footnote{matematico tedesco (1831 - 1916).} sono giunti a una formulazione rigorosa dei numeri reali.
 
 In effetti, assumere che i numeri reali sono tutti quelli che si possono scrivere in forma decimale finita o infinita, del tipo $r=n+\np{0,}abcd\ldots$, dove $r$ è il numero reale, $n$ è la sua parte intera e $\np{0,}abcd\ldots$ è quella decimale, comporta dei problemi. Per esempio, i numeri interi hanno una doppia rappresentazione: $1=\np{0,}\overline{9}$ come i numeri decimali finiti: $\np{1,225}=\np{1,224}\overline{9}$. Occorre quindi escludere almeno i numeri decimali con il~9 periodico. Oltre questo problema rimane la difficoltà di eseguire le operazioni tra numeri decimali illimitati. Gli algoritmi per addizionare, sottrarre e moltiplicare due numeri richiedono di cominciare dall'ultima cifra, cosa che non è possibile per i numeri decimali che non finiscono mai. Altro problema non semplice da gestire è il fatto che una definizione di
 questo tipo è strettamente legata al sistema di numerazione a base 10 che noi utilizziamo.
@@ -164,8 +164,8 @@ La questione a questo punto è: possiamo costruire l'insieme dei numeri reali a 
 È questa l'idea alla base del ragionamento di Richard Dedekind e del sezionamento degli insiemi.
 
 \begin{definizione}
-Si chiama \emph{sezione} o \emph{partizione} di un insieme $X$, una coppia di sottoinsiemi non vuoti $A$ e $B$ tali che: $A \cap B=\emptyset$,~~$A \cup B=X$,~~$\forall a \in A$, $\forall b \in B$~~$a<b$.
- \end{definizione}
+Si chiama \emph{sezione} o \emph{partizione} di un insieme $X$, una coppia di sottoinsiemi non vuoti $A$ e $B$ tali che:~$A \cap B=\emptyset$,~~$A \cup B=X$,~~$\forall a \in A$, $\forall b \in B$~~$a<b$.
+\end{definizione}
 
 \begin{exrig}
  \begin{esempio}
