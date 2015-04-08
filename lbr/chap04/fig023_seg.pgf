@@ -39,10 +39,13 @@
 \node[] at (3,-1.5) {$-$};
 \node[] at (5,-1.5) {$+$};
 \node[] at (7,-1.5) {$+$};
-\node[] at (.5,-2) {$-$};
-\node[] at (1.5,-2) {$+$};
-\node[] at (3,-2) {$-$};
-\node[] at (5,-2) {$+$};
-\node[] at (7,-2) {$-$};
+
+\begin{scope}[red!60!black]
+\node[circle,inner sep=1pt,draw] at (.5,-2) {$-$};
+\node[circle,inner sep=1pt,draw] at (1.5,-2) {$+$};
+\node[circle,inner sep=1pt,draw] at (3,-2) {$-$};
+\node[circle,inner sep=1pt,draw] at (5,-2) {$+$};
+\node[circle,inner sep=1pt,draw] at (7,-2) {$-$};
+\end{scope}
 
 \end{tikzpicture}

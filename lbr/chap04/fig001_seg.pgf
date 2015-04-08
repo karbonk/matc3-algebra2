@@ -29,10 +29,10 @@
 \node  at (1,-.25) {$-$};
 \node  at (6.5,-.75) {$+$};
 
-\begin{scope}[red]
+\begin{scope}[red!60!black]
 \foreach \zii in {1, 6.5}{
-\node  at (\zii,-1.25) {$+$};
+\node[circle,inner sep=1pt,draw]  at (\zii,-1.37){$+$};
 }
-\node  at (3.5,-1.25) {$-$};
+\node[circle,inner sep=1pt,draw]  at (3.5,-1.37) {$-$};
 \end{scope}
 \end{tikzpicture}
