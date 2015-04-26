@@ -9,7 +9,7 @@ Il problema enunciato venne posto da Giovanni Panormita, astronomo e filosofo al
 Con il linguaggio matematico attuale il problema si formalizza nell'equazione di terzo grado $x^3+2x^2+10x=20$; Fibonacci pervenne al valore approssimato $x=\np{1,3688}$ come soluzione al problema, senza indicare la via seguita per la sua determinazione. Pur tuttavia egli riuscì a dimostrare che le soluzioni di un'equazione di terzo grado non possono mai esprimersi mediante radicali quadratici neanche se sovrapposti.
 
 Solo tra il 1540 e il 1545, ad opera dei matematici italiani Niccolò Fontana, detto Tartaglia\footnote{soprannome dovuto al suo linguaggio balbettante (1499 ca. - 1557).}, e Gerolamo Cardano\footnote{matematico, medico, astrologo e filosofo (1501 - 1576).}, fu scoperta la formula risolutiva dell'equazione generale di terzo grado.
-Cardano dimostrò che ogni equazione di terzo grado $ax^3+bx^2+cx+d=0$ è riconducibile alla forma $y^3+py+q=0$ operando la sostituzione $x=y-\frac b{3a}$, per la quale si ricava la formula risolutiva: 
+Cardano dimostrò che ogni equazione di terzo grado $ax^3+bx^2+cx+d=0$ è riconducibile alla forma $y^3+py+q=0$ operando la sostituzione $x=y-\frac b{3a}$, per la quale ricava la formula risolutiva: 
 \[y=\sqrt[3]{-\frac q 2+\sqrt{\left(\frac p 3\right)^3+\left(\frac q 2\right)^2}}+\sqrt[3]{-\frac q 2-\sqrt{\left(\frac p 3\right)^3+\left(\frac q 2\right)^2}}\] 
 da cui poi si risale alla soluzione in $x$ dell'equazione assegnata.
 \begin{exrig}
@@ -23,7 +23,7 @@ e quindi, sostituendo $y=x+1$, si ha $x=\sqrt[3]{\dfrac{\sqrt 5-1} 2}+\sqrt[3]{\
 \end{esempio}
 
 \begin{esempio}
-Risolvere l'equazione $x^3=15x+4$ applicando la formula di Cardano.
+Risolvere l'equazione $x^3=15x+4$ applicando la formula di Tartaglia-Cardano.
 
 Notiamo che è $p=-15$ e $q=-4$ e dunque sotto la radice quadrata della formula 
 si ha $\left(\frac p 3\right)^3+\left(\frac q 2\right)^2=(-5)^3+(-2)^2=-121$ pertanto non un numero
@@ -132,7 +132,7 @@ L'equazione ha l'unica soluzione reale $x=-\sqrt[3]3$. Spieghiamo il risultato s
  \end{esempio}
 \end{exrig}
 
-\ovalbox{\risolvii \ref{ese:5.12}, \ref{ese:5.13}, \ref{ese:5.14}, \ref{ese:5.15}, \ref{ese:5.16}, \ref{ese:5.17}, \ref{ese:5.18}, \ref{ese:5.19}, \ref{ese:5.20}}
+\ovalbox{\risolvii \ref{ese:5.12}, \ref{ese:5.13}, \ref{ese:5.14}, \ref{ese:5.15}, \ref{ese:5.16}, \ref{ese:5.17}}
 
 \section{Equazioni trinomie}
 
@@ -170,9 +170,9 @@ L'equazione è biquadratica incompleta; si può determinare l'insieme soluzione 
 \conclusione
 L'equazione biquadratica ${ax}^4+{bx}^2+c=0$
 \begin{itemize*}
-\item ha quattro soluzioni reali distinte se il discriminante dell'equazione risolvente è positivo e se risultano positivi anche i rapporti $-\frac b a$ e $\frac c a$ che indicano rispettivamente la somma e il prodotto delle sue soluzioni. Infatti \dotfill;
-\item ha due soluzioni reali distinte se il discriminante dell'equazione risolvente è positivo e se risulta negativo il rapporto $\frac c a$ che indica il prodotto delle sue soluzioni. Infatti \dotfill;
-\item non ha soluzioni reali se il discriminante dell'equazione risolvente è positivo e se risulta positivo il rapporto $\frac c a$ e negativo il rapporto $-\frac b a$. Infatti \dotfill;
+\item ha quattro soluzioni reali distinte se il discriminante dell'equazione risolvente è positivo e se risultano positivi anche i rapporti $-\frac b a$ e $\frac c a$ che indicano rispettivamente la somma e il prodotto delle sue soluzioni;
+\item ha due soluzioni reali distinte se il discriminante dell'equazione risolvente è positivo e se risulta negativo il rapporto $\frac c a$ che indica il prodotto delle sue soluzioni;
+\item non ha soluzioni reali se il discriminante dell'equazione risolvente è positivo e se risulta positivo il rapporto $\frac c a$ e negativo il rapporto $-\frac b a$;
 \item non ha soluzioni reali se il discriminante dell'equazione risolvente è negativo.
 \end{itemize*}
 Per stabilire il numero di soluzioni di un'equazione biquadratica si può anche utilizzare la regola dei segni di Cartesio:
@@ -183,7 +183,7 @@ Per stabilire il numero di soluzioni di un'equazione biquadratica si può anche 
 \item $\Delta <0$ nessuna soluzione reale.
 \end{itemize*}
 
-\ovalbox{\risolvii \ref{ese:5.21}, \ref{ese:5.22}, \ref{ese:5.23}, \ref{ese:5.24}, \ref{ese:5.25}, \ref{ese:5.26}, \ref{ese:5.27}, \ref{ese:5.28}, \ref{ese:5.29}, \ref{ese:5.30}, \ref{ese:5.31}}
+\ovalbox{\risolvii \ref{ese:5.18}, \ref{ese:5.19}, \ref{ese:5.20}, \ref{ese:5.21}, \ref{ese:5.22}, \ref{ese:5.23}, \ref{ese:5.24}, \ref{ese:5.25}, \ref{ese:5.26}, \ref{ese:5.27}, \ref{ese:5.28}, \ref{ese:5.29}}
 
 \subsection{Equazioni trinomie con n maggiore di 2}
 
@@ -201,7 +201,6 @@ Ponendo $t=x^4$ arriviamo all'equazione $t^2-t-2=0$ da cui $t_1=2$ e $t_2=-1$; p
 \end{itemize}
 \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:5.32}, \ref{ese:5.33}}
 
 \section{Equazioni che si risolvono con sostituzioni}
 
@@ -214,7 +213,7 @@ Sostituendo $t=x^2-4$ l'equazione diventa $t^4-1=0$. È un'equazione binomia che
 \[x^2-4=-1\:\Rightarrow\: x^2=3\:\Rightarrow\: x_{1\text{,}2}=\pm \sqrt 3\quad\text{ e }\quad x^2-4=+1\:\Rightarrow\: x^2=5\:\Rightarrow\: x_{3\text{,}4}=\pm \sqrt 5.\]
 \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:5.34}, \ref{ese:5.35}, \ref{ese:5.36}, \ref{ese:5.37}}
+\ovalbox{\risolvii \ref{ese:5.30}, \ref{ese:5.31}, \ref{ese:5.32}, \ref{ese:5.33},\ref{ese:5.34}, \ref{ese:5.35}}
 
 \section{Equazioni reciproche}
 
@@ -289,7 +288,7 @@ Un modo alternativo per determinare l'insieme soluzione dell'equazione reciproca
  \end{itemize}
  \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:5.38}, \ref{ese:5.39}, \ref{ese:5.40}, \ref{ese:5.41}}
+\ovalbox{\risolvii  \ref{ese:5.36}, \ref{ese:5.37}, \ref{ese:5.38}, \ref{ese:5.39}}
 
 \subsection{Equazioni di terzo grado reciproche di seconda specie}
 
@@ -314,7 +313,7 @@ Procedendo come nel caso precedente si può ottenere la scomposizione in fattori
  \end{itemize}
  \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:5.42}, \ref{ese:5.43}, \ref{ese:5.44}}
+\ovalbox{\risolvii \ref{ese:5.40}, \ref{ese:5.41}, \ref{ese:5.42}}
 
 \subsection{Equazioni di quarto grado reciproche di prima specie}
 
@@ -346,7 +345,7 @@ Queste ultime equazioni hanno soluzioni reali se e solo se $|t|\ge 2$. Infatti, 
  \end{itemize}
  \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:5.45}, \ref{ese:5.46}}
+\ovalbox{\risolvii \ref{ese:5.43}, \ref{ese:5.44}}
 
 \subsection{Equazioni di quarto grado reciproche di seconda specie}
 
@@ -368,7 +367,7 @@ e quindi
 \[\IS=\left\{-1\text{, }1\text{, }4+\sqrt{15}\text{, }4-\sqrt{15}\right\}.\]
  \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:5.47}, \ref{ese:5.48}, \ref{ese:5.49}, \ref{ese:5.50}, \ref{ese:5.51}}
+\ovalbox{\risolvii  \ref{ese:5.45}, \ref{ese:5.46}, \ref{ese:5.47}, \ref{ese:5.48}, \ref{ese:5.49}, \ref{ese:5.50}, \ref{ese:5.51}}
 
 \subsection{Equazioni di quinto grado reciproche di prima specie}
 
