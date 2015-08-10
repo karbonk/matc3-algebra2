@@ -28,14 +28,16 @@ La funzione $f(x)$ è detta \textit{argomento del valore assoluto}.
 Per la funzione $f(x)=\left|\sqrt 3+3x\right|$ trovare le espressioni algebriche che descrivono i due casi.
 
 Per definizione si ha: 
-\[f(x)=\left|\sqrt 3+3x\right|=\begin{cases}\sqrt 3+3x & \text{ se~~}\sqrt 3+3x\ge 0\:\Rightarrow\: x\ge -\frac{\sqrt 3} 3\\-\sqrt 3-3x & \text{ se~~}\sqrt 3+3x<0\:\Rightarrow\: x<-\frac{\sqrt 3} 3\end{cases}.\]
+\[f(x)=\left|\sqrt 3+3x\right|=\begin{cases}\sqrt 3+3x & \text{ se~~}\sqrt 3+3x\ge 0\:\Rightarrow\: x\ge -\dfrac{\sqrt 3} 3\\-\sqrt 3-3x & \text{ se~~}\sqrt 3+3x<0\:\Rightarrow\: x<-\dfrac{\sqrt 3} 3\end{cases}.\]
 \end{esempio}
-
+\pagebreak
 \begin{esempio}
 Data la funzione $f(x)=\left|x^2-4\right|+\left|x+1\right|-2x$ descriverla per casi, eliminando i valori assoluti.
 
 Dobbiamo studiare i segni dei due binomi in valore assoluto 
-\[x^2-4\ge 0\quad\Rightarrow\quad x\le -2\vee x\ge 2\] e \[x+1\ge 0\quad\Rightarrow\quad x>-1.\] 
+\[\begin{array}{l}x^2-4\ge 0\quad\Rightarrow\quad x\le -2\vee x\ge 2~\text{ e} \\x+1\ge 0\quad\Rightarrow\quad x>-1.\end{array}\]
+
+%\[x^2-4\ge 0\quad\Rightarrow\quad x\le -2\vee x\ge 2\] e \[x+1\ge 0\quad\Rightarrow\quad x>-1.\] 
 La situazione è rappresentata con maggiore chiarezza nel grafico seguente.
 \begin{center}
 \input{./lbr/chap07/fig001_seg.pgf}
@@ -60,8 +62,9 @@ In sintesi
 
 \section{Equazioni in una incognita in valore assoluto}
 \subsection{Equazioni nelle quali l'incognita è presente solo all'interno del modulo}
-
-\subsubsection*{Equazioni con valore assoluto del tipo $\left|f(x)\right|=k\text{ con }k\ge 0$}
+\begin{itemize}
+\item Equazioni con valore assoluto del tipo $\left|f(x)\right|=k\text{ con }k\ge 0$.
+\end{itemize}
 
 \begin{exrig}
 \begin{esempio}\label{es:7.3}
@@ -79,19 +82,13 @@ x^2-7=3 & \text{ se~~}x^2-7 \ge 0\\
 \end{cases}\]
 ovvero il tutto equivale all'unione dei due sistemi
 
-%Ricordiamo che $\left|x^2-7\right|=x^2-7\text{ se~~}x^2-7\ge 0$ mentre $\left|x^2-7\right|=-x^2+7\text{ se }x^2-7<0$.
-
-%Pertanto l'equazione diventa $x^2-7=3\text{ se }x^2-7\ge 0$ e $-x^2+7=3\text{ se }x^2-7<0$.
-
-%Il tutto si trasforma nell'unione dei due sistemi 
 \[\left\{\begin{array}{l}{x^2-7\ge 0}\\{x^2-7=3}\end{array}\right.\cup \left\{\begin{array}{l}{x^2-7<0}\\{-x^2+7=3}\end{array}\right..\]
 
 Moltiplicando per $-1$ ambo i membri dell'equazione del secondo sistema otteniamo: \[\left\{\begin{array}{l}{x^2-7\ge 0}\\{x^2-7=3}\end{array}\right.\cup \left\{\begin{array}{l}{x^2-7<0}\\{x^2-7=-3}\end{array}\right..\]
 
 Si vede abbastanza facilmente che sia nel primo che nel secondo sistema le due disequazioni sono sempre verificate. Infatti, nel primo sistema l'equazione $x^2-7=3$ verifica automaticamente la disequazione $x^2-7\ge 0$ in quanto è richiesto che $x^2-7$ sia uguale a $3$, pertanto è necessariamente positivo.
 Stesso ragionamento vale per il secondo sistema. In altre parole, per risolvere la disequazione data è sufficiente risolvere le due equazioni $x^2-7=3$ e $x^2-7=-3$ unendone le soluzioni. Quindi
- \[x^2-7=3\:\Rightarrow\: x^2=10\:\Rightarrow\: x_1=-\sqrt{10}\;\vee\; x_2=\sqrt{10}\]
-e \[x^2-7=-3\:\Rightarrow\: x^2=4\:\Rightarrow\: x_3=-2\;\vee\; x_4=2.\]
+\[\begin{array}{l}x^2-7=3\:\Rightarrow\: x^2=10\:\Rightarrow\: x_1=-\sqrt{10}\;\vee\; x_2=\sqrt{10}~\text{ e} \\x^2-7=-3\:\Rightarrow\: x^2=4\:\Rightarrow\: x_3=-2\;\vee\; x_4=2.\end{array}\]
 
 L'insieme delle soluzioni è quindi: $\left\{-\sqrt{10}\text{, }\sqrt{10}\text{, }-2\text{, }+2\right\}$.
 \end{esempio}
@@ -103,15 +100,15 @@ L'insieme delle soluzioni è quindi: $\left\{-\sqrt{10}\text{, }\sqrt{10}\text{,
 Risolvere la seguente equazione $\left|x^2-x\right|=1$.
 
 L'equazione $\left|x^2-x\right|=1$ si risolve unendo le soluzioni delle equazioni $x^2-x=1$ e $x^2-x=-1$. cioè:
-\[x^2-x=1\quad\Rightarrow\quad x^2-x-1=0\quad\Rightarrow\quad x_1=\frac{1-\sqrt 5} 2\;\vee\; x_2=\frac{1+\sqrt 5} 2\]
-e
-\[x^2-x=-1\quad\Rightarrow\quad x^2-x+1=0\quad\Rightarrow\quad \Delta <0\quad\Rightarrow\quad\IS=\emptyset.\]
+\[\begin{array}{l}x^2-x=1\quad\Rightarrow\quad x^2-x-1=0\quad\Rightarrow\quad x_1=\dfrac{1-\sqrt 5} 2\;\vee\; x_2=\dfrac{1+\sqrt 5} 2~\text{ e} \\x^2-x=-1\quad\Rightarrow\quad x^2-x+1=0\quad\Rightarrow\quad \Delta <0\quad\Rightarrow\quad\IS=\emptyset.\end{array}\]
 
-L'insieme soluzione dell'equazione data è quindi \[\IS=\left\{\frac{1-\sqrt 5} 2\text{, }\frac{1+\sqrt 5} 2\right\}.\]
+L'insieme soluzione dell'equazione data è quindi \[\IS=\left\{\dfrac{1-\sqrt 5} 2\text{, }\dfrac{1+\sqrt 5} 2\right\}.\]
 \end{esempio}
 \end{exrig}
 
-\subsubsection*{Equazioni con valore assoluto del tipo ${\left|f(x)\right|=k\text{ con }k<0}$}
+\begin{itemize}
+\item Equazioni con valore assoluto del tipo ${\left|f(x)\right|=k\text{ con }k<0}$.
+\end{itemize}
 
 Se $k<0$ l'equazione è impossibile. In questo caso $\left|f(x)\right|=k$ è una contraddizione, in quanto un valore assoluto di una espressione è sempre un valore positivo.
 
@@ -119,7 +116,7 @@ Se $k<0$ l'equazione è impossibile. In questo caso $\left|f(x)\right|=k$ è una
 \begin{esempio}
 Risolvere la seguente equazione $\left|x-7\right|=-1$.
 Impostiamo la ricerca delle soluzioni con il metodo generale presentato nell'esempio~\ref{es:7.3}. L'equazione corrisponde alla soluzione dell'unione dei due sistemi seguenti
-\[\left\{\begin{array}{l}{x-7\ge 0}\\{x-7=-1}\end{array}\right. \cup \left\{\begin{array}{l}{x-7<0}\\{x-7=1}\end{array}\right..\]
+\[\left\{\begin{array}{l}{x-7\ge 0}\\{x-7=-1}\end{array}\right. \cup~ \left\{\begin{array}{l}{x-7<0}\\{x-7=1}\end{array}\right..\]
 Entrambi i sistemi non hanno soluzioni reali. L'equazione è impossibile.
 \end{esempio}
 \end{exrig}
@@ -133,26 +130,26 @@ Risolvere la seguente equazione $\left|-1+3x\right|=7x+4$.
 L'equazione presenta un valore assoluto al primo membro.
 
 Tenendo conto che 
-\[\left|-1+3x\right|=\begin{cases}-1+3x & \text{ se~~}-1+3x\ge 0\:\Rightarrow\: x\ge \frac 1 3\\1-3x & \text{ se~~}-1+3x<0\:\Rightarrow\: x<\frac 1 3\end{cases}\text{,}\]
+\[\left|-1+3x\right|=\spazielenx{\begin{cases}-1+3x & \text{ se~~}-1+3x\ge 0\:\Rightarrow\: x\ge \frac 1 3\\1-3x & \text{ se~~}-1+3x<0\:\Rightarrow\: x<\frac 1 3\end{cases}\text{,}}\]
 l'equazione si trasforma nell'unione dei due sistemi 
-\[\left\{\begin{array}{l}{x\ge \frac 1 3}\\{-1+3x=7x+4}\end{array}\right.\cup \left\{\begin{array}{l}{x<\frac 1 3}\\{1-3x=7x+4}\end{array}\right..\]
+\[\left\{\begin{array}{l}{x\ge \dfrac 1 3}\\{-1+3x=7x+4}\end{array}\right.\cup \left\{\begin{array}{l}{x<\dfrac 1 3}\\{1-3x=7x+4}\end{array}\right..\]
 
 Risolvendo si ha 
-\[\left\{\begin{array}{l}{x\ge \frac 1 3}\\{4x=-5\:\Rightarrow\: x=-\frac 5 4}\end{array}\right.\cup \left\{\begin{array}{l}{x<\frac 1 3}\\{10x=3\:\Rightarrow\: x=\frac 3{10}}\end{array}\right..\]
+\[\left\{\begin{array}{l}{x\ge \dfrac 1 3}\\{4x=-5\:\Rightarrow\: x=-\dfrac 5 4}\end{array}\right.\cup \left\{\begin{array}{l}{x<\dfrac 1 3}\\{10x=-3\:\Rightarrow\: x=-\dfrac 3{10}}\end{array}\right..\]
 
-La soluzione $-\frac 5 4$ non è accettabile in quanto non è maggiore di $\frac 1 3$. Pertanto rimane la soluzione $x=\frac 3{10}$ (che è minore di $\frac{1}{3}$).
+La soluzione $-\dfrac 5 4$ non è accettabile in quanto non è maggiore di $\dfrac 1 3$. Pertanto rimane la soluzione $x=-\dfrac 3{10}$ (che è minore di $\dfrac{1}{3}$).
 \end{esempio}
 
 \begin{esempio}
 Risolvere la seguente equazione $\left|-2x+5\right|=x-3$.
 
 Esplicitiamo i due casi dell'argomento 
-\[\left|-2x+5\right|=\begin{cases}-2x+5 & \text{ se~~}-2x+5\ge 0\:\Rightarrow\: x\le \frac 5 2\\2x-5 & \text{ se~~}-2x+5<0\:\Rightarrow\: x>\frac 5 2\end{cases}.\]
+\[\left|-2x+5\right|=\begin{cases}-2x+5 & \text{ se~~}-2x+5\ge 0\:\Rightarrow\: x\le \dfrac 5 2\\2x-5 & \text{ se~~}-2x+5<0\:\Rightarrow\: x>\dfrac 5 2\end{cases}.\]
 L'equazione si trasforma quindi nell'unione dei due sistemi:
-\[\left\{\begin{array}{l}{x\le \frac 5 2}\\{-2x+5=x-3}\end{array}\right.\cup \left\{\begin{array}{l}{x>\frac 5 2}\\{2x-5=x-3}\end{array}\right..\]
+\[\left\{\begin{array}{l}{x\le \dfrac 5 2}\\{-2x+5=x-3}\end{array}\right.\cup \left\{\begin{array}{l}{x>\dfrac 5 2}\\{2x-5=x-3}\end{array}\right..\]
 
 Risolviamo ciascun sistema 
-\[\left\{\begin{array}{l}{x\le \frac 5 2}\\{-3x=-8\:\Rightarrow\: x=\frac 8 3}\end{array}\right.\cup \left\{\begin{array}{l}{x>\frac 5 2}\\{x=2}\end{array}\right.\] 
+\[\left\{\begin{array}{l}{x\le \dfrac 5 2}\\{-3x=-8\:\Rightarrow\: x=\dfrac 8 3}\end{array}\right.\cup \left\{\begin{array}{l}{x>\dfrac 5 2}\\{x=2}\end{array}\right.\] 
 ognuno dei quali risulta impossibile, cioè $\IS_1=\emptyset$ e $\IS_2=\emptyset $.
 
 Quindi l'insieme soluzione dell'equazione data è $\IS=\IS_1\cup \IS_2=\emptyset \cup \emptyset =\emptyset $: l'equazione è impossibile.
@@ -163,11 +160,11 @@ Risolvere la seguente equazione $\left|2x-1\right|=x+2$.
 
 L'equazione si trasforma nell'unione dei due sistemi 
 \[ \left\{\begin{array}{l}{2x-1\ge 0}\\{2x-1=x+2}\end{array}\right.\cup \left\{\begin{array}{l}{2x-1<0}\\{-2x+1=x+2}\end{array}\right.\Rightarrow
-\left\{\begin{array}{l}{x\ge \frac 1 2}\\{x=3}\end{array}\right.\cup \left\{\begin{array}{l}{x<\frac 1 2}\\{x=-\frac 1 2}\end{array}\right..\] 
-Quindi le soluzioni sono $x=3$~~e~~$x=-\frac 1 2$.
+\left\{\begin{array}{l}{x\ge \dfrac 1 2}\\{x=3}\end{array}\right.\cup \left\{\begin{array}{l}{x<\dfrac 1 2}\\{x=-\dfrac 1 2}\end{array}\right..\] 
+Quindi le soluzioni sono $x=3$~~e~~$x=-\dfrac 1 2$.
 \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:7.8}, \ref{ese:7.9}, \ref{ese:7.10}, \ref{ese:7.11}, \ref{ese:7.12}, \ref{ese:7.13}, \ref{ese:7.14}, \ref{ese:7.15}}
+\ovalbox{\risolvii \ref{ese:7.8}, \ref{ese:7.9}, \ref{ese:7.10}, \ref{ese:7.11}, \ref{ese:7.12}, \ref{ese:7.13}, \ref{ese:7.14}, \ref{ese:7.15}, \ref{ese:7.16}}
 
 \section{Equazioni con più espressioni in valore assoluto}
 
@@ -193,7 +190,7 @@ Il sistema è impossibile in quanto $2$ non è minore di $\frac 1 2$.
 
 Caso II: 
 \[\left\{\begin{array}{l}\frac 1 2\le x< \frac 3 2\\-(2x-3)+(1-2x)+x=4\end{array}\right.\Rightarrow \left\{\begin{array}{l}\frac 1 2\le x< \frac 3 2\\x=0\end{array}\right.\Rightarrow\: \IS_2=\emptyset .\]
-Il sistema è impossibile in quanto 0 non appartiene all'intervallo $\left[\frac{1}{2}\text{, }\frac{3}{2}\right)$.
+Il sistema è impossibile in quanto 0 non appartiene all'intervallo $\left[\dfrac{1}{2}\text{, }\dfrac{3}{2}\right)$.
 
 Caso III: 
 \[\left\{\begin{array}{l}x\ge\frac 3 2\\(2x-3)+(1-2x)+x=4\end{array}\right.\Rightarrow \left\{\begin{array}{l}x\ge\frac 3 2\\x=6\end{array}\right.\Rightarrow\: \IS_3=\{6\}.\]
@@ -232,9 +229,9 @@ Conclusione: $\IS=\IS_1\cup \IS_2\cup \IS_3\cup \IS_4=\left\{1\text{, }2+\sqrt 7
 \item \emph{è presente più di un modulo che ha l'incognita nel proprio argomento.} Si studia il segno di ogni argomento e dallo schema che ne segue si costruiscono e quindi si risolvono i sistemi in cui la prima condizione è la disequazione che vincola il segno degli argomenti e la seconda è l'equazione in base al segno definito. Anche in questo caso l'insieme soluzione dell'equazione è dato dall'unione degli insiemi soluzione dei vari sistemi.
 \end{enumeratea}
 \end{procedura}
-\ovalbox{\risolvii \ref{ese:7.16}, \ref{ese:7.17}, \ref{ese:7.18}, \ref{ese:7.19}, \ref{ese:7.20}, \ref{ese:7.21}, \ref{ese:7.22}, \ref{ese:7.23}, \ref{ese:7.24}, \ref{ese:7.25}, \ref{ese:7.26}, \ref{ese:7.27}, \ref{ese:7.28}, \ref{ese:7.29}}
+\ovalbox{\risolvii \ref{ese:7.17}, \ref{ese:7.18}, \ref{ese:7.19}, \ref{ese:7.20}, \ref{ese:7.21}, \ref{ese:7.22}, \ref{ese:7.23}, \ref{ese:7.24}, \ref{ese:7.25}, \ref{ese:7.26}, \ref{ese:7.27}, \ref{ese:7.28}, \ref{ese:7.29}, \ref{ese:7.30}}
 
-\section{Disequazioni in valore assoluto}
+\section{Disequazioni con valore assoluto}
 Le disequazioni con i moduli si risolvono in modo analogo alle equazioni con moduli.
 
 \subsection{Disequazioni in cui l'incognita si trova solo nel modulo}
@@ -299,7 +296,7 @@ Quindi rappresentiamo gli insiemi soluzione dei due sistemi in uno schema, così
 \input{./lbr/chap07/fig003_seg.pgf}
 \end{center}
 
-L'insieme soluzione della disequazione data è $x<-2-\sqrt 5\;\vee\; x>\frac 1 3$.
+L'insieme soluzione della disequazione data è $x<-2-\sqrt 5\;\vee\; x>\dfrac 1 3$.
 \end{esempio}
 \end{exrig}
 
@@ -334,7 +331,7 @@ Adesso rappresentiamo gli insiemi soluzione dei tre sistemi in uno schema, così
 Unendo tutte le soluzioni si ha: $x=-1\;\vee\; 0\le x\le 2$.
 \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:7.30}, \ref{ese:7.31}, \ref{ese:7.32}, \ref{ese:7.33}, \ref{ese:7.34}, \ref{ese:7.35}, \ref{ese:7.36}}
+\ovalbox{\risolvii \ref{ese:7.31}, \ref{ese:7.32}, \ref{ese:7.33}, \ref{ese:7.34}, \ref{ese:7.35}, \ref{ese:7.36}, \ref{ese:7.37}}
 
 \newpage
 \input{./chap/07_esercizi}
