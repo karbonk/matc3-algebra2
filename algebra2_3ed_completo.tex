@@ -186,13 +186,20 @@
 \include{chap/05_eqmag2}
 \include{chap/06_sistemi}
 \include{chap/07_eqmod}
-\begin{comment}
 \include{chap/08_eqirrz}
-\include{chap/08a_successioni}
 %%%
 %%% Quarta Parte
 %%%
 \include{chap/part_04}
 \include{chap/09_probabil}
-\end{comment}
+%%
+%% Azzeramento numerazione capitoli
+%%
+\renewcommand{\thechapter}{\Alph{chapter}}
+\setcounter{chapter}{0}
+%%%
+%%% Quinta Parte
+%%%
+\include{chap/part_05}
+\include{chap/08a_successioni}
 \end{document}

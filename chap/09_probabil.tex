@@ -82,7 +82,7 @@ Se $n$ eventi $E_1$, $E_2$, \ldots, $E_n$ sono esaustivi cioè $E_1 \cup E_2 \cu
 
 Ricordiamo che la cardinalità dell'insieme delle parti cioè il numero degli eventi che si possono formare con gli elementi di $\Omega$ è dato da $\card(\wp(\Omega ))=2^n$, dove $n$ rappresenta il numero degli eventi elementari. Così nel lancio del dado abbiamo $2^6=64$ possibili eventi, considerando anche l'insieme vuoto $\emptyset$ che rappresenta l'evento impossibile e l'insieme $\Omega =\{1$, 2, 3, 4, 5, $6\}$ che rappresenta l'evento certo.
 
-\vspazio\ovalbox{\risolvii \ref{ese:9.1}, \ref{ese:9.2}, \ref{ese:9.3}, \ref{ese:9.4}, \ref{ese:9.5}}
+\vspazio\ovalbox{\risolvii \ref{ese:9.1}, \ref{ese:9.2}, \ref{ese:9.3}, \ref{ese:9.4}}
 
 \section{Definizioni di probabilità}
 
@@ -96,7 +96,7 @@ Se diciamo che oggi pioverà con probabilità $\np{0,20}=\frac{20}{100}=\frac 1 
 La valutazione della probabilità dell'evento $E$ è quel valore $P(E)$ che si ottiene dalla quota $q$ che l'individuo che procede alla valutazione è disposto a pagare per ricevere una vincita $S$ nel caso si verifichi l'evento. Quindi $P(E)=\dfrac q S$.
 \end{definizione}
 
-Per ottenere una valutazione coerente, per valutare quanto siamo disposti a perdere/{}vincere nella scommessa, dobbiamo immedesimarci nei due ruoli, quello dello scommettitore e quello del banco. Inoltre le somme che scommettiamo devono essere significative per chi procede alla valutazione.
+Per ottenere una valutazione coerente, per valutare quanto siamo disposti a perdere (vincere) nella scommessa, dobbiamo immedesimarci nei due ruoli, quello dello scommettitore e quello del banco. Inoltre le somme che scommettiamo devono essere significative per chi procede alla valutazione.
 Nessun individuo coerente scommetterebbe su un evento impossibile una quota maggiore di 0 qualunque sia la vincita e nessun individuo pagherebbe una vincita per il verificarsi di un evento certo.
 Da queste considerazioni deduciamo che la misura della probabilità appartiene all'intervallo $[0$, $1]$, essendo $0$ il valore che corrisponde all'evento impossibile e $1$ quello che corrisponde all'evento certo.
 
@@ -125,13 +125,13 @@ La probabilità che si estragga una pallina rossa è $p=\frac 3 5=\np{0,6}=60\te
 
 \begin{esempio}
 Da un mazzo di 40 carte napoletane estraiamo una carta. Calcoliamo la probabilità degli eventi:
-\begin{itemize*}
+\begin{description*}
 \item $A=$ esce una carta di spade;
 \item $B=$ esce una carta con il numero 12;
 \item $C=$ esce una carta con un numero o una figura;
 \item $D=$ esce il sette di denari;
 \item $E=$ esce un asso.
-\end{itemize*}
+\end{description*}
 I casi possibili sono 40, dato che il mazzo è formato da 40 carte. Anche qui siamo in presenza di eventi elementari equiprobabili, applichiamo ancora lo schema di valutazione classico
 \begin{itemize*}
 \item L'evento $A$ è casuale, infatti i casi favorevoli sono 10, dato che il mazzo ha 10 carte di spade: $P(A)=\frac{10}{40}=\frac 1 4$;
@@ -154,14 +154,14 @@ Aiutiamoci con una tabella per elencare tutti i casi.
 \begin{center}
 \begin{tabular}{ccc}
 prima moneta & seconda moneta & terza moneta\\
-\boxT & \boxT & \boxT\\
-\boxT & \boxT & \boxC\\
-\boxT & \boxC & \boxT\\
-\boxT & \boxC & \boxC\\
-\boxC & \boxT & \boxT\\
-\boxC & \boxT & \boxC\\
-\boxC & \boxC & \boxT\\
-\boxC & \boxC & \boxC\\
+T & T & T\\
+T & T & C\\
+T & C & T\\
+T & C & C\\
+C & T & T\\
+C & T & C\\
+C & C & T\\
+C & C & C\\
 \end{tabular}
 \end{center}
 I casi possibili sono 8. C'è un solo caso favorevole all'evento ``3 volte testa''. La probabilità di questo evento è quindi $p=\frac 1 8=\np{0,125}=\np{12,5}\%$.
@@ -195,7 +195,7 @@ Per rispondere a queste domande le compagnie di assicurazioni sono in grado di s
 \end{esempio}
 
 \begin{esempio}
-Un sacchetto contiene 10 palline, alcune bianche, altre nere. Si estrae a caso, senza guardare nel sacchetto un pallina, si guarda il colore e si rimette il sacchetto nella pallina.
+Un sacchetto contiene 10 palline, alcune bianche, altre nere. Si estrae a caso, senza guardare nel sacchetto una pallina, si guarda il colore e si rimette la pallina nel sacchetto.
 
 Dopo 100 estrazioni abbiamo contato 78 volte la pallina bianca e 22 la pallina nera. Possiamo allora ipotizzare che nel sacchetto ci siano 8 palline bianche e 2 palline nere.
 \end{esempio}
@@ -203,7 +203,7 @@ Dopo 100 estrazioni abbiamo contato 78 volte la pallina bianca e 22 la pallina n
 
 \subsection{La valutazione soggettiva}
 
-La valutazione soggettiva della probabilità è la definizione che abbiamo dato all'inizio del capitolo: la probabilità dell'evento $A$ è quel valore $p$ che l'individuo che procede alla valutazione è disposto a pagare per ricevere una vincita unitaria. Se un individuo valuta pari $\frac 1 4=25\%$ la probabilità di un certo evento $E$ vuol dire che è disposto a pagare $25$ euro a un ipotetico banco per riceverne $100$ nel caso che $E$ si verifichi. Naturalmente la scommessa va accettata anche come banco che deve essere disposto a scommettere il $75\%=1-p$ sul fatto che $E$ non si verifichi: $P(E)=\frac q S$ con $ q=25 $ e $S=100$.
+La valutazione soggettiva della probabilità è la definizione che abbiamo dato all'inizio del capitolo: la probabilità dell'evento $A$ è quel valore $p$ che l'individuo che procede alla valutazione è disposto a pagare per ricevere una vincita unitaria. Se un individuo valuta~$\frac 1 4=25\%$ la probabilità di un certo evento $E$ vuol dire che è disposto a pagare $25$ euro a un ipotetico banco per riceverne $100$ nel caso che $E$ si verifichi. Naturalmente la scommessa va accettata anche come banco che deve essere disposto a scommettere il $75\%=1-p$ sul fatto che $E$ non si verifichi: $P(E)=\frac q S$ con $ q=25 $ e $S=100$.
 
 \subsubsection*{Le scommesse}
 
@@ -235,9 +235,9 @@ Leggo sul sito del Corriere della Sera, che per la partita Real Madrid-Barcellon
 Significa che scommettendo 1 euro possiamo vincerne \np{2,60}: la vittoria del Real Madrid è stata quindi stimata dal giornale $p=\frac 1{\np{2,60}}=\frac{100}{260}=\np{0,38}\ldots$ circa 38\%.
 \end{esempio}
 \end{exrig}
-\ovalbox{\risolvii \ref{ese:9.6}, \ref{ese:9.7}, \ref{ese:9.8}, \ref{ese:9.9}, \ref{ese:9.10}, \ref{ese:9.11}, \ref{ese:9.12}, \ref{ese:9.13}, \ref{ese:9.14}, \ref{ese:9.15}, \ref{ese:9.16},}
+\ovalbox{\risolvii \ref{ese:9.5}, \ref{ese:9.6}, \ref{ese:9.7}, \ref{ese:9.8}, \ref{ese:9.9}, \ref{ese:9.10}, \ref{ese:9.11}, \ref{ese:9.12}, \ref{ese:9.13}, \ref{ese:9.14}, \ref{ese:9.15}, \ref{ese:9.16}, \ref{ese:9.17},}
 
-\vspazio\ovalbox{\ref{ese:9.17}, \ref{ese:9.18}, \ref{ese:9.19}, \ref{ese:9.20}, \ref{ese:9.21}, \ref{ese:9.22}, \ref{ese:9.23}, \ref{ese:9.24}, \ref{ese:9.25}, \ref{ese:9.26}, \ref{ese:9.27}}
+\vspazio\ovalbox{ \ref{ese:9.18}, \ref{ese:9.19}, \ref{ese:9.20}, \ref{ese:9.21}, \ref{ese:9.22}, \ref{ese:9.23}, \ref{ese:9.24}, \ref{ese:9.25}, \ref{ese:9.26}}
 
 \section{Probabilità dell'unione di due eventi}
 
@@ -248,13 +248,9 @@ Per la probabilità dell'evento unione di due eventi occorre distinguere tra eve
 \subsection[Unione di due eventi tra loro incompatibili]{Unione di due eventi tra loro incompatibili}
 
 \begin{definizione}
-Due eventi $A$ e $B$ si dicono \emph{incompatibili} quando non si possono verificare contemporaneamente, cioè quando $A\cap B=\emptyset$.
+Due eventi $A$ e $B$ si dicono \emph{incompatibili} quando non si possono verificare contemporaneamente, cioè quando $A\cap B=\emptyset$. Due eventi $A$ e $B$ si dicono \emph{compatibili} quando si possono verificare contemporaneamente, cioè quando $A\cap B\neq \emptyset$.
 \end{definizione}
 
-\begin{definizione}
-Due eventi $A$ e $B$ si dicono \emph{compatibili} quando si possono verificare contemporaneamente, cioè quando $A\cap B\neq \emptyset$.
-\end{definizione}
-\pagebreak
 \begin{exrig}
 \begin{esempio}
 Nel lancio di un dado regolare calcolare la probabilità dell'uscita del numero 3 o di un numero pari.
@@ -262,8 +258,8 @@ Nel lancio di un dado regolare calcolare la probabilità dell'uscita del numero 
 I due eventi $A=$``uscita del numero 3'' e $B=$``uscita di un numero pari'' sono eventi incompatibili.
 
 Ci sono due modi per calcolare la probabilità dell'evento unione.
-\paragraph{Modo I}: Secondo la valutazione classica la probabilità che esca il $3$ o un numero pari è uguale a $\frac 4 6$: infatti i casi favorevoli sono 4 (le facce 3, 2, 4 e 6) su un totale di $6$ casi possibili.
-\paragraph{Modo II}: Calcoliamo la probabilità dell'unione dei due eventi considerando le proprietà dei singoli eventi. Dato che i due eventi sono incompatibili, cioè: $A\cap B=\emptyset $: abbiamo $P(A\cup B)=\frac 1 6+\frac 3 6=\frac 4 6$.
+\paragraph{Modo I} Secondo la valutazione classica la probabilità che esca il $3$ o un numero pari è uguale a $\frac 4 6$: infatti i casi favorevoli sono 4 (le facce 3, 2, 4 e 6) su un totale di $6$ casi possibili.
+\paragraph{Modo II} Calcoliamo la probabilità dell'unione dei due eventi considerando le proprietà dei singoli eventi. Dato che i due eventi sono incompatibili, cioè: $A\cap B=\emptyset $: abbiamo $P(A\cup B)=\frac 1 6+\frac 3 6=\frac 4 6$.
 \begin{center}
  \input{./lbr/chap09/fig008_uni.pgf}
 \end{center}
@@ -284,19 +280,19 @@ Gli eventi $A=$``uscita di un numero maggiore di 2'' e $B=$``uscita di un numero
 \begin{center}
  \input{./lbr/chap09/fig009_int.pgf}
 \end{center}
-\paragraph{Modo I}: La probabilità che esca un numero maggiore di $2$ o un numero dispari è uguale a $\frac 5 6$: infatti i casi favorevoli sono 5 (le facce 1, 3, 4, 5 e 6) su un totale di $6$ casi possibili.
-\paragraph{Modo II}: Calcoliamo la probabilità dell'unione dei due eventi considerando le proprietà dei singoli eventi. In questo caso non possiamo sommare come nei casi precedenti le probabilità dei singoli eventi. Infatti $P(A)+P(B)=\frac 4 6+\frac 3 6=\frac 7 6$ che contraddice l'assioma della probabilità. Occorre togliere la probabilità dell'intersezione tra $A$ e $B$ contata due volte, una volta per $A$ e una per $B$, che è uguale a $\frac 2 6$: due casi favorevoli (le facce 3 e 5) su sei casi possibili: \[P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac 4 6+\frac 3 6-\frac 2 6=\frac 5 6.\]
+\paragraph{Modo I} La probabilità che esca un numero maggiore di $2$ o un numero dispari è uguale a~$\frac 5 6$: infatti i casi favorevoli sono 5 (le facce 1, 3, 4, 5 e 6) su un totale di $6$ casi possibili.
+\paragraph{Modo II} Calcoliamo la probabilità dell'unione dei due eventi considerando le proprietà dei singoli eventi. In questo caso non possiamo sommare come nei casi precedenti le probabilità dei singoli eventi. Infatti $P(A)+P(B)=\frac 4 6+\frac 3 6=\frac 7 6$ che contraddice l'assioma della probabilità. Occorre togliere la probabilità dell'intersezione tra $A$ e $B$ contata due volte, una volta per $A$ e una per $B$, che è uguale a $\frac 2 6$: due casi favorevoli (le facce 3 e 5) su sei casi possibili: \[P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac 4 6+\frac 3 6-\frac 2 6=\frac 5 6.\]
 \end{esempio}
 
 \begin{esempio}
 Calcolare la probabilità che estraendo a caso un numero della tombola esso contenga la cifra 5 oppure sia multiplo di 5.
 
 La prima domanda da farsi è se i due eventi sono compatibili o incompatibili. Poiché esistono numeri della tombola che contengono la cifra 5 e che sono anche multipli di 5 (per esempio 15, 50, \ldots) i due eventi sono compatibili. Di conseguenza bisogna applicare la regola $P(A\cup B)=P(A)+P(B)-P(A\cap B)$.
-\begin{itemize*}
+\begin{description*}
 \item $A=$``estrarre un numero che contiene la cifra 5''. Questi numeri sono: 5, 15, 25, 35, 45, 50, 51, 52, \ldots, 59, 65, 75, 85, in tutto 18 ne segue che: $p(A)=\frac{18}{90}$;
 \item $B=$``estrarre un numero multiplo di 5''. I multipli di 5 sono 5, 10, 15, 20, \ldots{} due per ogni decina, quindi 18 in tutto, ne segue che: $p(B)=\frac{18}{90}$;
 \item $A\cap B=$``estrarre un cifra che contiene 5 ed è multiplo di 5''. Questi numeri sono 5, 15, 25, 35, 45, 50, 55, 65, 75, 85 in tutto sono 10 quindi: $p(A\cap B)=\frac{10}{90}$.
-\end{itemize*}
+\end{description*}
 Applichiamo la regola della probabilità utilizzata nel modo II del precedente esempio quindi:
 
 $A\cup B=$``estrarre un numero che contenga la cifra 5 oppure sia multiplo di 5''. \[P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac{18}{90}+\frac{18}{90}-\frac{10}{90}=\frac{26}{90}\simeq \np{0,29}= 29\%. \]
@@ -314,9 +310,7 @@ Se pensiamo alla probabilità come una massa unitaria distribuita sugli eventi, 
 
 \osservazione Il teorema delle proprietà totali vale anche nel caso degli eventi incompatibili in quanto in questo caso la probabilità dell'intersezione dei due eventi $P(A\cap B)=\emptyset$ e l'uguaglianza diventa $P(A\cup B)=P(A)+P(B)$.
 
-\vspazio\ovalbox{\risolvii \ref{ese:9.6}, \ref{ese:9.7}, \ref{ese:9.28}, \ref{ese:9.29}, \ref{ese:9.30}, \ref{ese:9.31}, \ref{ese:9.32}, \ref{ese:9.33}, \ref{ese:9.34}, \ref{ese:9.35}, \ref{ese:9.36},}
-
-\ovalbox{\ref{ese:9.37} \ref{ese:9.38}}
+\vspazio\ovalbox{\risolvii \ref{ese:9.27}, \ref{ese:9.28}, \ref{ese:9.29}, \ref{ese:9.30}, \ref{ese:9.31}, \ref{ese:9.32}, \ref{ese:9.33}, \ref{ese:9.34}, \ref{ese:9.35}, \ref{ese:9.36} \ref{ese:9.37}}
 
 \section{Probabilità dell'evento complementare }
 
@@ -346,7 +340,7 @@ Per conoscere la probabilità dell'evento complementare cioè la probabilità ch
 
 \osservazione L'uguaglianza sulla probabilità dell'evento complementare può risultare molto utile per risolvere alcuni problemi. A volte è più facile, o indispensabile, calcolare la probabilità dell'evento complementare che calcolare direttamente la probabilità dell'evento.
 
-\vspazio\ovalbox{\risolvii \ref{ese:9.39}, \ref{ese:9.40}, \ref{ese:9.41}, \ref{ese:9.42}, \ref{ese:9.43}, \ref{ese:9.44}, \ref{ese:9.45}, \ref{ese:9.46}}
+\vspazio\ovalbox{\risolvii \ref{ese:9.38}, \ref{ese:9.39}, \ref{ese:9.40}, \ref{ese:9.41}, \ref{ese:9.42}, \ref{ese:9.43}, \ref{ese:9.44}, \ref{ese:9.45}}
 
 \section{La probabilità dell'evento intersezione di due eventi}
 
@@ -360,42 +354,38 @@ Per la probabilità dell'intersezione di due eventi occorre distinguere tra even
 Due eventi $A$ e $B$ si dicono \emph{indipendenti} se il verificarsi di $A$ non cambia la probabilità del verificarsi di $B$, si dicono invece \emph{dipendenti} se il verificarsi di $A$ cambia la probabilità di $B$ rispetto a quella valutata per $B$ prima del verificarsi di $A$.
 \end{definizione}
 
-%\newpage
-
 \begin{exrig}
 \begin{esempio}
 Determinare la probabilità che lanciando una moneta e un dado regolari esca testa e un numero maggiore di 4.
-\begin{itemize}
+\begin{description*}
 \item $A=$``uscita di Testa nel lancio di una moneta'' $\Rightarrow\: P(A)=\frac 1 2$;
 \item $B=$``uscita di un numero maggiore di 4 nel lancio di un dado'' $\Rightarrow\: P(B)=\frac 2 6$;
-\item $(A\cap B)$=``uscita di testa e di un numero maggiore di 4 nel lancio di una moneta e di un dado''.
-\end{itemize}
+\item $(A\cap B)$=``testa e un numero maggiore di 4 nel lancio di una moneta e di un dado''.
+\end{description*}
 Vediamo come determinare $P(A\cap B)$.
 I due eventi $A$ e $B$ non si influenzano in quanto l'uscita di testa non modifica la probabilità dell'uscita di 4 nel lancio del dado.
 
 Notiamo subito una situazione diversa rispetto a quella precedente dell'unione di due eventi. Nel caso precedente, lo spazio degli eventi era lo stesso per l'evento $A$, per l'evento $B$ e per l'evento unione $(A\cup B)$.
 Ora invece per l'evento $A$ l'insieme degli eventi elementari è $\Omega_1=\{T$, $C\}$, per l'evento $B$ invece, l'insieme degli eventi elementari è $\Omega_2=\{1$, 2, 3, 4, 5, $6\}$. L'evento $(A\cap B)$ ha il seguente insieme degli eventi elementari: \[\Omega=\{(T;1)\text{, }(T;2)\text{, }(T;3)\text{, }(T;4)\text{, }(T;5)\text{, }(T;6)\text{, }(C;1)\text{, }(C;2)\text{, }(C;3)\text{, }(C;4)\text{, }(C;5)\text{, }(C;6)\}. \]
-
 Lo spazio degli eventi elementari dell'intersezione è dato dal prodotto cartesiano dello spazio elementare di $A$ moltiplicato per quello di $B$. Si può calcolare la probabilità in due modi:
-\paragraph{Modo I}: Si indicano i casi favorevoli e i casi possibili rispetto all'evento intersezione: i casi favorevoli all'evento sono due: $(A\cap B)=\{(T;5)\text{, }(T;6)\}$, i casi possibili sono dodici: \[\Omega=\{(T;1)\text{, }(T;2)\text{, }(T;3)\text{, }(T;4)\text{, }(T;5)\text{, }(T;6)\text{, }(C;1)\text{, }(C;2)\text{, }(C;3)\text{, }(C;4)\text{, }(C;5)\text{, }(C;6)\} \] la probabilità dell'evento intersezione è: $P(A\cap B)=\frac 2{12}=\frac 1 6$.
+\paragraph{Modo I} Si indicano i casi favorevoli e i casi possibili rispetto all'evento intersezione: i casi favorevoli all'evento sono due: $(A\cap B)=\{(T;5)\text{, }(T;6)\}$, i casi possibili sono dodici: \[\Omega=\{(T;1)\text{, }(T;2)\text{, }(T;3)\text{, }(T;4)\text{, }(T;5)\text{, }(T;6)\text{, }(C;1)\text{, }(C;2)\text{, }(C;3)\text{, }(C;4)\text{, }(C;5)\text{, }(C;6)\} \] la probabilità dell'evento intersezione è: $P(A\cap B)=\frac 2{12}=\frac 1 6$.
 
 \begin{center}
  \input{./lbr/chap09/fig010_int.pgf}
 \end{center}
 
-\paragraph{Modo II}: Dato che i due eventi non si influenzano, supponiamo di procedere con due scelte successive: prima il lancio della moneta con probabilità pari a $\frac 1 2$ e poi il lancio del dado con probabilità pari a $\frac 2 6$. Se si verifica il primo evento la probabilità si riduce da 1 a $\frac 1 2$ a cui devo applicare la probabilità che si verifichi il secondo evento pari a $\frac 2 6$, moltiplicando le probabilità dei singoli eventi.
-\begin{itemize*}
+\paragraph{Modo II} I due eventi non si influenzano, procediamo con due scelte successive: prima il lancio della moneta con probabilità pari a $\frac 1 2$ e poi il lancio del dado con probabilità pari a $\frac 2 6$. Se si verifica il primo evento la probabilità si riduce da 1 a $\frac 1 2$ a cui devo applicare la probabilità che si verifichi il secondo evento pari a $\frac 2 6$, moltiplicando le probabilità dei singoli eventi.
+\begin{description*}
 \item $A=$``uscita di Testa nel lancio di una moneta'' $\Rightarrow\: P(A)=\frac 1 2$;
 \item $B=$``uscita di un numero maggiore di 4 nel lancio di un dado'' $\Rightarrow\: P(B)=\frac 2 6$;
-\item $(A\cap B)$=``uscita di testa e di un numero maggiore di 4 nel lancio di una moneta e di un dado'' $\Rightarrow\: P(A\cap B)=P(A)\cdot P(B)=\frac 1 2\cdot \frac 2 6=\frac 2{12}$.
-\end{itemize*}
+\item $(A\cap B)$=``uscita di testa e di un numero maggiore di 4 nel lancio di una moneta e di un dado'' $P(A\cap B)=P(A)\cdot P(B)=\frac 1 2\cdot \frac 2 6=\frac 2{12}$.
+\end{description*}
 \end{esempio}
 \end{exrig}
 
-Generalizziamo: dati due eventi aleatori $A$ e $B$ tra loro indipendenti la probabilità dell'evento intersezione tra $A$ e $B$ è data dalla probabilità di $A$ moltiplicata per la probabilità di $B$: \[P(A\cap B)=P(A)\cdot P(B).\]\label{reg:probabilita_intersezione_eventi_indipendenti}
+Generalizziamo: dati due eventi aleatori $A$ e $B$ tra loro indipendenti la probabilità dell'evento intersezione tra $A$ e $B$ è data dalla probabilità di $A$ moltiplicata per la probabilità di~$B$: \[P(A\cap B)=P(A)\cdot P(B).\]\label{reg:probabilita_intersezione_eventi_indipendenti}
 
 \subsubsection*{Diagrammi ad albero}
-
 Una rappresentazione grafica che può risultare utile nello studio della probabilità dell'evento intersezione detto anche studio delle \emph{probabilità composte} è il diagramma ad albero. Le linee dell'albero si dicono \emph{rami}, mentre i punti da cui partono e arrivano i rami si dicono \emph{nodi}, il nodo iniziale si chiama \emph{radice}.
 
 La costruzione di un diagramma ad albero nel caso delle probabilità composte consente di eseguire un'analisi completa di tutti i possibili esiti di una prova. Ogni percorso dell'albero che va dalla radice al nodo terminale indica una sequenza di eventi congiunti, incompatibile con qualsiasi altro percorso dell'albero. La probabilità di ogni singolo evento si indica sui rami e moltiplicando le probabilità che si incontrano nel percorso si ottiene la probabilità della congiunzione degli eventi che formano il percorso. Dato che ogni percorso che va dalla radice al nodo terminale individua eventi incompatibili, se vogliamo trovare l'unione di due o più percorsi possiamo semplicemente sommarli.
@@ -408,12 +398,12 @@ L'albero può essere semplificato considerando gli eventi coinvolti e i loro com
 \begin{exrig}
 \begin{esempio}
 In un'urna abbiamo tre palline bianche e due nere. Facciamo due estrazioni rimettendo dopo la prima estrazione la pallina nell'urna. Vogliamo calcolare la probabilità dell'uscita di una pallina nera nelle due estrazioni.
-\begin{itemize*}
+\begin{description*}
 \item $B_{1}=$``nella prima estrazione pallina bianca'' $\Rightarrow\: P(B_1)=\frac 3 5$;
 \item $B_{2}=$``nella seconda estrazione pallina bianca'' $\Rightarrow\: P(B_2)=\frac 3 5$ in quanto la pallina si rimette nell'urna;
 \item $N_{1}=$``nella prima estrazione pallina nera'' $\Rightarrow\: P(N_1)=\frac 2 5$;
 \item $N_{2}=$``nella seconda estrazione pallina nera'' $\Rightarrow\: P(N_2)=\frac 2 5$.
-\end{itemize*}
+\end{description*}
 Il problema è sempre lo stesso: calcolare una probabilità su un insieme intersezione partendo dalle probabilità degli eventi componenti. Devo moltiplicare la probabilità di avere nera nella prima estrazione $P(N_1)=\frac 2 5$ con la probabilità di avere nera nella seconda estrazione $P(N_2)=\frac 2 5$ in quanto, l'uscita della prima pallina nera, evento considerato ora come avvenuto, non influenza la probabilità di avere nera alla seconda estrazione in quanto la pallina estratta viene rimessa nell'urna. Quindi: $P(N_1\cap N_2)=\frac 2 5\cdot \frac 2 5=\frac 4{25}$ in quanto i due eventi sono indipendenti.
 \begin{center}
  \input{./lbr/chap09/fig012_alb.pgf}
@@ -431,12 +421,14 @@ Perché scommettendo alla pari sull'evento $A=$``ottenere almeno una volta un 6 
 \end{problema}
 Scommettere alla pari, 1:1, significa assegnare alla probabilità degli eventi $A$ e $B$ il valore pari a $\frac 1 2$.
 Consideriamo la probabilità dell'evento $A$ composto dai seguenti quattro eventi indipendenti ma non incompatibili
-\begin{itemize*}
+\begin{multicols}{2}
+\begin{description*}
 \item $E_1=$``ottenere 6 nel primo lancio'';
 \item $E_2=$``ottenere 6 nel secondo lancio'';
 \item $E_3=$``ottenere 6 nel terzo lancio'';
 \item $E_4=$``ottenere 6 nel quarto lancio''.
-\end{itemize*}
+\end{description*}
+\end{multicols}
 In questo caso conviene calcolare la probabilità dell'evento complementare: $\overline A=$``non ottenere un 6 in quattro lanci di un dado'', $\overline A=(\overline{E_1}\cap \overline{E_2}\cap \overline{E_3}\cap \overline{E_4})$.
 
 Dato che gli eventi sono indipendenti ed equiprobabili abbiamo: \[ P(\overline{E_1})=P(\overline{E_2})=P(\overline{E_3})=P(\overline{E_4})=\frac 5 6. \]
@@ -447,9 +439,9 @@ Consideriamo ora la probabilità dell'evento $B$, dove valgono considerazioni an
 \[ P(\overline B)=\underbrace{\frac{35}{36}\cdot\frac{35}{36}\cdot\frac{35}{36}\cdot\ldots\cdot\frac{35}{36}}_{24\text{ volte}}=\frac{35^{24}}{36^{24}}=\np{0,509}=\np{50,9}\% \]
 da cui $P(B)=1-\np{0,509}=\np{0,491}=\np{49,1}\%$. Così è spiegato come mai in un grande numero di scommesse, scommettendo alla pari, il Cavalier de Méré si rovinasse.
 
-\vspazio\ovalbox{\risolvii \ref{ese:9.47}, \ref{ese:9.48}, \ref{ese:9.49}, \ref{ese:9.50}, \ref{ese:9.51}, \ref{ese:9.52}, \ref{ese:9.53}, \ref{ese:9.54}, \ref{ese:9.55}, \ref{ese:9.56}, \ref{ese:9.57},}
+\vspazio\ovalbox{\risolvii \ref{ese:9.46}, \ref{ese:9.47}, \ref{ese:9.48}, \ref{ese:9.49}, \ref{ese:9.50}, \ref{ese:9.51}, \ref{ese:9.52}, \ref{ese:9.53}, \ref{ese:9.54}, \ref{ese:9.55}, \ref{ese:9.56}, \ref{ese:9.57}, \ref{ese:9.58}}
 
-\ovalbox{\ref{ese:9.58}, \ref{ese:9.59}}
+%\ovalbox{\ref{ese:9.57}, \ref{ese:9.58}}
 
 \subsection{Intersezione di due eventi tra loro dipendenti}
 
@@ -462,11 +454,11 @@ Si chiama \emph{probabilità condizionata} o \emph{subordinata} di un evento $B$
 Calcolare la probabilità di avere due palline nere in due estrazioni successive da un'urna contenente tre palline bianche e due nere (questa volta però senza rimettere la pallina nell'urna una colta estratta).
 
 Dato che vogliamo calcolare la probabilità dell'evento intersezione $(N_1\cap N_2)$ questa sarà data dalla probabilità dell'evento $N_1$ moltiplicata per la probabilità dell'evento $N_2$ dopo che si è verificato l'evento $N_1$. La probabilità dell'evento $N_2$ dopo il verificarsi di $N_1$ non è la stessa dell'esperimento precedente in quanto la pallina estratta non viene rimessa nell'urna.
-\begin{itemize*}
-\item $N_{1}=$``pallina nera alla prima estrazione'' $\Rightarrow\: P(N_1)=\frac 2 5$;
-\item $N_{2}=$``pallina nera alla seconda estrazione'', dopo che l'evento $N_1$ si è verificato, $\Rightarrow\: P(N_2/N_1)=\frac 1 4$.
-\end{itemize*}
-%\newpage
+\begin{description*}
+\item $N_{1}=$``pallina nera alla I° estrazione'' $\Rightarrow\: P(N_1)=\frac 2 5$;
+\item $N_{2}=$``pallina nera alla II° estrazione'', dopo che l'evento $N_1$ si è verificato, $\Rightarrow P(N_2/N_1)=\frac 1 4$.
+\end{description*}
+
 \begin{center}
  \input{./lbr/chap09/fig013_alb.pgf}
 \end{center}
@@ -477,10 +469,10 @@ Attraverso il diagramma ad albero è facile calcolare le probabilità degli even
 
 \begin{esempio}
 Una scatola di caramelle contiene 20 caramelle assortite alla frutta, incartate allo stesso modo e quindi irriconoscibili. Di esse 14 sono al limone. Fabio ne prende 2. Qual è la probabilità che siano tutte e due al limone?
-\begin{itemize*}
+\begin{description*}
 \item $E_1=$``la prima caramella è al limone'' $\Rightarrow\: P(E_1)=\frac{14}{20}$;
 \item $E_2=$``la seconda è al limone''. Questo evento è dipendente dal primo, perché se Fabio ha preso una caramella al limone nella scatola rimangono 19 caramelle di cui 13 al limone quindi $P(E_2/E_1)=\frac{13}{19}$.
-\end{itemize*}
+\end{description*}
 \[P(E_1\cap E_2)=P(E_1)\cdot P(E_2/E_1)=\frac{14}{20}\cdot \frac{13}{19}=\frac{91}{190}.\]
 \end{esempio}
 \end{exrig}
@@ -526,7 +518,7 @@ In genere $P(A/B)\neq P(B/A)$ in quanto le due probabilità pur avendo lo stesso
 
 Per la proprietà commutativa dell'intersezione abbiamo: $P(A\cap B)=P(B\cap A)$ quindi 
 \[P(A\cap B)=P(A)\cdot P(B/A)=P(B)\cdot P(A/B).\]
-%\newpage
+\pagebreak
 \begin{exrig}
 \begin{esempio}
 Conviene scommettere alla pari che in una classe composta da 23 alunni, due persone compiano gli anni nello stesso giorno dello stesso mese?
@@ -540,12 +532,13 @@ Analizziamo alcune di queste probabilità e applichiamo il teorema delle probabi
 Il primo allievo avrà la certezza di compiere gli anni in un qualsiasi giorno dell'anno; il secondo allievo avrà una probabilità pari a 364 giorni su 365 di non compiere gli anni nello stesso giorno del primo; il terzo allievo una probabilità di 363 giorni su 365 condizionata a non compiere gli anni lo stesso giorno del primo e del secondo; e così via fino alla probabilità dell'ultimo allievo pari a 343 giorni su 365 di non compiere gli anni lo stesso giorno dei propri compagni.
 
 Ora applichiamo il teorema delle probabilità composte: \[ P(\overline A)=\frac{365}{365}\cdot \frac{364}{365}\cdot \frac{363}{365}\cdot \ldots \cdot \frac{343}{365}=\frac{365\cdot 364\cdot 363\cdot \ldots \cdot 343}{365^{23}}=\np{0,493}=\np{49,3}\%.\] Dato che $P(A)=1-P(\overline A)=1-\np{0,493}=\np{0,507}=\np{50,7}\%$.
-\conclusione Conviene scommettere alla pari sull'evento $A$.
+
+Conviene quindi scommettere alla pari sull'evento $A$.
 \end{esempio}
 \end{exrig}
 Il problema dell'esempio precedente si può schematizzare anche come segue: in un'urna ci sono $365$ palline numerate da $1$ a $365$. Qual è la probabilità di estrarre 2 volte la stessa pallina in 23 estrazioni, rimettendo la pallina nell'urna dopo ogni estrazione?
 
-\vspazio\ovalbox{\risolvii \ref{ese:9.60}, \ref{ese:9.61}, \ref{ese:9.62}, \ref{ese:9.63}, \ref{ese:9.64}}
+\vspazio\ovalbox{\risolvii \ref{ese:9.59}, \ref{ese:9.60}, \ref{ese:9.61}, \ref{ese:9.62}, \ref{ese:9.63}}
 \newpage
 \input{./chap/09_esercizi}
 \cleardoublepage

@@ -2,7 +2,7 @@
 % (c)~2014 Dimitrios Vrettos - d.vrettos@gmail.com
 \section{Esercizi}
 \subsection{Esercizi dei singoli paragrafi}
-\subsection*{\thechapter.1 - Gli eventi}
+\subsection*{9.1 - Gli eventi}
 
 \begin{esercizio}
  \label{ese:9.1}
@@ -29,41 +29,6 @@ Aprendo a caso un libro di 200 pagine indica se gli eventi seguenti sono impossi
 
 \begin{esercizio}
  \label{ese:9.3}
-Completa la tabella:
-\begin{center}
-\begin{tabular}{lll}
-Insieme / Evento & Spazio degli eventi & Numero degli eventi\\
-\midrule
-\multicolumn{3}{l}{Lanciando una moneta ottengo croce}\\
-$E=\{\text{croce}\} $ & $ \Omega =\{$testa, croce$\} $ & $ 2^2=4 $\\
-\midrule
-\multicolumn{3}{l}{Lanciando un dado ottengo 1 o 6} \\
-$E=\{1$, $6\}$ & $\Omega =\{1$, 2, \ldots, \ldots, \ldots, \ldots$\}$ & $ 2^6=\ldots$\\
-\midrule
-\multicolumn{3}{l}{Pallina con un numero primo da un'urna con 15 palline numerate da 1 a 15}\\
-$E=\{2$, 3, 5, \ldots, \ldots, \ldots$\}$ & $\Omega=\{x\in \insN \mid 1\le x\le 15\}$ & $2^{15}$\\
-\midrule
-\multicolumn{3}{l}{Estraendo una carta da un mazzo di 40 carte, si presenta il 7 di denari}\\
-$ E=\{7\text{ di denari}\} $ & $ \Omega =\{x\in A\mid A=\{\text{Mazzo da 40}\}\} $ & \ldots\ldots\ldots\ldots\\
-\midrule
-\multicolumn{3}{l}{Lanciando due monete ottengo facce diverse}\\
-\ldots \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots\\
-\midrule
-\multicolumn{3}{l}{Lanciando un dato ottengo un numero pari}\\
-\ldots \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots\\
-\midrule
-\multicolumn{3}{l}{Pallina con un numero multiplo di 3 da un'urna con 15 palline numerate da 1 a 15}\\
-\ldots \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots\\
-\midrule
-\multicolumn{3}{l}{Estraendo una carta da un mazzo di 40 carte, si presenta un asso}\\
-\ldots \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots & \ldots \ldots \ldots \ldots\\
-\end{tabular}
-\end{center}
-\end{esercizio}
-%\newpage
-\pagebreak
-\begin{esercizio}
- \label{ese:9.4}
 Estraendo una carta da un mazzo di 40 carte napoletane, individua fra le seguenti le coppie di eventi incompatibili:
 \begin{multicols}{2}
 \begin{enumeratea}
@@ -80,222 +45,228 @@ Quali sono i 2 eventi la cui unione genera un evento certo?
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.5}
+ \label{ese:9.4}
  Considerando la distribuzione dei sessi in famiglie con due figli in cui lo spazio degli eventi $\Omega =\{{M;M}$, ${M;F}$, ${F;M}$, ${F;F}\}$ quali sono l'intersezione e l'unione degli eventi $E_1$ =``Il primo figlio è maschio'' e $E_2$ = ``Il secondo figlio è maschio''.
 \end{esercizio}
 
-\subsection*{\thechapter.2 - Definizioni di probabilità}
+\subsection*{9.2 - Definizioni di probabilità}
 
 \begin{esercizio}
- \label{ese:9.6}
-Quali tra i seguenti numeri possono essere misure di probabilità? \[ \np{1,5}\text{, }\np{0,5}\text{, }25\text{, }100\%\text{, }\np{-0,1}\text{, }\frac 1 2\text{, }\frac 4 3\text{, }0\text{, }120\%\text{, }\np{0,}\overline{3}. \]
+ \label{ese:9.5}
+Quali tra i seguenti numeri possono essere misure di probabilità? \[ \np{1,5}\text{,}\quad\np{0,5}\text{,}\quad 25\text{,}\quad 100\%\text{,}\quad\np{-0,1}\text{,}\quad\frac 1 2\text{,}\quad\frac 4 3\text{,}\quad 0\text{,}\quad 120\%\text{,}\quad\np{0,}\overline{3}. \]
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.7}
+ \label{ese:9.6}
 Elenca i casi favorevoli all'evento: ``lanciando tre dadi la somma delle facce è 5''.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.8}
+ \label{ese:9.7}
 Per uno studente è indifferente ricevere \officialeuro~$350$ senza condizioni, oppure un motorino del valore \officialeuro~$\np{1500}$ solo se sarà promosso. Qual è la probabilità che lo studente attribuisce alla sua promozione?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.9}
+ \label{ese:9.8}
 Uno studente è disposto a puntare 10 € per riceverne 60 solo se sarà interrogato in matematica. Quale probabilità lo studente attribuisce all'eventualità di essere interrogato in matematica?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.10}
+ \label{ese:9.9}
 Tre amici si sfidano ad una gara di scacchi. Giudico che due di essi si equivalgano, mentre ritengo che il terzo abbia probabilità doppia di ciascuno degli altri due sfidanti. Quale probabilità attribuisco a ciascuno dei tre giocatori?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.11}
+ \label{ese:9.10}
 Un'urna contiene 3 palline bianche, 5 rosse e 7 verdi tutte uguali e distinguibili solo per il colore. Calcolare la probabilità che estraendo a caso una pallina dall'urna si verificano i seguenti eventi.
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ si estrae una pallina rossa;
 \item $ B= $ si estrae una pallina bianca;
 \item $ C= $ si estrae una pallina bianca o verde.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.12}
+ \label{ese:9.11}
 Si lanciano 3 monete equilibrate (testa e croce sono egualmente possibili); calcolare la probabilità di ottenere due croci e una testa.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.13}
+ \label{ese:9.12}
 Calcolare la probabilità che lanciando 2 dadi regolari la somma dei numeri che si presentano sia 6.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.14}
+ \label{ese:9.13}
 Un'urna contiene 100 palline identiche, numerate da 1 a 100. Calcolare la probabilità che estraendo a caso una pallina dall'urna, essa sia un multiplo di 10.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.15}
+ \label{ese:9.14}
 Un'urna contiene 15 palline identiche, numerate da 1 a 15. Calcolare la probabilità che estraendo a caso due palline dall'urna, la loro somma sia 10.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.16}
+ \label{ese:9.15}
 Calcola la probabilità che lanciando 4 volte una moneta equilibrata escano solo due teste.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.17}
+ \label{ese:9.16}
 Pago alla mia compagnia di assicurazione un premio di \officialeuro~$450$ all'anno per avere assicurato contro il furto la mia auto che ho pagato \officialeuro~$\np{12000}$. Quale probabilità viene attribuita dalla compagnia al furto dell'auto?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.18}
+ \label{ese:9.17}
 E' più facile vincere un premio acquistando un biglietto nella lotteria A che prevede 10 premi di ugual valore su un totale di $\np{5000}$ biglietti venduti o nella lotteria B che prevede 7 premi su $\np{3000}$ biglietti venduti?
 Se ogni premio per entrambe le lotteria ammonta a \officialeuro~$\np{1000}$, quale dovrebbe essere un prezzo equo per la lotteria A? Quale il prezzo equo per la lotteria B?
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.19}
+ \label{ese:9.18}
 In Italia nel 2005 sono stati denunciati dalla polizia $\np{2579124}$ crimini penali, nello stesso periodo in Danimarca sono stati denunciati $\np{432704}$ crimini. Sulla base di questi dati ritieni che sia più sicuro vivere in Danimarca?
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.20}
+ \label{ese:9.19}
  In un mazzo di 40 carte napoletane calcola la probabilità che estraendo a caso una carta essa sia:
-\begin{itemize*}
+\begin{multicols}{2}
+\begin{description*}
 \item $ A= $ un re;
 \item $ B= $ una carta a denari;
 \item $ C= $ una carta minore di 8;
 \item $ D = $ una carta con punteggio pari.
-\end{itemize*}
+\end{description*}
+\end{multicols}
+\end{esercizio}
+
+\begin{esercizio}
+ \label{ese:9.20}
+Un mazzo di carte francesi è composto da 54 carte, 13 per seme e due jolly, i semi sono cuori e quadri di colore rosso, picche e fiori di colore nero. Calcolare la probabilità che estraendo a caso una carta sia
+\begin{multicols}{2}
+\begin{description*}
+\item $ A= $ un jolly;
+\item $ B= $ un re;
+\item $ C= $ l'asso di picche,
+\item $ D= $ una carta di colore rosso.
+\end{description*}
+\end{multicols}
 \end{esercizio}
 
 \begin{esercizio}
  \label{ese:9.21}
-Un mazzo di carte francesi è composto da 54 carte, 13 per seme e due jolly, i semi sono cuori e quadri di colore rosso, picche e fiori di colore nero. Calcolare la probabilità che estraendo a caso una carta
-\begin{itemize*}
-\item $ A= $ sia un jolly;
-\item $ B= $ sia un re;
-\item $ C= $ sia l'asso di picche,
-\item $ D= $ sia una carta di colore rosso.
-\end{itemize*}
-\end{esercizio}
-
-\begin{esercizio}
- \label{ese:9.22}
 Da un mazzo di 40 carte napoletane vengono tolte tutte le figure, calcola la probabilità di estrarre una carta a denari.
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.23}
+ \label{ese:9.22}
 In un sacchetto vengono inserite 21 tessere, su ciascuna delle quali è stampata una lettera dell'alfabeto italiano. Calcola la probabilità che estraendo a caso una tessera essa sia
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ una consonante;
 \item $ B= $ una vocale;
 \item $ C= $ una lettera della parola MATEMATICA.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.24}
+ \label{ese:9.23}
 Nelle estrazioni del Lotto si estraggono dei numeri a caso compresi tra 1 e 90. Calcola la probabilità che il primo numero estratto sia:
-\begin{itemize*}
+\begin{multicols}{2}
+\begin{description*}
 \item $ A= $ il 90;
 \item $ B= $ un numero pari;
 \item $ C= $ un multiplo di 3;
 \item $ D= $ contenga la cifra 1.
-\end{itemize*}
+\end{description*}
+\end{multicols}
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.25}
+ \label{ese:9.24}
 In un ipermercato si sono venduti in un anno $\np{1286}$ cellulari di tipo A e $780$ cellulari di tipo B. Mentre erano ancora in garanzia sono stati restituiti $12$ cellulari di tipo A e $11$ cellulari di tipo B perché malfunzionanti. Comprando un cellulare di tipo A, qual è la probabilità che sia malfunzionante? Qual è la probabilità che sia malfunzionante un cellulare di tipo B?
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.26}
+ \label{ese:9.25}
 Quando vado al lavoro parcheggio l'auto nei parcheggi a pagamento ma non sempre compro il biglietto del parcheggio. Precisamente lo compro il lunedì e il giovedì, non lo compro il martedì e il mercoledì, il venerdì vado sempre con l'auto di un collega, il sabato e la domenica non lavoro. Quando vado al lavoro, che probabilità ho di prendere la multa per non aver pagato il parcheggio?
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.27}
+ \label{ese:9.26}
 Un semaforo mostra il rosso per 120'', il verde per 60'', il giallo per 10''. Qual è la probabilità di incontrare il semaforo quando è verde?
 \end{esercizio}
 
-\subsection*{\thechapter.3 - Probabilità dell'unione di due eventi}
+\subsection*{9.3 - Probabilità dell'unione di due eventi}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.28}
+ \label{ese:9.27}
  Lanciando un dado regolare, si calcoli la probabilità che esca un numero dispari o minore di 4.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.29}
+ \label{ese:9.28}
 Da un'urna che contiene 12 palline identiche, numerate da 1 a 12, se ne estrae una. Calcolare la probabilità che la pallina presenti un numero minore di 6 o un numero maggiore di 8.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.30}
+ \label{ese:9.29}
 Da un'urna che contiene 12 palline, numerate da 1 a 12, se ne estrae una. Calcolare la probabilità che la pallina presenti un numero pari o un numero maggiore di 8.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.31}
+ \label{ese:9.30}
 Lanciando un dado regolare, si calcoli la probabilità che esca un numero pari o minore di 2.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.32}
+ \label{ese:9.31}
 Calcolare la probabilità che scegliendo a caso una carta da un mazzo di carte francesi di 54 carte si prenda una carta di picche o un re.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.33}
+ \label{ese:9.32}
 Estraendo una carta da un mazzo di 40 carte, calcolare la probabilità che sia un 3 o una carta di spade.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.34}
+ \label{ese:9.33}
  Da un'urna che contiene 5 palline rosse, 8 palline blu, 12 palline bianche, 15 palline gialle, se ne estrae una. Calcolare la probabilità che la pallina sia rossa o blu o gialla.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.35}
+ \label{ese:9.34}
 Da un'urna che contiene 30 palline identiche, numerate da 1 a 30, se ne estrae una. Calcolare la probabilità che il numero della pallina sia minore di 20 o multiplo di 4.
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.36}
+ \label{ese:9.35}
 Per un mazzo di 40 carte napoletane calcola la probabilità di estrarre
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ un asso o un re;
 \item $ B= $ un sette o una carta a bastoni;
 \item $ C= $ una figura o una carta a denari.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.37}
+ \label{ese:9.36}
 Calcola la probabilità che lanciando un dado a sei facce esca un numero pari o un multiplo di 3.
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.38}
+ \label{ese:9.37}
 Nel gioco della tombola si estrae una pallina numerata da un sacchetto contenente 90 palline numerate da 1 a 90. Calcola la probabilità che estraendo la prima pallina essa riporti:
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ un multiplo di 5 o un multiplo di 10,
 \item $ B= $ un numero pari o un multiplo di 5,
 \item $ C= $ un numero che contenga la cifra 5 o la cifra 2.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
-\subsection*{\thechapter.4 - Probabilità dell'evento complementare}
+\subsection*{9.4 - Probabilità dell'evento complementare}
 
 \begin{esercizio}
- \label{ese:9.39}
+ \label{ese:9.38}
 La seguente tabella è tratta dalla tavola di mortalità dei maschi al 2002 relativa a una popolazione di $\np{100000}$ individui:
 \begin{center}
 \begin{tabular}{lccccc}
@@ -307,414 +278,520 @@ Calcola la probabilità per un individuo dell'età di 20 anni di vivere almeno p
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.40}
+ \label{ese:9.39}
 Calcola la probabilità di vincita dell'Italia ai campionati mondiali di calcio se i bookmaker scommettono su una sua vincita 5 a 12.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.41}
+ \label{ese:9.40}
 In un incontro di boxe il pugile Cacine viene dato 7:1 contro il detentore del titolo Pickdur.
 Secondo gli allibratori, quale la probabilità ha Cacine di conquistare il titolo?
 Quali le poste per Pickdur?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.42}
+ \label{ese:9.41}
 Quanto devo puntare su Celestino, che viene dato vincente 21:4 per riscuotere \officialeuro~$500$?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.43}
+ \label{ese:9.42}
 Un cubo di legno viene verniciato e successivamente segato parallelamente alle facce in modo da ottenere $\np{1000}$ cubetti. Quanti tagli sono necessari? Qual è la probabilità che, una volta mescolati i cubetti, si estragga
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ un cubetto con una sola faccia verniciata;
 \item $ B= $ un cubetto con due facce verniciate;
 \item $ C= $ un cubetto con nessuna faccia verniciata.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.44}
+ \label{ese:9.43}
 In un circolo vi sono 100 soci. Di essi si sa che 44 sanno giocare a dama, 39 a scacchi, 8 sanno giocare sia a dama che a scacchi. Estraendo a sorte uno dei 100 soci, qual è la probabilità che sia una persona che non sappia giocare ad alcun gioco.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.45}
+ \label{ese:9.44}
 Da un mazzo di 40 carte si estrae 1 carta. Calcola la probabilità dei seguenti eventi:
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ la carta non è di spade;
 \item $ B= $ la carta non è una figura;
 \item $ C= $ la carta non è un 2.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.46}
+ \label{ese:9.45}
 Calcola la probabilità che lanciando 4 volte una moneta equilibrata esca almeno una testa.
 \end{esercizio}
 
-\subsection*{\thechapter.5 - Probabilità dell'evento intersezione di due eventi}
+\subsection*{9.5 - Probabilità dell'evento intersezione di due eventi}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.47}
+ \label{ese:9.46}
 Nel lancio di due monete qual è la probabilità che almeno una sia croce?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.48}
+ \label{ese:9.47}
 Nel lancio di due dadi qual è la probabilità di avere un totale di 8 o due numeri uguali?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.49}
+ \label{ese:9.48}
 Qual è la probabilità, nel lancio di due dadi, che la somma dei punti sia almeno 9?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.50}
+ \label{ese:9.49}
 Nel lancio di due dadi, punto \officialeuro~$7$ sul fatto che la somma delle facce sia uguale a 5. Quanto devo ricevere perché il gioco sia equo?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.51}
+ \label{ese:9.50}
 La probabilità che un proiettile colpisca un determinato bersaglio è $\np{0,5}$. Qual è la probabilità che tre proiettili lanciati uno dopo l'altro colpiscano tutti il bersaglio.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.52}
+ \label{ese:9.51}
 Due persone giocano con le dita di entrambe le mani a pari e dispari. Con una posta 1:1 conviene giocare sul pari o sul dispari?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.53}
+ \label{ese:9.52}
 Un allievo cuoco prepara la cena. La probabilità che la minestra sia troppo salata è pari a $\np{0,3}$ e che l'arrosto bruci sia pari a $\np{0,4}$. Qual è la probabilità che la cena riesca bene?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
+ \label{ese:9.53}
+Una scopa elettrica è formata da due apparati: il motore che si guasta una volta su 10 entro un anno e la carrozzeria che si rompe una volta su 100 entro un anno. Che probabilità ha la scopa elettrica di essere funzionante dopo un anno?
+\end{esercizio}
+
+\begin{esercizio}[\Ast]
  \label{ese:9.54}
-Una scopa elettrica è formata da due apparati: il motore che si guasta una volta su 10 dopo un anno e la carrozzeria che si rompe una volta su 100 dopo un anno. Che probabilità ha la scopa elettrica di essere funzionante dopo un anno?
+Una coppia ha caratteri ereditari tali che ogni loro figlio ha probabilità pari a $1/4$ di essere malato. I genitori vorrebbero avere due figli. Calcolare la probabilità di avere:
+\begin{multicols}{2}
+\begin{description*}
+\item $ A= $ entrambi i figli sani;
+\item $ B= $ almeno un figlio malato.
+\end{description*}
+\end{multicols}
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
  \label{ese:9.55}
-Una coppia ha caratteri ereditari tali che ogni loro figlio ha probabilità pari a $1/4$ di essere malato. I genitori vorrebbero avere due figli. Calcolare la probabilità di avere:
-\begin{itemize*}
-\item $ A= $ entrambi i figli sani;
-\item $ B= $ almeno un figlio malato.
-\end{itemize*}
+Determinare la probabilità che lanciando tre volte una moneta si presentino
+\begin{multicols}{3}
+\begin{description*}
+\item $ A= $ 3 Teste;
+\item $ B= $ 1 Testa;
+\item $ C= $ 2 Teste.
+\end{description*}
+\end{multicols}
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
  \label{ese:9.56}
-Determinare la probabilità che lanciando tre volte una moneta si presentino
-\begin{itemize*}
-\item $ A= $ 3 Teste;
-\item $ B= $ 1 Testa;
-\item $ C= $ 2 Teste.
-\end{itemize*}
+Nel lancio di una moneta e di un dado calcolare la probabilità di:
+\begin{description*}
+\item $ A= $ ottenere Croce e il 6;
+\item $ B= $ ottenere Testa e un numero multiplo di 2;
+\item $ C= $ ottenere Croce e un numero maggiore di 2.
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
  \label{ese:9.57}
-Nel lancio di una moneta e di un dado calcolare la probabilità di:
-\begin{itemize*}
-\item $ A= $ ottenere Croce e il 6;
-\item $ B= $ ottenere Testa e un numero multiplo di 2;
-\item $ C= $ ottenere Croce e un numero maggiore di 2.
-\end{itemize*}
-\end{esercizio}
-
-\begin{esercizio}[\Ast]
- \label{ese:9.58}
 In un'urna ci sono 6 palline, di cui 2 nere e 4 bianche: calcola la probabilità di estrarre palline di diverso colore nel caso in cui la prima pallina viene rimessa nell'urna.
 \end{esercizio}
 
 \begin{esercizio}
- \label{ese:9.59}
+ \label{ese:9.58}
 L'urna $ U_1 $ contiene 10 palline rosse e 15 bianche, l'urna $ U_2 $ contiene 12 palline rosse e 13 palline bianche. Calcola la probabilità che estraendo una pallina da $ U_1 $ e una pallina da $ U_2 $ siano entrambe rosse.
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.60}
+ \label{ese:9.59}
  Un'urna contiene 10 palline rosse, 7 palline nere e 2 bianche. Estraendone simultaneamente tre, calcolare la probabilità:
-\begin{itemize*}
+\begin{description*}
  \item $ A= $ tutte e tre rosse;
  \item $ B= $ tutte e tre bianche;
  \item $ C= $ 1 rossa e 2 nere;
  \item $ D= $ tutte di colore diverso;
  \item $ E= $ una sola bianca.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.61}
+ \label{ese:9.60}
  Da un mazzo di 40 carte, si estrae una carta a caso. Determina la probabilità:
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ che esca un Re;
 \item $ B= $ che esca un Re nell'ipotesi che sia uscita una figura;
 \item $ C= $ che esca un Re nell'ipotesi che sia uscito il seme di fiori;
 \item $ D= $ che esca il seme di fiori dopo che è uscito un Re.
-\end{itemize*}
+\end{description*}
 Tra gli eventi $A$, $B$, $C$ e $D$, quali sono indipendenti?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.62}
+ \label{ese:9.61}
 Uno studente universitario ha la probabilità $\np{0,3}$ di superare l'esame di matematica e $\np{0,5}$ di superare l'esame di diritto privato. Se i due eventi sono indipendenti determinare la probabilità che lo studente ha di superare
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ tutti e due gli esami;
 \item $ B= $ almeno un esame.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.63}
+ \label{ese:9.62}
 Un'urna contiene 5 palline bianche e 12 nere. Estraendole due a caso qual è la probabilità che siano dello stesso colore?
 \end{esercizio}
 
 \begin{esercizio}[\Ast]
- \label{ese:9.64}
+ \label{ese:9.63}
 Uno studente ha la probabilità del $55\%$ di prendere il debito in matematica, del $30\%$ di prendere il debito in inglese e del $20\%$ di prendere il debito in entrambe le materie. Valutare la probabilità di:
-\begin{itemize*}
+\begin{description*}
 \item $ A= $ avere il debito in matematica nell'ipotesi di averlo già preso in inglese;
 \item $ B= $ avere il debito in inglese nell'ipotesi di averlo già preso in matematica;
 \item $ C= $ avere il debito in matematica nell'ipotesi di non averlo preso in inglese;
 \item $ D= $ avere il debito in inglese nell'ipotesi di non averlo preso in matematica;
 \item $ E= $ non avere il debito in matematica nell'ipotesi di averlo preso in inglese;
 \item $ F= $ non avere il debito in inglese nell'ipotesi di non averlo preso in matematica.
-\end{itemize*}
+\end{description*}
 \end{esercizio}
 
 \subsection*{Esercizi dalle prove Invalsi}
 
-\begin{esercizio}[Prove Invalsi~2005]% \label{ese:9.65}
+\begin{esercizio}[2005~\Ast]
+\label{ese:9.64}
 Se si lanciano contemporaneamente due monete, qual è la probabilità che escano una testa e una croce?
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2005] % \label{ese:9.66}
+\begin{esercizio}[2005~\Ast]
+\label{ese:9.65}
 Qual è la probabilità che su 6 lanci di un comune dado a 6 facce, non truccato, si abbia per 6 volte il numero 3?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2005]% \label{ese:9.67}
+\begin{esercizio}[2005~\Ast]
+\label{ese:9.66}
 Un'urna contiene 20 gettoni numerati da 1 a 20. Si estrae un gettone: è un numero pari. Senza reinserire il gettone, se ne estrae un secondo. Qual è la probabilità di estrarre un numero dispari?
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2006] % \label{ese:9.68}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.67}
 Se lanci un dado una sola volta, quale probabilità hai di ottenere un numero pari minore di 6?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2006]% \label{ese:9.69}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.68}
 È lanciato un dado non truccato a forma di ottaedro (solido regolare a otto facce), le cui facce sono numerate da 1 a 8. Qual è la probabilità che esca una faccia il cui numero è multiplo di 3?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2006]% \label{ese:9.70}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.69}
 Un mazzo di carte da poker è composto da 52 pezzi, 12 dei quali sono figure. Pescando a caso una carta, qual è la probabilità che si verifichi l'evento: ``esce una figura o un asso''?
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2006] % \label{ese:9.71}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.70}
 Un'urna contiene 50 gettoni colorati. 20 sono di colore verde, 18 di colore rosso, 10 di colore blu. Qual è la probabilità di pescare un gettone che non sia né verde, né rosso e né blu?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2006]% \label{ese:9.72}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.71}
 La probabilità di estrarre una pallina rossa da un'urna contenente 100 palline è $3/50$. Quante sono le palline rosse contenute nell'urna?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2005]% \label{ese:9.73}
+\begin{esercizio}[2005~\Ast]
+\label{ese:9.72}
 Si lancia un comune dado a 6 facce, non truccato, per 8 volte. Qual è la probabilità che al terzo lancio esca il numero 5?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2005]% \label{ese:9.74}
+\begin{esercizio}[2005~\Ast]
+\label{ese:9.73}
 Data un'urna contenente 30 palline, di cui 6 rosse, 9 gialle, 3 verdi e 12 blu, quale delle seguenti affermazioni è falsa? La probabilità di estrarre una pallina \ldots
-\begin{itemize*}
+\begin{multicols}{2}
+\begin{enumeratea}
 \item rossa o gialla è $\np{0,5}$;
 \item verde è $\np{0,1}$;
 \item blu o gialla è $\np{0,7}$;
 \item rossa o blu è $\np{0,4}$.
-\end{itemize*}
+\end{enumeratea}
+\end{multicols}
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2006] % \label{ese:9.75}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.74}
 Se i lanciano contemporaneamente due monete, qual è la probabilità che esca almeno una testa?
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2006] % \label{ese:9.76}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.75}
 Un'urna contiene 20 palline: 4 bianche, 6 rosse e 10 verdi. Quanto vale il rapporto fra la probabilità di estrarre una pallina bianca o rossa e la probabilità di estrarre una pallina rossa o verde?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2006]% \label{ese:9.77}
+\begin{esercizio} [2006~\Ast]
+\label{ese:9.76}
 La probabilità di estrarre una pallina bianca da un'urna è $4/10$. Quale delle seguenti affermazioni è compatibile con la precedente?
-\begin{itemize*}
+\begin{enumeratea}
 \item l'urna contiene 20 palline bianche, 15 rosse e 5 nere;
 \item l'urna contiene 40 palline bianche, 40 rosse e 40 nere;
 \item l'urna contiene 40 palline bianche e 100 rosse;
 \item l'urna contiene 80 palline bianche, 50 rosse e 70 nere.
-\end{itemize*}
+\end{enumeratea}
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2006] % \label{ese:9.78}
+\begin{esercizio}[2006~\Ast]
+\label{ese:9.77}
 In un dado truccato avente le facce numerate da 1 a 6, la probabilità di uscita di un numero è direttamente proporzionale al numero stesso. Quanto vale la probabilità che, lanciando il dado, esca il numero 5?
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2007] % \label{ese:9.79}
+\begin{esercizio}[2007~\Ast]
+\label{ese:9.78}
 Da un'urna contenente 50 palline, Marco ne estrae 20 senza rimetterle nell'urna ed osserva che 10 sono nere e 10 sono rosse. Estraendo una 21-esima pallina, qual è la probabilità che questa si nera?
+\begin{multicols}{2}
+\begin{enumeratea}
+\item più di~$\frac{1}{2}$;
+\item esattamente~$\frac{1}{2}$;
+\item meno di~$\frac{1}{2}$;
+\item non si può determinare.
+\end{enumeratea}
+\end{multicols}
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2007] % \label{ese:9.80}
+\begin{esercizio}[2007~\Ast]
+\label{ese:9.79}
 Quanto vale la probabilità che una persona risponda correttamente ad una domanda che prevede solo una risposta esatta, scegliendo a caso una risposta fra le quattro proposte?
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2007] % \label{ese:9.81}
+\begin{esercizio}[2007~\Ast]
+\label{ese:9.80}
 Un'urna contiene 21 palline, ognuna delle quali è contrassegnata da una lettera dell'alfabeto italiano. Qual è la probabilità che, estraendo a caso una di queste palline, si verifichi l'evento ``esce la lettera $\pi $''?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2007]% \label{ese:9.82}
+\begin{esercizio}[2007~\Ast]
+\label{ese:9.81}
 In una lotteria i 4 premi sono assegnati per estrazioni successive, partendo dal 1° fino al 4°. Pietro ha acquistato uno solo dei 100 biglietti venduti. Egli è presente all'estrazione dei premi e l'estrazione del 1° premio lo vede perdente. Qual è la probabilità che Pietro vinca il 2° premio?
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2007] % \label{ese:9.83}
+\begin{esercizio}[2007~\Ast]
+\label{ese:9.82}
 Si lanciano due dadi ed escono due numeri il cui prodotto è 6. Qual è la probabilità che uno dei due numeri usciti sia 2?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2007]% \label{ese:9.84}
+\begin{esercizio} [2007~\Ast]
+\label{ese:9.83}
 Quanti casi possibili si ottengono gettando un dado e una moneta contemporaneamente?
-
-A. 12 \quad B. 8 \quad C. 36 \quad D. 2 \quad E. La risposta esatta non è tra quelle proposte.
+\begin{multicols}{2}
+\begin{enumeratea}
+\item $12$;
+\item $8$;
+\item $36$;
+\item $2$.
+\end{enumeratea}
+\end{multicols}
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2003] % \label{ese:9.85}
+\begin{esercizio}[2003~\Ast]
+\label{ese:9.84}
  Se lanci un normale dado numerato da 1 a 6, ciascun numero ha probabilità $1/6$ di uscire. In 4 lanci successivi sono usciti i numeri 2, 3, 4 e 3. Se lanci il dado una quinta volta, qual è la probabilità che esca 3?
-\begin{itemize*}
-\item Maggiore di $1/6$, perché nei 4 tiri precedenti il punteggio 3 è uscito 2 volte su 4;
-\item $1/6$, perché il dado non si ricorda degli eventi passati;
-\item minore di $1/6$, perché il punteggio 3 è già uscito e ora è più probabile che escano gli altri;
-\item $1/2$, come indica il calcolo dei casi favorevoli (due) sul totale dei casi (quattro);
+\begin{enumeratea}
+\item Maggiore di $\frac{1}{6}$, perché nei 4 tiri precedenti il punteggio 3 è uscito 2 volte su 4;
+\item $\frac{1}{6}$, perché il dado non si ricorda degli eventi passati;
+\item minore di $\frac{1}{6}$, perché il punteggio 3 è già uscito e ora è più probabile che escano gli altri;
+\item $\frac{1}{2}$, come indica il calcolo dei casi favorevoli (due) sul totale dei casi (quattro);
 \item le informazioni date non consentono di rispondere.
-\end{itemize*}
+\end{enumeratea}
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2003]% \label{ese:9.86}
+\begin{esercizio} [2003~\Ast]
+\label{ese:9.85}
  Estrarre da un mazzo di carte francesi (52 carte) una carta di seme nero e figura è \ldots
-\begin{itemize*}
+\begin{enumeratea}
 \item più probabile che estrarre una carta di seme nero;
 \item più probabile che estrarre una figura di qualunque seme;
 \item meno probabile che estrarre una carta di seme nero e asso;
 \item altrettanto probabile che estrarre una carta di seme nero o figura;
-\item altrettanto probabile che estrarre una carta di seme rosso e figura. (Prove Invalsi 2003)
-\end{itemize*}
+\item altrettanto probabile che estrarre una carta di seme rosso e figura.
+\end{enumeratea}
 \end{esercizio}
 
-\begin{esercizio}[Prove Invalsi~2003] % \label{ese:9.87}
-La probabilità di estrarre un 6 o un 8 da un mazzo di carte napoletane (40 carte) è \ldots
+\begin{esercizio}[2003~\Ast]
+\label{ese:9.86}
+Qual'è la probabilità di estrarre un 6 o un 8 da un mazzo di carte napoletane (40 carte)?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2003]% \label{ese:9.88}
+\begin{esercizio}[2003~\Ast]
+\label{ese:9.87}
 Aldo e Luigi giocano a testa o croce, ciascuno di essi lancia due monete. Qual è la probabilità che il numero di teste di Luigi sia uguale a quelle ottenute da Aldo?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2004]% \label{ese:9.89}
+\begin{esercizio}[2004~\Ast]
+\label{ese:9.88}
 Se lanci una normale moneta, Testa e Croce hanno entrambe probabilità $1/2$ di uscire. In 4 lanci successivi, sono usciti Testa, Croce, Testa, Testa. Se lanci la moneta una quinta volta, qual è la probabilità che esca Testa?
-\begin{itemize*}
+\begin{multicols}{2}
+\begin{enumeratea}
 \item Maggiore di $ \frac 1 2 $;
 \item uguale a $ \frac 1 2 $;
 \item minore di $ \frac 1 2 $;
-\item le informazioni date non consentono di rispondere.
-\end{itemize*}
+\item non si può rispondere.
+\end{enumeratea}
+\end{multicols}
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2004]% \label{ese:9.90}
+\begin{esercizio}[2004~\Ast]
+\label{ese:9.89}
 Nel gioco della tombola qual è la probabilità di estrarre un numero maggiore di 20 e minore di 35?
 \end{esercizio}
 
-\begin{esercizio} [Prove Invalsi~2004]% \label{ese:9.91}
+\begin{esercizio}[2004~\Ast]
+\label{ese:9.90}
 Qual è la probabilità che lanciando un dado esca un numero dispari o multiplo di 3?
 \end{esercizio}
 
 \subsection{Risposte}
 \begin{multicols}{2}
 
-\paragraph{\thechapter.8.} $P(E)=\np{0,23}$.
+\paragraph{9.7.} $P(E)=\np{0,23}$.
 
-\paragraph{\thechapter.9.} $P(E)=\np{0,17}$.
+\paragraph{9.8.} $P(E)=\np{0,17}$.
 
-\paragraph{\thechapter.10.} $P(A)=P(B)=\np{0,25}$; $P(C)=\np{0,50}$.
+\paragraph{9.9.} $P(A)=P(B)=\np{0,25}$; $P(C)=\np{0,50}$.
 
-\paragraph{\thechapter.11.} $ P(A)=\frac{1}{3}$; $P(B)=\frac{1}{5}$; $P(C)=\frac{2}{3} $.
+\paragraph{9.10.} $ P(A)=\frac{1}{3}$; $P(B)=\frac{1}{5}$; $P(C)=\frac{2}{3} $.
 
-\paragraph{\thechapter.13.} $P(E)=\frac 5{36}$.
+\paragraph{9.12.} $P(E)=\frac 5{36}$.
 
-\paragraph{\thechapter.14.} $P(E)=\frac{10}{100}=\frac 1{10}$.
+\paragraph{9.13.} $P(E)=\frac{10}{100}=\frac 1{10}$.
 
-\paragraph{\thechapter.15.} $P(E)=\frac 8{210}=\frac 4{105}$
+\paragraph{9.14.} $P(E)=\frac 8{210}=\frac 4{105}$
 
-\paragraph{\thechapter.16.} $P(E)=\frac 3 8$.
+\paragraph{9.15.} $P(E)=\frac 3 8$.
 
-\paragraph{\thechapter.17.} $P(E)=\np{0,0375}$.
+\paragraph{9.16.} $P(E)=\np{0,0375}$.
 
-\paragraph{\thechapter.18.} Biglietto B; Prezzo(A)=\officialeuro~$2$;\protect\\ Prezzo(B)=\officialeuro~$\np{2,23}$.
+\paragraph{9.17.} Biglietto B; Prezzo(A)=\officialeuro~$2$;\protect\\ Prezzo(B)=\officialeuro~$\np{2,23}$.
 
-\paragraph{\thechapter.28.} $P(E)=\frac 2 3$.
+\paragraph{9.27.} $P(E)=\frac 2 3$.
 
-\paragraph{\thechapter.29.} $P(E)=\frac 3 4$.
+\paragraph{9.28.} $P(E)=\frac 3 4$.
 
-\paragraph{\thechapter.30.} $P(E)=\frac 2 3$.
+\paragraph{9.29.} $P(E)=\frac 2 3$.
 
-\paragraph{\thechapter.31.} $P(E)=\frac 2 3$.
+\paragraph{9.30.} $P(E)=\frac 2 3$.
 
-\paragraph{\thechapter.32.} $P(E)=\frac 8{27}$.
+\paragraph{9.31.} $P(E)=\frac 8{27}$.
 
-\paragraph{\thechapter.33.} $P(E)=\frac{13}{40}$.
+\paragraph{9.32.} $P(E)=\frac{13}{40}$.
 
-\paragraph{\thechapter.34.} $P(E)=\frac 7{10}$.
+\paragraph{9.33.} $P(E)=\frac 7{10}$.
 
-\paragraph{\thechapter.35.} $P(E)=\frac{11}{15}$.
+\paragraph{9.34.} $P(E)=\frac{11}{15}$.
 
-\paragraph{\thechapter.39.} $P(E)=\np{0,91}$.
+\paragraph{9.38.} $P(E)=\np{0,91}$.
 
-\paragraph{\thechapter.40.} $P(E)=\np{0,71}$.
+\paragraph{9.39.} $P(E)=\np{0,71}$.
 
-\paragraph{\thechapter.41.} $P(A)=\frac 1 8;B=7:1$.
+\paragraph{9.40.} $P(A)=\frac 1 8;B=7:1$.
 
-\paragraph{\thechapter.42.} \officialeuro~$80$.
+\paragraph{9.41.} \officialeuro~$80$.
 
-\paragraph{\thechapter.43.} $P(A)=\np{0,384}$; $P(B)=\np{0,096}$; $P(C)=\np{0,512}$.
+\paragraph{9.42.} $P(A)=\np{0,384}$; $P(B)=\np{0,096}$; $P(C)=\np{0,512}$.
 
-\paragraph{\thechapter.44.} $P(E)=\np{0,25}$.
+\paragraph{9.43.} $P(E)=\np{0,25}$.
 
-\paragraph{\thechapter.45.} $P(A)=\frac 3 4$; $P(B)=\frac 7{10}$; $P(C)=\frac 9{10}$.
+\paragraph{9.44.} $P(A)=\frac 3 4$; $P(B)=\frac 7{10}$; $P(C)=\frac 9{10}$.
 
-\paragraph{\thechapter.46.} $P(E)=1-\frac 1{16}=\frac{15}{16}$.
+\paragraph{9.45.} $P(E)=1-\frac 1{16}=\frac{15}{16}$.
 
-\paragraph{\thechapter.47.} $P(E)=\frac 3 4$.
+\paragraph{9.46.} $P(E)=\frac 3 4$.
 
-\paragraph{\thechapter.48.} $P(E)=\frac 5{18}$.
+\paragraph{9.47.} $P(E)=\frac 5{18}$.
 
-\paragraph{\thechapter.49.} $P(E)=\frac{15}{18}$.
+\paragraph{9.48.} $P(E)=\frac{15}{18}$.
 
-\paragraph{\thechapter.50.} \officialeuro~$63$.
+\paragraph{9.49.} \officialeuro~$63$.
 
-\paragraph{\thechapter.51.} $P(E)=\np{0,125}$.
+\paragraph{9.50.} $P(E)=\np{0,125}$.
 
-\paragraph{\thechapter.52.} indifferente.
+\paragraph{9.51.} indifferente.
 
-\paragraph{\thechapter.53.} $P(E)=\np{0,42}$.
+\paragraph{9.52.} $P(E)=\np{0,42}$.
 
-\paragraph{\thechapter.54.} $P(E)=\np{89,1}\%$
+\paragraph{9.53.} $P(E)=\np{89,1}\%$
 
-\paragraph{\thechapter.55.} $ P(A)=\frac 9 {16}$; $P(B)=\frac 7 {16} $.
+\paragraph{9.54.} $ P(A)=\frac 9 {16}$; $P(B)=\frac 7 {16} $.
 
-\paragraph{\thechapter.56.} $ P(A)=\frac 1 8$; $P(B)=\frac3 8$; $P(C)=\frac 3 8 $.
+\paragraph{9.55.} $ P(A)=\frac 1 8$; $P(B)=\frac3 8$; $P(C)=\frac 3 8 $.
 
-\paragraph{\thechapter.57.} $ P(A)=\frac 1 {12}$; $P(B)=\frac1 4$; $P(C)=\frac 1 3 $.
+\paragraph{9.56.} $ P(A)=\frac 1 {12}$; $P(B)=\frac1 4$; $P(C)=\frac 1 3 $.
 
-\paragraph{\thechapter.58.} $ P(E)=\frac 4 9 $.
+\paragraph{9.57.} $ P(E)=\frac 4 9 $.
 
-\paragraph{\thechapter.60.} $P(A)=\np{0,12}$; $P(B)=0$; $P(C)=\np{0,22}$; $P(D)=\np{0,14}$; $P(E)=\np{0,28}$.
+\paragraph{9.59.} $P(A)=\np{0,12}$; $P(B)=0$; $P(C)=\np{0,22}$; $P(D)=\np{0,14}$; $P(E)=\np{0,28}$.
 
-\paragraph{\thechapter.61.} $ P(A)=\frac 1{10}$; $ P(B)=\frac 1 3 $; $ P(C)=\frac 1{10} $; $ P(D)=\frac 1 4 $; $A$ e $C$.
+\paragraph{9.60.} $ P(A)=\frac 1{10}$; $ P(B)=\frac 1 3 $; $ P(C)=\frac 1{10} $; $ P(D)=\frac 1 4 $; $A$ e $C$.
 
-\paragraph{\thechapter.62.} $P(A)=\np{0,15}$; $P(B)=\np{0,65}$.
+\paragraph{9.61.} $P(A)=\np{0,15}$; $P(B)=\np{0,65}$.
 
-\paragraph{\thechapter.63.} $P(A)=\np{0,56}$.
+\paragraph{9.62.} $P(A)=\np{0,56}$.
 
-\paragraph{\thechapter.64.} $P(A)=67\%$; $P(B)=36\%$; $P(C)=50\%$; $P(D)=22\%$; $P(E)=33\%$; $P(F)=64\%$.
+\paragraph{9.63.} $P(A)=67\%$; $P(B)=36\%$; $P(C)=50\%$; $P(D)=22\%$; $P(E)=33\%$; $P(F)=64\%$.
+\end{multicols}
+
+\begin{multicols}{3}
+\paragraph{9.64.} $\frac{1}{2}$.
+
+\paragraph{9.65.} $\frac{1}{6^{6}}$.
+
+\paragraph{9.66.} $\frac{10}{19}$.
+
+\paragraph{9.67.} $\frac{1}{3}$.
+
+\paragraph{9.68.} $\frac{1}{4}$.
+
+\paragraph{9.69.} $\frac{4}{13}$.
+
+\paragraph{9.70.} $\frac{1}{25}$.
+
+\paragraph{9.71.} $6$.
+
+\paragraph{9.72.} $\frac{25}{6^{3}}$.
+
+\paragraph{9.73.} d).
+
+\paragraph{9.74.} $\frac{3}{4}$.
+
+\paragraph{9.75.} $\frac{5}{8}$.
+
+\paragraph{9.76.} d).
+
+\paragraph{9.77.} $\frac{5}{21}$.
+
+\paragraph{9.78.} d).
+
+\paragraph{9.79.} $\frac{1}{4}$.
+
+\paragraph{9.80.} $0$.
+
+\paragraph{9.81.} $\frac{1}{99}$.
+
+\paragraph{9.82.} $\frac{1}{2}$.
+
+\paragraph{9.83.} a).
+
+\paragraph{9.84.} b).
+
+\paragraph{9.85.} e).
+
+\paragraph{9.86.} $\frac{1}{5}$.
+
+\paragraph{9.87.} $\frac{3}{8}$.
+
+\paragraph{9.88.} b).
+
+\paragraph{9.89.} $\frac{7}{45}$.
+
+\paragraph{9.90.} $\frac{2}{3}$.
+
 \end{multicols}
