@@ -3,7 +3,7 @@
 # (c) 2014 Dimitrios Vrettos - d.vrettos@gmail.com
 # v1.0
 #
-NAME = algebra2_3ed_completo
+NAME = algebra2_4ed_completo
 
 SHORT_NAME = algebra2_stm
 

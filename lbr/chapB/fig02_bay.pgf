@@ -1,0 +1,28 @@
+% (c) 2012 Dimitrios Vrettos - d.vrettos@gmail.com
+\begin{tikzpicture}[x=2cm,font=\small,scale=.95]
+\def\firstcircle{(1.5,2.5) circle (1.8)}
+\def\firstrett {(-.5,0) -- (-5,5) -- (.6,5) -- (.8,0) -- cycle}
+\def\secrett {(.8,0) -- (.6,5) -- (2.4,5) -- (1.5,0) -- cycle}
+\def\thirdrett {(1.5,0) -- (2.4,5) -- (4,5) -- (4,0) -- cycle}
+
+\draw[rounded corners] (-.5,0) rectangle (3.5,5);
+\begin{scope}
+\clip \firstcircle;
+\fill[red!20]\firstrett;
+\clip \firstcircle;
+\fill[yellow!50]\secrett;
+\clip \firstcircle;
+\fill[gray!30]\thirdrett;
+\end{scope}
+
+\draw\firstcircle;
+
+\draw (.6,5)--(.8,0);\draw(2.4,5)--(1.5,0);
+\draw(-.7,3)--(-.3,2.5);
+\node [above]at (-.7,3) {$E$};
+\node at (0,4.6){$H_1$};\node at (1.5,4.6){$H_2$};\node at (3,4.6){$H_3$};
+\node at (.2,2.5){$p(E\cap H_1)$};
+\node at (1.4,2.5){$p(E\cap H_2)$};
+\node at (2.55,2.5){$p(E\cap H_3)$};
+\node at (1.5,-.7){$p(E)=p(E\cap H_1)+p(E\cap H_2)+p(E\cap H_3)$};
+\end{tikzpicture}

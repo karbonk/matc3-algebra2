@@ -1,0 +1,38 @@
+% (c) 2012 Dimitrios Vrettos - d.vrettos@gmail.com
+\begin{tikzpicture}[x=2cm,font=\small]
+\def\firstcircle{(2,2.5) circle (1.8)}
+\def\firstrett {(0,0) rectangle (1.1,5)}
+\def\secrett {(1.1,0) rectangle (2,5)}
+\def\thirdrett {(2,0) rectangle (2.9,5)}
+\def\fourrett {(2.9,0) rectangle (4,5)}
+
+\draw[rounded corners] (0,0) rectangle (4,5);
+\begin{scope}
+\clip \firstcircle;
+\fill[red!20]
+\firstrett;
+\clip \firstcircle;
+\fill[yellow!50]\secrett;
+\clip \firstcircle;
+\fill[gray!30]\thirdrett;
+\clip \firstcircle;
+\fill[orange!30]\fourrett;
+\end{scope}
+
+\draw\firstcircle;
+
+\draw (1.1,5)--(1.1,0);\draw(2,5)--(2,0);\draw(2.9,5)--(2.9,0);
+\draw(-.2,3)--(.2,2.5);
+\node [above]at (-.2,3) {M};
+\node at (.5,4.5){$A_1$};\node at (1.5,4.5){$A_2$};\node at (2.5,4.5){$A_3$};\node at (3.5,4.5){$A_4$};
+\node at (.65,2.7){$p(M\cap A_1)$};\node at (.65,2.3){$0,098$};
+\node at (1.55,2.7){$p(M\cap A_2)$};\node at (1.55,2.3){$0,133$};
+\node at (2.45,2.7){$p(M\cap A_3)$};\node at (2.45,2.3){$0,141$};
+\node at (3.35,2.7){$p(M\cap A_4)$};\node at (3.35,2.3){$0,113$};
+\node at (2,-.7){$\text{Totale prima riga: }0,098+0,133+0,141+0,113=0,485$};
+
+\draw[rounded corners] (4.5,0) rectangle (7,3.5);
+\def\seccircle{(5.75,1.75) circle (1.1)}
+\draw\seccircle;
+
+\end{tikzpicture}
