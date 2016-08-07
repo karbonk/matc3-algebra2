@@ -331,7 +331,7 @@ Ridurre due o più radici allo stesso indice:
 \begin{enumeratea}
  \item scomporre in fattori irriducibili tutti i radicandi;
  \item porre le condizioni di esistenza;
- \item calcolare il minimo comune multiplo tra gli indici delle radici;
+ \item calcolare il minimo comune multiplo tra gli indici delle radici e assegnarlo alle radici;
  \item per ciascuna radice dividere il~$\mcm$ per l'indice della radice e moltiplicare il quoziente trovato per l'esponente del radicando.
 \end{enumeratea}
 \end{procedura}
@@ -732,6 +732,21 @@ Se l'espressione $a^2-b$ è un quadrato perfetto, i radicali doppi possono esser
 \sqrt{a\pm \sqrt b}=\sqrt{\dfrac{a+\sqrt{a^2-b}} 2}\pm \sqrt{\dfrac{a-\sqrt{a^2-b}} 2}
 \end{equation*}
 
+Dimostriamo la formula $\sqrt{a+ \sqrt b}=\sqrt{\dfrac{a+\sqrt{a^2-b}} 2}+ \sqrt{\dfrac{a-\sqrt{a^2-b}} 2}$
+\begin{itemize*}
+\item eleviamo al quadrato ambo i termini dell'uguaglianza ottenendo:
+\[a+ \sqrt b=\dfrac{a+\sqrt{a^2-b}}{2} +2\sqrt{\dfrac{a+\sqrt{a^2-b}}{2}}\cdot\sqrt{\dfrac{a-\sqrt{a^2-b}}{2}}+\dfrac{a-\sqrt{a^2-b}} 2;
+\]
+\item sommiamo i radicali simili e moltiplichiamo quelli con lo stesso indice:
+\[a+ \sqrt b=\dfrac{2a}{2}+2\sqrt{\dfrac{a^{2}-\left(a^{2}-b\right)}{4}};
+\]
+%\item per la differenza di due quadrati otteniamo:
+%\[a+ \sqrt b=a+2\sqrt{\dfrac{a^{2}-\left(a^{2}-b\right)}{4}};\]
+\item da cui semplificando
+\[a+ \sqrt b=a+ \sqrt b.\]
+\end{itemize*}
+
+\pagebreak
 \begin{exrig}
  \begin{esempio}
 Trasforma, se possibile, i seguenti radicali doppi in radicali semplici.

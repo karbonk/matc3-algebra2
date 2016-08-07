@@ -35,7 +35,7 @@ Per definizione si ha:
 Data la funzione $f(x)=\left|x^2-4\right|+\left|x+1\right|-2x$ descriverla per casi, eliminando i valori assoluti.
 
 Dobbiamo studiare i segni dei due binomi in valore assoluto 
-\[\begin{array}{l}x^2-4\ge 0\quad\Rightarrow\quad x\le -2\vee x\ge 2~\text{ e} \\x+1\ge 0\quad\Rightarrow\quad x>-1.\end{array}\]
+\[\begin{array}{l}x^2-4\ge 0\quad\Rightarrow\quad x\le -2\vee x\ge 2~\text{ e} \\x+1\ge 0\quad\Rightarrow\quad x\ge -1.\end{array}\]
 
 %\[x^2-4\ge 0\quad\Rightarrow\quad x\le -2\vee x\ge 2\] e \[x+1\ge 0\quad\Rightarrow\quad x>-1.\] 
 La situazione è rappresentata con maggiore chiarezza nel grafico seguente.
@@ -44,16 +44,16 @@ La situazione è rappresentata con maggiore chiarezza nel grafico seguente.
 \end{center}
 
 \begin{itemize*}
-\item Nell'intervallo $x<-2$ l'argomento del primo valore assoluto è positivo e quello del secondo è negativo;
-\item nell'intervallo $-2\le x<-1$ tutti e due gli argomenti del valore assoluto sono negativi;
-\item nell'intervallo $-1\le x<2$ l'argomento del primo valore assoluto è negativo, quello del secondo è positivo;
-\item nell'intervallo $x\ge 2$ entrambi gli argomenti sono positivi.
+\item Nell'intervallo $x\le -2$ l'argomento del primo valore assoluto è positivo o uguale a 0 per $x=-2$ e quello del secondo è negativo;
+\item nell'intervallo $-2<x<-1$ tutti e due gli argomenti del valore assoluto sono negativi;
+\item nell'intervallo $-1\le x\le 2$ l'argomento del primo valore assoluto è negativo o uguale a 0 per $x=2$, quello del secondo è positivo o uguale a 0 per $x=1$;
+\item nell'intervallo $x>2$ entrambi gli argomenti sono positivi.
 \end{itemize*}
 In sintesi 
 \[f(x)=
-\begin{cases}(x^2-4)-(x+1)-2 & \text{ se~~}x<-2 \\
--(x^2-4)-(x+1)-2x & \text{ se~~}-2\le x<-1 \\
--(x^2-4)+(x+1)-2x & \text{ se~~}-1\le x<2 \\
+\begin{cases}(x^2-4)-(x+1)-2 & \text{ se~~}x\le -2 \\
+-(x^2-4)-(x+1)-2x & \text{ se~~}-2<x<-1 \\
+-(x^2-4)+(x+1)-2x & \text{ se~~}-1\le x\le 2 \\
 (x^2-4)+(x+1)-2x & \text{ se~~}x>2
 \end{cases}.\]
 \end{esempio}
@@ -235,7 +235,10 @@ Conclusione: $\IS=\IS_1\cup \IS_2\cup \IS_3\cup \IS_4=\left\{1\text{, }2+\sqrt 7
 Le disequazioni con i moduli si risolvono in modo analogo alle equazioni con moduli.
 
 \subsection{Disequazioni in cui l'incognita si trova solo nel modulo}
-\paragraph{Primo caso:} disequazioni nella forma $\left|f(x)\right|<k$ con $ k>0 $.
+
+\begin{itemize}
+\item Disequazioni con valore assoluto nella forma $\left|f(x)\right|<k \text{ con }  k>0 $.
+\end{itemize}
 
 La disequazione si risolve studiando l'unione dei due sistemi 
 \[\left\{\begin{array}{l}{f(x)\ge 0}\\{f(x)<k}\end{array}\right.\cup\left\{\begin{array}{l}{f(x)< 0}\\{f(x)>-k}\end{array}\right.\]
@@ -257,9 +260,17 @@ L'insieme soluzione della disequazione assegnata è quindi $-2<x<2$.
 \end{esempio}
 \end{exrig}
 
-\paragraph{Secondo caso:} disequazioni nella forma $\left|f(x)\right|>k$ con $ k>0 $.
+\begin{itemize}
+\item Disequazioni con valore assoluto nella forma $\left|f(x)\right|>k \text{ con } k>0 $.
+\end{itemize}
 
-Per il procedimento svolto nel caso precedente queste disequazioni si trasformano sempre nelle disequazioni \[ f(x)<-k\;\vee\; f(x)>k. \]
+La disequazione si risolve studiando l'unione dei due sistemi 
+\[\left\{\begin{array}{l}{f(x)\ge 0}\\{f(x)>k}\end{array}\right.\cup\left\{\begin{array}{l}{f(x)< 0}\\{f(x)<-k}\end{array}\right.\]
+che hanno soluzioni \[ f(x)<-k\;\vee\; f(x)>k. \]
+
+%\paragraph{Secondo caso:} disequazioni nella forma $\left|f(x)\right|>k$ con $ k>0 $.
+
+%Per il procedimento svolto nel caso precedente queste disequazioni si trasformano sempre nelle disequazioni \[ f(x)<-k\;\vee\; f(x)>k. \]
 
 \begin{exrig}
 \begin{esempio}
